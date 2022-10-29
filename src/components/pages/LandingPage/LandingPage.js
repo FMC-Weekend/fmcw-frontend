@@ -37,28 +37,38 @@ function landingPage() {
 
       <div className={Classes.texture_bg}></div>
       <img src="/SECT_DIV_LINE.svg" alt="line" className={Classes.line_sep} />
-      <Section
-        title="ABOUT US"
-        imagePath="/clubs_2X.png"
-        buttonText="REGISTER"
-        link="/authentication"
-        className="about-img">
-        <img src="/LINEE.svg" alt="line" className={Classes.about_sep} />
-        The long-awaited exemplary 8th edition of FMC Weekend is finally here! This time we not only
-        bring to you a plethora of exciting events that will put your creative mettle to test, but
-        also some awe-inspiring workshops by the notable and established names of the digital arts
-        domain, all from the very comfort of your home. As we herald this journey, get ready to
-        experience some of the most ecstatic moments of your lives as the passion for digital arts
-        conjures within you.
-      </Section>
-      <img src="/SECT_DIV_LINE.svg" alt="line" className={Classes.line_sep1} />
-      <Section title="EVENTS" imagePath="/EVENTSS.png" buttonText="SEE ALL EVENTS" link="/events">
-        <img src="/LINEE.svg" alt="line" className={Classes.event_sep} />
-        The electrifying eighth edition of FMC Weekend brings to you an opportunity to compete with
-        your contemporaries and establish your talent. Participate in events of creative writing,
-        photography, cinematography, design and animation, discover your true potential and watch
-        FMC Weekend truly transform into a celebration of excellence.
-      </Section>
+
+      <div data-aos="zoom-in" data-aos-duration="1200">
+        <Section
+          title="ABOUT US"
+          imagePath="/clubs_2X.png"
+          buttonText="REGISTER"
+          link="/authentication"
+          className="about-img">
+          <img src="/LINEE.svg" alt="line" className={Classes.about_sep} />
+          The long-awaited exemplary 8th edition of FMC Weekend is finally here! This time we not
+          only bring to you a plethora of exciting events that will put your creative mettle to
+          test, but also some awe-inspiring workshops by the notable and established names of the
+          digital arts domain, all from the very comfort of your home. As we herald this journey,
+          get ready to experience some of the most ecstatic moments of your lives as the passion for
+          digital arts conjures within you.
+        </Section>
+      </div>
+
+      <div data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="250">
+        <img src="/SECT_DIV_LINE.svg" alt="line" className={Classes.line_sep1} />
+      </div>
+
+      <div data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="250">
+        <Section title="EVENTS" imagePath="/EVENTSS.png" buttonText="SEE ALL EVENTS" link="/events">
+          <img src="/LINEE.svg" alt="line" className={Classes.event_sep} />
+          The electrifying eighth edition of FMC Weekend brings to you an opportunity to compete
+          with your contemporaries and establish your talent. Participate in events of creative
+          writing, photography, cinematography, design and animation, discover your true potential
+          and watch FMC Weekend truly transform into a celebration of excellence.
+        </Section>
+      </div>
+
       <Footer />
     </div>
   );
