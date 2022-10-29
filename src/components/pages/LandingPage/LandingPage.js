@@ -21,8 +21,24 @@ function landingPage() {
     }
   };
 
- useEffect(() => {
-    AOS.init({duration: 2000});
+  useEffect(() => {
+    AOS.init({duration: 1500,
+  //     disable: false,
+  // startEvent: 'DOMContentLoaded',
+  // initClassName: 'aos-init',
+  // animatedClassName: 'aos-animate',
+  // useClassNames: false,
+  // disableMutationObserver: false,
+  // debounceDelay: 50,
+  // throttleDelay: 99,
+  // offset: 120,
+  // delay: 0,
+  // duration: 400,
+  // easing: 'ease',
+  // once: false,
+  // mirror: true,
+  // anchorPlacement: 'top-bottom',
+    });
     showButton();
   }, []);
 
@@ -39,8 +55,16 @@ function landingPage() {
       <Banner imagePath="/Group_7139.svg" />
 
       <div className={Classes.texture_bg}></div>
-      <img src="/SECT_DIV_LINE.svg" alt="line" className={Classes.line_sep} /><div  data-aos="flip-left">
-      <Section
+      <img src="/SECT_DIV_LINE.svg" alt="line" className={Classes.line_sep} />
+      <div data-aos="zoom-out"
+       data-aos-offset="100"
+    data-aos-delay="10"
+    data-aos-duration="1500"
+    data-aos-easing="ease-in"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center">
+      <Section 
         title="ABOUT US"
         imagePath="/clubs_2X.png"
         buttonText="REGISTER"
@@ -59,9 +83,17 @@ function landingPage() {
     
 
       <img src="/SECT_DIV_LINE.svg" alt="line" className={Classes.line_sep1}  />
+      
       </div>
-      <div data-aos="flip-right">
-      <Section title="EVENTS" imagePath="/EVENTSS.png" buttonText="SEE ALL EVENTS" link="/events">
+      <div data-aos="zoom-out"
+    data-aos-offset="100"
+    data-aos-delay="10"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center">
+      <Section data-aos="zoom-in" title="EVENTS" imagePath="/EVENTSS.png" buttonText="SEE ALL EVENTS" link="/events">
         <img src="/LINEE.svg" alt="line" className={Classes.event_sep} />
         The electrifying eighth edition of FMC Weekend brings to you an opportunity to compete with
         your contemporaries and establish your talent. Participate in events of creative writing,
