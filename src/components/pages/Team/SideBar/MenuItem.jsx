@@ -1,3 +1,5 @@
+import React from 'react';
+import Bounce from 'react-reveal/Bounce';
 import { useState, useEffect } from 'react';
 import Classes from './MenuItem.module.css';
 
@@ -24,6 +26,7 @@ function MenuItem({ anchorId, itemName, active }) {
 
   return (
     <li>
+    <Bounce bottom>
       <a
         href={`#${itemName}`}
         onClick={handleClick}
@@ -32,6 +35,7 @@ function MenuItem({ anchorId, itemName, active }) {
         style={active ? { color: '#fcc907' } : { color: 'white' }}>
         <h1>{itemName}</h1>
       </a>
+      </Bounce>
     </li>
   );
 }
