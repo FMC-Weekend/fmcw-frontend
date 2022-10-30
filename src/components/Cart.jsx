@@ -77,17 +77,17 @@ function Cart(props) {
       email: document.getElementById('email').value,
       phone: document.getElementById('phone').value,
       amount: paymentAmount,
-      redirect_url: 'https://fmcbackend.herokuapp.com/api/pay/callback'
     };
     console.log(obj);
 
-    const res = await fetch('https://fmcbackend.herokuapp.com/api/pay', {
+    const res = await fetch(process.env.REACT_APP_BACKEND_URI+'/api/pay', {
       method: 'POST',
       body: JSON.stringify(obj),
       headers: {
         'Content-Type': 'application/json'
       }
     });
+
     // console.log({ obj });
     const data = await res.json();
     console.log(data);
@@ -96,6 +96,15 @@ function Cart(props) {
     // event they have booked and the total payment amount
     // The body of the API request should contain: name, email, phone and paymentAmount of the user.
     // The API request should be made in the checkoutHandler function and you should use the register-form to get the email of user.
+    const MessageToUser=await fetch(process.env.REACT_APP_BACKEND_URI+'/api/send-mail', {
+      method: 'POST',
+      body: JSON.stringify(obj),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    const datas = await MessageToUser.json();
+    console.log(datas);
   }
   let paymentAmount = 0;
   for (const item of cartItems) {
@@ -157,8 +166,9 @@ function Cart(props) {
             <div className="back"></div>
 
             <div className="register-form">
-              <h1 className="reg-text">register</h1>
+               <h1 className="reg-text">register</h1>
               <div className="reg-form">
+             
                 <div className="text">
                   <input type="text" id="name" placeholder="Enter your name" required />
                   <hr />
@@ -167,12 +177,12 @@ function Cart(props) {
                   <input type="phone" id="phone" placeholder="Enter your Phone No" required />
                   <br></br>
                   <label htmlFor="cart-amount">
-                    <h3>Total Price = ₹ {paymentAmount} </h3>
+                   <div className='price-details'><h3>Total Price = ₹ {paymentAmount} </h3></div> 
                   </label>
                 </div>
-                <div onClick={checkoutHandler} name="registor-button">
+                <button onClick={checkoutHandler} name="registor-button" >
                   Pay Now
-                </div>
+                </button>
               </div>
             </div>
             {/* <Typography id="modal-modal-title" variant="h6" component="h2">
