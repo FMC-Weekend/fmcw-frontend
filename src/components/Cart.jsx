@@ -180,7 +180,10 @@ function Cart(props) {
                    <div className='price-details'><h3>Total Price = ₹ {paymentAmount} </h3></div> 
                   </label>
                 </div>
-                <button onClick={checkoutHandler} name="registor-button" >
+
+                <button onClick={checkoutHandler} name="registor-button" className="">
+
+
                   Pay Now
                 </button>
               </div>
