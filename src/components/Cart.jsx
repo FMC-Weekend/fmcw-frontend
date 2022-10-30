@@ -77,11 +77,11 @@ function Cart(props) {
       email: document.getElementById('email').value,
       phone: document.getElementById('phone').value,
       amount: paymentAmount,
-      redirect_url: 'https://fmcbackend.herokuapp.com/api/pay/callback'
+      redirect_url: process.env.REACT_APP_BACKEND_URI+'/api/pay/callback'
     };
     console.log(obj);
 
-    const res = await fetch('https://fmcbackend.herokuapp.com/api/pay', {
+    const res = await fetch(process.env.REACT_APP_BACKEND_URI+'/api/pay', {
       method: 'POST',
       body: JSON.stringify(obj),
       headers: {
@@ -92,10 +92,22 @@ function Cart(props) {
     const data = await res.json();
     console.log(data);
 
+
+    
     //ToDo: You just have to make an API request to /api/send-mail to send the email to the user with the details of the
     // event they have booked and the total payment amount
     // The body of the API request should contain: name, email, phone and paymentAmount of the user.
     // The API request should be made in the checkoutHandler function and you should use the register-form to get the email of user.
+    const mailData = await fetch(process.env.REACT_APP_BACKEND_URI+'/api/send-mail', {
+      method: 'POST',
+      body: JSON.stringify(obj),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    // console.log({ obj });
+    const userData = await mailData.json();
+    console.log(userData);
   }
   let paymentAmount = 0;
   for (const item of cartItems) {
@@ -167,7 +179,7 @@ function Cart(props) {
                   <input type="phone" id="phone" placeholder="Enter your Phone No" required />
                   <br></br>
                   <label htmlFor="cart-amount">
-                    <h3>Total Price = ₹ {paymentAmount} </h3>
+                    <h3 className='price-info'>Total Price = ₹ {paymentAmount} </h3>
                   </label>
                 </div>
                 <button onClick={checkoutHandler} name="registor-button">
