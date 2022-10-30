@@ -89,14 +89,15 @@
     z-index:2;
   }
   .reg-text{
+    color: #070707;
     position:absolute;
     font-family:sans-serif;
-    font-size:15px;
+    font-size:35px;
     text-transform: capitalize;
     top:20px;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #383838;
+    color: #070707;
 
   }
   .reg-form{
@@ -109,7 +110,7 @@
 
   .text input{
     width:100%;
-    heiht:0px;
+    height:0px;
     margin:10px auto;
     border:none;
     outline:none;
@@ -185,4 +186,25 @@ transform: scale(2);
     right: 20px;
     top: 50px;
   }
-  
+  .price-details{
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    /* margin-left: 10px; */
+  }
+ #name{
+  background-color: white;
+  border-radius: 5px;
+ }
+ #email{
+  background-color: white;
+  border-radius: 5px;
+ }
+ #phone{
+  background-color: white;
+  border-radius: 5px;
+ }
+ .pay-button{
+  border-radius: 5px;
+  margin-top: 10px;
+ }
