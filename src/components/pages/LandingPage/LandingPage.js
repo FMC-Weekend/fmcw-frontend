@@ -25,6 +25,9 @@ function landingPage() {
     showButton();
     Aos.init({ duratin: 1500 });
   }, []);
+  useEffect(() => {
+    Aos.init({ duratin: 1500 });
+  }, []);
 
   const logoutHandler = () => {
     sessionStorage.clear();
@@ -46,9 +49,9 @@ function landingPage() {
         buttonText="REGISTER"
         link="/authentication"
         className="about-img"
-        data-aos="fade-right">
-        <img src="/LINEE.svg" alt="line" className={Classes.about_sep} data-aos="fade-right" />
-        <p data-aos="fade-right">
+      >
+        <img src="/LINEE.svg" alt="line" className={Classes.about_sep} data-aos="fade-right" data-aos-delay="100" />
+        <p data-aos="fade-right" data-aos-delay="100">
           The long-awaited exemplary 8th edition of FMC Weekend is finally here! This time we not
           only bring to you a plethora of exciting events that will put your creative mettle to
           test, but also some awe-inspiring workshops by the notable and established names of the
@@ -59,8 +62,8 @@ function landingPage() {
       </Section>
       <img src="/SECT_DIV_LINE.svg" alt="line" className={Classes.line_sep1} />
       <Section title="EVENTS" imagePath="/EVENTSS.png" buttonText="SEE ALL EVENTS" link="/events">
-        <img src="/LINEE.svg" alt="line" className={Classes.event_sep} data-aos="fade-right" />
-        <p data-aos="fade-right">
+        <img src="/LINEE.svg" alt="line" className={Classes.event_sep} data-aos="fade-right" data-aos-delay="100" />
+        <p data-aos="fade-right" data-aos-delay="100">
           The electrifying eighth edition of FMC Weekend brings to you an opportunity to compete
           with your contemporaries and establish your talent. Participate in events of creative
           writing, photography, cinematography, design and animation, discover your true potential
