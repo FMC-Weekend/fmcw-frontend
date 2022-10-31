@@ -88,7 +88,7 @@ function Cart(props) {
       redirect_url: 'https://fmcw-backend1.onrender.com/send-mail'
     };
     console.log(obj1);
-    console.log("ha");
+    
 
     const res = await fetch('https://fmcw-backend1.onrender.com/api/pay', {
       method: 'POST',
