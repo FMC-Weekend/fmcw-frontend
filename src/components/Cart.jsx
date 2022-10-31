@@ -44,7 +44,7 @@ function Cart(props) {
       const token = sessionStorage.getItem('tokenID');
       try {
         const res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/user', {
-          method: 'GET',
+          method: 'POST',
           headers: {
             'Content-Type': 'application/json',
             token: token
@@ -77,11 +77,20 @@ function Cart(props) {
       email: document.getElementById('email').value,
       phone: document.getElementById('phone').value,
       amount: paymentAmount,
-      redirect_url: 'https://fmcbackend.herokuapp.com/api/pay/callback'
+      redirect_url: 'https://fmcw-backend1.onrender.com/api/pay/callback'
     };
     console.log(obj);
+    let obj1 = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      phone: document.getElementById('phone').value,
+      amount: paymentAmount,
+      redirect_url: 'https://fmcw-backend1.onrender.com/send-mail'
+    };
+    console.log(obj1);
+    console.log("ha");
 
-    const res = await fetch('https://fmcbackend.herokuapp.com/api/pay', {
+    const res = await fetch('https://fmcw-backend1.onrender.com/api/pay', {
       method: 'POST',
       body: JSON.stringify(obj),
       headers: {
@@ -91,6 +100,18 @@ function Cart(props) {
     // console.log({ obj });
     const data = await res.json();
     console.log(data);
+    
+    const result = await fetch('https://fmcw-backend1.onrender.com/api/send-mail', {
+      method: 'POST',
+      body: JSON.stringify(obj1),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    // console.log({ obj });
+    console.log("ggg");
+    const data2 = await result.json();
+    console.log(data2);
 
     //ToDo: You just have to make an API request to /api/send-mail to send the email to the user with the details of the
     // event they have booked and the total payment amount
