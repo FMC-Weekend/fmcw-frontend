@@ -88,9 +88,11 @@ function Cart(props) {
         'Content-Type': 'application/json'
       }
     });
-    // console.log({ obj });
+    console.log({ obj });
     const data = await res.json();
     console.log(data);
+
+    //Done By Sangle Nilesh
 
     let mail_obj = {
       name: document.getElementById('name').value ,
@@ -98,6 +100,7 @@ function Cart(props) {
       phone: document.getElementById('phone').value,
       paymentAmount: paymentAmount,
     }
+    console.log(mail_obj)
 
     const mail_res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/send-mail',{
       method: 'POST',
@@ -107,7 +110,8 @@ function Cart(props) {
       }
     })
 
-    const mail_data = await res.json() ;
+    const mail_data = await mail_res ;
+    console.log("Mail Data");
     console.log(mail_data);
 
     //ToDo: You just have to make an API request to /api/send-mail to send the email to the user with the details of the
