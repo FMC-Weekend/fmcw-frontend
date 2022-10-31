@@ -43,7 +43,7 @@ function Cart(props) {
       // setIsLoading(true);
       const token = sessionStorage.getItem('tokenID');
       try {
-        const res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/user', {
+        const res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/send-mail', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
