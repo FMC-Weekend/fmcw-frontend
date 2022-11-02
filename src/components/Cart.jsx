@@ -43,7 +43,7 @@ function Cart(props) {
       // setIsLoading(true);
       const token = sessionStorage.getItem('tokenID');
       try {
-        const res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/user', {
+        const res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/send-mail', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -88,9 +88,31 @@ function Cart(props) {
         'Content-Type': 'application/json'
       }
     });
-    // console.log({ obj });
+    console.log({ obj });
     const data = await res.json();
     console.log(data);
+
+    //Done By Sangle Nilesh
+
+    let mail_obj = {
+      name: document.getElementById('name').value ,
+      email: document.getElementById('email').value,
+      phone: document.getElementById('phone').value,
+      paymentAmount: paymentAmount,
+    }
+    console.log(mail_obj)
+
+    const mail_res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/send-mail',{
+      method: 'POST',
+      body: JSON.stringify(mail_obj),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+
+    const mail_data = await mail_res ;
+    console.log("Mail Data");
+    console.log(mail_data);
 
     //ToDo: You just have to make an API request to /api/send-mail to send the email to the user with the details of the
     // event they have booked and the total payment amount
