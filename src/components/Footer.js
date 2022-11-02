@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Button } from './Button';
 import logo from './foo.png';
 import temp from './foop.png';
+import { motion } from 'framer-motion';
 
 function Footer() {
   return (
@@ -11,9 +12,15 @@ function Footer() {
       <footer>
         <div className="footer">
           <section>
-            <img
+            <motion.img
+              whileInView={{
+                y: [100, 0],
+                opacity: [0, 1]
+              }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.5, type: 'spring' }}
               src="https://drive.google.com/uc?export=view&id=1fqWH1KoCSic6KfpfZl_yT2UZ5PGecRz_"
-              className="image"></img>
+              className="image"></motion.img>
           </section>
         </div>
       </footer>
