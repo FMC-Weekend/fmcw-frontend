@@ -81,7 +81,7 @@ function Cart(props) {
     };
     console.log(obj);
 
-    const res = await fetch('https://fmcbackend.herokuapp.com/api/pay', {
+    const res = await fetch('https://fmcw-backend1.onrender.com'+'/api/send-mail', {
       method: 'POST',
       body: JSON.stringify(obj),
       headers: {
