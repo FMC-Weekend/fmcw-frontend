@@ -170,9 +170,9 @@ function Cart(props) {
                     <h3>Total Price = ₹ {paymentAmount} </h3>
                   </label>
                 </div>
-                <div onClick={checkoutHandler} name="registor-button">
+                <button onClick={checkoutHandler} name="registor-button">
                   Pay Now
-                </div>
+                </button>
               </div>
             </div>
             {/* <Typography id="modal-modal-title" variant="h6" component="h2">
