@@ -1,9 +1,16 @@
+import React from 'react';
 import Classes from './Section.module.css';
 import Button from './Button/Button';
+import { motion } from 'framer-motion';
 
 function Section(props) {
   return (
-    <div className={Classes.section}>
+    <motion.div
+      initial={{ scale: 0.3, rotate: -15 }}
+      whileInView={{ scale: 1, rotate: 0 }}
+      transition={{ type: 'spring', duration: 3 }}
+      viewport={{ once: true }}
+      className={Classes.section}>
       {/* <h2 >Title</h2> */}
       {/* <div > */}
       <h2 className={Classes.section_title}>{props.title}</h2>
@@ -25,7 +32,7 @@ function Section(props) {
           <img src={props.imagePath} className={Classes.section_image} />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 export default Section;
