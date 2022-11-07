@@ -43,7 +43,7 @@ function Cart(props) {
       // setIsLoading(true);
       const token = sessionStorage.getItem('tokenID');
       try {
-        const res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/user', {
+        const res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/send-mail', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ function Cart(props) {
           }
         });
         const data = await res.json();
-        // console.log(data);
+        console.log(data);
 
         if (data.message === 'success') {
           console.log(data);
@@ -81,16 +81,28 @@ function Cart(props) {
     };
     console.log(obj);
 
-    const res = await fetch('https://fmcbackend.herokuapp.com/api/pay', {
+    const res = await fetch('https://fmcw-backend1.onrender.com/api/pay', {
       method: 'POST',
       body: JSON.stringify(obj),
       headers: {
         'Content-Type': 'application/json'
       }
     });
-    // console.log({ obj });
     const data = await res.json();
     console.log(data);
+
+    const mail = await fetch('https://fmcw-backend1.onrender.com/api/send-mail', {
+      method: 'POST',
+      body: JSON.stringify(obj),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    const data2 = await mail.json();
+    console.log(data2);
+
+    // console.log({ obj });
+    
 
     //ToDo: You just have to make an API request to /api/send-mail to send the email to the user with the details of the
     // event they have booked and the total payment amount
