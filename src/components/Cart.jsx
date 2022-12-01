@@ -98,16 +98,16 @@ function Cart(props) {
     // event they have booked and the total payment amount
     // The body of the API request should contain: name, email, phone and paymentAmount of the user.
     // The API request should be made in the checkoutHandler function and you should use the register-form to get the email of user.
-    const mailData = await fetch(process.env.REACT_APP_BACKEND_URI+'/api/send-mail', {
-      method: 'POST',
-      body: JSON.stringify(obj),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
+    // const mailData = await fetch(process.env.REACT_APP_BACKEND_URI+'/api/send-mail', {
+    //   method: 'POST',
+    //   body: JSON.stringify(obj),
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   }
+    // });
     // console.log({ obj });
-    const userData = await mailData.json();
-    console.log(userData);
+    // const userData = await mailData.json();
+    // console.log(userData);
   }
   let paymentAmount = 0;
   for (const item of cartItems) {
@@ -169,20 +169,20 @@ function Cart(props) {
             <div className="back"></div>
 
             <div className="register-form">
-              <h1 className="reg-text">register</h1>
+              <h1 className="reg-text">REGISTER</h1>
               <div className="reg-form">
                 <div className="text">
-                  <input type="text" id="name" placeholder="Enter your name" required />
+                  <input className="register-input" type="text" id="name" placeholder="Name" required />
                   <hr />
-                  <input type="email" id="email" placeholder="Enter your email" required />
+                  <input className="register-input" type="email" id="email" placeholder="Email" required />
                   <hr />
-                  <input type="phone" id="phone" placeholder="Enter your Phone No" required />
+                  <input className="register-input" type="phone" id="phone" placeholder="Contact Number" required />
                   <br></br>
                   <label htmlFor="cart-amount">
                     <h3 className='price-info'>Total Price = ₹ {paymentAmount} </h3>
                   </label>
                 </div>
-                <button onClick={checkoutHandler} name="registor-button">
+                <button onClick={checkoutHandler} name="registor-button" className='register-btn'>
                   Pay Now
                 </button>
               </div>
