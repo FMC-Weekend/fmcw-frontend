@@ -3,7 +3,7 @@ import GoogleLogin from 'react-google-login';
 import { Redirect } from 'react-router-dom';
 import AuthContext from '../../../store/auth-context';
 import Classes from './Authentication.module.css';
-
+import React from 'react';
 function Authentication() {
   const authCtx = useContext(AuthContext);
 
@@ -41,7 +41,7 @@ function Authentication() {
       const data = await res.json();
       console.log(data);
       sessionStorage.setItem('tokenID', googleData.tokenId);
-      // authCtx.updateToken(googleData.tokenId)
+      authCtx.updateToken(googleData.tokenId)
       // Update context with value of token
 
       const isNewUser = data.user.newUser;

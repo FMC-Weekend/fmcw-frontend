@@ -1,0 +1,50 @@
+:root {
+    --primary:#FCC907;
+  }
+  
+  .btn {
+    padding: 6px 25px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: Nunito Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+  }
+  
+  .btn--primary {
+    background-color: var(--primary);
+    color: #242424;
+    border: 1px solid var(--primary);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .btn--outline {
+    background-color: transparent;
+    color: #fff;
+    padding: 8px 20px;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
+  }
+  
+  .btn--medium {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+  
+  .btn--large {
+    padding: 12px 26px;
+    font-size: 20px;
+  }
+  
+  .btn--large:hover,
+  .btn--medium:hover {
+    transition: all 0.3s ease-out;
+    background: #FCC907;
+box-shadow: 0px 0px 24px rgba(255, 212, 48, 0.7);
+border-radius: 4px;;
+  }
