@@ -116,28 +116,18 @@
   }
   .register-form{
     background-color: #1b083d;
-    background-opacity:0.4;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width:30%;
-    height:400px;
+    width:max(30%,300px);
+    height:425px;
     border-radius:10px;
     box-shadow:0px 0px 100px #000;
     z-index:2;
   }
-  .reg-text{
-    position:absolute;
-    font-family:sans-serif;
-    font-size:15px;
-    text-transform: capitalize;
-    top:20px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #383838;
 
-  }
   .reg-form{
     position:relative;
     top:70px;
@@ -147,9 +137,10 @@
 
 
   .text input{
+    color: #1b083d;
     width:100%;
-    heiht:0px;
-    margin:10px auto;
+    height:36px;
+    margin:5px auto;
     border:none;
     outline:none;
   }

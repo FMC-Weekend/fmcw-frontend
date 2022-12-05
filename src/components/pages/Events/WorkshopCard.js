@@ -8,7 +8,7 @@ import './events.css';
 // import { Button } from '@mui/material';
 // import unicorn from "./assets/test.png";
 import styled from 'styled-components';
-import Tilt from 'react-tilt';
+// import Tilt from 'react-tilt';
 // import addToCart from './CartModal';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -95,7 +95,7 @@ function EventCard(props) {
     scale: 1.06
   };
   return (
-    <Tilt className="w-card" options={options}>
+    <div className="w-card">
       <div className="w-card-div">
         <div className="workshop-card-img-div">
           <img src={props.img} onClick={handleOpen} alt="unicorn" className="workshop-card-img" />
@@ -159,7 +159,7 @@ function EventCard(props) {
           </Typography>
         </Box>
       </Modal>
-    </Tilt>
+    </div>
   );
 }
 EventCard.defaultProps = {
