@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade'
 
 function Banner(props) {
   return (
-    <Fade big duration={4500}>
+    <Fade big duration={1000}>
     <div className={Classes.banner}>
       <img src="/HERO-WO-LOGO-011.svg" className={Classes.image} />
       <img src="/mobile-hero-section-02.svg" className={Classes.mobile_hero} />
