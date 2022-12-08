@@ -152,7 +152,7 @@ function EventCard(props) {
 
                     // change();
                   }}>
-                  Add <img src="/add-cartPURPLE_OLD_1.svg" />
+                  Add <img src={process.env.REACT_APP_AWS_S3_URI + '/add-cartPURPLE_OLD_1.svg'} />
                 </button>
               )}
             </div>

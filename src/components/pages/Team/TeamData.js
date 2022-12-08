@@ -28,7 +28,7 @@ const data = {
   contentData: [
     {
       id: 7,
-      img: '/smriti.jpeg',
+      img: process.env.REACT_APP_AWS_S3_URI + '/smriti.jpeg',
       position: 'Content Head',
       name: 'Smriti Snehil'
     },
@@ -68,7 +68,7 @@ const data = {
     },
     {
       id: 8,
-      img: '/preety.jpeg',
+      img: process.env.REACT_APP_AWS_S3_URI + '/preety.jpeg',
       position: 'Public Relations Head',
       name: 'Preety Sarwa'
     }
@@ -76,7 +76,7 @@ const data = {
   socialMediaData: [
     {
       id: 9,
-      img: '/akanksha.jpeg',
+      img: process.env.REACT_APP_AWS_S3_URI + '/akanksha.jpeg',
       position: 'Social Media Head',
       name: 'Akanksha Verma'
     },
@@ -100,7 +100,7 @@ const data = {
     },
     {
       id: 13,
-      img: '/sfsf.jpeg',
+      img: process.env.REACT_APP_AWS_S3_URI + '/sfsf.jpeg',
       position: 'Social Media Head',
       name: 'Siddhart Verma'
     }
@@ -120,7 +120,7 @@ const data = {
     },
     {
       id: 16,
-      img: '/shreyash.jpeg',
+      img: process.env.REACT_APP_AWS_S3_URI + '/shreyash.jpeg',
       position: 'Tech Head',
       name: 'Shreyash Singh'
     }
@@ -148,7 +148,7 @@ const data = {
     },
     {
       id: 27,
-      img: '/manhar.jpeg',
+      img: process.env.REACT_APP_AWS_S3_URI + '/manhar.jpeg',
       position: 'Event Head',
       name: 'Manhar Joshi'
     }
@@ -156,7 +156,7 @@ const data = {
   convenorData: [
     {
       id: 20,
-      img: '/parth.jpeg',
+      img: process.env.REACT_APP_AWS_S3_URI + '/parth.jpeg',
       position: 'Convenor',
       name: 'Parth Khandelwal'
     },
@@ -182,13 +182,13 @@ const data = {
     },
     {
       id: 24,
-      img: '/poojith.jpeg',
+      img: process.env.REACT_APP_AWS_S3_URI + '/poojith.jpeg',
       position: 'Jt. General Secretary',
       name: 'Poojith'
     },
     {
       id: 25,
-      img: '/Nitisha.jpeg',
+      img: process.env.REACT_APP_AWS_S3_URI + '/Nitisha.jpeg',
       position: 'Jt. General Secretary',
       name: 'Nitisha Kothari'
     }
@@ -202,7 +202,7 @@ const data = {
     },
     {
       id: 27,
-      img: '/manhar.jpeg',
+      img: process.env.REACT_APP_AWS_S3_URI + '/manhar.jpeg',
       position: 'Cine Club Secretary',
       name: 'Manhar Joshi'
     },
@@ -214,7 +214,7 @@ const data = {
     },
     {
       id: 29,
-      img: '/sudhanva.jpeg',
+      img: process.env.REACT_APP_AWS_S3_URI + '/sudhanva.jpeg',
       position: 'Animation Club Secretary',
       name: 'Sudhanva Rao'
     },

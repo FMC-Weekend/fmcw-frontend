@@ -2,7 +2,7 @@ const data = {
   photographyData: [
     {
       id: 1,
-      img: '/infocus-01.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/infocus-01.png',
       genre: 'photography',
       type: 'Contest',
       title: 'InFocus',
@@ -12,7 +12,7 @@ const data = {
     },
     {
       id: 2,
-      img: '/snapIT-01.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/snapIT-01.png',
       genre: 'photography',
       type: 'Contest',
       title: 'Snap It Now',
@@ -22,7 +22,7 @@ const data = {
     },
     {
       id: 3,
-      img: '/photoArt-01.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/photoArt-01.png',
       genre: 'photography',
       type: 'Contest',
       title: 'Photo Art',
@@ -34,7 +34,7 @@ const data = {
   outreachData: [
     {
       id: 4,
-      img: '/vlogholic-01.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/vlogholic-01.png',
       genre: 'outreach',
       type: 'Contest',
       title: 'Vlogoholic',
@@ -44,7 +44,7 @@ const data = {
     },
     {
       id: 5,
-      img: '/documentary-01.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/documentary-01.png',
       genre: 'outreach',
       type: 'Contest',
       title: 'Documentary Making',
@@ -54,7 +54,7 @@ const data = {
     },
     {
       id: 6,
-      img: '/admad-01.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/admad-01.png',
       genre: 'outreach',
       type: 'Contest',
       title: 'Ad-Mad',
@@ -66,7 +66,7 @@ const data = {
   cineData: [
     {
       id: 7,
-      img: '/bRoll-01.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/bRoll-01.png',
       genre: 'cine',
       type: 'Contest',
       title: 'Thats how B-Roll',
@@ -76,7 +76,7 @@ const data = {
     },
     {
       id: 8,
-      img: '/magic-01.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/magic-01.png',
       genre: 'cine',
       type: 'Contest',
       title: 'Magic Behind the Lens',
@@ -86,7 +86,7 @@ const data = {
     },
     {
       id: 9,
-      img: '/shortFilm-01.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/shortFilm-01.png',
       genre: 'cine',
       type: 'Contest',
       title: 'Make It Short',
@@ -98,7 +98,7 @@ const data = {
   designData: [
     {
       id: 11,
-      img: '/designTunes-01.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/designTunes-01.png',
       genre: 'design',
       type: 'Contest',
       title: 'Design The Tunes',
@@ -108,7 +108,7 @@ const data = {
     },
     {
       id: 12,
-      img: '/logoRedesign-01.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/logoRedesign-01.png',
       genre: 'design',
       type: 'Contest',
       title: 'Logo Redesign',
@@ -118,7 +118,7 @@ const data = {
     },
     {
       id: 13,
-      img: '/notJustWords-01.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/notJustWords-01.png',
       genre: 'design',
       type: 'Contest',
       title: 'Not Just Words',
@@ -130,7 +130,7 @@ const data = {
   mediaData: [
     {
       id: 14,
-      img: '/hades_-01.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/hades_-01.png',
       genre: 'media',
       type: 'Contest',
       title: 'Hades Reporters',
@@ -140,7 +140,7 @@ const data = {
     },
     {
       id: 15,
-      img: '/straightSite-01.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/straightSite-01.png',
       genre: 'media',
       type: 'Contest',
       title: 'Straight from Site',
@@ -150,7 +150,7 @@ const data = {
     },
     {
       id: 16,
-      img: '/writer_block-01.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/writer_block-01.png',
       genre: 'media',
       type: 'Contest',
       title: "Writer's Block",
@@ -162,7 +162,7 @@ const data = {
   animationData: [
     {
       id: 17,
-      img: '/capture-01.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/capture-01.png',
       genre: 'animation',
       type: 'Contest',
       title: 'Capture the Imagination',
@@ -172,7 +172,7 @@ const data = {
     },
     {
       id: 18,
-      img: '/realmOfWonder-01.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/realmOfWonder-01.png',
       genre: 'animation',
       type: 'Contest',
       title: 'Unreal',
@@ -182,7 +182,7 @@ const data = {
     },
     {
       id: 19,
-      img: '/unreal-01.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/unreal-01.png',
       genre: 'animation',
       type: 'Contest',
       title: 'Realm of Wonders',
@@ -194,7 +194,7 @@ const data = {
   photographyWorkshopData: [
     {
       id: 1,
-      img: '/rathika.jpeg',
+      img: process.env.REACT_APP_AWS_S3_URI + '/rathika.jpeg',
       genre: 'photography',
       type: 'Workshop',
       title: 'Photography Workshop',
@@ -207,7 +207,7 @@ const data = {
     },
     {
       id: 2,
-      img: '/navin.jpeg',
+      img: process.env.REACT_APP_AWS_S3_URI + '/navin.jpeg',
       genre: 'photography',
       type: 'Workshop',
       title: 'Photography Workshop',
@@ -232,7 +232,7 @@ const data = {
   outreachWorkshopData: [
     {
       id: 4,
-      img: '/priyankaoutreach.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/priyankaoutreach.png',
       genre: 'outreach',
       type: 'Workshop',
       title: 'Travel Vlogging',
@@ -245,7 +245,7 @@ const data = {
     },
     {
       id: 5,
-      img: '/csvenketaram.jpeg',
+      img: process.env.REACT_APP_AWS_S3_URI + '/csvenketaram.jpeg',
       genre: 'outreach',
       type: 'Workshop',
       title: 'Documentary Filmmaking workshop',
@@ -260,7 +260,7 @@ const data = {
   cineWorkshopData: [
     {
       id: 7,
-      img: '/sanjayf.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/sanjayf.png',
       genre: 'cine',
       type: 'Workshop',
       title: 'Filmmaking workshop ',
@@ -288,7 +288,7 @@ const data = {
   designWorkshopData: [
     {
       id: 11,
-      img: '/annada.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/annada.png',
       genre: 'design',
       type: 'Workshop',
       title: 'Design Workshop',
@@ -301,7 +301,7 @@ const data = {
     },
     {
       id: 12,
-      img: '/rishabh.jpeg',
+      img: process.env.REACT_APP_AWS_S3_URI + '/rishabh.jpeg',
       genre: 'design',
       type: 'Workshop',
       title: 'Product design',
@@ -316,7 +316,7 @@ const data = {
   mediaWorkshopData: [
     {
       id: 14,
-      img: '/nikita.jpeg',
+      img: process.env.REACT_APP_AWS_S3_URI + '/nikita.jpeg',
       genre: 'media',
       type: 'Workshop',
       title: 'Creative Writing workshop',
@@ -329,7 +329,7 @@ const data = {
     },
     {
       id: 15,
-      img: '/ankitmedia.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/ankitmedia.png',
       genre: 'media',
       type: 'Workshop',
       title: 'Tech Journalism Workshop',
@@ -344,7 +344,7 @@ const data = {
   animationWorkshopData: [
     {
       id: 17,
-      img: '/sandeepvfx.png',
+      img: process.env.REACT_APP_AWS_S3_URI + '/sandeepvfx.png',
       genre: 'animation',
       type: 'Workshop',
       title: 'VFX Workshop',
