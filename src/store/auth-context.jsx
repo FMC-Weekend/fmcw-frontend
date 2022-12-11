@@ -24,11 +24,11 @@ export const AuthContextProvider = (props) => {
 
   // const isLoggedIn = !!token;
 
-  const modifyToken = (token) => {    
+  const modifyToken = (token) => {
     console.log(token);
     setToken(token);
     setIsLoggedIn(!!token);
-    console.log(isLoggedIn)
+    console.log(isLoggedIn);
   };
 
   const modifyName = (name) => {

@@ -7,9 +7,8 @@ function SponsorSection(props) {
     // <div style={{ backgroundColor: "#bbb", display: "flex", flexWrap: "wrap", marginLeft: "3vw" }}>
     <div
       style={{
-        marginTop: '30px',
-      }}
-    >
+        marginTop: '30px'
+      }}>
       <div className={classes.mssg}>
         <h2>
           FMC Weekend’22 presents to you the core team members who along with their diligent team of
@@ -31,7 +30,7 @@ function SponsorSection(props) {
 
         <div className={classes.cards}>
           {data.genSecData.map((item, index) => (
-                <Card img={item.img} position={item.position} name={item.name} key={index} />
+            <Card img={item.img} position={item.position} name={item.name} key={index} />
           ))}
         </div>
       </div>
@@ -40,8 +39,8 @@ function SponsorSection(props) {
 
         <div className={classes.cards}>
           {data.contentData.map((item, index) => (
-                <Card img={item.img} position={item.position} name={item.name} key={index} />
-              ))}
+            <Card img={item.img} position={item.position} name={item.name} key={index} />
+          ))}
         </div>
       </div>
       <div className={classes.sponsor_title} id="sponsor_4">
@@ -58,8 +57,8 @@ function SponsorSection(props) {
 
         <div className={classes.cards}>
           {data.eventData.map((item, index) => (
-                <Card img={item.img} position={item.position} name={item.name} key={index} />
-              ))}
+            <Card img={item.img} position={item.position} name={item.name} key={index} />
+          ))}
         </div>
       </div>
 
@@ -110,8 +109,8 @@ function SponsorSection(props) {
 
         <div className={classes.cards}>
           {data.secretariesData.map((item, index) => (
-                <Card img={item.img} position={item.position} name={item.name} key={index} />
-              ))}
+            <Card img={item.img} position={item.position} name={item.name} key={index} />
+          ))}
         </div>
       </div>
     </div>

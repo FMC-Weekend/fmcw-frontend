@@ -1,7 +1,8 @@
+/* eslint-disable react/no-unknown-property */
 import React from 'react';
 import styled from 'styled-components';
 import './Card.css';
-import Fade from 'react-reveal/Fade'
+import Fade from 'react-reveal/Fade';
 
 const CardTitle = styled.h3`
   transform: translateZ(55px);
@@ -19,15 +20,15 @@ function TeamCard(props) {
 
   return (
     <Fade right>
-    <div className="team-card" options={options}>
-      <div>
-        <div className="cardImg">
-          <img src={props.img} alt="unicorn" className="cardImg" />
+      <div className="team-card" options={options}>
+        <div>
+          <div className="cardImg">
+            <img src={props.img} alt="unicorn" className="cardImg" />
+          </div>
+          <CardTitle className="position">{props.position}</CardTitle>
         </div>
-        <CardTitle className="position">{props.position}</CardTitle>
+        <CardTitle className="cardTitle">{props.name}</CardTitle>
       </div>
-      <CardTitle className="cardTitle">{props.name}</CardTitle>
-    </div>
     </Fade>
   );
 }

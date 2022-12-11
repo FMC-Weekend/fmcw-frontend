@@ -32,7 +32,7 @@ function Sponsors(props) {
             <div className="line_2" />
           </div>
           <a href="https://xp-pen.co.in/" target="_blank" rel="noreferrer">
-            <img src={process.env.REACT_APP_AWS_S3_URI + "/XPpenco-title.png"} />
+            <img src={process.env.REACT_APP_AWS_S3_URI + '/XPpenco-title.png'} />
           </a>
           <div className="separator-1">
             <div className="line_1" />
@@ -82,7 +82,7 @@ function Sponsors(props) {
           />
           <SponsorCard
             className="sponsor-card"
-            img={process.env.REACT_APP_AWS_S3_URI + "/ims.png"}
+            img={process.env.REACT_APP_AWS_S3_URI + '/ims.png'}
             name="MBA Prep Partner"
             position="IMS"
             websiteLink="https://www.imsindia.com/"

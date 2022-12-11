@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import '../App.css';
 import { Button } from './Button';
