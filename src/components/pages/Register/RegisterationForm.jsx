@@ -1,4 +1,4 @@
-import { Fragment, useContext } from 'react';
+import React, { Fragment, useContext } from 'react';
 import AuthContext from '../../../store/auth-context';
 import Classes from './Registeration.module.css';
 function RegisterationForm() {

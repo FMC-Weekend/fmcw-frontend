@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
 
@@ -10,7 +10,7 @@ function SponsorCard(props) {
   return (
     <div className="sponsor-card">
       <div>
-        <a href={props.websiteLink} target="_blank">
+        <a href={props.websiteLink} target="_blank" rel="noreferrer">
           <div className="sponsor_card_img">
             <img src={props.img} alt="unicorn" className="sponsorcardImg" />
           </div>

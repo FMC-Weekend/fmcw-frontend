@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+import React from 'react';
 import Classes from './Button.module.css';
 
 function Button(props) {

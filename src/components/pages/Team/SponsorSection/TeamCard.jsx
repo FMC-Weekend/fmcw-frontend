@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unknown-property */
+/* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
 import './Card.css';
@@ -20,7 +20,7 @@ function TeamCard(props) {
 
   return (
     <Fade right>
-      <div className="team-card" options={options}>
+      <div className="team-card">
         <div>
           <div className="cardImg">
             <img src={props.img} alt="unicorn" className="cardImg" />

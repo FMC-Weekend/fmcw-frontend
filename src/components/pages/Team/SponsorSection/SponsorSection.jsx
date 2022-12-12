@@ -1,3 +1,4 @@
+import React from 'react';
 import Card from './TeamCard';
 import classes from './SponsorSection.module.css';
 import data from '../TeamData';
