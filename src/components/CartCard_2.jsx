@@ -8,7 +8,7 @@ import './CartCard_2.css';
 // import { Button } from '@mui/material';
 // import unicorn from "./assets/test.png";
 import styled from 'styled-components';
-import Tilt from 'react-tilt';
+// import Tilt from 'react-tilt';
 // import addToCart from './CartModal';
 import CloseIcon from '@mui/icons-material/Close';
 import { useCart } from 'react-use-cart';
@@ -54,7 +54,7 @@ function CartCard_2(props) {
     scale: 1.06
   };
   return (
-    <Tilt className="card" options={options}>
+    <div className="card">
       <div className="card-div">
         <img
           src={props.img}
@@ -84,7 +84,7 @@ function CartCard_2(props) {
           {props.ps}
         </a>
       </div>
-    </Tilt>
+    </div>
   );
 }
 CartCard_2.defaultProps = {

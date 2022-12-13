@@ -37,7 +37,12 @@
 }
 .team-card h3 {
   font-family: Marcellus;
-  font-size: 1.0em;
+  font-size: .9em;
+  transition: transform .5s ease;
+}
+
+.team-card:hover h3{
+  transform: scale(1.2);
 }
 /* Add rounded corners to the top left and the top right corner of the image */
 /* Add some padding inside the card container */

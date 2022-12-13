@@ -1,5 +1,7 @@
-import { useState, useEffect } from 'react';
+/* eslint-disable react/prop-types */
+import React, { useState, useEffect } from 'react';
 import Classes from './MenuItem.module.css';
+import Fade from 'react-reveal/Fade';
 
 function MenuItem({ anchorId, itemName, active }) {
   const [anchorTarget, setAnchorTarget] = useState(null);
@@ -30,7 +32,9 @@ function MenuItem({ anchorId, itemName, active }) {
         // className={true ? Classes.active : ""}
         aria-label={`Scroll to ${itemName}`}
         style={active ? { color: '#fcc907' } : { color: 'white' }}>
-        <h1>{itemName}</h1>
+        <Fade bottom>
+          <h1>{itemName}</h1>
+        </Fade>
       </a>
     </li>
   );

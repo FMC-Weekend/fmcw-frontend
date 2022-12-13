@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import styled from 'styled-components';
 import './Card.css';
+import Fade from 'react-reveal/Fade';
 
 const CardTitle = styled.h3`
   transform: translateZ(55px);
@@ -17,15 +19,17 @@ function TeamCard(props) {
   };
 
   return (
-    <div className="team-card" options={options}>
-      <div>
-        <div className="cardImg">
-          <img src={props.img} alt="unicorn" className="cardImg" />
+    <Fade right>
+      <div className="team-card">
+        <div>
+          <div className="cardImg">
+            <img src={props.img} alt="unicorn" className="cardImg" />
+          </div>
+          <CardTitle className="position">{props.position}</CardTitle>
         </div>
-        <h3 className="position">{props.position}</h3>
+        <CardTitle className="cardTitle">{props.name}</CardTitle>
       </div>
-      <CardTitle className="cardTitle">{props.name}</CardTitle>
-    </div>
+    </Fade>
   );
 }
 TeamCard.defaultProps = {

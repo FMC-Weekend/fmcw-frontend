@@ -38,20 +38,44 @@ function Pass(props) {
           </p>
         </div>
         <div className="pass-img">
-          <img src="/Group7130.svg" alt="" />
+          <img src={process.env.REACT_APP_AWS_S3_URI + '/Group7130.svg'} alt="" />
         </div>
         <div className="pass-cards">
           <NavLink to="/events">
-            <img src="/Group7119.svg" className="pass_card" alt="" />
+            <img
+              src={process.env.REACT_APP_AWS_S3_URI + '/Group7119.svg'}
+              className="pass_card"
+              alt=""
+            />
           </NavLink>
 
           <NavLink to="/events">
-            <img src="/Group7124.svg" className="pass_card" alt="" />
+            <img
+              src={process.env.REACT_APP_AWS_S3_URI + '/Group7124.svg'}
+              className="pass_card"
+              alt=""
+            />
           </NavLink>
-          <img src="/Group7125.svg" className="pass_card" alt="" />
-          <img src="/Group7126.svg" className="pass_card" alt="" />
-          <img src="/Group7121.svg" className="pass_card" alt="" />
-          <img src="/Group7122.svg" className="pass_card" alt="" />
+          <img
+            src={process.env.REACT_APP_AWS_S3_URI + '/Group7125.svg'}
+            className="pass_card"
+            alt=""
+          />
+          <img
+            src={process.env.REACT_APP_AWS_S3_URI + '/Group7126.svg'}
+            className="pass_card"
+            alt=""
+          />
+          <img
+            src={process.env.REACT_APP_AWS_S3_URI + '/Group7121.svg'}
+            className="pass_card"
+            alt=""
+          />
+          <img
+            src={process.env.REACT_APP_AWS_S3_URI + '/Group7122.svg'}
+            className="pass_card"
+            alt=""
+          />
         </div>
       </section>
       <Footer />

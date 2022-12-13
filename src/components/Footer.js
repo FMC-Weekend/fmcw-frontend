@@ -12,7 +12,7 @@ function Footer() {
         <div className="footer">
           <section>
             <img
-              src="https://drive.google.com/uc?export=view&id=1fqWH1KoCSic6KfpfZl_yT2UZ5PGecRz_"
+              src={process.env.REACT_APP_AWS_S3_URI + '/FMCW_Sponsors_Logo_White.png'}
               className="image"></img>
           </section>
         </div>

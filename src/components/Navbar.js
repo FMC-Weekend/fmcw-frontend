@@ -128,7 +128,11 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <NavLink exact to="/">
-          <img src="/FMC_GOLDEN_NAV.svg" className="img" alt="FMC" />
+          <img
+            src={process.env.REACT_APP_AWS_S3_URI + '/FMC_GOLDEN_NAV.svg'}
+            className="img"
+            alt="FMC"
+          />
         </NavLink>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
