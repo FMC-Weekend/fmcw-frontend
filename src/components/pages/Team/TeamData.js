@@ -17,7 +17,7 @@ const data = {
       img: 'https://drive.google.com/uc?export=view&id=1m3QAQAUwNFMEP3Hbsh4lVf7Wl99X-1aF',
       position: 'Marketing Head',
       name: 'Mahesh Singh Tomar'
-    },
+    }
     // {
     //   id: 6,
     //   img: 'https://drive.google.com/uc?export=view&id=1hp33WeTpZP-UuYeO_rqLfsLSqCyeRyaJ',

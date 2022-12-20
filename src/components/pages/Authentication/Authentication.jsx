@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import GoogleLogin from 'react-google-login';
 import { Redirect } from 'react-router-dom';
 import AuthContext from '../../../store/auth-context';

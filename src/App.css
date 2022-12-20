@@ -7,7 +7,7 @@
 body {
   overflow-x: hidden;
   z-index: -999;
-  background-image: url('/public/website_texture_2245x2245.svg') !important;
+  background-image: url(https://ik.imagekit.io/yhqz4qiocg/public/website_texture_2245x2245.svg) !important;
 }
 .home,
 .services,

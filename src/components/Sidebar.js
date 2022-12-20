@@ -35,21 +35,21 @@ function TabPanel(props) {
 TabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.number.isRequired,
-  value: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired
 };
 
 function a11yProps(index) {
   return {
     id: `vertical-tab-${index}`,
-    'aria-controls': `vertical-tabpanel-${index}`,
+    'aria-controls': `vertical-tabpanel-${index}`
   };
 }
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   tabs: {
     '& .MuiTabs-indicator': {
-      background: '#FCC907',
-    },
-  },
+      background: '#FCC907'
+    }
+  }
 }));
 export default function VerticalTabs() {
   const [value, setValue] = React.useState(0);
@@ -73,11 +73,11 @@ export default function VerticalTabs() {
           fontColor: 'black',
           '& .MuiTabs-indicator': {
             background: '#FCC907',
-            width: '0px',
+            width: '0px'
           },
           '& .MuiButtonBase-root-MuiTab-root': {
-            alignItems: 'flex-start',
-          },
+            alignItems: 'flex-start'
+          }
         }}
         className="tabs">
         <Tab label="Photography" {...a11yProps(0)} />

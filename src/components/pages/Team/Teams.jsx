@@ -1,3 +1,4 @@
+import React from 'react';
 import Menu from './SideBar/Menu';
 import classes from './Sponsors.module.css';
 import SponsorSection from './SponsorSection/SponsorSection';

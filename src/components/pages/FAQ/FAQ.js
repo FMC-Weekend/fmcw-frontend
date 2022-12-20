@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { IconContext } from 'react-icons';
