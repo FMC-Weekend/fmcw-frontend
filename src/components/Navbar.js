@@ -180,6 +180,7 @@ function Navbar() {
               FAQ
             </NavLink>
           </li>
+         
 
           {/* <li className="nav-item">
             {button && sessionStorage.getItem('tokenID') && (

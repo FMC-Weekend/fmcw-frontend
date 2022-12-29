@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext,useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import { gapi } from 'gapi-script';
@@ -22,12 +22,15 @@ import Dashboard from './components/pages/Dashboard/Old';
 import AuthContext from './store/auth-context';
 import PrivateRoute from './components/PrivateRoute';
 import Team from './components/pages/Team/Teams';
+
 // import Merchandise from './components/pages/Merchandise/Merchandise';
 import AllEvents from './components/pages/Events/MobileView/AllEvents';
 import Cart from './components/Cart';
 import DashBoard_2 from './components/pages/Dashboard/DashboardNew';
 import DashBoardNew from './components/pages/Dashboard/DashboardNew';
 import Passes from './components/pages/Passes/Passes';
+
+
 function App() {
   const authCtx = useContext(AuthContext);
   if (window.innerWidth <= 1280) {
@@ -39,10 +42,13 @@ function App() {
       plugin_name: 'chat'
     });
   });
+ 
   return (
     <>
+    
       <Router>
         <Navbar />
+        
         <Switch>
           {/* <Route path="/landing" exact component={Home} /> */}
           <Route path="/sign-up" component={SignUp} />;
@@ -56,7 +62,10 @@ function App() {
           <Route path="/events/allevents" component={AllEvents} />;
           <Route path="/sponsors" component={Sponsors} />
           <Route path="/FAQ" component={FAQ} />
-          <Route path="/" exact component={landingPage} />
+          
+          <Route path="/"  exact component={landingPage}  />
+        
+         
           <Route path="/authentication" exact component={Authentication} />
           {/* {authCtx.isLoggedIn && <Route path="/dashboard" exact component={Dashboard} />} */}
           {/* {sessionStorage.getItem('isNewUser')==="true" && <Route path="/register" exact component={RegisterationForm} />} */}
@@ -67,6 +76,7 @@ function App() {
           <Route path="/d" exact component={DashBoard_2} />
           <Route path="/passes" exact component={Passes} />
         </Switch>
+  
       </Router>
     </>
   );

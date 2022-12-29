@@ -6,6 +6,7 @@ import logo from './foo.png';
 import temp from './foop.png';
 
 function Footer() {
+
   return (
     <div className="footer-container">
       <footer>
@@ -51,7 +52,7 @@ function Footer() {
             aria-label="LinkedIn"
             rel="noreferrer">
             <i className="fab fa-linkedin" />
-          </a>
+          </a> 
         </div>
       </section>
     </div>

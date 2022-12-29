@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 const AuthContext = React.createContext({
   token: '',
   isLoggedIn: false,
@@ -58,6 +57,7 @@ export const AuthContextProvider = (props) => {
     updateIsNewUser: modifyIsNewUser,
     updateUserType: modifyUserType
   };
+  
   return <AuthContext.Provider value={contextValue}>{props.children}</AuthContext.Provider>;
 };
 

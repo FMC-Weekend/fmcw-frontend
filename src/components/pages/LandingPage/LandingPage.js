@@ -29,6 +29,7 @@ function landingPage() {
     closeMobileMenu();
   };
 
+
   return (
     <div className={Classes.landing_page}>
       {/* <h1> Landing Page</h1> */}
