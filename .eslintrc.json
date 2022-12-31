@@ -12,12 +12,15 @@
             "jsx": true
         },
         "ecmaVersion": 13,
+        
         "sourceType": "module"
     },
     "plugins": [
         "react", "prettier"
     ],
     "rules": {
-        "prettier/prettier": "warn"
+        "prettier/prettier": "warn",
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off"
     }
 }
