@@ -54,7 +54,7 @@
   height: 69px;
   float: right;
   top: 245px;
-  left: 160px;
+  left: 170px;
   z-index: 1;
   margin: 15px 20px 0px 20px;
 }
@@ -118,10 +118,42 @@
 @media screen and (max-width: 700px) {
   .team-card {
     /* max-width: calc(45% - 1em); */
-    width: 302px;
-    margin-left: 10px;
+    width: 280px;
+    height: 410px;
+    margin-left: -30px;
+    display: flex;
+    justify-content: space-between;
   }
+
   .parent_wrapper{
     width: 100%;
   }
+
+  .cardImg{
+    width: 225px;
+    height: 270px;
+  }
+
+  .cardImg img{
+    width: 235px;
+    height: 270px;
+  }
+
+  .position{
+    position: absolute;
+    top: 330px;
+    width: 280px;
+  }
+
+  .cardTitle{
+    position:absolute;
+    top: 360px;
+    width: 280px;
+  }
+
+  .drink{
+    position: absolute;
+    top:235px;
+  }
 }
+
