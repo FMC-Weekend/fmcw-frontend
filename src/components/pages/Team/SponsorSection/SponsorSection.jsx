@@ -8,6 +8,7 @@ function SponsorSection(props) {
     <div
       style={{
         marginTop: '30px',
+        marginLeft: '30px',
       }}
     >
       <div className={classes.mssg}>

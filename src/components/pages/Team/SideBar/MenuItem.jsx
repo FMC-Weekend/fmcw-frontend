@@ -33,7 +33,7 @@ function MenuItem({ anchorId, itemName, active }) {
         aria-label={`Scroll to ${itemName}`}
         style={
           active
-            ? { color: 'black', backgroundColor: 'white', marginLeft: 0 }
+            ? { color: 'black', backgroundColor: 'white', marginLeft: 0, border: '2px solid #000000', transform: 'translateX(1px)', }
             : { color: 'white', marginLeft: 0 }
         }>
         <Fade bottom>
