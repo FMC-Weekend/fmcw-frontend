@@ -36,6 +36,7 @@ function landingPage() {
       <Banner imagePath={process.env.REACT_APP_AWS_S3_URI + '/Group_7139.svg'} />
 
       <div className={Classes.texture_bg}></div>
+
       <img
         src={process.env.REACT_APP_AWS_S3_URI + '/SECT_DIV_LINE.svg'}
         alt="line"
