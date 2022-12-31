@@ -4,7 +4,7 @@
 }
 body {
   background-color: #1b083d;
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto !important;
   float: none !important;
 }

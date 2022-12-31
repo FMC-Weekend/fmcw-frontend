@@ -1,9 +1,10 @@
 body {
   font-family: Marcellus;
-  background-color: #1D033E;
+  background-color: #1d033e;
 }
 .event_page {
-  background: #1D033E;
+  background: #f5f5f5 !important;
+  /* background: #1D033E; */
   overflow: hidden;
 }
 .tabs {
@@ -19,58 +20,88 @@ body {
   margin: 10px;
   margin-left: 19px;
 }
+
+/*
+flip card
+*/
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
 .workshop-card-img-div h3 {
   position: absolute;
   top: 20px;
-  color: #FCC907;
+  color: #fcc907;
   left: 18px;
 }
 .card-div h3 {
   position: absolute;
   top: 20px;
-  color: #FCC907;
+  color: #fcc907;
   left: 18px;
 }
 .card {
-  margin-right: 50px;
-  margin-top: 10px;
-  max-width: 450px;
-  height: 400px;
-  width: 250px;
-  transition-duration: 300ms;
-  transition-property: transform;
-  transition-timing-function: ease-out;
-  transform: rotate3d(90);
-  border-radius: 10px;
-  /* padding: 20px; */
-  background: #27094B;
-  text-align: center;
-  box-shadow: 0px 24px 48px 0px #0000005c;
+  position: relative;
+  /* position: fixed; */
+  width: 388px;
+  height: 327px;
+  /* left: 475px; */
+  left: 75px;
+  /* top: 175px; */
+  top: 66px;
+  /* background: #685EDA; */
+  border: 2px solid #000000;
+  box-shadow: 6px 8px 0px #000000;
+  border-radius: 19px;
+  overflow: hidden;
 }
 .card:hover {
   transition-duration: 150ms;
   box-shadow: 0px 12px 24px 0px #00000029;
   transition: all 0.4s ease;
 }
-.separator{
-  display:flex;
+.separator {
+  display: flex;
   align-items: center;
 }
 
-.separator .line{
+.separator .line {
   height: 0.5px;
   margin-top: 15px;
   flex: 2;
   margin: 10px;
-  background-color: #FCC907;
+  background-color: #ffffff;
 }
 
-.separator h2{
+.separator h2 {
   font-family: Nunito Sans;
-  font-size: 1.0em;
+  font-size: 1em;
   font-style: normal;
   font-weight: 400;
-  color: #FCC907;
+  color: #ffffff;
   line-height: 20px;
   text-transform: uppercase;
   letter-spacing: 0em;
@@ -83,12 +114,12 @@ body {
   width: 100%;
 }
 .event-cards {
- display: flex;
- /* float: left; */
- margin: 0 auto;
- justify-content: flex-start;
- width: 80vw;
- padding-right:10px;
+  display: flex;
+  /* float: left; */
+  margin: 0 auto;
+  justify-content: flex-start;
+  width: 80vw;
+  padding-right: 10px;
 }
 .all-events {
   display: flex;
@@ -104,21 +135,21 @@ body {
   transform: rotate3d(180deg);
 }
 .workshop-cards {
-display: flex;
-justify-content: space-between;
-margin-top: 20px;
-width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 80vw;
 }
 .tabs {
- font-size: 1em;
- margin-top: 20px;
+  font-size: 1em;
+  margin-top: 20px;
 }
 .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
-  color: #FCC907;
+  color: #ffffff;
   text-decoration: none;
 }
-.btn1 {
-  color:#FCC907;
+.btnView {
+  /* color:#FCC907;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -130,26 +161,219 @@ width: 80vw;
   line-height: 16px;
   letter-spacing: 0em;
   text-align: center;
- margin-top: 20px;
+ margin-top: 20px; */
+
+  position: absolute;
+  width: 231px;
+  height: 32px;
+  /* left: 547px; */
+  left: 70px;
+  /* top: 409px; */
+  top: 234px;
+
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: justify;
+
+  color: #ffffff;
 }
-.btn1:hover {
-  color: #fff
+.btnView:hover {
+  color: #fff;
+}
+.addToCart {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 388px;
+  height: 55px;
+  /* left: 475px; */
+  left: -2px;
+  /* top: 447px; */
+  top: 272px;
+
+  /* background:  #2ED9FC; */
+  border: 2px solid #000000;
+  border-radius: 0px 0px 22px 22px;
+}
+.addToCartBtn {
+  position: absolute;
+  width: 256px;
+  height: 30px;
+  /* left: 539px; */
+  left: 64px;
+  /* top: 457px; */
+  top: 10px;
+
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.addToCartBtn:hover {
+  color: #ffffff;
 }
 .card-content {
   padding: 10px 20px;
-  color:#fff;
+  color: #fff;
 }
 .card-title {
-  margin: 0 auto;
-  color: #fff;
-  font-family: Marcellus;
-  font-size: 20px;
+  position: absolute;
+  width: 386px;
+  height: 67px;
+  /* left: 475px; */
+  /* left: 75px; */
+  /* top: 196px; */
+  top: 21px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  /* line-height: 37px; */
+  text-align: center;
+
+  color: #ffffff;
+}
+.lineTitle {
+  position: absolute;
+  width: 137px;
+  height: 0px;
+  left: 123px;
+  /* left: 600px; */
+  /* top: 239px; */
+
+  border: 0.5px solid #ffffff;
+}
+.viewProbImg {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 30px;
+  bottom: 60px;
+}
+.type {
+  position: absolute;
+  width: 89px;
+  height: 22px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  text-align: left;
+  left: 40px;
+  top: 33px;
+}
+.front-title {
+  position: absolute;
+  width: 265px;
+  height: 74px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: left;
+  color: #000000;
+
+  left: 40px;
+  top: 65px;
+}
+.prizes-front {
+  position: absolute;
+  width: 240px;
+  height: 34px;
+
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  margin-top: 10px;
-  line-height: 30px;
-  letter-spacing: 0em;
+  font-size: 18px;
+  line-height: 34px;
   text-align: center;
+
+  color: #000000;
+  text-align: left;
+  left: 40px;
+  top: 139px;
+}
+.front-price {
+  position: absolute;
+  width: 62px;
+  height: 22px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  text-align: left;
+  left: 40px;
+  top: 177px;
+}
+.three-dots1 {
+  position: absolute;
+  width: 15px;
+  height: 17px;
+  left: 296px;
+  bottom: 43px;
+
+  background: #ffffff;
+}
+.three-dots2 {
+  position: absolute;
+  width: 15px;
+  height: 17px;
+  left: 316px;
+  bottom: 43px;
+
+  background: #ffffff;
+}
+.three-dots3 {
+  position: absolute;
+  width: 15px;
+  height: 17px;
+  left: 336px;
+  bottom: 43px;
+
+  background: #ffffff;
+}
+.front-arrow {
+  position: absolute;
+  /* width: 59px; */
+  height: 60px;
+
+  /* border: 2px solid #FFFFFF;
+transform: rotate(45deg); */
+  left: 310px;
+  top: 17px;
+}
+.front-img {
+  position: absolute;
+  width: 103px;
+  height: 80.14px;
+  left: 40px;
+  top: 221px;
 }
 .workshop-card-title {
   margin: 0 auto;
@@ -163,8 +387,8 @@ width: 80vw;
   letter-spacing: 0em;
   text-align: center;
 }
-.card .prizes {
-  font-family: Nunito Sans;
+.card .contents {
+  /* font-family: Nunito Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -172,12 +396,30 @@ width: 80vw;
   line-height: 18px;
   margin-top: 20px;
   letter-spacing: 0em;
-  text-align: center;
+  text-align: center; */
+
+  position: absolute;
+  width: 314px;
+  height: 105px;
+  /* left: 513px; */
+  left: 36px;
+  /* top: 258px; */
+  top: 83px;
+
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 125.3%;
+  /* or 23px */
+
+  text-align: justify;
+
+  color: #ffffff;
 }
 
-
 .MuiSlider-root {
-  color: #FCC907;
+  color: #ffffff;
 }
 #vertical-tab-0,
 #vertical-tab-1,
@@ -197,7 +439,7 @@ width: 80vw;
   text-align: left;
   position: relative;
   padding-left: 40px;
-  color: #F9F4F5;
+  color: #f9f4f5;
   text-transform: capitalize;
 }
 #vertical-tab-0:focus,
@@ -207,21 +449,21 @@ width: 80vw;
 #vertical-tab-4:focus,
 #vertical-tab-5:focus,
 #vertical-tab-6:active {
-  color: #FCC907;
+  color: #ffffff;
   border-right: none;
 }
-#vertical-tab-0[aria-selected="true"],
-#vertical-tab-1[aria-selected="true"],
-#vertical-tab-2[aria-selected="true"],
-#vertical-tab-3[aria-selected="true"],
-#vertical-tab-4[aria-selected="true"],
-#vertical-tab-5[aria-selected="true"],
-#vertical-tab-6[aria-selected="true"] {
-  color: #FCC907;
+#vertical-tab-0[aria-selected='true'],
+#vertical-tab-1[aria-selected='true'],
+#vertical-tab-2[aria-selected='true'],
+#vertical-tab-3[aria-selected='true'],
+#vertical-tab-4[aria-selected='true'],
+#vertical-tab-5[aria-selected='true'],
+#vertical-tab-6[aria-selected='true'] {
+  color: #ffffff;
 }
 .MuiTabs-indicator {
   width: 0px;
-  background: #fcc907;
+  background: #ffffff;
 }
 .MuiButtonBase-root-MuiTab-root {
   align-items: flex-start;
@@ -257,8 +499,8 @@ width: 80vw;
   margin-top: 18px;
   padding: 5px;
   text-decoration: none;
-  background: #fcc907;
-  border: 1px solid #FCC907;
+  background: #ffffff;
+  border: 1px solid #ffffff;
   font-weight: 700;
 }
 .cart-btn span {
@@ -269,7 +511,7 @@ width: 80vw;
   box-shadow: 0px 0px 24px 0px rgba(255, 212, 48, 0.7);
 }
 .fees {
-  color: #FCC907;
+  color: #ffffff;
   font-size: 1em;
   position: relative;
   text-align: left;
@@ -280,7 +522,7 @@ width: 80vw;
 .cart {
   width: 100px;
   font-size: 1.6em;
-  color: #FCC907;
+  color: #ffffff;
   background: transparent;
   padding: 3px;
   outline: none;
@@ -292,8 +534,8 @@ width: 80vw;
   margin: auto;
 }
 .cart:hover {
-  background: #FCC907;
-  color:#27094B;
+  background: #ffffff;
+  color: #27094b;
   transition: all 0.6s ease-in-out;
 }
 .cart-modal {
@@ -304,40 +546,40 @@ width: 80vw;
 #modal-modal-title {
   color: #fff;
   font-family: Marcellus;
-  border-bottom: 2px solid #FCC907;
+  border-bottom: 2px solid #ffffff;
   padding-bottom: 20px;
 }
 #modal-modal-description {
-  color:#FCC907;
+  color: #ffffff;
   font-family: Marcellus;
-  border-bottom: 2px solid #FCC907;
+  border-bottom: 2px solid #ffffff;
 }
 .table {
-  background: #27094B;
-  color: #fff
+  background: #27094b;
+  color: #fff;
 }
 .btn-danger {
   background: #fff;
-  color:#1D033E;
+  color: #1d033e;
   margin-right: 30px;
   margin-top: 20px;
 }
 .btn-danger:hover {
   background: transparent;
-  color:#fff;
+  color: #fff;
   border: 1px solid #fff;
   transition: all 0.3s ease-in-out;
 }
 .btn-primary {
-  background:#FCC907;
-  color:#1D033E;
+  background: #ffffff;
+  color: #1d033e;
   margin-right: -30px;
   margin-top: 20px;
 }
 .btn-primary:hover {
   background: transparent;
-  color:#fff;
-  border: 1px solid #FCC907;
+  color: #fff;
+  border: 1px solid #ffffff;
   transition: all 0.6s ease-in-out;
 }
 .btns {
@@ -351,10 +593,10 @@ width: 80vw;
 }
 .workshop-modal {
   width: 80vw;
-  background:#35096b;
+  background: #35096b;
   opacity: 1;
   display: flex;
-  border-radius: 15PX;
+  border-radius: 15px;
   height: 300px;
   padding: 20px;
   margin: auto;
@@ -370,10 +612,10 @@ width: 80vw;
   cursor: pointer;
 }
 .workshop-modal .guest-details {
- float: right;
- display: flex;
- position: absolute;
- font-family: Marcellus;
+  float: right;
+  display: flex;
+  position: absolute;
+  font-family: Marcellus;
 }
 .workshop-modal .guest-details p {
   display: flex;
@@ -382,33 +624,32 @@ width: 80vw;
   margin: 45px;
   font-size: 1.3em;
   font-family: Marcellus;
- }
- .workshop-modal .guest-details h2 {
+}
+.workshop-modal .guest-details h2 {
   color: #fcc907;
   font-size: 1.6em;
   position: absolute;
   left: 293px;
   font-family: Marcellus;
- }
- .workshop-modal .guest-details h3 {
+}
+.workshop-modal .guest-details h3 {
   color: #fcc907;
   font-size: 1.2em;
   position: absolute;
   left: 293px;
   bottom: 0;
   font-family: Marcellus;
- }
- .dates {
-   
- }
- .time {
+}
+.dates {
+}
+.time {
   margin-left: 250px;
- }
- .workshop-modal .guest-details span {
+}
+.workshop-modal .guest-details span {
   color: #fff;
-  font-size: 1.0em;
+  font-size: 1em;
   font-family: Marcellus;
- }
+}
 .workshop-modal-img {
   object-fit: cover;
   position: relative;
@@ -425,7 +666,7 @@ width: 80vw;
   font-family: Marcellus;
   font-size: 1.4em;
 }
-#modal-modal-description  h3 {
+#modal-modal-description h3 {
   font-family: Marcellus;
   font-size: 1.4em;
   margin-top: 3px;
@@ -442,7 +683,7 @@ width: 80vw;
   transform: rotate3d(90);
   border-radius: 10px;
   /* padding: 20px; */
-  background: #27094B;
+  background: #27094b;
   text-align: center;
   box-shadow: 0px 24px 48px 0px #0000005c;
 }
@@ -462,26 +703,26 @@ width: 80vw;
   text-decoration: none;
   padding: 20px;
   color: #fff;
-} 
+}
 @media screen and (max-width: 1006px) {
   .event_page {
-    background-color: #1D033E;
+    background-color: #1d033e;
   }
   body {
-    background: #1D033E;
+    background: #1d033e;
   }
   .event-cards {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: -15px;
-}
+  }
 
   .sidebar {
     display: none;
   }
   .showOnMobile {
     display: block;
-    background: #1D033E;
+    background: #1d033e;
   }
   .card {
     width: 60vw;
@@ -494,10 +735,9 @@ width: 80vw;
     justify-content: space-between;
     margin-left: -15px;
   }
-   .tabs {
-
-   }
-   #menuBtn {
+  .tabs {
+  }
+  #menuBtn {
     display: block;
     font-size: 2em;
     position: absolute;
@@ -509,14 +749,14 @@ width: 80vw;
     text-align: center;
     padding: 20px;
     list-style: none;
-    background: #1D033E;
-   }
-   .btn-danger {
+    background: #1d033e;
+  }
+  .btn-danger {
     margin-bottom: 30px;
   }
   .workshop-modal {
     width: 80vw;
-    background:#35096b;
+    background: #35096b;
     opacity: 1;
     overflow: hidden;
     height: 75vh;
@@ -533,14 +773,14 @@ width: 80vw;
     background-color: #170231;
   }
   .workshop-modal .guest-details {
-   margin: auto;
-   width: 60vw;
-   text-align: center;
-   left: 40px;
-   display: contents;
-   flex-direction: column;
-   position: absolute;
-   font-family: Marcellus;
+    margin: auto;
+    width: 60vw;
+    text-align: center;
+    left: 40px;
+    display: contents;
+    flex-direction: column;
+    position: absolute;
+    font-family: Marcellus;
   }
   .workshop-modal .guest-details p {
     color: #fff;
@@ -549,8 +789,8 @@ width: 80vw;
     font-size: 1.2em;
     text-align: center;
     font-family: Marcellus;
-   }
-   .workshop-modal .guest-details h2 {
+  }
+  .workshop-modal .guest-details h2 {
     color: #fcc907;
     font-size: 1.6em;
     position: relative;
@@ -558,32 +798,31 @@ width: 80vw;
     right: 0px;
     left: 0;
     font-family: Marcellus;
-   }
-   .workshop-modal .guest-details h3 {
+  }
+  .workshop-modal .guest-details h3 {
     color: #fcc907;
-    font-size: 1.0em;
+    font-size: 1em;
     bottom: -40px;
     left: 0;
     display: contents;
     font-family: Marcellus;
-   }
-   .dates {
-     
-   }
-   .time {
-     margin-top: 40px;
-   }
-   .workshop-modal .guest-details .timing {
+  }
+  .dates {
+  }
+  .time {
+    margin-top: 40px;
+  }
+  .workshop-modal .guest-details .timing {
     flex-direction: column;
     display: flex;
     margin-top: 120px;
     position: relative;
-   }
-   .workshop-modal .guest-details span {
+  }
+  .workshop-modal .guest-details span {
     color: #fff;
-    font-size: 1.0em;
+    font-size: 1em;
     font-family: Marcellus;
-   }
+  }
   .workshop-modal-img {
     object-fit: cover;
     position: relative;
@@ -591,56 +830,56 @@ width: 80vw;
     width: 100px;
     border-radius: 50%;
   }
-   .mobile h2{
-     font-family: Marcellus;
-     font-style: normal;
-     font-weight: normal;
-     font-size: 1.6em;
-     line-height: 20px;
-     color:#FCC907;
-   }
-   .cart-btn {
+  .mobile h2 {
+    font-family: Marcellus;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6em;
+    line-height: 20px;
+    color: #fcc907;
+  }
+  .cart-btn {
     width: 90px;
     height: 35px;
     position: absolute;
     right: 30px;
   }
-   .mobile ul {
-     color: #fff;
-     padding: 20px;
-     list-style: none;
-     font-family: Marcellus;
-   font-size: 16px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 25px;
-   letter-spacing: 0em;
-   }
-   .mobile li {
-     padding: 20px;
-     margin-left: 14px;
-   }
-   .mobile a {
-     text-decoration: none;
-     color: #fff;
-   }
-   .mobile a:hover {
-    text-decoration: none;
-    color:#FCC907;
+  .mobile ul {
+    color: #fff;
+    padding: 20px;
+    list-style: none;
+    font-family: Marcellus;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
   }
-   .mobile li .iconify {
-     color: #fff;
-     font-size: 1.6em;
-   }
-   .section {
+  .mobile li {
+    padding: 20px;
+    margin-left: 14px;
+  }
+  .mobile a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .mobile a:hover {
+    text-decoration: none;
+    color: #fcc907;
+  }
+  .mobile li .iconify {
+    color: #fff;
+    font-size: 1.6em;
+  }
+  .section {
     margin: 30px;
     padding: 20px;
     position: relative;
   }
-  .section CartModal{
+  .section CartModal {
     margin-top: -30px;
   }
-   .section .back-btn {
+  .section .back-btn {
     font-family: Nunito Sans;
     font-size: 14px;
     font-style: normal;
@@ -651,25 +890,25 @@ width: 80vw;
     text-align: center;
     z-index: 1;
     width: 100px;
-    height: 40px; 
-    left: 38%; 
-    border: 2px solid #FCC907;
-    color: #FCC907;
+    height: 40px;
+    left: 38%;
+    border: 2px solid #fcc907;
+    color: #fcc907;
     padding: 10px;
     background: transparent;
     text-decoration: none;
     border-radius: 6px;
     position: absolute;
     cursor: pointer;
-   }
-   .section .back-btn:hover {
-     background: #FCC907;
-     color: #fff;
-   }
-   .trash-btn {
-     display: none;
-   }
-   #modal-modal-description ul li {
+  }
+  .section .back-btn:hover {
+    background: #fcc907;
+    color: #fff;
+  }
+  .trash-btn {
+    display: none;
+  }
+  #modal-modal-description ul li {
     display: flex;
     padding: 0px;
   }
@@ -679,7 +918,7 @@ width: 80vw;
     padding-right: 5px;
     font-size: 0.8em;
   }
-  #modal-modal-description  h3 {
+  #modal-modal-description h3 {
     font-family: Marcellus;
     font-size: 0.9em;
     padding-left: 4px;
@@ -691,10 +930,10 @@ width: 80vw;
   }
   #modal-modal-description a {
     font-family: Marcellus;
-    font-size: 1.0em;
+    font-size: 1em;
     text-decoration: none;
     color: #fff;
-  } 
+  }
   .w-cart {
     bottom: -58px;
     right: 0;
@@ -709,5 +948,5 @@ width: 80vw;
     font-size: 0.9em;
     text-align: center;
     font-family: Marcellus;
-   }
+  }
 }

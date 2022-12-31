@@ -5,14 +5,14 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
-import EventCard from './pages/Events/EventCard';
-import WorkshopCard from './pages/Events/WorkshopCard';
+import EventCard from './EventCard';
+// import WorkshopCard from './pages/Events/WorkshopCard';
 import { makeStyles } from '@material-ui/core/styles';
 // import WorkshopCard from './pages/Events/WorkshopCard';
 // import MenuIcon from '@mui/icons-material/Menu';
 // import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 // import Card from '../../src/components/pages/Sponsors/SponsorSection/Card';
-import data from './pages/Events/Data/data';
+import data from './Data/data';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -35,21 +35,21 @@ function TabPanel(props) {
 TabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.number.isRequired,
-  value: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired
 };
 
 function a11yProps(index) {
   return {
     id: `vertical-tab-${index}`,
-    'aria-controls': `vertical-tabpanel-${index}`,
+    'aria-controls': `vertical-tabpanel-${index}`
   };
 }
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   tabs: {
     '& .MuiTabs-indicator': {
-      background: '#FCC907',
-    },
-  },
+      background: '#FCC907'
+    }
+  }
 }));
 export default function VerticalTabs() {
   const [value, setValue] = React.useState(0);
@@ -67,17 +67,30 @@ export default function VerticalTabs() {
         onChange={handleChange}
         aria-label="Vertical tabs example"
         sx={{
+          marginTop: '0px',
+          boxSizing: 'border-box',
+
+          // position: absolute;
+          width: '360px',
+          height: '964px',
+          left: '1px',
+          top: '0px',
+
+          background: '#685EDA',
+          border: '2px solid #000000',
           borderRight: 3,
-          borderColor: '#FCC907',
+          borderColor: 'black',
           fontSize: '38px',
           fontColor: 'black',
           '& .MuiTabs-indicator': {
-            background: '#FCC907',
-            width: '0px',
+            background: '#000000',
+            width: '0px'
           },
           '& .MuiButtonBase-root-MuiTab-root': {
             alignItems: 'flex-start',
-          },
+            paddingLeft: '24px'
+            
+          }
         }}
         className="tabs">
         <Tab label="Photography" {...a11yProps(0)} />
@@ -100,13 +113,16 @@ export default function VerticalTabs() {
                   link={item.link}
                   price={item.price}
                   prize={item.prize}
+                  content={item.content}
                   item={item}
                   key={index}
+                  color={item.color}
+                  color2={item.color2}
                 />
               );
             })}
           </div>
-          <div className="workshop-cards">
+          {/* <div className="workshop-cards">
             {data.photographyWorkshopData.map((item, index) => {
               return (
                 <WorkshopCard
@@ -124,7 +140,7 @@ export default function VerticalTabs() {
                 />
               );
             })}
-          </div>
+          </div> */}
         </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
@@ -133,6 +149,7 @@ export default function VerticalTabs() {
             {data.cineData.map((item, index) => {
               return (
                 <EventCard
+                  style={{ left: '607px' }}
                   img={item.img}
                   title={item.title}
                   type={item.type}
@@ -141,11 +158,13 @@ export default function VerticalTabs() {
                   prize={item.prize}
                   item={item}
                   key={index}
+                  color={item.color}
+                  color2={item.color2}
                 />
               );
             })}
           </div>
-          <div className="workshop-cards">
+          {/* <div className="workshop-cards">
             {data.cineWorkshopData.map((item, index) => {
               return (
                 <WorkshopCard
@@ -163,7 +182,7 @@ export default function VerticalTabs() {
                 />
               );
             })}
-          </div>
+          </div> */}
         </div>
       </TabPanel>
       <Divider />
@@ -181,11 +200,13 @@ export default function VerticalTabs() {
                   prize={item.prize}
                   item={item}
                   key={index}
+                  color={item.color}
+                  color2={item.color2}
                 />
               );
             })}
           </div>
-          <div className="workshop-cards">
+          {/* <div className="workshop-cards">
             {data.outreachWorkshopData.map((item, index) => {
               return (
                 <WorkshopCard
@@ -203,7 +224,7 @@ export default function VerticalTabs() {
                 />
               );
             })}
-          </div>
+          </div> */}
         </div>
       </TabPanel>
       <Divider />
@@ -221,11 +242,13 @@ export default function VerticalTabs() {
                   prize={item.prize}
                   item={item}
                   key={index}
+                  color={item.color}
+                  color2={item.color2}
                 />
               );
             })}
           </div>
-          <div className="workshop-cards">
+          {/* <div className="workshop-cards">
             {data.mediaWorkshopData.map((item, index) => {
               return (
                 <WorkshopCard
@@ -243,7 +266,7 @@ export default function VerticalTabs() {
                 />
               );
             })}
-          </div>
+          </div> */}
         </div>
       </TabPanel>
       <Divider />
@@ -261,11 +284,13 @@ export default function VerticalTabs() {
                   prize={item.prize}
                   item={item}
                   key={index}
+                  color={item.color}
+                  color2={item.color2}
                 />
               );
             })}
           </div>
-          <div className="workshop-cards">
+          {/* <div className="workshop-cards">
             {data.designWorkshopData.map((item, index) => {
               return (
                 <WorkshopCard
@@ -283,7 +308,7 @@ export default function VerticalTabs() {
                 />
               );
             })}
-          </div>
+          </div> */}
         </div>
       </TabPanel>
       <Divider />
@@ -301,11 +326,13 @@ export default function VerticalTabs() {
                   prize={item.prize}
                   item={item}
                   key={index}
+                  color={item.color}
+                  color2={item.color2}
                 />
               );
             })}
           </div>
-          <div className="workshop-cards">
+          {/* <div className="workshop-cards">
             {data.animationWorkshopData.map((item, index) => {
               return (
                 <WorkshopCard
@@ -323,7 +350,7 @@ export default function VerticalTabs() {
                 />
               );
             })}
-          </div>
+          </div> */}
         </div>
       </TabPanel>
     </Box>
