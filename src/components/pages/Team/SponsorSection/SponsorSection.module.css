@@ -3,11 +3,9 @@
 }
 .sponsor_title h1 {
   position: relative;
-  padding: 0;
-  margin: 0;
   font-family: Manrope;
   font-weight: 300;
-  font-size: 40px;
+  font-size: 42px;
   color: #685EDA;
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -17,7 +15,7 @@
   letter-spacing: 0;
   padding-left: 37px;
   line-height: 1.5em;
-  margin-top: 15px;
+  margin-top: 25px;
   padding-bottom: 5px;
   position: relative;
 }
@@ -25,20 +23,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  padding-left: 20px;
+  padding-left: 32px;
 }
 .mssg {
   margin-top: 20px;
   text-align: left;
   margin-right: 50px;
-  font-family: Nunito Sans;
 }
 .mssg h2 {
-  /* color: #FCC907; */
-  color: black;
   font-family: 'Manrope';
-  font-size: 1.2em;
+  font-size: 24px;
+  font-style: normal;
   margin-top: 20px;
+  font-weight: 500;
+  line-height: 33px;;
   margin: 27px 36px;
-  text-align: left;
+  text-align: justify;
 }
