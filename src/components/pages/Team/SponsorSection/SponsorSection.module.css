@@ -1,5 +1,6 @@
 .sponsor_section {
-  margin: 20px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 .sponsor_title h1 {
   position: relative;
@@ -40,3 +41,37 @@
   margin: 27px 36px;
   text-align: justify;
 }
+
+@media screen and (max-width: 1050px){
+  .sponsor_section{
+    margin-left: -2px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .sponsor_section{
+    margin-left: -8%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sponsor_section{
+    margin-left: 30px;
+  }
+
+  .mssg h2{
+    margin: 27px 0px;
+  }
+
+  .sponsor_title h1{
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  .cards{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 10%;
+  }
+}
+
