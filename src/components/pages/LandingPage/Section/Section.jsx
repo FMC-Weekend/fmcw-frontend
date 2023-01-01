@@ -30,7 +30,7 @@ function Section(props) {
           <p>Some text..</p> */}
 
           <Fade right duration={1000}>
-            <img src={props.imagePath} className={Classes.section_image} />
+            <img src={props.imagePath} className={Classes.section_image} alt="section-image"/>
           </Fade>
         </div>
       </div>

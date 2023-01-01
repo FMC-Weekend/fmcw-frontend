@@ -18,21 +18,21 @@ function Sponsors(props) {
           </div> */}
 
           <a href="https://picsart.com/create" target="_blank" rel="noreferrer">
-            <img src="https://drive.google.com/uc?export=view&id=1fsc_Fq1gE-eGUuDfPCbApWUxqs3Wqy6U" />
+            <img src="https://drive.google.com/uc?export=view&id=1fsc_Fq1gE-eGUuDfPCbApWUxqs3Wqy6U" alt="sponsors-logo"/>
           </a>
           <div className="separator-1">
             <div className="line_1" />
             <h2>Presents</h2>
             <div className="line_2" />
           </div>
-          <img src="https://drive.google.com/uc?export=view&id=128UU4QrdniNQj2LCVkf-MomRRR1udwkU" />
+          <img src="https://drive.google.com/uc?export=view&id=128UU4QrdniNQj2LCVkf-MomRRR1udwkU" alt="sponsors-logo"/>
           <div className="separator-1">
             <div className="line_1" />
             <h2>Co-Presented By</h2>
             <div className="line_2" />
           </div>
           <a href="https://xp-pen.co.in/" target="_blank" rel="noreferrer">
-            <img src={process.env.REACT_APP_AWS_S3_URI + "/XPpenco-title.png"} />
+            <img src={process.env.REACT_APP_AWS_S3_URI + "/XPpenco-title.png"} alt="sponsors-logo"/>
           </a>
           <div className="separator-1">
             <div className="line_1" />
@@ -40,7 +40,7 @@ function Sponsors(props) {
             <div className="line_2" />
           </div>
           <a href="https://www.lapcare.com/" target="_blank" rel="noreferrer">
-            <img src="https://drive.google.com/uc?export=view&id=1ftavQQIClarxTN6gfxFKipEt9Bh_JNxy" />
+            <img src="https://drive.google.com/uc?export=view&id=1ftavQQIClarxTN6gfxFKipEt9Bh_JNxy" alt="sponsors-logo"/>
           </a>
           <div className="separator-1">
             <div className="line_1" />
@@ -48,7 +48,7 @@ function Sponsors(props) {
             <div className="line_2" />
           </div>
           <a href="https://www.tickertape.in/" target="_blank" rel="noreferrer">
-            <img src="https://drive.google.com/uc?export=view&id=1nLK6rWZGLfCfdb7Y2FMdR7lI7W6-FT0-" />
+            <img src="https://drive.google.com/uc?export=view&id=1nLK6rWZGLfCfdb7Y2FMdR7lI7W6-FT0-" alt="sponsors-logo"/>
           </a>
           <div className="separator-1">
             <div className="line_1" />
@@ -56,7 +56,7 @@ function Sponsors(props) {
             <div className="line_2" />
           </div>
           <a href="https://indiafilmproject.co/" target="_blank" rel="noreferrer">
-            <img src="https://drive.google.com/uc?export=view&id=1fqzXH6KtY_kM8KrSTYAin0zXOhnZis0x" />
+            <img src="https://drive.google.com/uc?export=view&id=1fqzXH6KtY_kM8KrSTYAin0zXOhnZis0x" alt="sponsors-logo"/>
           </a>
 
           {/* <div className="separator-1">
