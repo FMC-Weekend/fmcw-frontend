@@ -21,9 +21,18 @@ function TeamCard(props) {
     <Fade right>
     <div className="team-card" options={options}>
       <div>
-        <div className="cardImg">
-          <img src={props.img} alt="unicorn" className="cardImg" />
+        <div className='stars'>
+          <img src="images/bi_stars.png" alt="" />
         </div>
+
+        <div className='drink'>
+          <img src="images/drink.png" alt="" />
+        </div>
+
+        <div className="cardImg">
+          <img src={props.img} alt=""/>
+        </div>
+        
         <CardTitle className="position">{props.position}</CardTitle>
       </div>
       <CardTitle className="cardTitle">{props.name}</CardTitle>

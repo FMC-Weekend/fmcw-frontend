@@ -166,7 +166,7 @@ function Menu() {
    */
   return (
     <section>
-      <ul style={{ listStyle: 'none' }} className="menu-list">
+      <ul style={{ listStyle: 'none', paddingLeft: 0 }} className="menu-list">
         {menuList}
       </ul>
     </section>
