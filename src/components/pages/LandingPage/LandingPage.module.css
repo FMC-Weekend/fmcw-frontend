@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Montserrat:wght@600&display=swap');
 .div1{
-  /* background-color: #685EDA;
-  overflow-x: hidden;
-  min-height: 100px; */
-  box-sizing: border-box;
-
+box-sizing: border-box;
 position: absolute;
 width: 100%;
 height: 774px;
-/* left: -78px; */
 top: 109px;
-
 background: #685EDA;
 border: 2px solid #000000;
 }
@@ -20,7 +14,6 @@ border: 2px solid #000000;
   height: 76px;
   left: 130px;
   top: 323px;
-  
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 400;
@@ -86,8 +79,7 @@ top: 176px;
 
 }
 .div2{
-  box-sizing: border-box;
-
+box-sizing: border-box;
 position: absolute;
 width: 1668px;
 height: 800px;
@@ -538,7 +530,16 @@ text-align: justify;
 color: #000000;
 }
 
-
+.footer{
+  box-sizing: border-box;
+  position: absolute;
+  width: 1512px;
+  /* height: 498px; */
+  left: -50px;
+  top: 4743px;
+  /* background: #F3F3F3; */
+  border: 2px solid #000000;
+}
 
 
 
@@ -549,48 +550,316 @@ color: #000000;
 
 
 @media screen and (max-width: 786px) {
-
-  .login_button button {
-    width: 100vw;
-  }
-  .section_for_web {
-    display: none;
-  }
-  .section_for_mobile {
-    display: block;
-  }
-  .texture_bg {
-    /* margin: ; */
-    height: 10vh;
-    /* mix-blend-mode: screen; */
-    background: linear-gradient(180deg, #14052C 0%, #1D033E 100%);
-  }
-  .line_sep {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50vw;
-    margin-left:100px;
-    margin-top: 80px;
-  }
-  .line_sep1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50vw;
-    margin-left:100px;
-  }
-  .about_sep {
-    position: relative;
-    display: none;
-    margin: 0 auto;
-  }
-  .event_sep {
-    position: relative;
-    display: none;
-    margin: 0 auto;
-  }
- .Section_section_title__Zi2Ev {
-   display: none;
- }
+.div1 img{
+  top:-111px;
+  width:75%;
+  left:15%;
 }
+.div1 h1{
+  top: 50%;
+  width: auto;
+  left:10%;
+  right:10%;
+  /* background-image: url("./side_img.svg"); */
+}
+.div1 button{
+  top: 75%;
+  left: 25%;
+}
+.div2 h1{
+  /* font-size: x-large; */
+  top: 10%;
+  left: 10%;
+  right: 10%;
+}
+.div2 h2{
+  top: 30%;
+  left: 10%;
+  right: 10%;
+}
+.design,.photography,.media,.cine,.animation,.outreach{
+  /* max-width: 50%; */
+ left: 15%;
+}
+.div2{
+  width: 100%;
+  left:0px;
+}
+.div2 button p{
+  font-size: 30px;
+}
+.div2 button{
+  width:50%;
+  /* width: 200px; */
+  /* height: 200px; */
+  left: 25%;
+  height:50px;
+  /* top:3%; */
+  /* top: 20%; */
+}
+.design{
+  top: 80%;
+}
+.media{
+  top: 40%;
+}
+.animation{
+  top: 90%;
+}
+.outreach{
+  top: 60%;
+
+}
+.cine{
+  top: 70%;
+}
+.photography{
+  top: 50%;
+}
+.div3 img,.div4 img,.div5 img,.div6 img{
+  top: 10%;
+  left: 10%;
+}
+.div3{
+  /* left: 0; */
+  width: 100%;
+  position: absolute;
+  /* top: 2000px; */
+  left: 0;
+  align-items: center;
+}
+.div4{
+  position: relative;
+  /* top: 50%; */
+  line-height: normal;
+}
+.div2 h1,.div2 h2,.div3 h1,.div3 p,.div3 button,.div4 h1,.div4 p,.div4 button,.div5 h1,.div5 p,.div5 button,.div6 h1,.div6 p,.div6 button{
+  left:2%;
+  max-width: 100%;
+}
+.div3 h1,.div4 h1,.div5 h1,.div6 h1{
+  /* font-weight: 300;*/
+  font-size:30px;
+}
+.div4{
+  top: 2440px;
+  left:0px;
+  width: 100%;
+}
+.div5{
+  top: 3285px;
+  left:0px;
+  width: 100%;
+}
+.div6{
+  top: 4050px;
+  left:0px;
+  width: 100%;
+}
+.div7{
+  top: 4800px;
+  left:0px;
+  width: 100%;  
+}
+.div7 h1{
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  font-size: 100px;
+}
+.div7 h2{
+  top: 50%;
+  left: 10%;
+  width: 80%;
+  font-size: 30px;
+}
+.div8{
+  top: 5520px;
+  left:0px;
+  width: 100%;  
+}
+.div8 img:nth-child(2){
+  top: 20%;
+  left: 10%;
+  width: 80%;
+}
+.div8 h1{
+  top: 60%;
+  left: 20%;
+  width: 80%;
+  font-size: 50px;
+}
+.div8 h2{
+  top: 70%;
+  left: 2px;
+  width: 100%;
+  font-size: 25px;
+}
+.footer{
+  top: 6300px;
+  left:0px;
+  width: 100%;  
+}
+.back,.forward{
+  top: 10%;
+  width: 5%;
+  height: 5%;
+}
+}
+@media screen and (max-width: 480px) {
+  .div1 img{
+    top:-111px;
+    width:75%;
+    left:15%;
+  }
+  .div1 h1{
+    top: 50%;
+    width: auto;
+    left:10%;
+    right:10%;
+    /* background-image: url("./side_img.svg"); */
+  }
+  .div1 button{
+    top: 75%;
+    left: 25%;
+  }
+  .div2 h1{
+    /* font-size: x-large; */
+    top: 10%;
+    left: 10%;
+    right: 10%;
+  }
+  .div2 h2{
+    top: 30%;
+    left: 10%;
+    right: 10%;
+  }
+  .design,.photography,.media,.cine,.animation,.outreach{
+    /* max-width: 50%; */
+   left: 15%;
+  }
+  .div2{
+    width: 100%;
+    left:0px;
+  }
+  .div2 button p{
+    font-size: 30px;
+  }
+  .div2 button{
+    width:50%;
+    /* width: 200px; */
+    /* height: 200px; */
+    left: 25%;
+    height:50px;
+    /* top:3%; */
+    /* top: 20%; */
+  }
+  .design{
+    top: 80%;
+  }
+  .media{
+    top: 40%;
+  }
+  .animation{
+    top: 90%;
+  }
+  .outreach{
+    top: 60%;
+  
+  }
+  .cine{
+    top: 70%;
+  }
+  .photography{
+    top: 50%;
+  }
+  .div3 img,.div4 img,.div5 img,.div6 img{
+    top: 10%;
+    left: 10%;
+  }
+  .div3{
+    /* left: 0; */
+    width: 100%;
+    position: absolute;
+    /* top: 2000px; */
+    left: 0;
+    align-items: center;
+  }
+  .div4{
+    position: relative;
+    /* top: 50%; */
+    line-height: normal;
+  }
+  .div2 h1,.div2 h2,.div3 h1,.div3 p,.div3 button,.div4 h1,.div4 p,.div4 button,.div5 h1,.div5 p,.div5 button,.div6 h1,.div6 p,.div6 button{
+    left:2%;
+    max-width: 100%;
+  }
+  .div3 h1,.div4 h1,.div5 h1,.div6 h1{
+    /* font-weight: 300;*/
+    font-size:30px;
+  }
+  .div4{
+    top: 2440px;
+    left:0px;
+    width: 100%;
+  }
+  .div5{
+    top: 3285px;
+    left:0px;
+    width: 100%;
+  }
+  .div6{
+    top: 4050px;
+    left:0px;
+    width: 100%;
+  }
+  .div7{
+    top: 4800px;
+    left:0px;
+    width: 100%;  
+  }
+  .div7 h1{
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    font-size: 100px;
+  }
+  .div7 h2{
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    font-size: 30px;
+  }
+  .div8{
+    top: 5520px;
+    left:0px;
+    width: 100%;  
+  }
+  .div8 img:nth-child(2){
+    top: 20%;
+    left: 10%;
+    width: 80%;
+  }
+  .div8 h1{
+    top: 60%;
+    left: 20%;
+    width: 80%;
+    font-size: 50px;
+  }
+  .div8 h2{
+    top: 70%;
+    left: 2px;
+    width: 100%;
+    font-size: 25px;
+  }
+  .footer{
+    top: 6300px;
+    left:0px;
+    width: 100%;  
+  }
+  .back,.forward{
+    top: 10%;
+    width: 5%;
+    height: 5%;
+  }
+  }

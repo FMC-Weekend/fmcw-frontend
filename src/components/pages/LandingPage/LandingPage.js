@@ -109,7 +109,9 @@ function landingPage() {
         </div>
         
         </div>
-        <Footer/>
+        <div className={Classes.footer}>
+        <Footer />
+        </div>
         
     </>
     
