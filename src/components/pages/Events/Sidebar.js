@@ -24,7 +24,7 @@ function TabPanel(props) {
       aria-labelledby={`vertical-tab-${index}`}
       {...other}>
       {value === index && (
-        <Box sx={{ p: 3 }} id="box1">
+        <Box sx={{ p: 3 }} id="box1" style={{paddingTop: '0px'}}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -57,6 +57,7 @@ export default function VerticalTabs() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  const [color, setColor] = React.useState('#00CCF5');
   return (
     <Box sx={{ flexGrow: 1, display: 'flex', height: 'auto' }} className="box">
       {/* <ArrowBackIosNewIcon onClick={collapseMenu} /> */}
@@ -76,7 +77,7 @@ export default function VerticalTabs() {
           left: '1px',
           top: '0px',
 
-          background: '#685EDA',
+          background: color,
           border: '2px solid #000000',
           borderRight: 3,
           borderColor: 'black',
@@ -89,16 +90,15 @@ export default function VerticalTabs() {
           '& .MuiButtonBase-root-MuiTab-root': {
             alignItems: 'flex-start',
             paddingLeft: '24px'
-            
           }
         }}
         className="tabs">
-        <Tab label="Photography" {...a11yProps(0)} />
-        <Tab label="Cinematography" {...a11yProps(1)} />
-        <Tab label="Outreach" {...a11yProps(2)} />
-        <Tab label="Media" {...a11yProps(3)} />
-        <Tab label="Design" {...a11yProps(4)} />
-        <Tab label="Animation" {...a11yProps(5)} />
+        <Tab label="Photography" {...a11yProps(0)} onClick={() => setColor('#00CCF5')} />
+        <Tab label="Cinematography" {...a11yProps(1)} onClick={() => setColor('#14F0B9')} />
+        <Tab label="Outreach" {...a11yProps(2)} onClick={() => setColor('#FFC900')} />
+        <Tab label="Media" {...a11yProps(3)} onClick={() => setColor('#FF90E8')} />
+        <Tab label="Design" {...a11yProps(4)} onClick={() => setColor('#685EDA')} />
+        <Tab label="Animation" {...a11yProps(5)} onClick={() => setColor('#FE6263')} />
       </Tabs>
 
       <TabPanel value={value} index={0} className="tab-panel">
@@ -126,7 +126,7 @@ export default function VerticalTabs() {
             {data.photographyWorkshopData.map((item, index) => {
               return (
                 <WorkshopCard
-                  img={item.img}
+                img={item.img}
                   title={item.title}
                   type={item.type}
                   link={item.link}

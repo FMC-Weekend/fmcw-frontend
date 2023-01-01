@@ -23,8 +23,8 @@ const data = {
       link: 'https://drive.google.com/file/d/1YyKAYn-PBXPoKSB1Z1iU6fa6wjaVGULL/view?usp=sharing',
       price: 129,
       prize: '8K',
-      color: '#14F0B9',
-      color2: '#62FFD8',
+      color: '#00CCF5',
+      color2: '#2ED9FC',
       content:
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
@@ -37,8 +37,8 @@ const data = {
       link: 'https://drive.google.com/file/d/1nEwQqQeI5mulbMTA1I6u9YzXsLLLEiKC/view?usp=sharing',
       price: 129,
       prize: '14K',
-      color: '#FFC900',
-      color2: '#FFDC5A',
+      color: '#00CCF5',
+      color2: '#2ED9FC',
       content:
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     }
@@ -53,8 +53,8 @@ const data = {
       link: 'https://drive.google.com/file/d/1qTdAlnarcZ47eOS-R7O_ImNfsZPnvnBZ/view?usp=sharing',
       price: 129,
       prize: '10K',
-      color: '#FE6263',
-      color2: '#FD8A8B',
+      color: '#FFC900',
+      color2: '#FFDC5A',
       content:
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
@@ -67,8 +67,8 @@ const data = {
       link: 'https://drive.google.com/file/d/1-j7QXOXQpBTioe3S7jrTeydKBLGPkcZe/view?usp=sharing',
       price: 129,
       prize: '10K',
-      color: '#FF90E8',
-      color2: '#FFC8F4',
+      color: '#FFC900',
+      color2: '#FFDC5A',
       content:
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
@@ -81,8 +81,8 @@ const data = {
       link: 'https://drive.google.com/file/d/1YOj9LLElPbGTbFbL2DP-8QAcltoFAMY5/view?usp=sharing',
       price: 129,
       prize: '9K',
-      color: '#685EDA',
-      color2: '#9990FF',
+      color: '#FFC900',
+      color2: '#FFDC5A',
       content:
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     }
@@ -97,8 +97,8 @@ const data = {
       link: 'https://drive.google.com/file/d/1pQMLQD-NpXDh26tlTystzPNsU9Mcxzge/view?usp=sharing',
       price: 129,
       prize: '10K',
-      color: '#00CCF5',
-      color2: '#2ED9FC',
+      color: '#14F0B9',
+      color2: '#62FFD8',
       content:
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
@@ -125,8 +125,8 @@ const data = {
       link: 'https://drive.google.com/file/d/1mW5PcltZXyPRmOTaJaHE3QKdlCoPI7Hz/view?usp=sharing',
       price: 129,
       prize: '8K',
-      color: '#FFC900',
-      color2: '#FFDC5A',
+      color: '#14F0B9',
+      color2: '#62FFD8',
       content:
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     }
@@ -141,8 +141,8 @@ const data = {
       link: 'https://drive.google.com/file/d/1-VApwFFzYsxfs5Kc8vGfzK5YowaJ7DYP/view?usp=sharing',
       price: 129,
       prize: '10K',
-      color: '#FE6263',
-      color2: '#FD8A8B',
+      color: '#685EDA',
+      color2: '#9990FF',
       content:
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
@@ -155,8 +155,8 @@ const data = {
       link: 'https://drive.google.com/file/d/1miS5p8eaeN-ZaLiip4ApnatmpnoVVMqj/view?usp=sharing',
       price: 129,
       prize: '12K',
-      color: '#FF90E8',
-      color2: '#FFC8F4',
+      color: '#685EDA',
+      color2: '#9990FF',
       content:
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
@@ -185,8 +185,8 @@ const data = {
       link: 'https://drive.google.com/file/d/1L4xS562Rld4_j7Lr1xv7iU0L4cu7gHPW/view?usp=sharing',
       price: 129,
       prize: '8K',
-      color: '#00CCF5',
-      color2: '#2ED9FC',
+      color: '#FF90E8',
+      color2: '#FFC8F4',
       content:
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
@@ -199,8 +199,8 @@ const data = {
       link: 'https://drive.google.com/file/d/1w-fj86xTKa9X0jQjhH4UFLNu5HRpRvdO/view?usp=sharing',
       price: 129,
       prize: '8K',
-      color: '#14F0B9',
-      color2: '#62FFD8',
+      color: '#FF90E8',
+      color2: '#FFC8F4',
       content:
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
@@ -213,8 +213,8 @@ const data = {
       link: 'https://drive.google.com/file/d/1-3a8h2Z4Wg5invFtBQoCJLT_iL2we-Ky/view?usp=sharing',
       price: 129,
       prize: '8K',
-      color: '#FFC900',
-      color2: '#FFDC5A',
+      color: '#FF90E8',
+      color2: '#FFC8F4',
       content:
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     }
@@ -243,8 +243,8 @@ const data = {
       link: 'https://drive.google.com/file/d/13FR_L6kpYO6Zo5-kbikKxoA6Q1YzerEX/view?usp=sharing',
       price: 129,
       prize: '9K',
-      color: '#FF90E8',
-      color2: '#FFC8F4',
+      color: '#FE6263',
+      color2: '#FD8A8B',
       content:
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
@@ -257,8 +257,8 @@ const data = {
       link: 'https://drive.google.com/file/d/17n4rzKwRtKgCljrkxgUF6DZ02qwsZOG_/view?usp=sharing',
       price: 129,
       prize: '6K',
-      color: '#685EDA',
-      color2: '#9990FF',
+      color: '#FE6263',
+      color2: '#FD8A8B',
       content:
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     }

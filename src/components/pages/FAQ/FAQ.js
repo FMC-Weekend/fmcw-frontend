@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { IconContext } from 'react-icons';
-import { FiPlus, FiMinus } from 'react-icons/fi';
+import { TiArrowUpOutline, TiArrowDownThick } from 'react-icons/ti';
 import { Data } from './Data';
 import Footer from '../../Footer';
+
 // import './FAQ.css';
 
 const AccordionSection = styled.div`
@@ -12,10 +13,10 @@ const AccordionSection = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 70vh;
+  height: 100vh;
   width: 100%;
   overflow-x: hidden;
-  background: #1d033e;
+  background: #fff;
   @media (max-width: 768px) {
     height: 80vh;
   }
@@ -24,26 +25,47 @@ const AccordionSection = styled.div`
 const Container = styled.div`
   position: absolute;
   top: 5%;
-  color: #27094b;
-  max-width: 1000px;
-  width: 60vw;
+  color: #fff;
+  max-width: 1500px;
+  width: 100vw;
   @media (max-width: 768px) {
     width: 80vw;
   }
 `;
+const Heading = styled.div`
+  position: relative;
+  background: #fe6263;
+  height: 200px;
+  left: 0px;
+  max-width: 1600px;
+  width: 102vw;
+  border: 3px solid #000000;
+  h1 {
+    padding: 15px;
+    font-size: 60px;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 128px;
+    line-height: 156px;
+    color: #ffffff;
+    text-shadow: 4px 5px 0px #000000;
+  }
+  @media (max-width: 768px) {
+    width: 100vw;
+  }
+`;
 
 const Wrap = styled.div`
-  background: #27094b;
-  color: #fcc907;
+  background: #fff;
+  color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   text-align: center;
   cursor: pointer;
-  border: 1px solid #6f5700;
-  margin: 10px;
-  border-radius: 10px;
   position: relative;
   h1 {
     padding: 15px;
@@ -57,16 +79,14 @@ const Wrap = styled.div`
 `;
 
 const Dropdown = styled.div`
-  background: #27094b;
-  color: #fff;
+  background: #fff;
+  color: black;
   width: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: left;
-  border: 1px solid #6f5700;
   margin: 15px;
-  border-radius: 10px;
 
   p {
     font-size: 20px;
@@ -89,18 +109,44 @@ function Accordion() {
 
   return (
     <div className="HEADER">
-      <IconContext.Provider value={{ color: '#FCC907', size: '25px' }}>
+      <Heading>
+        <h1>FAQ</h1>
+      </Heading>
+
+      <IconContext.Provider value={{ color: 'black', size: '47px' }}>
         <AccordionSection className="accordion">
           <Container>
             {Data.map((item, index) => (
               <>
                 <Wrap onClick={() => toggle(index)} key={index}>
-                  <h1>{item.question}</h1>
-                  <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
+                  <h1
+                    style={{
+                      fontFamily: 'Montserrat',
+                      fontStyle: 'normal',
+                      color: 'black',
+                      fontWeight: '500',
+                      fontSize: '36px',
+                      lineHeight: '44px'
+                    }}>
+                    {item.question}
+                  </h1>
+                  <span style={{ fontFamily: 'Montserrat', fontStyle: 'normal' }}>
+                    {clicked === index ? <TiArrowUpOutline /> : <TiArrowDownThick />}
+                  </span>
                 </Wrap>
+                <hr style={{ color: 'black', border: '0.25px solid #000000' }}></hr>
                 {clicked === index ? (
                   <Dropdown>
-                    <p>{item.answer}</p>
+                    <p
+                      style={{
+                        fontFamily: 'Montserrat',
+                        fontStyle: 'normal',
+                        fontWeight: '400',
+                        fontSize: '24px',
+                        lineHeight: '145.9%'
+                      }}>
+                      {item.answer}
+                    </p>
                   </Dropdown>
                 ) : null}
               </>

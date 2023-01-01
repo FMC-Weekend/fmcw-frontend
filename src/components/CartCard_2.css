@@ -17,6 +17,7 @@ body {
   max-width: 951px;
   position: relative;
   margin: 32px;
+  margin-top: 0px;
   margin-left: 19px;
 }
 .card-div h3 {
@@ -35,7 +36,7 @@ body {
   /* margin-right: 50px; */
   margin-right: 70px;
   margin-bottom: 50px;
-  margin-top: 10px;
+  margin-top: 0px;
   /* max-width: 450px;
     height: 420px; */
   max-width: 384px;
