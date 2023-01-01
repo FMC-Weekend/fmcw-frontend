@@ -5,11 +5,7 @@ import data from '../TeamData';
 function SponsorSection(props) {
   return (
     // <div style={{ backgroundColor: "#bbb", display: "flex", flexWrap: "wrap", marginLeft: "3vw" }}>
-    <div
-      style={{
-        marginTop: '30px',
-      }}
-    >
+    <div className={classes.sponsor_section}>
       <div className={classes.mssg}>
         <h2>
           FMC Weekend’22 presents to you the core team members who along with their diligent team of

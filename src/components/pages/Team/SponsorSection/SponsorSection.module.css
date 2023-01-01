@@ -1,14 +1,13 @@
 .sponsor_section {
-  margin: 20px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 .sponsor_title h1 {
   position: relative;
-  padding: 0;
-  margin: 0;
-  font-family: Marcellus;
+  font-family: Manrope;
   font-weight: 300;
-  font-size: 40px;
-  color:#FCC907;
+  font-size: 42px;
+  color: #685EDA;
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
@@ -17,7 +16,7 @@
   letter-spacing: 0;
   padding-left: 37px;
   line-height: 1.5em;
-  margin-top: 15px;
+  margin-top: 25px;
   padding-bottom: 5px;
   position: relative;
 }
@@ -25,19 +24,54 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  padding-left: 20px;
+  padding-left: 32px;
 }
 .mssg {
   margin-top: 20px;
   text-align: left;
   margin-right: 50px;
-  font-family: Nunito Sans;
 }
 .mssg h2 {
-  color: #FCC907;
-  font-family: Marcellus;
-  font-size: 1.2em;
+  font-family: 'Manrope';
+  font-size: 24px;
+  font-style: normal;
   margin-top: 20px;
+  font-weight: 500;
+  line-height: 33px;;
   margin: 27px 36px;
-  text-align: left;
+  text-align: justify;
 }
+
+@media screen and (max-width: 1050px){
+  .sponsor_section{
+    margin-left: -2px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .sponsor_section{
+    margin-left: -8%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sponsor_section{
+    margin-left: 30px;
+  }
+
+  .mssg h2{
+    margin: 27px 0px;
+  }
+
+  .sponsor_title h1{
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  .cards{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 10%;
+  }
+}
+

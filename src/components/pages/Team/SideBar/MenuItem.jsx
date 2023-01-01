@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+/* eslint react/prop-types: 0 */
+import React, { useState, useEffect } from 'react';
 import Classes from './MenuItem.module.css';
 import Fade from 'react-reveal/Fade';
 
@@ -25,18 +26,21 @@ function MenuItem({ anchorId, itemName, active }) {
 
   return (
     <li>
-      
       <a
         href={`#${itemName}`}
         onClick={handleClick}
         // className={true ? Classes.active : ""}
         aria-label={`Scroll to ${itemName}`}
-        style={active ? { color: '#fcc907' } : { color: 'white' }}>
-        <Fade bottom><h1>{itemName}</h1></Fade>
+        style={
+          active
+            ? { color: 'black', backgroundColor: 'white', marginLeft: 0, border: '2px solid #000000', transform: 'translateX(1px)', }
+            : { color: 'white', marginLeft: 0 }
+        }>
+        <Fade bottom>
+          <div>{itemName}</div>
+        </Fade>
       </a>
-      
     </li>
-    
   );
 }
 

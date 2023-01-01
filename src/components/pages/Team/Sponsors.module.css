@@ -1,5 +1,6 @@
 .wrapper {
-  background-color: #1b083d;
+  /* background-color: #1b083d; */
+  background-color: white;
   position: relative;
   height: 100%;
   overflow: hidden;
@@ -8,18 +9,20 @@
   height: 100%;
   max-width: 30vw;
   position: fixed;
-  top: 20;
-  left: 6vw;
-  width: 300px;
-  background: transparent;
+  top: 78px;
+  width: 360px;
+  height: 873px;
+  left: 1px;
+  background: #685EDA;
   overflow-x: hidden;
   padding-top: 20px;
   text-align: left;
   line-height: 1.5;
-  font-size: 1em;
-  border-right: 2px solid #FCC907;
-  /* padding-top: ; */
-  scrollbar-color: #FCC907;
+  font-size: 1.2em;
+  border: 2px solid black;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Montserrat';
 }
 .sidebar h1 {
   font-size: 1.2em;
