@@ -1,7 +1,7 @@
 .button {
   /* text-decoration: none; */
   color: black;
-  background: #fcc907;
+  background: #FF90E8;
   /* padding: 15px 40px; */
   /* border-radius: 4px; */
   /* font-weight: normal; */
@@ -29,5 +29,5 @@
 
 .glow_button:hover {
   /* border-color:#fcc907; */
-  box-shadow: 0px 0px 24px 0px rgba(255, 212, 48, 0.7);
+  box-shadow: 0px 0px 24px 0px #FF90E8;
 }

@@ -7,7 +7,15 @@ import Classes from './LandingPage.module.css';
 import Footer from '../../Footer';
 import { Button } from '../../Button';
 import closeMobileMenu from '../../Navbar';
-
+import side_img from './side_img.svg';
+import winner1 from "./winner.svg";
+import briefing from "./briefing.svg";
+import redcarpet from "./red-carpet.svg";
+import vector2 from "./vector2.svg"
+import banner4 from "./banner4.svg"
+import backButton from "./backButton.png"
+import forwardButton from "./forwardButton.png";
+import { Link } from 'react-router-dom';
 function landingPage() {
   const [button, setButton] = useState(true);
 
@@ -30,57 +38,81 @@ function landingPage() {
   };
 
   return (
-    <div className={Classes.landing_page}>
-      {/* <h1> Landing Page</h1> */}
-
-      <Banner imagePath={process.env.REACT_APP_AWS_S3_URI + '/Group_7139.svg'} />
-
-      <div className={Classes.texture_bg}></div>
-      <img
-        src={process.env.REACT_APP_AWS_S3_URI + '/SECT_DIV_LINE.svg'}
-        alt="line"
-        className={Classes.line_sep}
-      />
-      <Section
-        title="ABOUT US"
-        imagePath={process.env.REACT_APP_AWS_S3_URI + '/clubs_2X.png'}
-        buttonText="REGISTER"
-        link="/authentication"
-        className="about-img">
-        <img
-          src={process.env.REACT_APP_AWS_S3_URI + '/LINEE.svg'}
-          alt="line"
-          className={Classes.about_sep}
-        />
-        The long-awaited exemplary 8th edition of FMC Weekend is finally here! This time we not only
-        bring to you a plethora of exciting events that will put your creative mettle to test, but
-        also some awe-inspiring workshops by the notable and established names of the digital arts
-        domain, all from the very comfort of your home. As we herald this journey, get ready to
-        experience some of the most ecstatic moments of your lives as the passion for digital arts
-        conjures within you.
-      </Section>
-      <img
-        src={process.env.REACT_APP_AWS_S3_URI + '/SECT_DIV_LINE.svg'}
-        alt="line"
-        className={Classes.line_sep1}
-      />
-      <Section
-        title="EVENTS"
-        imagePath={process.env.REACT_APP_AWS_S3_URI + '/EVENTSS.png'}
-        buttonText="SEE ALL EVENTS"
-        link="/events">
-        <img
-          src={process.env.REACT_APP_AWS_S3_URI + '/LINEE.svg'}
-          alt="line"
-          className={Classes.event_sep}
-        />
-        The electrifying eighth edition of FMC Weekend brings to you an opportunity to compete with
-        your contemporaries and establish your talent. Participate in events of creative writing,
-        photography, cinematography, design and animation, discover your true potential and watch
-        FMC Weekend truly transform into a celebration of excellence.
-      </Section>
-      <Footer />
-    </div>
+    
+    <>
+      <div>
+        <div className={Classes.div1}>
+          <h1 className={Classes.div1_heading}>A FEST FOR xyz</h1>
+          {/* <Link to="/authentication">  */}
+          <a href='/authentication'>
+          <button   className={Classes.register_button}><p>Register</p></button></a>
+          {/* </Link> */}
+          <img src={side_img} className={Classes.div1_img}/>
+        </div>
+        <div className={Classes.div2}>
+    <h1 >FOR CREATIVE ENTHUSIASTS</h1>
+    <h2>FROM FIELDS OF</h2>
+    <button className={Classes.design} >   <p>Design</p></button>
+    <button className={Classes.photography}><p>Photography</p></button>
+    <button className={Classes.media}><p>Media</p></button>
+    <button className={Classes.cine}><p>Cine</p></button>
+    <button className={Classes.animation}><p>Animation</p></button>
+    <button className={Classes.outreach}><p>Outreach</p></button>
+        </div>
+        <div className={Classes.div3}>
+        <div className={Classes.banner1}>
+        <img src={winner1}/>
+        </div>
+        <h1>COMPETITIONS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in. Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim semper. Tellus mauris sed ultricies nunc posuere non placerat </p>
+       
+        <button place><p>Explore</p></button>
+         </div>
+       
+        <div className={Classes.div4}>
+        <div className={Classes.banner2}>
+        <img src={briefing}/>
+        </div>
+        <h1>WORKSHOPS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in. Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim semper. Tellus mauris sed ultricies nunc posuere non placerat </p>
+       
+        <button place><p>Explore</p></button>
+        </div>
+        <div className={Classes.div5}>
+        <div className={Classes.banner3}>
+        <img src={redcarpet}/>
+        </div>
+        <h1>PRONITES</h1>
+        <p>Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in. Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim semper. Tellus mauris sed ultricies nunc posuere non placerat </p>
+       
+        <button place><p>Explore</p></button>
+        </div>
+        <div className={Classes.div6}>
+        <div className={Classes.banner4}>
+        <img src={banner4}/>
+        </div>
+        <h1>OPEN AIR THEATRES</h1>
+        <p>Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in. Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim semper. Tellus mauris sed ultricies nunc posuere non placerat </p>
+       
+        <button place><p>Explore</p></button>
+        </div>
+        <div className={Classes.div7}>
+<h1>75269</h1>
+<h2>Creative enthusiasts visiting the fest, building a culture and  community of digital art</h2>
+        </div>
+        <div className={Classes.div8}>
+        <img className={Classes.back} src={backButton}/>
+        <img src={vector2}/>
+        <img className={Classes.forward} src={forwardButton}/>
+        <h1>Shubham</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h2>
+        </div>
+        
+        </div>
+        <Footer/>
+        
+    </>
+    
   );
 }
 
