@@ -110,7 +110,7 @@ function Accordion() {
   return (
     <div className="HEADER">
       <Heading>
-        <h1><img src='../../../../public/images/Vector_5.png'/>FAQ</h1>
+        <h1>FAQ</h1>
       </Heading>
 
       <IconContext.Provider value={{ color: 'black', size: '47px' }}>
