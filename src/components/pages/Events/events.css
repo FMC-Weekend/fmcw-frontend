@@ -280,7 +280,7 @@ flip card
 }
 .front-title {
   position: absolute;
-  width: 265px;
+  /* width: 265px; */
   height: 74px;
 
   font-family: 'Montserrat';
@@ -948,5 +948,12 @@ transform: rotate(45deg); */
     font-size: 0.9em;
     text-align: center;
     font-family: Marcellus;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .event-cards{
+    margin-left: -40px !important;
   }
 }

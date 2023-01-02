@@ -18,7 +18,7 @@ body {
   position: relative;
   margin: 32px;
   margin-top: 0px;
-  margin-left: 19px;
+  /* margin-left: 19px; */
 }
 .card-div h3 {
   position: absolute;
@@ -417,14 +417,14 @@ body {
   }
   .showOnMobile {
     display: block;
-    background: #1d033e;
+    background: #685EDA;
   }
   .card {
     width: 60vw;
     max-width: 400px;
     margin-right: -10px;
     flex-wrap: wrap;
-    min-width: 280px;
+    min-width: 260px;
     height: 500px;
     margin-top: 40px;
   }
@@ -482,18 +482,18 @@ body {
     text-align: center;
     padding: 20px;
     list-style: none;
-    background: #1d033e;
+    background: #685EDA;
   }
   .btn-danger {
     margin-bottom: 30px;
   }
   .mobile h2 {
-    font-family: Marcellus;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.6em;
-    line-height: 20px;
-    color: #fcc907;
+        line-height: 1.5;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    color: #000000;
   }
   .cart-btn {
     width: 90px;
@@ -504,12 +504,13 @@ body {
     color: #fff;
     padding: 20px;
     list-style: none;
-    font-family: Marcellus;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px;
     letter-spacing: 0em;
+    line-height: 1.5;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    color: #ffffff;
   }
   .mobile li {
     padding: 20px;
@@ -517,19 +518,22 @@ body {
   }
   .mobile a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
   }
   .mobile a:hover {
     text-decoration: none;
-    color: #fcc907;
+    color: #000000;
   }
   .mobile li .iconify {
     color: #fff;
     font-size: 1.6em;
   }
   .section {
-    margin: 30px;
+    background: #ffffff;
+    margin: 0px;
     padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
     position: relative;
   }
   .section CartModal {
@@ -548,8 +552,8 @@ body {
     width: 100px;
     height: 40px;
     margin-left: 0;
-    border: 2px solid #fcc907;
-    color: #fcc907;
+    border: 2px solid #000000;
+    color: #000000;
     padding: 10px;
     background: transparent;
     text-decoration: none;
