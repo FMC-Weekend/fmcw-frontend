@@ -4,7 +4,7 @@ import { IconContext } from 'react-icons';
 import { TiArrowUpOutline, TiArrowDownThick } from 'react-icons/ti';
 import { Data } from './Data';
 import Footer from '../../Footer';
-
+import { Fade } from 'react-reveal';
 // import './FAQ.css';
 
 const AccordionSection = styled.div`
@@ -35,7 +35,7 @@ const Container = styled.div`
 const Heading = styled.div`
   position: relative;
   background: #fe6263;
-  height: 200px;
+  height: 30vh;
   left: 0px;
   max-width: 1600px;
   width: 102vw;
@@ -52,8 +52,15 @@ const Heading = styled.div`
     color: #ffffff;
     text-shadow: 4px 5px 0px #000000;
   }
+  img {
+    position: relative;
+    width: 30vw;
+    height: 30vh;
+    left: 35vw;
+    top: 0vh;
+  }
   @media (max-width: 768px) {
-    width: 100vw;
+    // width: 100vw;
   }
 `;
 
@@ -109,10 +116,13 @@ function Accordion() {
 
   return (
     <div className="HEADER">
+      
       <Heading>
-        <h1>FAQ</h1>
+      <Fade right>
+        <img src='Group_7167.svg' />
+        
+      </Fade>
       </Heading>
-
       <IconContext.Provider value={{ color: 'black', size: '47px' }}>
         <AccordionSection className="accordion">
           <Container>
@@ -131,12 +141,14 @@ function Accordion() {
                     {item.question}
                   </h1>
                   <span style={{ fontFamily: 'Montserrat', fontStyle: 'normal' }}>
-                    {clicked === index ? <TiArrowUpOutline /> : <TiArrowDownThick />}
+                    {clicked === index ? <img src='Vector_58.svg' /> : <TiArrowDownThick />}
                   </span>
                 </Wrap>
                 <hr style={{ color: 'black', border: '0.25px solid #000000' }}></hr>
                 {clicked === index ? (
+                  <Fade bottom>
                   <Dropdown>
+                    
                     <p
                       style={{
                         fontFamily: 'Montserrat',
@@ -148,6 +160,8 @@ function Accordion() {
                       {item.answer}
                     </p>
                   </Dropdown>
+                  
+                  </Fade>
                 ) : null}
               </>
             ))}

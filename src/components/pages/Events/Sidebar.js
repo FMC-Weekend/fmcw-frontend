@@ -8,6 +8,7 @@ import Divider from '@mui/material/Divider';
 import EventCard from './EventCard';
 // import WorkshopCard from './pages/Events/WorkshopCard';
 import { makeStyles } from '@material-ui/core/styles';
+import { Fade } from 'react-reveal';
 // import WorkshopCard from './pages/Events/WorkshopCard';
 // import MenuIcon from '@mui/icons-material/Menu';
 // import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
@@ -104,6 +105,7 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={0} className="tab-panel">
         <div className="card-container">
           <div className="event-cards">
+            <Fade right>
             {data.photographyData.map((item, index) => {
               return (
                 <EventCard
@@ -121,6 +123,7 @@ export default function VerticalTabs() {
                 />
               );
             })}
+            </Fade>
           </div>
           {/* <div className="workshop-cards">
             {data.photographyWorkshopData.map((item, index) => {
@@ -146,6 +149,7 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={1}>
         <div className="card-container">
           <div className="event-cards">
+            <Fade right>
             {data.cineData.map((item, index) => {
               return (
                 <EventCard
@@ -163,6 +167,7 @@ export default function VerticalTabs() {
                 />
               );
             })}
+            </Fade>
           </div>
           {/* <div className="workshop-cards">
             {data.cineWorkshopData.map((item, index) => {
@@ -189,6 +194,7 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={2}>
         <div className="card-container">
           <div className="event-cards">
+            <Fade right>
             {data.outreachData.map((item, index) => {
               return (
                 <EventCard
@@ -205,6 +211,7 @@ export default function VerticalTabs() {
                 />
               );
             })}
+            </Fade>
           </div>
           {/* <div className="workshop-cards">
             {data.outreachWorkshopData.map((item, index) => {
@@ -231,6 +238,7 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={3}>
         <div className="card-container">
           <div className="event-cards">
+            <Fade right>
             {data.mediaData.map((item, index) => {
               return (
                 <EventCard
@@ -247,6 +255,7 @@ export default function VerticalTabs() {
                 />
               );
             })}
+            </Fade>
           </div>
           {/* <div className="workshop-cards">
             {data.mediaWorkshopData.map((item, index) => {
@@ -273,6 +282,7 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={4}>
         <div className="card-container">
           <div className="event-cards">
+            <Fade right>
             {data.designData.map((item, index) => {
               return (
                 <EventCard
@@ -289,6 +299,7 @@ export default function VerticalTabs() {
                 />
               );
             })}
+            </Fade>
           </div>
           {/* <div className="workshop-cards">
             {data.designWorkshopData.map((item, index) => {
@@ -315,6 +326,7 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={5}>
         <div className="card-container">
           <div className="event-cards">
+            <Fade right>
             {data.animationData.map((item, index) => {
               return (
                 <EventCard
@@ -331,6 +343,7 @@ export default function VerticalTabs() {
                 />
               );
             })}
+            </Fade>
           </div>
           {/* <div className="workshop-cards">
             {data.animationWorkshopData.map((item, index) => {
