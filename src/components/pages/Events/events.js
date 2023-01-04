@@ -1,6 +1,6 @@
 import React from 'react';
 import MobileLayout from './MobileLayout';
-import SideBar from '../../Sidebar';
+import SideBar from './Sidebar';
 import './events.css';
 import Footer from '../../Footer';
 import { ToastContainer, toast } from 'react-toastify';

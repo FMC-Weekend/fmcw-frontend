@@ -8,7 +8,11 @@ const data = {
       title: 'InFocus',
       link: 'https://drive.google.com/file/d/1ypZkoyI1x3Es-zCTiT0jytmZTazSXmNp/view?usp=sharing',
       price: 129,
-      prize: '12K'
+      prize: '12K',
+      color: '#00CCF5',
+      color2: '#2ED9FC',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
       id: 2,
@@ -18,7 +22,11 @@ const data = {
       title: 'Snap It Now',
       link: 'https://drive.google.com/file/d/1YyKAYn-PBXPoKSB1Z1iU6fa6wjaVGULL/view?usp=sharing',
       price: 129,
-      prize: '8K'
+      prize: '8K',
+      color: '#00CCF5',
+      color2: '#2ED9FC',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
       id: 3,
@@ -28,7 +36,11 @@ const data = {
       title: 'Photo Art',
       link: 'https://drive.google.com/file/d/1nEwQqQeI5mulbMTA1I6u9YzXsLLLEiKC/view?usp=sharing',
       price: 129,
-      prize: '10K'
+      prize: '14K',
+      color: '#00CCF5',
+      color2: '#2ED9FC',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     }
   ],
   outreachData: [
@@ -40,7 +52,11 @@ const data = {
       title: 'Vlogoholic',
       link: 'https://drive.google.com/file/d/1qTdAlnarcZ47eOS-R7O_ImNfsZPnvnBZ/view?usp=sharing',
       price: 129,
-      prize: '10K'
+      prize: '10K',
+      color: '#FFC900',
+      color2: '#FFDC5A',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
       id: 5,
@@ -50,7 +66,11 @@ const data = {
       title: 'Documentary Making',
       link: 'https://drive.google.com/file/d/1-j7QXOXQpBTioe3S7jrTeydKBLGPkcZe/view?usp=sharing',
       price: 129,
-      prize: '10K'
+      prize: '10K',
+      color: '#FFC900',
+      color2: '#FFDC5A',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
       id: 6,
@@ -60,7 +80,11 @@ const data = {
       title: 'Ad-Mad',
       link: 'https://drive.google.com/file/d/1YOj9LLElPbGTbFbL2DP-8QAcltoFAMY5/view?usp=sharing',
       price: 129,
-      prize: '9K'
+      prize: '9K',
+      color: '#FFC900',
+      color2: '#FFDC5A',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     }
   ],
   cineData: [
@@ -72,7 +96,11 @@ const data = {
       title: 'Thats how B-Roll',
       link: 'https://drive.google.com/file/d/1pQMLQD-NpXDh26tlTystzPNsU9Mcxzge/view?usp=sharing',
       price: 129,
-      prize: '10K'
+      prize: '10K',
+      color: '#14F0B9',
+      color2: '#62FFD8',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
       id: 8,
@@ -82,7 +110,11 @@ const data = {
       title: 'Magic Behind the Lens',
       link: 'https://drive.google.com/file/d/1MF0nFWgHMGxGEU3Kad9qEKbAOTVWVM-w/view?usp=sharing',
       price: 129,
-      prize: '15K'
+      prize: '15K',
+      color: '#14F0B9',
+      color2: '#62FFD8',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
       id: 9,
@@ -92,7 +124,11 @@ const data = {
       title: 'Make It Short',
       link: 'https://drive.google.com/file/d/1mW5PcltZXyPRmOTaJaHE3QKdlCoPI7Hz/view?usp=sharing',
       price: 129,
-      prize: '8K'
+      prize: '8K',
+      color: '#14F0B9',
+      color2: '#62FFD8',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     }
   ],
   designData: [
@@ -104,7 +140,11 @@ const data = {
       title: 'Design The Tunes',
       link: 'https://drive.google.com/file/d/1-VApwFFzYsxfs5Kc8vGfzK5YowaJ7DYP/view?usp=sharing',
       price: 129,
-      prize: '10K'
+      prize: '10K',
+      color: '#685EDA',
+      color2: '#9990FF',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
       id: 12,
@@ -114,7 +154,11 @@ const data = {
       title: 'Logo Redesign',
       link: 'https://drive.google.com/file/d/1miS5p8eaeN-ZaLiip4ApnatmpnoVVMqj/view?usp=sharing',
       price: 129,
-      prize: '12K'
+      prize: '12K',
+      color: '#685EDA',
+      color2: '#9990FF',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
       id: 13,
@@ -124,7 +168,11 @@ const data = {
       title: 'Not Just Words',
       link: 'https://drive.google.com/file/d/1ULnLIRNCJzkgYD57vRQM73EEs_vcY3Ls/view?usp=sharing',
       price: 129,
-      prize: '8K'
+      prize: '8K',
+      color: '#685EDA',
+      color2: '#9990FF',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     }
   ],
   mediaData: [
@@ -136,7 +184,11 @@ const data = {
       title: 'Hades Reporters',
       link: 'https://drive.google.com/file/d/1L4xS562Rld4_j7Lr1xv7iU0L4cu7gHPW/view?usp=sharing',
       price: 129,
-      prize: '8K'
+      prize: '8K',
+      color: '#FF90E8',
+      color2: '#FFC8F4',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
       id: 15,
@@ -146,7 +198,11 @@ const data = {
       title: 'Straight from Site',
       link: 'https://drive.google.com/file/d/1w-fj86xTKa9X0jQjhH4UFLNu5HRpRvdO/view?usp=sharing',
       price: 129,
-      prize: '8K'
+      prize: '8K',
+      color: '#FF90E8',
+      color2: '#FFC8F4',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
       id: 16,
@@ -156,7 +212,11 @@ const data = {
       title: "Writer's Block",
       link: 'https://drive.google.com/file/d/1-3a8h2Z4Wg5invFtBQoCJLT_iL2we-Ky/view?usp=sharing',
       price: 129,
-      prize: '8K'
+      prize: '8K',
+      color: '#FF90E8',
+      color2: '#FFC8F4',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     }
   ],
   animationData: [
@@ -168,7 +228,11 @@ const data = {
       title: 'Capture the Imagination',
       link: 'https://drive.google.com/file/d/1jRpV-ZjKNNTm8RFOGktaaZfCz73uQfAx/view?usp=sharing',
       price: 129,
-      prize: '10K'
+      prize: '10K',
+      color: '#FE6263',
+      color2: '#FD8A8B',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
       id: 18,
@@ -178,7 +242,11 @@ const data = {
       title: 'Unreal',
       link: 'https://drive.google.com/file/d/13FR_L6kpYO6Zo5-kbikKxoA6Q1YzerEX/view?usp=sharing',
       price: 129,
-      prize: '9K'
+      prize: '9K',
+      color: '#FE6263',
+      color2: '#FD8A8B',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
       id: 19,
@@ -188,7 +256,11 @@ const data = {
       title: 'Realm of Wonders',
       link: 'https://drive.google.com/file/d/17n4rzKwRtKgCljrkxgUF6DZ02qwsZOG_/view?usp=sharing',
       price: 129,
-      prize: '6K'
+      prize: '6K',
+      color: '#FE6263',
+      color2: '#FD8A8B',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     }
   ],
   photographyWorkshopData: [
@@ -241,7 +313,7 @@ const data = {
       prize: 'Priyanka Chandola',
       date: '11th February',
       time: '4:00 p.m. - 5:00 p.m.',
-      desc: 'From a software engineer to a YouTuber, Priyanka Chandola is going places with her ‘Desi Girl Traveller’ channel on social media platforms. She creates content on travel in the digital space with the aim to break societal norms. Here’s a look at her journey.'
+      desc: 'From a software engineer to a YouTuber, Priyanka Chandola is going places with her ‘Desi Girl Traveller’ channel on social media platforms. She creates prize on travel in the digital space with the aim to break societal norms. Here’s a look at her journey.'
     },
     {
       id: 5,

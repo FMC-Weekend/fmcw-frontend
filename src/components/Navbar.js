@@ -127,13 +127,36 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <NavLink exact to="/">
-          <img
-            src={process.env.REACT_APP_AWS_S3_URI + '/FMC_GOLDEN_NAV.svg'}
-            className="img"
-            alt="FMC"
-          />
-        </NavLink>
+        <div className="navbar-icon">
+          <div className="icon-container">
+            <NavLink exact to="/">
+              <svg
+                width="114"
+                height="53"
+                viewBox="0 0 114 53"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M35.4048 43.0654V0H0.5L6.05963 6.8595H28.617V13.3434H11.3155L16.8733 20.2029H28.617V34.6921L35.4048 43.0654Z"
+                  fill="black"
+                />
+                <path
+                  d="M78.5957 43.0654V0H113.5L103.873 11.3016H95.0992L99.1684 6.8595H85.3835V23.8672L90.3734 18.1611H99.1458L78.5957 43.0654Z"
+                  fill="black"
+                />
+                <path
+                  d="M45.7714 10.7735V28.5113L38.4912 35.4185V0H75.5108V11.5094L68.2306 18.4185V10.7735L57.0019 20.8511L45.7714 10.7735Z"
+                  fill="black"
+                />
+                <path
+                  d="M38.4912 53.0002V39.1611L45.7714 32.2539V35.819L57.0001 25.7395L68.2306 35.819V22.1591L75.5108 15.252V53.0002L57.0001 35.4396L38.4912 53.0002Z"
+                  fill="black"
+                />
+              </svg>
+            </NavLink>
+          </div>
+        </div>
+
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
@@ -150,20 +173,29 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <NavLink
-              to="/passes"
+              to="/pronites"
               className="nav-links"
               activeClassName="target"
               onClick={closeMobileMenu}>
-              PASSES
+              PRONITES
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink
-              to="/team"
+              to="/passes"
               className="nav-links"
               activeClassName="target"
               onClick={closeMobileMenu}>
-              TEAM
+              GLIMPSES
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="/FAQ"
+              className="nav-links"
+              activeClassName="target"
+              onClick={closeMobileMenu}>
+              FAQ
             </NavLink>
           </li>
           <li className="nav-item">
@@ -177,46 +209,30 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <NavLink
-              to="/FAQ"
+              to="/team"
               className="nav-links"
               activeClassName="target"
               onClick={closeMobileMenu}>
-              FAQ
+              TEAM
             </NavLink>
           </li>
-
-          {/* <li className="nav-item">
-            {button && sessionStorage.getItem('tokenID') && (
-              <Button
-                isInternalLink
-                toLink="/"
-                buttonStyle="btn--primary"
-                className="nav-links sign"
-                onClick={logoutHandler}>
-                DASHBOARD
-              </Button>
-            )}
-          </li> */}
-
           <li className="nav-item">
             {sessionStorage.getItem('isLoggedIn') == 'true' ? (
-              <Button
+              <div
                 isInternalLink
                 toLink="/dashboard"
-                buttonStyle="btn--primary"
-                className="sign"
+                className="nav-register-btn"
                 onClick={closeMobileMenu}>
-                DASHBOARD
-              </Button>
+                <div className='register-btn-text'>DASHBOARD</div>
+              </div>
             ) : (
-              <Button
+              <div
                 isInternalLink
                 toLink="/authentication"
-                buttonStyle="btn--primary"
-                className="sign"
+                className="nav-register-btn"
                 onClick={closeMobileMenu}>
-                SIGN IN
-              </Button>
+                <div className='register-btn-text'>REGISTER</div>
+              </div>
             )}
           </li>
         </ul>

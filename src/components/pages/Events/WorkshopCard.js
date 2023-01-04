@@ -99,7 +99,7 @@ function EventCard(props) {
       <div className="w-card-div">
         <div className="workshop-card-img-div">
           <img src={props.img} onClick={handleOpen} alt="unicorn" className="workshop-card-img" />
-          <h3>₹ {props.price}</h3>
+          {/* <h3>₹ {props.price}</h3> */}
         </div>
 
         <div className="separator">
@@ -152,7 +152,7 @@ function EventCard(props) {
 
                     // change();
                   }}>
-                  Add <img src={process.env.REACT_APP_AWS_S3_URI + '/add-cartPURPLE_OLD_1.svg'} />
+                  Add <img src={process.env.REACT_APP_AWS_S3_URI + '/add-cartPURPLE_OLD_1.svg'} alt="cart-icon" />
                 </button>
               )}
             </div>
