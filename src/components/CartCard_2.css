@@ -1,9 +1,7 @@
 body {
   font-family: Marcellus;
-  background-color: #1d033e;
 }
 .event_page {
-  background: #1d033e;
   overflow: hidden;
 }
 .tabs {
@@ -162,11 +160,11 @@ body {
 }
 .card-content {
   padding: 10px 20px;
-  color: #fff;
+  color: #000;
 }
 .card-title {
   margin: 0 auto;
-  color: #fff;
+  color: #000;
   font-family: Marcellus;
   font-size: 20px;
   font-style: normal;
@@ -422,10 +420,10 @@ body {
   .card {
     width: 60vw;
     max-width: 400px;
-    margin-right: -10px;
+    /* margin-right: -10px; */
     flex-wrap: wrap;
-    min-width: 260px;
-    height: 500px;
+    min-width: 320px;
+    height: 400px;
     margin-top: 40px;
   }
   .w-card {

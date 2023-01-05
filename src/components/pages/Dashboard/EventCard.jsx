@@ -4,15 +4,19 @@ import React, { useState } from 'react';
 // import CardContent from '@mui/material/CardContent';
 // import CardMedia from '@mui/material/CardMedia';
 // import Typography from '@mui/material/Typography';
-// import './Events.css';
+import './Events.module.css';
 // import { Button } from '@mui/material';
 // import unicorn from "./assets/test.png";
 import styled from 'styled-components';
 // import Tilt from 'react-tilt';
-import Classes from './Events.module.css';
 // import addToCart from './CartModal';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useCart } from 'react-use-cart';
+// import rectangle from './Rectangle133.png'
+// import arrow from './Vector59.png'
+// import frontImg from './Group7175.png'
+// import viewProbImg from './Vector.png'
 
 const CardTitle = styled.h2`
   transform: translateZ(55px);
@@ -22,6 +26,7 @@ function EventCard(props) {
   const { isEmpty, items, totalItems, cartTotal, removeItem, emptyCart, updateItemQuantity } =
     useCart();
   const [click, setClick] = useState(false);
+  const [buttonText, setButtonText] = useState('Next');
   const { addItem, inCart } = useCart();
   const { getItem } = useCart();
   const handleClick = () => {
@@ -36,6 +41,40 @@ function EventCard(props) {
     }
   }
 
+  async function addItemToCart(item) {
+    // console.log('yash');
+    const userID = sessionStorage.getItem('userID');
+    // e.preventDefault();
+    let obj = {
+      userID: userID,
+      cartItem: item
+    };
+
+    const res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/cart', {
+      method: 'POST',
+      body: JSON.stringify(obj),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    // console.log({ obj });
+
+    // alert('Item added to cart successfully!');/
+    window.setTimeout(function () {
+      location.reload();
+    }, 1000);
+    toast.warn('Event added to cart successfully!', {
+      position: 'top-center',
+      autoClose: 3000,
+      draggable: true,
+      icon: false
+    });
+
+    // post not working because status isn't upadated in data.js;
+
+    //only for show purposed
+    // window.location.href = "/register";
+  }
   const options = {
     reverse: true,
     max: 15,
@@ -45,31 +84,30 @@ function EventCard(props) {
     scale: 1.06
   };
   return (
-    <div className={Classes.card}>
-      <div className={Classes.card_div}>
-        <img src={props.img} alt="unicorn" className={Classes.card_img} />
-        {/* <h3>₹ {props.price}</h3> */}
-        {/* <button
-          className="cart-btn"
-          onClick={() => {
-            addItem(props.item);
-            // change();
-          }}
-          disabled={inCart(props.item.id)}>
-          {inCart(props.item.id) ? 'Added' : 'Add'}
-          {inCart(props.item.id) ? '' : <img src="/add-cartPURPLE_OLD_1.svg" />}
-        </button> */}
-        <div className={Classes.separator}>
-          <div className={Classes.line} />
-          <span>{props.type}</span>
-          <div className={Classes.line} />
+    <div className="card card-flip" style={{background: props.color}}>
+      <div className="card-front card-div">
+        <b className="type">{props.type}</b>
+          <img className='front-arrow' src='Vector59.png'></img>
+        <b className="front-title">{props.title}</b>
+          <b className="prizes-front">Prizes Worth- {props.prize}</b>
+          <b className='front-price'>RS.{props.price}</b>
+          <img className='front-img' src='Group7175.png'></img>
+          <img className='three-dots1' src='Rectangle133.png'></img>
+          <img className='three-dots2' src='Rectangle133.png'></img>
+          <img className='three-dots3' src='Rectangle133.png'></img>
+      </div>
+
+      <div className="card-back card-div">
+        
+        <div className="card-title">
+          {props.title}
+          <div className="lineTitle"></div>
         </div>
-        <CardTitle className={Classes.card_title}>{props.title}</CardTitle>
-        <h2 className={Classes.prizes}>
-          PRIZES WORTH <br></br>
-          <b>{props.prize}</b>
-        </h2>
-        <a href={props.link} target="_blank" className={Classes.btn1} rel="noreferrer">
+        <div className="contents">
+          <b>{props.content}</b>
+        </div>
+        <img className='viewProbImg' src='circle-arrow-right-solid.svg' alt='arrow' />
+        <a href={props.link} target="_blank" className="btnView" rel="noreferrer">
           {props.ps}
         </a>
       </div>
@@ -77,9 +115,11 @@ function EventCard(props) {
   );
 }
 EventCard.defaultProps = {
-  type: '',
+  type: 'Contest',
   title: 'That’s How B’roll',
   ps: 'View Problem Statement',
-  price: 150
+  ps2: 'Add To Cart',
+  content: 150,
+  color2: '#2ED9FC',
 };
 export default EventCard;

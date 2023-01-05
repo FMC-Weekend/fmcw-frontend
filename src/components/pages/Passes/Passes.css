@@ -67,7 +67,7 @@
     flex-direction: row;
     float: left;
     width: max(25vw, 300px);
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: 20px;
     padding-left: 5px;
     padding-bottom: 80px;

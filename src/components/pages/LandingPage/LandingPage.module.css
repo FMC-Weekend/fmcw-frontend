@@ -133,7 +133,7 @@ color: #FFFFFF;
   z-index: 1;
   position: relative;
   padding: 15px;
-  top: 224px;
+  top: 35vh;
   color: #fff;
 }
 .anim h2 {
@@ -590,15 +590,21 @@ color: #000000;
   left:15%;
 }
 .div1 h1{
-  top: 50%;
+  top: 90vh;
   width: auto;
-  left:10%;
-  right:10%;
+  left:0;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  font-size: 2em;
   /* background-image: url("./side_img.svg"); */
 }
 .div1 button{
-  top: 75%;
-  left: 25%;
+  top: 100vh;
+  left: 0;
+  position: relative;
+  margin: auto;
+  width: auto;
 }
 .div2 {
   width: 100%;
@@ -815,7 +821,7 @@ border-radius: 4px;
   height: 5%;
 }
 .anim {
-  top: -227px;
+  top: -30vh;
 }
 }
 @media screen and (max-width: 480px){

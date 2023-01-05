@@ -8,7 +8,7 @@ import { useCart } from 'react-use-cart';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import Classes from './Events.module.css';
+// import Classes from './Events.module.css';
 const CardTitle = styled.h2`
   transform: translateZ(55px);
 `;

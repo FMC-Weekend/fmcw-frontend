@@ -113,21 +113,8 @@ function EventCard(props) {
       </div>
 
       <div className="card-back card-div">
-        {sessionStorage.getItem('isLoggedIn') == 'true' && (
-          <button
-            className="cart-btn"
-            onClick={() => {
-              // send post request to database
-
-              addItemToCart(props.item);
-              // addItem(props.item);
-
-              // change();
-            }}>
-            {/* Add <img src={process.env.REACT_APP_AWS_S3_URI + '/add-cartPURPLE_OLD_1.svg'} /> */}
-          </button>
-        )}
-        <div className="card-title" style={{ left: props.titleLeft, top: props.titleTop }}>
+        
+        <div className="card-title">
           {props.title}
           <div className="lineTitle"></div>
         </div>
@@ -142,25 +129,23 @@ function EventCard(props) {
           }}>
           <b>{props.content}</b>
         </div>
-        <img className="viewProbImg" src={viewProbImg} style={{ left: props.imgLeft }}></img>
-        <a
-          href={props.link}
-          target="_blank"
-          className="btnView"
-          rel="noreferrer"
-          style={{ left: props.viewStatementLeft }}>
+        <img className='viewProbImg' src='circle-arrow-right-solid.svg' alt='arrow' />
+        <a href={props.link} target="_blank" className="btnView" rel="noreferrer">
           {props.ps}
         </a>
-        <div className="addToCart" style={{ background: props.color2 }}>
-          <a
-            href={props.link}
-            target="_blank"
-            className="addToCartBtn"
-            rel="noreferrer"
-            style={{ left: props.addToCartLeft , overflow: 'hidden'}}>
+        {sessionStorage.getItem('isLoggedIn') == 'true' && (
+          <div className="addToCart" style={{background: props.color2}} onClick={() => {
+              // send post request to database
+
+              addItemToCart(props.item);
+              // addItem(props.item);
+
+              // change();
+            }}>
             {props.ps2}
-          </a>
+          
         </div>
+        )}
       </div>
     </div>
   );
@@ -171,6 +156,7 @@ EventCard.defaultProps = {
   ps: 'View Problem Statement',
   ps2: 'Add To Cart',
   content: 150,
+  color: '#000',
   color2: '#2ED9FC',
   left: '75px'
 };

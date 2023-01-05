@@ -116,10 +116,10 @@ export default function VerticalTabs() {
                   price={item.price}
                   prize={item.prize}
                   content={item.content}
-                  item={item}
-                  key={index}
                   color={item.color}
                   color2={item.color2}
+                  item={item}
+                  key={index}
                 />
               );
             })}

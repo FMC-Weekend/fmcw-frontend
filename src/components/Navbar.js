@@ -218,21 +218,21 @@ function Navbar() {
           </li>
           <li className="nav-item">
             {sessionStorage.getItem('isLoggedIn') == 'true' ? (
-              <div
+              <Button
                 isInternalLink
                 toLink="/dashboard"
                 className="nav-register-btn"
                 onClick={closeMobileMenu}>
                 <div className='register-btn-text'>DASHBOARD</div>
-              </div>
+              </Button>
             ) : (
-              <div
+              <Button
                 isInternalLink
                 toLink="/authentication"
                 className="nav-register-btn"
                 onClick={closeMobileMenu}>
                 <div className='register-btn-text'>REGISTER</div>
-              </div>
+              </Button>
             )}
           </li>
         </ul>
