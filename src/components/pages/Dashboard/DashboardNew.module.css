@@ -2,14 +2,117 @@
 @import url('https://fonts.googleapis.com/css?family=Marcellus');
 
 .section {
-  background: #1d033e;
+  background: #fff;
   display: flex;
   min-height: 100vh;
   height: 100%;
   flex-direction: column;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
-@media screen and (max-width: 960px) {
+.logout_button {
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 24px;
+gap: 4px;
+width: 200px;
+margin: 10px;
+margin-left: 80px;
+font-weight: 700;
+font-size: 1.8em;
+  background: #FF90E8;
+border: 2px solid #000000;
+box-shadow: 4px 6px 0px #000000;
+border-radius: 4px;
+}
+.logout_button:hover {
+  box-shadow: none;
+  transition: all 0.3s ease-in-out;
+}
+.section_top {
+  margin-top: 100px;
+}
+.addContest {
+  margin: auto;
+  color: #000;
+  right: 120px;
+  margin-top: 65px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 19px;
+  position: absolute;
+  width: 384px;
+  height: 327px;
+  display: flex;
+  box-shadow: 6px 8px 0px #000000;
+  flex-direction: column;
+  border: 2px solid black;
+}
+.addWorkshop {
+  margin: auto;
+  color: #000;
+  text-align: center;
+  justify-content: center;
+  border-radius: 19px;
+  position: relative;
+  width: 384px;
+  height: 327px;
+  display: flex;
+  box-shadow: 6px 8px 0px #000000;
+  flex-direction: column;
+  border: 2px solid black;
+}
+.addWorkshop h1 {
+  text-decoration: none;
+}
+.addContest h1, .addWorkshop h1 {
+  font-family: 'Comic Neue';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 100px;
+  text-align: center;
+  text-decoration:  none;
+}
+.addContest:hover, .addWorkshop:hover {
+  box-shadow: none;
+  transition: all 0.3s ease-in;
+}
+.addContest h2, .addWorkshop h2 {
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 34px;
+text-align: center;
+text-decoration: none;
+
+}
+.user_details {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.user_details h2 {
+  font-size: 4em;
+  margin-top: -20px;
+  font-family: Montserrat;
+  color: rgb(136, 0, 255);
+}
+.illus img {
+  display: flex;
+  position: relative;
+  top: -25vh;
+  float: right;
+}
+.user_details span {
+  margin: 10px 40px;
+  font-family: Montserrat;
+  color: rgb(249, 18, 95);
+}
+@media screen and (max-width: 786px) {
   .section {
     /* align-items: center; */
   }
@@ -21,20 +124,13 @@
   
 }
 .section_title {
-  /* display: inline-block; */
-  /* position: relative; */
-  display: flex;
-  flex-direction: column;
-  /* width: 100vw; */
-  justify-content: center;
-  margin-bottom: 7vh;
-  top: 12vh;
-  /* float: left; */
-  /* padding-left: 10vw; */
-  /* text-align: left; */
-  /* padding-top: 10vh; */
+width: 30vw;
+display: flex;
+justify-content: right;
 }
-
+.section_title img {
+  left: 0;
+}
 .section_title h1 {
   padding-top: 8vh;
 
@@ -56,14 +152,48 @@
 
 .section_top h2 {
   display: block;
-  font-family: Marcellus;
+  font-family: Montserrat;
   font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
+  font-weight: 600;
+  font-size: 4em;
   line-height: 40px;
-  color: #fcc907;
+  color: rgb(24, 24, 24);
   padding-left: 5vw;
   padding-bottom: 5vh;
+}
+.section_top h3 {
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3em;
+  line-height: 40px;
+  color: rgb(24, 24, 24);
+  padding-left: 5vw;
+  padding-bottom: 5vh;
+}
+.user_details {
+  align-items: center;
+    margin-top: 20px;
+    display: block;
+}
+.user_details h2 {
+  font-size: 1.4em;
+  margin-top: -20px;
+  font-family: Montserrat;
+  color: rgb(136, 0, 255);
+}
+.illus img {
+  display: flex;
+  position: relative;
+  top: -25vh;
+  float: right;
+}
+.user_details span {
+  margin: 10px 40px;
+  display: contents;
+  font-family: Montserrat;
+  color: rgb(249, 18, 95);
 }
 .referral h2 {
   font-family: 'Nunito Sans';
@@ -74,7 +204,12 @@
   color: #ffffff;
   padding-bottom: 1vh;
 }
-
+.addContest {
+  right: 0;
+}
+.registered_contest {
+  display: contents;
+}
 .referral span {
   text-transform: uppercase;
   color: #fcc907;
@@ -88,24 +223,22 @@
 
 .contest_cards {
   padding-left: 5vw;
+  /* width: 60vw; */
 }
-
+.contest_cards a {
+  text-decoration: none;
+}
 .event_cards {
   display: flex;
   flex-wrap: wrap;
+  width: 70vw;
 }
 @media screen and (max-width: 960px) {
   .event_cards {
     justify-content: space-around;
+    position: relative;
+    top: 325px;
   }
-  .logout_button {
-   margin: auto;
-  }
-  
-}
 
-.logout_button {
-  padding-left: 5vw;
-  padding-top: 5vh;
-  margin-top: 20px;
+  
 }

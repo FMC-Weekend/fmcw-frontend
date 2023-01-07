@@ -6,7 +6,6 @@
 body {
   overflow-x: hidden;
   z-index: -999;
-  background-image: url('/public/website_texture_2245x2245.svg') !important;
 }
 .home,
 .services,
@@ -17,7 +16,6 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 3rem;
-  background-color: rgb(20, 20, 20);
 }
 
 .services {

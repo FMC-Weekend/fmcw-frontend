@@ -17,6 +17,7 @@ const CardTitle = styled.h2`
   transform: translateZ(55px);
 `;
 
+
 function CartCard_2(props) {
   const { isEmpty, items, totalItems, cartTotal, removeItem, emptyCart, updateItemQuantity } =
     useCart();
@@ -54,15 +55,23 @@ function CartCard_2(props) {
     scale: 1.06
   };
   return (
-    <div className="card">
-      <div className="card-div">
-        <img
-          src={props.img}
-          alt="unicorn"
-          className={props.type == 'Contest' ? 'card-img' : 'workshop-card-img'}
-        />
-        {props.type == 'Contest' ? <h3>₹ {props.price}</h3> : ''}
-        {!props.verified && (
+    <div className="card card-flip" style={{background: props.color}}>
+      <div className="card-front card-div">
+        
+     
+        <b className="type">{props.type}</b>
+          <img className='front-arrow' src='Vector59.png'></img>
+        <b className="front-title">{props.title}</b>
+          <b className="prizes-front">Prizes Worth- {props.prize}</b>
+          <b className='front-price'>RS.{props.price}</b>
+          <img className='front-img' src='Group7175.png'></img>
+          <img className='three-dots1' src='Rectangle133.png'></img>
+          <img className='three-dots2' src='Rectangle133.png'></img>
+          <img className='three-dots3' src='Rectangle133.png'></img>
+      </div>
+
+      <div className="card-back card-div">
+      {!props.verified && (
           <button
             className="cart-btn"
             onClick={() => {
@@ -72,25 +81,26 @@ function CartCard_2(props) {
             <CloseIcon />
           </button>
         )}
-        <div className="separator">
-          <div className="line" />
-          <h2>{props.type}</h2>
-          <div className="line" />
+        <div className="card-title">
+          {props.title}
+          <div className="lineTitle"></div>
         </div>
-        <CardTitle className="card-title">{props.title}</CardTitle>
-        <h2 className="prizes">{props.type == 'Contest' ? 'PRIZES WORTH' : 'By'}</h2>
-        <h2 style={{ fontSize: '1.2em' }}>{props.prize}</h2>
-        <a href={props.link} target="_blank" className="btn1" rel="noreferrer">
+        <div className="contents">
+          <b>{props.content}</b>
+        </div>
+        <img className='viewProbImg' src='circle-arrow-right-solid.svg' alt='arrow' />
+        <a href={props.link} target="_blank" className="btnView" rel="noreferrer">
           {props.ps}
         </a>
       </div>
     </div>
+       
   );
 }
 CartCard_2.defaultProps = {
   type: 'Contest',
   title: 'That’s How B’roll',
   ps: '',
-  price: 150
+  price: 150,
 };
 export default CartCard_2;

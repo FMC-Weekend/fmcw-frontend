@@ -1,9 +1,7 @@
 body {
   font-family: Marcellus;
-  background-color: #1d033e;
 }
 .event_page {
-  background: #1d033e;
   overflow: hidden;
 }
 .tabs {
@@ -16,7 +14,7 @@ body {
 .card-container {
   max-width: 951px;
   position: relative;
-  margin: 32px;
+  /* margin: 32px; */
   margin-top: 0px;
   /* margin-left: 19px; */
 }
@@ -34,7 +32,8 @@ body {
 }
 .card {
   /* margin-right: 50px; */
-  margin-right: 70px;
+  /* margin-right: 70px; */
+  margin: auto;
   margin-bottom: 50px;
   margin-top: 0px;
   /* max-width: 450px;
@@ -116,7 +115,7 @@ body {
   margin: 0 auto;
   justify-content: flex-start;
   width: 80vw;
-  padding-right: 240px;
+  /* padding-right: 240px; */
   padding-bottom: 89px;
 }
 .card-action {
@@ -162,11 +161,11 @@ body {
 }
 .card-content {
   padding: 10px 20px;
-  color: #fff;
+  color: #000;
 }
 .card-title {
   margin: 0 auto;
-  color: #fff;
+  color: #000;
   font-family: Marcellus;
   font-size: 20px;
   font-style: normal;
@@ -406,7 +405,7 @@ body {
     background: #1d033e;
   }
   .event-cards {
-    margin-left: -15px;
+    /* margin-left: -15px; */
     flex-wrap: wrap;
     /* justify-content: center; */
     flex-direction: column;
@@ -422,10 +421,10 @@ body {
   .card {
     width: 60vw;
     max-width: 400px;
-    margin-right: -10px;
+    /* margin-right: -10px; */
     flex-wrap: wrap;
     min-width: 260px;
-    height: 500px;
+    height: 400px;
     margin-top: 40px;
   }
   .w-card {

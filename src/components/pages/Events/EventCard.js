@@ -42,9 +42,7 @@ function EventCard(props) {
   }
 
   async function addItemToCart(item) {
-    // console.log('yash');
     const userID = sessionStorage.getItem('userID');
-    // e.preventDefault();
     let obj = {
       userID: userID,
       cartItem: item
@@ -57,9 +55,6 @@ function EventCard(props) {
         'Content-Type': 'application/json'
       }
     });
-    // console.log({ obj });
-
-    // alert('Item added to cart successfully!');/
     window.setTimeout(function () {
       location.reload();
     }, 1000);
@@ -90,7 +85,8 @@ function EventCard(props) {
         background: props.color,
         left: props.left,
         height: props.height,
-        width: props.width
+        width: props.width,
+        marginRight: props.marginRight,
       }}>
       <div className="card-front card-div">
         <b className="type" style={{ left: props.frontLeft }}>
@@ -113,23 +109,10 @@ function EventCard(props) {
       </div>
 
       <div className="card-back card-div">
-        {sessionStorage.getItem('isLoggedIn') == 'true' && (
-          <button
-            className="cart-btn"
-            onClick={() => {
-              // send post request to database
-
-              addItemToCart(props.item);
-              // addItem(props.item);
-
-              // change();
-            }}>
-            {/* Add <img src={process.env.REACT_APP_AWS_S3_URI + '/add-cartPURPLE_OLD_1.svg'} /> */}
-          </button>
-        )}
-        <div className="card-title" style={{ left: props.titleLeft, top: props.titleTop }}>
+        
+        <div className="card-title" style={{width: props.width}}>
           {props.title}
-          <div className="lineTitle"></div>
+          <div className="lineTitle" style={{left: props.lineLeft}}></div>
         </div>
         ;
         <div
@@ -142,25 +125,23 @@ function EventCard(props) {
           }}>
           <b>{props.content}</b>
         </div>
-        <img className="viewProbImg" src={viewProbImg} style={{ left: props.imgLeft }}></img>
-        <a
-          href={props.link}
-          target="_blank"
-          className="btnView"
-          rel="noreferrer"
-          style={{ left: props.viewStatementLeft }}>
+        <img className='viewProbImg' src={viewProbImg} style={{ left: props.imgLeft }}></img>
+        <a href={props.link} target="_blank" className="btnView" rel="noreferrer" style={{ left: props.viewStatementLeft }}>
           {props.ps}
         </a>
-        <div className="addToCart" style={{ background: props.color2 }}>
-          <a
-            href={props.link}
-            target="_blank"
-            className="addToCartBtn"
-            rel="noreferrer"
-            style={{ left: props.addToCartLeft , overflow: 'hidden'}}>
+        {sessionStorage.getItem('isLoggedIn') == 'true' && (
+          <div className="addToCart" style={{background: props.color2}} onClick={() => {
+              // send post request to database
+
+              addItemToCart(props.item);
+              // addItem(props.item);
+
+              // change();
+            }}>
             {props.ps2}
-          </a>
+          
         </div>
+        )}
       </div>
     </div>
   );
@@ -171,7 +152,7 @@ EventCard.defaultProps = {
   ps: 'View Problem Statement',
   ps2: 'Add To Cart',
   content: 150,
+  color: '#000',
   color2: '#2ED9FC',
-  left: '75px'
 };
 export default EventCard;

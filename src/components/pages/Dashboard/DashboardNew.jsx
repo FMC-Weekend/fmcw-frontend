@@ -15,7 +15,7 @@ function DashBoardNew() {
   const [isLoading, setIsLoading] = useState(false);
   const [userData, setUserData] = useState({
     name: '',
-    email: 'foo@foo.com',
+    email: '',
     college: 'Foo',
     phone: 'XXXXXXXXXX',
     year: '0',
@@ -59,11 +59,11 @@ function DashBoardNew() {
             setUserData((prevState) => ({
               // ...prevState,
               name: data.user.userID.name,
-              // email: data.user.userID.email,
-              // college: data.user.userID.college,
-              // phone: data.user.userID.number,
+              email: data.user.userID.email,
+              college: data.user.userID.college,
+              phone: data.user.userID.number,
               // year: data.user.userID.yearOfStudy,
-              // instaHandle: data.user.userID.instaHandle,
+              instaHandle: data.user.userID.instaHandle,
               userType: data.user.userID.role,
               refCode: data.user.ref_code,
               // timesReferred: data.user.norefcode,
@@ -74,11 +74,11 @@ function DashBoardNew() {
             setUserData((prevState) => ({
               // ...prevState,
               name: data.user.name,
-              // email: data.user.email,
-              // college: data.user.college,
-              // phone: data.user.number,
-              // year: data.user.yearOfStudy,
-              // instaHandle: data.user.instaHandle,
+              email: data.user.email,
+              college: data.user.college,
+              phone: data.user.number,
+              year: data.user.yearOfStudy,
+              instaHandle: data.user.instaHandle,
               userType: data.user.role,
               cartItems: data.user.userCart.cartItems,
               refCode: data.user.ref_code
@@ -106,48 +106,67 @@ function DashBoardNew() {
   return (
     <div className={Classes.section}>
       <div className={Classes.section_top}>
-        <div className={Classes.section_title}>
-          <h1>Dashboard</h1>
-        </div>
-        <h2>Hey {userData.name}!</h2>
-        <div className={Classes.referral}>
-          <h2>
-            Referral Code: <span>{userData.refCode}</span>
-          </h2>
+        <div className={Classes.illus}>
+          <img src='dashboard.svg' alt='illustration'/>
+          </div>
+        <h3>Hi, </h3> 
+        <h2>{userData.name}!</h2>
+        <section className={Classes.user_details}>
+          <h2>Email: <span>{userData.email}</span></h2>
+          <h2>College: <span>{userData.college}</span></h2>
+          <h2>Year of Study: <span>{userData.yearOfStudy}</span></h2>
+          <h2>Referral Code: <span>{userData.refCode}</span></h2>
+          <h2>Instagram Handle: <span>{userData.instaHandle}</span></h2>
           <h2>{userData.userType == '2' ? 'Campus Ambassador' : 'Participant'}</h2>
-        </div>
+        </section>
         <div className={Classes.registered_contest}>
           <h2>Registered Contests</h2>
         </div>
       </div>
       <div className={Classes.contest_cards}>
+      <a href='/events'>
+          <section className={Classes.addContest}>
+            <h1>+</h1>
+            <h2>Add more contest</h2>
+          </section>
+          </a>
         {/* <div className="event-cards"> */}
         <div className={Classes.event_cards}>
           {userData.cartItems.map((item, index) => {
             if (item.Type === 'Contest') {
               return (
                 <EventCard
-                  img={item.img}
-                  title={item.title}
-                  type={item.Type}
-                  link={item.link}
-                  price={item.price}
-                  prize={item.prize}
-                  item={item}
-                  key={index}
+                img={item.img}
+                title={item.title}
+                type={item.type}
+                link={item.link}
+                price={item.price}
+                prize={item.prize}
+                content={item.content}
+                item={item}
+                key={index}
+                color={item.color}
+                color2={item.color2}
                 />
               );
             }
             return '';
           })}
+          
         </div>
       </div>
       <div className={`${Classes.registered_contest} ${Classes.section_top}`}>
         <h2>Registered Workshops</h2>
       </div>
       <div className={Classes.contest_cards}>
+      <a href='/events'>
+          <section className={Classes.addWorkshop}>
+            <h1>+</h1>
+            <h2>Add more workshop</h2>
+          </section>
+          </a>
         {/* <div className="event-cards"> */}
-        <div className={Classes.event_cards}>
+        {/* <div className={Classes.event_cards}>
           {userData.cartItems.map((item, index) => {
             if (item.Type === 'Workshop') {
               return (
@@ -166,18 +185,12 @@ function DashBoardNew() {
             }
             return '';
           })}
-        </div>
+        </div> */}
       </div>
-      <div className={Classes.logout_button}>
-        <Button
-          // isInternalLink
-          // toLink="/"
-          // buttonStyle="btn--primary"
-          // className="nav-links sign"
+      <button className={Classes.logout_button}
           onClick={logoutHandler}>
           LOG OUT
-        </Button>
-      </div>
+        </button>
       <Footer />
     </div>
   );

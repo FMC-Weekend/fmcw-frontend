@@ -20,7 +20,7 @@
 .card {
   margin-right: 126px;
   margin-top: 50px;
-  width: 100vw;
+  width: 300px;
   height: 440px;
   transition-duration: 300ms;
   transition-property: transform;

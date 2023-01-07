@@ -13,7 +13,6 @@ function Events() {
         toastClassName="toast-style"
         toastStyle={{ backgroundColor: '#FCC907', color: '#1D033E', fontWeight: 'bold' }}
       />
-
       <div className="sidebar">
         <SideBar />
         <Footer />

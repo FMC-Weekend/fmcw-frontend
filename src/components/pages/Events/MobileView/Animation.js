@@ -4,7 +4,6 @@ import data from '../Data/data';
 import { Link } from 'react-router-dom';
 import Footer from '../../../Footer';
 import { ToastContainer } from 'react-toastify';
-import WorkshopCard from '../WorkshopCard';
 function Animation() {
   return (
     <div style={{ background: '#1D033E', overflow: 'hidden' }}>
@@ -13,11 +12,11 @@ function Animation() {
         toastClassName="toast-style"
         toastStyle={{ backgroundColor: '#FCC907', color: '#1D033E', fontWeight: 'bold' }}
       />
-      <section className="section" style={{ padding: '10px' }}>
+      <section className="section">
         <Link to="/events" className="back-btn" style={{ background: '#FE6263' }}>
           Back
         </Link>
-        <div className="card-container" style={{ paddingLeft: '13%' }}>
+        <div className="card-container">
           <div className="event-cards">
             {data.animationData.map((item, index) => {
               return (
@@ -33,14 +32,13 @@ function Animation() {
                   key={index}
                   color={item.color}
                   color2={item.color2}
-                  left={'0px'}
                   width={'260px'}
                   height={'329px'}
                   contentLeft={'12px'}
-                  contentTop={'64px'}
+                  contentTop={'70px'}
                   contentWidth={'230px'}
                   contentFont={'16px'}
-                  titleLeft={'-60px'}
+                  lineLeft={'23%'}
                   titleTop={'3px'}
                   imgLeft={'7px'}
                   viewStatementLeft={'50px'}
@@ -51,25 +49,6 @@ function Animation() {
               );
             })}
           </div>
-          {/* <div className="workshop-cards">
-            {data.animationWorkshopData.map((item, index) => {
-              return (
-                <WorkshopCard
-                  img={item.img}
-                  title={item.title}
-                  type={item.type}
-                  link={item.link}
-                  price={item.price}
-                  prize={item.prize}
-                  desc={item.desc}
-                  date={item.date}
-                  time={item.time}
-                  item={item}
-                  key={index}
-                />
-              );
-            })}
-          </div> */}
         </div>
       </section>
       <Footer />

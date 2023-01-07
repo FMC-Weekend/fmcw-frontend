@@ -6,12 +6,8 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import EventCard from './EventCard';
-// import WorkshopCard from './pages/Events/WorkshopCard';
 import { makeStyles } from '@material-ui/core/styles';
-// import WorkshopCard from './pages/Events/WorkshopCard';
-// import MenuIcon from '@mui/icons-material/Menu';
-// import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-// import Card from '../../src/components/pages/Sponsors/SponsorSection/Card';
+import { Fade } from 'react-reveal';
 import data from './Data/data';
 
 function TabPanel(props) {
@@ -60,7 +56,6 @@ export default function VerticalTabs() {
   const [color, setColor] = React.useState('#00CCF5');
   return (
     <Box sx={{ flexGrow: 1, display: 'flex', height: 'auto' }} className="box">
-      {/* <ArrowBackIosNewIcon onClick={collapseMenu} /> */}
       <Tabs
         orientation="vertical"
         variant="scrollable"
@@ -68,15 +63,12 @@ export default function VerticalTabs() {
         onChange={handleChange}
         aria-label="Vertical tabs example"
         sx={{
+          overflow: 'inherit',
           marginTop: '0px',
           boxSizing: 'border-box',
-
-          // position: absolute;
           width: '360px',
-          height: '964px',
           left: '1px',
           top: '0px',
-
           background: color,
           border: '2px solid #000000',
           borderRight: 3,
@@ -104,6 +96,7 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={0} className="tab-panel">
         <div className="card-container">
           <div className="event-cards">
+            <Fade right>
             {data.photographyData.map((item, index) => {
               return (
                 <EventCard
@@ -114,38 +107,23 @@ export default function VerticalTabs() {
                   price={item.price}
                   prize={item.prize}
                   content={item.content}
-                  item={item}
-                  key={index}
                   color={item.color}
                   color2={item.color2}
-                />
-              );
-            })}
-          </div>
-          {/* <div className="workshop-cards">
-            {data.photographyWorkshopData.map((item, index) => {
-              return (
-                <WorkshopCard
-                img={item.img}
-                  title={item.title}
-                  type={item.type}
-                  link={item.link}
-                  price={item.price}
-                  prize={item.prize}
-                  desc={item.desc}
-                  date={item.date}
-                  time={item.time}
                   item={item}
                   key={index}
+                  marginRight={'70px'}
+                  left={'95px'}
                 />
               );
             })}
-          </div> */}
+            </Fade>
+          </div>
         </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <div className="card-container">
           <div className="event-cards">
+            <Fade right>
             {data.cineData.map((item, index) => {
               return (
                 <EventCard
@@ -160,35 +138,20 @@ export default function VerticalTabs() {
                   key={index}
                   color={item.color}
                   color2={item.color2}
+                  marginRight={'70px'}
+                  left={'95px'}
                 />
               );
             })}
+            </Fade>
           </div>
-          {/* <div className="workshop-cards">
-            {data.cineWorkshopData.map((item, index) => {
-              return (
-                <WorkshopCard
-                  img={item.img}
-                  title={item.title}
-                  type={item.type}
-                  link={item.link}
-                  price={item.price}
-                  prize={item.prize}
-                  desc={item.desc}
-                  date={item.date}
-                  time={item.time}
-                  item={item}
-                  key={index}
-                />
-              );
-            })}
-          </div> */}
         </div>
       </TabPanel>
       <Divider />
       <TabPanel value={value} index={2}>
         <div className="card-container">
           <div className="event-cards">
+            <Fade right>
             {data.outreachData.map((item, index) => {
               return (
                 <EventCard
@@ -202,35 +165,20 @@ export default function VerticalTabs() {
                   key={index}
                   color={item.color}
                   color2={item.color2}
+                  marginRight={'70px'}
+                  left={'95px'}
                 />
               );
             })}
+            </Fade>
           </div>
-          {/* <div className="workshop-cards">
-            {data.outreachWorkshopData.map((item, index) => {
-              return (
-                <WorkshopCard
-                  img={item.img}
-                  title={item.title}
-                  type={item.type}
-                  link={item.link}
-                  price={item.price}
-                  prize={item.prize}
-                  desc={item.desc}
-                  date={item.date}
-                  time={item.time}
-                  item={item}
-                  key={index}
-                />
-              );
-            })}
-          </div> */}
         </div>
       </TabPanel>
       <Divider />
       <TabPanel value={value} index={3}>
         <div className="card-container">
           <div className="event-cards">
+            <Fade right>
             {data.mediaData.map((item, index) => {
               return (
                 <EventCard
@@ -244,35 +192,20 @@ export default function VerticalTabs() {
                   key={index}
                   color={item.color}
                   color2={item.color2}
+                  marginRight={'70px'}
+                  left={'95px'}
                 />
               );
             })}
+            </Fade>
           </div>
-          {/* <div className="workshop-cards">
-            {data.mediaWorkshopData.map((item, index) => {
-              return (
-                <WorkshopCard
-                  img={item.img}
-                  title={item.title}
-                  type={item.type}
-                  link={item.link}
-                  price={item.price}
-                  prize={item.prize}
-                  desc={item.desc}
-                  date={item.date}
-                  time={item.time}
-                  item={item}
-                  key={index}
-                />
-              );
-            })}
-          </div> */}
         </div>
       </TabPanel>
       <Divider />
       <TabPanel value={value} index={4}>
         <div className="card-container">
           <div className="event-cards">
+            <Fade right>
             {data.designData.map((item, index) => {
               return (
                 <EventCard
@@ -286,35 +219,20 @@ export default function VerticalTabs() {
                   key={index}
                   color={item.color}
                   color2={item.color2}
+                  marginRight={'70px'}
+                  left={'95px'}
                 />
               );
             })}
+            </Fade>
           </div>
-          {/* <div className="workshop-cards">
-            {data.designWorkshopData.map((item, index) => {
-              return (
-                <WorkshopCard
-                  img={item.img}
-                  title={item.title}
-                  type={item.type}
-                  link={item.link}
-                  price={item.price}
-                  prize={item.prize}
-                  desc={item.desc}
-                  date={item.date}
-                  time={item.time}
-                  item={item}
-                  key={index}
-                />
-              );
-            })}
-          </div> */}
         </div>
       </TabPanel>
       <Divider />
       <TabPanel value={value} index={5}>
         <div className="card-container">
           <div className="event-cards">
+            <Fade right>
             {data.animationData.map((item, index) => {
               return (
                 <EventCard
@@ -328,29 +246,13 @@ export default function VerticalTabs() {
                   key={index}
                   color={item.color}
                   color2={item.color2}
+                  marginRight={'70px'}
+                  left={'95px'}
                 />
               );
             })}
+            </Fade>
           </div>
-          {/* <div className="workshop-cards">
-            {data.animationWorkshopData.map((item, index) => {
-              return (
-                <WorkshopCard
-                  img={item.img}
-                  title={item.title}
-                  type={item.type}
-                  link={item.link}
-                  price={item.price}
-                  prize={item.prize}
-                  desc={item.desc}
-                  date={item.date}
-                  time={item.time}
-                  item={item}
-                  key={index}
-                />
-              );
-            })}
-          </div> */}
         </div>
       </TabPanel>
     </Box>

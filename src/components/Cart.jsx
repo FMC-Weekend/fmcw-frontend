@@ -142,7 +142,6 @@ function Cart(props) {
                 <div key={index} className="cart-container">
                   <CartCard_2
                     className="cart-card"
-                    img={item.img}
                     title={item.title}
                     type={item.Type}
                     link={item.link}
@@ -151,6 +150,8 @@ function Cart(props) {
                     name={item.name}
                     item={item}
                     key={index}
+                    color={item.color}
+                    color2={item.color2}
                     verified={item.verifyStatus}
                     mongooseId={item._id}
                   />
