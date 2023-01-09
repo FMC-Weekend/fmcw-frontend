@@ -2,7 +2,7 @@
 
 .div1{
   box-sizing: border-box;
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 130vh;
   top: 0;
@@ -11,7 +11,7 @@
 }
 .div1_heading{
   position: absolute;
-  width: 100%;
+  /* width: 100%; */
   height: 76px;
   left: 130px;
   top: 323px;
@@ -86,7 +86,7 @@ height: 80vh;
 display: flex;
 flex-direction: row;
 /* left: -77px; */
-top: 120vh;
+/* top: 120vh; */
 
 background: #FE6263;
 border: 2px solid #000000;
@@ -133,7 +133,7 @@ color: #FFFFFF;
   z-index: 1;
   position: relative;
   padding: 15px;
-  top: 35vh;
+  /* top: 35vh; */
   color: #fff;
 }
 .anim h2 {
@@ -174,7 +174,7 @@ border-radius: 4px;
 }
 .div2 .button_2 {
   padding: 10px 30px;
-  position: relative;
+  position: absolute;
   top: 45vh;
   /* left: 69px; */
   /* justify-content: flex-start; */
@@ -318,7 +318,7 @@ width: 50%;
 height: 104vh;
 /* height: 700px; */
 /* left: -44px; */
-top: 100vh;
+/* top: 100vh; */
 
 background: #FFFFFF;
 border: 2px solid #000000;
@@ -328,8 +328,8 @@ border: 2px solid #000000;
   position: relative;
   width: 50%;
   height: 104vh;
-  left: 50%;
-  top: -4vh;
+  /* left: 50%; */
+  /* top: -4vh; */
   background: #FFFFFF;
   border: 2px solid #000000;
 }
@@ -340,7 +340,7 @@ border: 2px solid #000000;
   width: 50%;
   height: 104vh;
   /* left: -44px; */
-  top: -4vh;
+  /* top: -4vh; */
   
   background: #FFFFFF;
   border: 2px solid #000000;
@@ -350,15 +350,15 @@ border: 2px solid #000000;
   position: relative;
   width: 50%;
   height: 104vh;
-  left: 50%;
-  top: -108vh;
+  /* left: 50%; */
+  /* top: -108vh; */
   background: #FFFFFF;
   border: 2px solid #000000;
 }
 .div3 h1,.div4 h1,.div5 h1,.div6 h1{
-  min-width: 500px;
+  /* min-width: 500px; */
   position: relative;
-  width: 100vw;
+  width: 36vw;
   height: 63px;
   left: 108px;
   top: 43vh;
@@ -466,7 +466,7 @@ line-height: 33px;
   position: relative;
   width: 100%;
   height: 80vh;
-  bottom: 108vh;
+  /* bottom: 108vh; */
   /* left: -69px; */
   background: #685EDA;
   border: 2px solid #000000;
@@ -493,7 +493,7 @@ line-height: 33px;
   width: 75vw;
   /* height: 116px; */
   /* left: 236px; */
-  top: 45vh;
+  top: 42vh;
   margin: auto;
   font-family: 'Montserrat';
   font-style: normal;
@@ -567,30 +567,27 @@ color: #000000;
   box-sizing: border-box;
   position: relative;
   width: 100%;
-  top: 0;
+  /* top: 0; */
   /* background: #F3F3F3; */
   border: 2px solid #000000;
 }
-
-
-
-
-
-
-
-
+.eventBox{
+  display: flex;
+}
 
 @media screen and (max-width: 786px) {
-  .div1{
-    
+  .eventBox{
+    display: block;
   }
 .div1 img{
   top:0;
   width:75%;
   left:15%;
+      height: 70vh;
+    top: -20vh;
 }
 .div1 h1{
-  top: 90vh;
+  top: 75vh;
   width: auto;
   left:0;
   position: relative;
@@ -600,7 +597,7 @@ color: #000000;
   /* background-image: url("./side_img.svg"); */
 }
 .div1 button{
-  top: 100vh;
+  top: 90vh;
   left: 0;
   position: relative;
   margin: auto;
@@ -649,48 +646,50 @@ color: #000000;
   /* top: 50%; */
   line-height: normal;
 }
-.div2 h1,.div2 h2,.div3 h1,.div3 p,.div3 button,.div4 h1,.div4 p,.div4 button,.div5 h1,.div5 p,.div5 button,.div6 h1,.div6 p,.div6 button{
+.div2 h1,.div2 h2,.div3 h1,.div3 p,.div4 h1,.div4 p,.div5 h1,.div5 p,.div6 h1,.div6 p{
   left:2%;
   width: 85vw;
   max-width: 100%;
 }
+.div3 button,.div4 button,.div5 button,.div6 button{
+  max-width: 100%;
+}
 .div3 h1,.div4 h1,.div5 h1,.div6 h1{
   /* font-weight: 300;*/
-  font-size:30px;
+  font-size:20px;
+  font-weight: 800;
 }
 .div3 p,.div4 p,.div5 p,.div6 p{
   /* font-weight: 300;*/
-  font-size: 4vw;
+  font-size: 3vw;
 }
 .div4{
-  top: 98vh;
+  /* top: 98vh; */
   left:0px;
   width: 100%;
 }
 .div5{
-  top: 98vh;
+  /* top: 98vh; */
   left:0px;
   width: 100%;
 }
 .div6{
-  top: 98vh;
+  /* top: 98vh; */
   left:0px;
   width: 100%;
 }
 .div7{
-  top: 98vh;
+  /* top: 98vh; */
   left:0px;
   width: 100%;  
 }
 .div7 h1{
-  top: 10%;
   width: 80%;
-  font-size: 100px;
+  font-size: 5em;
 }
 .div7 h2{
-  top: 50%;
   width: 80%;
-  font-size: 30px;
+  font-size: 20px;
 }
 .div2 h2{
 font-size: 8vw;
@@ -811,7 +810,7 @@ border-radius: 4px;
   border-radius: 4px;
 }
 .footer{
-  top: 98vh;
+  /* top: 98vh; */
   left:0px;
   width: 100%;  
 }
@@ -821,9 +820,12 @@ border-radius: 4px;
   height: 5%;
 }
 .anim {
-  top: -30vh;
+  /* top: -30vh; */
 }
 }
 @media screen and (max-width: 480px){
-
+  .div3 p,.div4 p,.div5 p,.div6 p{
+  /* font-weight: 300;*/
+  font-size: 4vw;
+}
 }

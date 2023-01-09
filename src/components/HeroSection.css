@@ -70,12 +70,9 @@ image {
 
   .btn {
     width: 129px;
-    position: absolute;
-    top: 420px;
     display: flex;
     margin: auto;
     justify-content: center;
     align-items: center;
-    left: 25px;
   }
 }

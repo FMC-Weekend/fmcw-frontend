@@ -60,35 +60,6 @@ function landingPage() {
           </Fade>
         </div>
 
-        <div className={Classes.div2}>
-          <Fade right>
-            <h1>FOR CREATIVE ENTHUSIASTS</h1>
-            <h2>FROM FIELDS OF</h2>
-            <section className={Classes.button_1}>
-              <button className={Classes.design}>
-                {' '}
-                <p>Design</p>
-              </button>
-              <button className={Classes.photography}>
-                <p>Photography</p>
-              </button>
-              <button className={Classes.media}>
-                <p>Media</p>
-              </button>
-            </section>
-            <section className={Classes.button_2}>
-              <button className={Classes.cine}>
-                <p>Cine</p>
-              </button>
-              <button className={Classes.animation}>
-                <p>Animation</p>
-              </button>
-              <button className={Classes.outreach}>
-                <p>Outreach</p>
-              </button>
-            </section>
-          </Fade>
-        </div>
         <div className={Classes.anim}>
           <Marquee gradient={false} speed={50}>
             <h2>FMC WEEKEND</h2>
@@ -98,22 +69,52 @@ function landingPage() {
             <h2>VISTA</h2>
           </Marquee>
         </div>
-        <div className={Classes.div3}>
-          <div className={Classes.banner1}>
-            <img src={winner1} />
+          <div className={Classes.div2}>
+            <Fade right>
+              <h1>FOR CREATIVE ENTHUSIASTS</h1>
+              <h2>FROM FIELDS OF</h2>
+              <section className={Classes.button_1}>
+                <button className={Classes.design}>
+                  {' '}
+                  <p>Design</p>
+                </button>
+                <button className={Classes.photography}>
+                  <p>Photography</p>
+                </button>
+                <button className={Classes.media}>
+                  <p>Media</p>
+                </button>
+              </section>
+              <section className={Classes.button_2}>
+                <button className={Classes.cine}>
+                  <p>Cine</p>
+                </button>
+                <button className={Classes.animation}>
+                  <p>Animation</p>
+                </button>
+                <button className={Classes.outreach}>
+                  <p>Outreach</p>
+                </button>
+              </section>
+            </Fade>
           </div>
-          <Fade bottom>
-            <h1>COMPETITIONS</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in. Pellentesque
-              et tempor tortor enim ac sit. Egestas est lacus nullam dignissim semper. Tellus mauris
-              sed ultricies nunc posuere non placerat{' '}
-            </p>
+        <div className={Classes.eventBox}>
 
-            <button place>Explore</button>
-          </Fade>
-        </div>
+          <div className={Classes.div3}>
+            <div className={Classes.banner1}>
+              <img src={winner1} />
+            </div>
+            <Fade bottom>
+              <h1>COMPETITIONS</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in. Pellentesque
+                et tempor tortor enim ac sit. Egestas est lacus nullam dignissim semper. Tellus mauris
+                sed ultricies nunc posuere non placerat{' '}
+              </p>
 
+              <button place>Explore</button>
+            </Fade>
+          </div>
         <div className={Classes.div4}>
           <div className={Classes.banner2}>
             <img src={briefing} />
@@ -129,35 +130,38 @@ function landingPage() {
             <button place>Explore</button>
           </Fade>
         </div>
-        <div className={Classes.div5}>
-          <div className={Classes.banner3}>
-            <img src={redcarpet} />
-          </div>
-          <Fade bottom>
-            <h1>PRONITES</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in. Pellentesque
-              et tempor tortor enim ac sit. Egestas est lacus nullam dignissim semper. Tellus mauris
-              sed ultricies nunc posuere non placerat{' '}
-            </p>
-
-            <button place>Explore</button>
-          </Fade>
         </div>
-        <div className={Classes.div6}>
-          <div className={Classes.banner4}>
-            <img src={banner4} />
-          </div>
-          <Fade bottom>
-            <h1>OPEN AIR THEATRES</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in. Pellentesque
-              et tempor tortor enim ac sit. Egestas est lacus nullam dignissim semper. Tellus mauris
-              sed ultricies nunc posuere non placerat{' '}
-            </p>
+        <div className={Classes.eventBox}>
+          <div className={Classes.div5}>
+            <div className={Classes.banner3}>
+              <img src={redcarpet} />
+            </div>
+            <Fade bottom>
+              <h1>PRONITES</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in. Pellentesque
+                et tempor tortor enim ac sit. Egestas est lacus nullam dignissim semper. Tellus mauris
+                sed ultricies nunc posuere non placerat{' '}
+              </p>
 
-            <button place>Explore</button>
-          </Fade>
+              <button place>Explore</button>
+            </Fade>
+          </div>
+          <div className={Classes.div6}>
+            <div className={Classes.banner4}>
+              <img src={banner4} />
+            </div>
+            <Fade bottom>
+              <h1>OPEN AIR THEATRES</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in. Pellentesque
+                et tempor tortor enim ac sit. Egestas est lacus nullam dignissim semper. Tellus mauris
+                sed ultricies nunc posuere non placerat{' '}
+              </p>
+
+              <button place>Explore</button>
+            </Fade>
+          </div>
         </div>
         <div className={Classes.div7}>
           <Fade right>

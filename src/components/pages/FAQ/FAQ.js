@@ -115,7 +115,7 @@ function Accordion() {
   };
 
   return (
-    <div className="HEADER">
+    <div className="HEADER" style={{overflow: "hidden"}}>
       
       <Heading>
       <Fade right>

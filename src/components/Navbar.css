@@ -161,10 +161,6 @@ border-radius: 0 !important;
   justify-items: center;
   align-items: center;
 }
-.register-btn-text {
-  margin: auto;
-  width: 50%;
-}
 .fas {
   color: #000;
   font-size: 1.25rem;
@@ -246,10 +242,6 @@ border-radius: 0 !important;
     width: fit-content;
   }
 
-  .register-btn-text {
-    margin: 0;
-  width: 50%;
-  }
 
   .nav-links:hover {
     background: #ff90e8;
