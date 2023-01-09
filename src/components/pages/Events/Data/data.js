@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 const data = {
   photographyData: [
     {
@@ -5,8 +6,8 @@ const data = {
       img: process.env.REACT_APP_AWS_S3_URI + '/infocus-01.png',
       genre: 'photography',
       type: 'Contest',
-      title: 'InFocus',
-      link: 'https://drive.google.com/file/d/1ypZkoyI1x3Es-zCTiT0jytmZTazSXmNp/view?usp=sharing',
+      title: 'PhotoArt',
+      link: 'https://iitbhuacin-my.sharepoint.com/:w:/g/personal/vaibhav_sinha_phe21_iitbhu_ac_in/EdC0oFVQKa9BgUAlTsZ-478BzqCHxT4u1JxH_xdfn4gGpg?e=IM7zKs',
       price: 129,
       prize: '12K',
       color: '#00CCF5',
@@ -19,8 +20,8 @@ const data = {
       img: process.env.REACT_APP_AWS_S3_URI + '/snapIT-01.png',
       genre: 'photography',
       type: 'Contest',
-      title: 'Snap It Now',
-      link: 'https://drive.google.com/file/d/1YyKAYn-PBXPoKSB1Z1iU6fa6wjaVGULL/view?usp=sharing',
+      title: 'Portfolio in 24',
+      link: 'https://docs.google.com/document/d/1AIc4URCDZddJ0EZjV5FCrkVSUaTirZXvPQwXb8Sbp_I/edit?usp=sharing',
       price: 129,
       prize: '8K',
       color: '#00CCF5',
@@ -33,8 +34,36 @@ const data = {
       img: process.env.REACT_APP_AWS_S3_URI + '/photoArt-01.png',
       genre: 'photography',
       type: 'Contest',
-      title: 'Photo Art',
-      link: 'https://drive.google.com/file/d/1nEwQqQeI5mulbMTA1I6u9YzXsLLLEiKC/view?usp=sharing',
+      title: 'InFocus',
+      link: 'https://docs.google.com/document/d/1am6Q14ZGIHs83RyEYyrcUuCX4TXOF4xRlGU9EhAH7RM/edit?usp=drivesdk',
+      price: 129,
+      prize: '14K',
+      color: '#00CCF5',
+      color2: '#2ED9FC',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+    },
+    {
+      id: 4,
+      img: process.env.REACT_APP_AWS_S3_URI + '/photoArt-01.png',
+      genre: 'photography',
+      type: 'Contest',
+      title: 'InstaMeet',
+      link: 'https://docs.google.com/document/d/1SuC5eWRvRM9zPJD_YfDZakiAdSGon_IUsnWnb0qm-Ws/edit?usp=sharing',
+      price: 129,
+      prize: '14K',
+      color: '#00CCF5',
+      color2: '#2ED9FC',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+    },
+    {
+      id: 5,
+      img: process.env.REACT_APP_AWS_S3_URI + '/photoArt-01.png',
+      genre: 'photography',
+      type: 'Contest',
+      title: 'SnapChase',
+      link: 'https://docs.google.com/document/d/1gpkcbcFulNc2haFFD6PAo6ieglO0qjQAUG6WcU9QGfI/edit?usp=drivesdk',
       price: 129,
       prize: '14K',
       color: '#00CCF5',
@@ -45,12 +74,12 @@ const data = {
   ],
   outreachData: [
     {
-      id: 4,
+      id: 6,
       img: process.env.REACT_APP_AWS_S3_URI + '/vlogholic-01.png',
       genre: 'outreach',
       type: 'Contest',
       title: 'Vlogoholic',
-      link: 'https://drive.google.com/file/d/1qTdAlnarcZ47eOS-R7O_ImNfsZPnvnBZ/view?usp=sharing',
+      link: 'https://docs.google.com/document/d/1PlGyzKJo_OZSJC35ZZaJmv8brSf6GMx77xl47qz-Rxg/edit?usp=sharing',
       price: 129,
       prize: '10K',
       color: '#FFC900',
@@ -59,12 +88,12 @@ const data = {
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
-      id: 5,
+      id: 7,
       img: process.env.REACT_APP_AWS_S3_URI + '/documentary-01.png',
       genre: 'outreach',
       type: 'Contest',
-      title: 'Documentary Making',
-      link: 'https://drive.google.com/file/d/1-j7QXOXQpBTioe3S7jrTeydKBLGPkcZe/view?usp=sharing',
+      title: 'Rant it',
+      link: 'https://docs.google.com/document/d/1dWAbsuj0r3L1pNtiwiC24AGOPpQ0oAEoffjPWhXlsFg/edit?usp=sharing',
       price: 129,
       prize: '10K',
       color: '#FFC900',
@@ -73,12 +102,12 @@ const data = {
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
-      id: 6,
+      id: 8,
       img: process.env.REACT_APP_AWS_S3_URI + '/admad-01.png',
       genre: 'outreach',
       type: 'Contest',
       title: 'Ad-Mad',
-      link: 'https://drive.google.com/file/d/1YOj9LLElPbGTbFbL2DP-8QAcltoFAMY5/view?usp=sharing',
+      link: 'https://docs.google.com/document/d/13K_BvRrRAHGDk2SbgXOjM3YDaAlzNwnVP1VJW0SRpZY/edit',
       price: 129,
       prize: '9K',
       color: '#FFC900',
@@ -89,12 +118,12 @@ const data = {
   ],
   cineData: [
     {
-      id: 7,
+      id: 9,
       img: process.env.REACT_APP_AWS_S3_URI + '/bRoll-01.png',
       genre: 'cine',
       type: 'Contest',
       title: 'Thats how B-Roll',
-      link: 'https://drive.google.com/file/d/1pQMLQD-NpXDh26tlTystzPNsU9Mcxzge/view?usp=sharing',
+      link: 'https://1drv.ms/w/s!AieflRg28nxYgydLqafGrtwhUywk?e=DMhy7j',
       price: 129,
       prize: '10K',
       color: '#14F0B9',
@@ -103,12 +132,12 @@ const data = {
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
-      id: 8,
+      id: 10,
       img: process.env.REACT_APP_AWS_S3_URI + '/magic-01.png',
       genre: 'cine',
       type: 'Contest',
-      title: 'Magic Behind the Lens',
-      link: 'https://drive.google.com/file/d/1MF0nFWgHMGxGEU3Kad9qEKbAOTVWVM-w/view?usp=sharing',
+      title: 'Frame By Frame',
+      link: 'https://docs.google.com/document/d/1zN4n8oHEixgfW8yYV472Y7gsipoN4V-SzqHcsuNiumk/edit?usp=sharing',
       price: 129,
       prize: '15K',
       color: '#14F0B9',
@@ -117,12 +146,26 @@ const data = {
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
-      id: 9,
+      id: 11,
       img: process.env.REACT_APP_AWS_S3_URI + '/shortFilm-01.png',
       genre: 'cine',
       type: 'Contest',
-      title: 'Make It Short',
-      link: 'https://drive.google.com/file/d/1mW5PcltZXyPRmOTaJaHE3QKdlCoPI7Hz/view?usp=sharing',
+      title: 'Director’s Cut',
+      link: 'https://docs.google.com/document/d/1xhgdOSMRK4rGPc4-tMtt5q3nrQAWwRYWE5RAt5b1nRU/edit?usp=sharing',
+      price: 129,
+      prize: '8K',
+      color: '#14F0B9',
+      color2: '#62FFD8',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+    },
+    {
+      id: 12,
+      img: process.env.REACT_APP_AWS_S3_URI + '/shortFilm-01.png',
+      genre: 'cine',
+      type: 'Contest',
+      title: 'Trim it up',
+      link: 'https://docs.google.com/document/d/11s6Lq2zMBV09CH9md7L_ANTv8npZnM5GF3gwWcLhJxU/edit',
       price: 129,
       prize: '8K',
       color: '#14F0B9',
@@ -133,7 +176,7 @@ const data = {
   ],
   designData: [
     {
-      id: 11,
+      id: 13,
       img: process.env.REACT_APP_AWS_S3_URI + '/designTunes-01.png',
       genre: 'design',
       type: 'Contest',
@@ -147,28 +190,28 @@ const data = {
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
-      id: 12,
-      img: process.env.REACT_APP_AWS_S3_URI + '/logoRedesign-01.png',
+      id: 14,
+      img: process.env.REACT_APP_AWS_S3_URI + '/notJustWords-01.png',
       genre: 'design',
       type: 'Contest',
-      title: 'Logo Redesign',
-      link: 'https://drive.google.com/file/d/1miS5p8eaeN-ZaLiip4ApnatmpnoVVMqj/view?usp=sharing',
+      title: 'Design-a-thon',
+      link: 'https://drive.google.com/file/d/1ULnLIRNCJzkgYD57vRQM73EEs_vcY3Ls/view?usp=sharinghttps://docs.google.com/document/d/1yUcO3FqBB-imYYFEegLGVHt06iduS8zwnrKhuDNX1b8/edit?usp=sharing',
       price: 129,
-      prize: '12K',
+      prize: '8K',
       color: '#685EDA',
       color2: '#9990FF',
       content:
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
-      id: 13,
-      img: process.env.REACT_APP_AWS_S3_URI + '/notJustWords-01.png',
+      id: 15,
+      img: process.env.REACT_APP_AWS_S3_URI + '/logoRedesign-01.png',
       genre: 'design',
       type: 'Contest',
-      title: 'Not Just Words',
-      link: 'https://drive.google.com/file/d/1ULnLIRNCJzkgYD57vRQM73EEs_vcY3Ls/view?usp=sharing',
+      title: 'FrameX',
+      link: 'https://docs.google.com/document/d/1SiMd1_DVWT6_i0oD3kntLXQQpjXpHquoL6X5A4zaOSA/edit?usp=drivesdk',
       price: 129,
-      prize: '8K',
+      prize: '12K',
       color: '#685EDA',
       color2: '#9990FF',
       content:
@@ -177,12 +220,12 @@ const data = {
   ],
   mediaData: [
     {
-      id: 14,
+      id: 16,
       img: process.env.REACT_APP_AWS_S3_URI + '/hades_-01.png',
       genre: 'media',
       type: 'Contest',
-      title: 'Hades Reporters',
-      link: 'https://drive.google.com/file/d/1L4xS562Rld4_j7Lr1xv7iU0L4cu7gHPW/view?usp=sharing',
+      title: 'Straight from Site',
+      link: 'https://docs.google.com/document/d/1uoFKCqAf9mtdaotzTcb59WmR44Qv7e7OAYJpwfbkDaM/edit?usp=drivesdk',
       price: 129,
       prize: '8K',
       color: '#FF90E8',
@@ -191,12 +234,12 @@ const data = {
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
-      id: 15,
+      id: 17,
       img: process.env.REACT_APP_AWS_S3_URI + '/straightSite-01.png',
       genre: 'media',
       type: 'Contest',
-      title: 'Straight from Site',
-      link: 'https://drive.google.com/file/d/1w-fj86xTKa9X0jQjhH4UFLNu5HRpRvdO/view?usp=sharing',
+      title: "Editor's House",
+      link: 'https://docs.google.com/document/d/1TJe8P8cJy7rOfmiszenCmY5IAh0xrOBnHHHUX9vsZ30/edit?usp=drivesdk',
       price: 129,
       prize: '8K',
       color: '#FF90E8',
@@ -205,12 +248,40 @@ const data = {
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
-      id: 16,
+      id: 18,
       img: process.env.REACT_APP_AWS_S3_URI + '/writer_block-01.png',
       genre: 'media',
       type: 'Contest',
-      title: "Writer's Block",
-      link: 'https://drive.google.com/file/d/1-3a8h2Z4Wg5invFtBQoCJLT_iL2we-Ky/view?usp=sharing',
+      title: 'Infinite Tales',
+      link: 'https://docs.google.com/document/d/18GCWEEJE2fHWpozcodEo791zxT1cRtB_PzATKhTjBoA/edit?usp=sharing',
+      price: 129,
+      prize: '8K',
+      color: '#FF90E8',
+      color2: '#FFC8F4',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+    },
+    {
+      id: 19,
+      img: process.env.REACT_APP_AWS_S3_URI + '/writer_block-01.png',
+      genre: 'media',
+      type: 'Contest',
+      title: 'RJ hunt',
+      link: 'https://docs.google.com/document/d/1Z9fW4LqzpUvOg2oNqwqkPZ_eYl8jhGOij02nMpnS2AE/edit?usp=sharing',
+      price: 129,
+      prize: '8K',
+      color: '#FF90E8',
+      color2: '#FFC8F4',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+    },
+    {
+      id: 20,
+      img: process.env.REACT_APP_AWS_S3_URI + '/writer_block-01.png',
+      genre: 'media',
+      type: 'Contest',
+      title: 'Screenplay',
+      link: 'https://docs.google.com/document/d/112ZyMtoYplavhAwdVlVpykN5TiMX9Y9DcAA4a2KKcqw/edit?usp=drivesdk',
       price: 129,
       prize: '8K',
       color: '#FF90E8',
@@ -221,12 +292,12 @@ const data = {
   ],
   animationData: [
     {
-      id: 17,
+      id: 21,
       img: process.env.REACT_APP_AWS_S3_URI + '/capture-01.png',
       genre: 'animation',
       type: 'Contest',
-      title: 'Capture the Imagination',
-      link: 'https://drive.google.com/file/d/1jRpV-ZjKNNTm8RFOGktaaZfCz73uQfAx/view?usp=sharing',
+      title: 'Realm Of Wonders',
+      link: 'https://docs.google.com/document/d/1arU2WyTGO1LT1SZVoD9BCLVeTmdM5PPkrvxcIPTqSVg/edit?usp=sharing',
       price: 129,
       prize: '10K',
       color: '#FE6263',
@@ -235,12 +306,12 @@ const data = {
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
-      id: 18,
+      id: 22,
       img: process.env.REACT_APP_AWS_S3_URI + '/realmOfWonder-01.png',
       genre: 'animation',
       type: 'Contest',
-      title: 'Unreal',
-      link: 'https://drive.google.com/file/d/13FR_L6kpYO6Zo5-kbikKxoA6Q1YzerEX/view?usp=sharing',
+      title: 'Artspace',
+      link: 'https://docs.google.com/document/d/1sRZnNcLPIriGLbQZyMndMilqP47oOSkn7E8e0nVTKMM/edit?usp=sharing',
       price: 129,
       prize: '9K',
       color: '#FE6263',
@@ -249,12 +320,26 @@ const data = {
         'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
     },
     {
-      id: 19,
+      id: 23,
       img: process.env.REACT_APP_AWS_S3_URI + '/unreal-01.png',
       genre: 'animation',
       type: 'Contest',
-      title: 'Realm of Wonders',
-      link: 'https://drive.google.com/file/d/17n4rzKwRtKgCljrkxgUF6DZ02qwsZOG_/view?usp=sharing',
+      title: 'VFXorama',
+      link: 'https://docs.google.com/document/d/1wD3INF7sSEfODUXvCLn-A3RkhC_GicMMQxFQ_ANCtkE/edit?usp=sharing',
+      price: 129,
+      prize: '6K',
+      color: '#FE6263',
+      color2: '#FD8A8B',
+      content:
+        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+    },
+    {
+      id: 24,
+      img: process.env.REACT_APP_AWS_S3_URI + '/unreal-01.png',
+      genre: 'animation',
+      type: 'Contest',
+      title: 'Capture the Imagination',
+      link: 'https://docs.google.com/document/d/19CvHkSsEhQqBdU49dtRzucydoI3ICqccNMuPZkzqKcM/edit?usp=sharing',
       price: 129,
       prize: '6K',
       color: '#FE6263',
