@@ -20,7 +20,7 @@ function TabPanel(props) {
       aria-labelledby={`vertical-tab-${index}`}
       {...other}>
       {value === index && (
-        <Box sx={{ p: 3 }} id="box1" style={{paddingTop: '0px'}}>
+        <Box sx={{ p: 3 }} id="box1" style={{ paddingTop: '0px' }}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -97,25 +97,25 @@ export default function VerticalTabs() {
         <div className="card-container">
           <div className="event-cards">
             <Fade right>
-            {data.photographyData.map((item, index) => {
-              return (
-                <EventCard
-                  img={item.img}
-                  title={item.title}
-                  type={item.type}
-                  link={item.link}
-                  price={item.price}
-                  prize={item.prize}
-                  content={item.content}
-                  color={item.color}
-                  color2={item.color2}
-                  item={item}
-                  key={index}
-                  marginRight={'70px'}
-                  left={'95px'}
-                />
-              );
-            })}
+              {data.photographyData.map((item, index) => {
+                return (
+                  <EventCard
+                    img={item.img}
+                    title={item.title}
+                    type={item.type}
+                    link={item.link}
+                    price={item.price}
+                    prize={item.prize}
+                    content={item.content}
+                    color={item.color}
+                    color2={item.color2}
+                    item={item}
+                    key={index}
+                    marginRight={'70px'}
+                    left={'95px'}
+                  />
+                );
+              })}
             </Fade>
           </div>
         </div>
@@ -124,25 +124,26 @@ export default function VerticalTabs() {
         <div className="card-container">
           <div className="event-cards">
             <Fade right>
-            {data.cineData.map((item, index) => {
-              return (
-                <EventCard
-                  style={{ left: '607px' }}
-                  img={item.img}
-                  title={item.title}
-                  type={item.type}
-                  link={item.link}
-                  price={item.price}
-                  prize={item.prize}
-                  item={item}
-                  key={index}
-                  color={item.color}
-                  color2={item.color2}
-                  marginRight={'70px'}
-                  left={'95px'}
-                />
-              );
-            })}
+              {data.cineData.map((item, index) => {
+                return (
+                  <EventCard
+                    style={{ left: '607px' }}
+                    img={item.img}
+                    title={item.title}
+                    type={item.type}
+                    link={item.link}
+                    price={item.price}
+                    prize={item.prize}
+                    content={item.content}
+                    item={item}
+                    key={index}
+                    color={item.color}
+                    color2={item.color2}
+                    marginRight={'70px'}
+                    left={'95px'}
+                  />
+                );
+              })}
             </Fade>
           </div>
         </div>
@@ -152,24 +153,25 @@ export default function VerticalTabs() {
         <div className="card-container">
           <div className="event-cards">
             <Fade right>
-            {data.outreachData.map((item, index) => {
-              return (
-                <EventCard
-                  img={item.img}
-                  title={item.title}
-                  type={item.type}
-                  link={item.link}
-                  price={item.price}
-                  prize={item.prize}
-                  item={item}
-                  key={index}
-                  color={item.color}
-                  color2={item.color2}
-                  marginRight={'70px'}
-                  left={'95px'}
-                />
-              );
-            })}
+              {data.outreachData.map((item, index) => {
+                return (
+                  <EventCard
+                    img={item.img}
+                    title={item.title}
+                    type={item.type}
+                    link={item.link}
+                    price={item.price}
+                    prize={item.prize}
+                    content={item.content}
+                    item={item}
+                    key={index}
+                    color={item.color}
+                    color2={item.color2}
+                    marginRight={'70px'}
+                    left={'95px'}
+                  />
+                );
+              })}
             </Fade>
           </div>
         </div>
@@ -179,24 +181,25 @@ export default function VerticalTabs() {
         <div className="card-container">
           <div className="event-cards">
             <Fade right>
-            {data.mediaData.map((item, index) => {
-              return (
-                <EventCard
-                  img={item.img}
-                  title={item.title}
-                  type={item.type}
-                  link={item.link}
-                  price={item.price}
-                  prize={item.prize}
-                  item={item}
-                  key={index}
-                  color={item.color}
-                  color2={item.color2}
-                  marginRight={'70px'}
-                  left={'95px'}
-                />
-              );
-            })}
+              {data.mediaData.map((item, index) => {
+                return (
+                  <EventCard
+                    img={item.img}
+                    title={item.title}
+                    type={item.type}
+                    link={item.link}
+                    price={item.price}
+                    prize={item.prize}
+                    content={item.content}
+                    item={item}
+                    key={index}
+                    color={item.color}
+                    color2={item.color2}
+                    marginRight={'70px'}
+                    left={'95px'}
+                  />
+                );
+              })}
             </Fade>
           </div>
         </div>
@@ -206,24 +209,25 @@ export default function VerticalTabs() {
         <div className="card-container">
           <div className="event-cards">
             <Fade right>
-            {data.designData.map((item, index) => {
-              return (
-                <EventCard
-                  img={item.img}
-                  title={item.title}
-                  type={item.type}
-                  link={item.link}
-                  price={item.price}
-                  prize={item.prize}
-                  item={item}
-                  key={index}
-                  color={item.color}
-                  color2={item.color2}
-                  marginRight={'70px'}
-                  left={'95px'}
-                />
-              );
-            })}
+              {data.designData.map((item, index) => {
+                return (
+                  <EventCard
+                    img={item.img}
+                    title={item.title}
+                    type={item.type}
+                    link={item.link}
+                    price={item.price}
+                    prize={item.prize}
+                    content={item.content}
+                    item={item}
+                    key={index}
+                    color={item.color}
+                    color2={item.color2}
+                    marginRight={'70px'}
+                    left={'95px'}
+                  />
+                );
+              })}
             </Fade>
           </div>
         </div>
@@ -233,24 +237,25 @@ export default function VerticalTabs() {
         <div className="card-container">
           <div className="event-cards">
             <Fade right>
-            {data.animationData.map((item, index) => {
-              return (
-                <EventCard
-                  img={item.img}
-                  title={item.title}
-                  type={item.type}
-                  link={item.link}
-                  price={item.price}
-                  prize={item.prize}
-                  item={item}
-                  key={index}
-                  color={item.color}
-                  color2={item.color2}
-                  marginRight={'70px'}
-                  left={'95px'}
-                />
-              );
-            })}
+              {data.animationData.map((item, index) => {
+                return (
+                  <EventCard
+                    img={item.img}
+                    title={item.title}
+                    type={item.type}
+                    link={item.link}
+                    price={item.price}
+                    prize={item.prize}
+                    content={item.content}
+                    item={item}
+                    key={index}
+                    color={item.color}
+                    color2={item.color2}
+                    marginRight={'70px'}
+                    left={'95px'}
+                  />
+                );
+              })}
             </Fade>
           </div>
         </div>
