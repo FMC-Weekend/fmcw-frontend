@@ -15,7 +15,7 @@ function DashBoardNew() {
   const [isLoading, setIsLoading] = useState(false);
   const [userData, setUserData] = useState({
     name: 'Harsh Shrivastava',
-    email: 'harsh.shrivastava.eee21@itbhu.ajsjsjdjhdsc.in',
+    email: 'harsh.shrivastava.eee21@itbhu.ac.in',
     college: 'Foo',
     phone: 'XXXXXXXXXX',
     yearOfStudy: '2',
@@ -145,58 +145,6 @@ function DashBoardNew() {
           </a> */}
           {/* <div className="event-cards"> */}
           <div className={Classes.event_cards}>
-            <EventCard
-              top={'7vh'}
-              title={'game'}
-              type={'djndjdf'}
-              link={'dcjhcjdf'}
-              price={'69'}
-              prize={'69'}
-              content={'ewjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'}
-              item={'dkjdsjkkjd'}
-              key={'0'}
-              color={'pink'}
-              color2={'light pink'}
-            />
-            <EventCard
-              top={'7vh'}
-              title={'game'}
-              type={'djndjdf'}
-              link={'dcjhcjdf'}
-              price={'69'}
-              prize={'69'}
-              content={'ewjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'}
-              item={'dkjdsjkkjd'}
-              key={'0'}
-              color={'pink'}
-              color2={'light pink'}
-            />
-            <EventCard
-              top={'7vh'}
-              title={'game'}
-              type={'djndjdf'}
-              link={'dcjhcjdf'}
-              price={'69'}
-              prize={'69'}
-              content={'ewjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'}
-              item={'dkjdsjkkjd'}
-              key={'0'}
-              color={'pink'}
-              color2={'light pink'}
-            />
-            <EventCard
-              top={'7vh'}
-              title={'game'}
-              type={'djndjdf'}
-              link={'dcjhcjdf'}
-              price={'69'}
-              prize={'69'}
-              content={'ewjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'}
-              item={'dkjdsjkkjd'}
-              key={'0'}
-              color={'pink'}
-              color2={'light pink'}
-            />
             {userData.cartItems.map((item, index) => {
               if (item.Type === 'Contest') {
                 return (
@@ -230,110 +178,6 @@ function DashBoardNew() {
           </a> */}
           {/* <div className="event-cards"> */}
           <div className={Classes.event_cards}>
-            <EventCard
-              top={'7vh'}
-              title={'game'}
-              type={'djndjdf'}
-              link={'dcjhcjdf'}
-              price={'69'}
-              prize={'69'}
-              content={'ewjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'}
-              item={'dkjdsjkkjd'}
-              key={'0'}
-              color={'pink'}
-              color2={'light pink'}
-              width={'260px'}
-              height={'329px'}
-              contentLeft={'12px'}
-              contentTop={'70px'}
-              contentWidth={'230px'}
-              contentFont={'16px'}
-              lineLeft={'23%'}
-              titleTop={'3px'}
-              imgLeft={'7px'}
-              viewStatementLeft={'50px'}
-              addToCartLeft={'6px'}
-              frontLeft={'20px'}
-              display={'none'}
-            />
-            <EventCard
-              top={'7vh'}
-              title={'game'}
-              type={'djndjdf'}
-              link={'dcjhcjdf'}
-              price={'69'}
-              prize={'69'}
-              content={'ewjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'}
-              item={'dkjdsjkkjd'}
-              key={'0'}
-              color={'pink'}
-              color2={'light pink'}
-              width={'260px'}
-              height={'329px'}
-              contentLeft={'12px'}
-              contentTop={'70px'}
-              contentWidth={'230px'}
-              contentFont={'16px'}
-              lineLeft={'23%'}
-              titleTop={'3px'}
-              imgLeft={'7px'}
-              viewStatementLeft={'50px'}
-              addToCartLeft={'6px'}
-              frontLeft={'20px'}
-              display={'none'}
-            />
-            <EventCard
-              top={'7vh'}
-              title={'game'}
-              type={'djndjdf'}
-              link={'dcjhcjdf'}
-              price={'69'}
-              prize={'69'}
-              content={'ewjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'}
-              item={'dkjdsjkkjd'}
-              key={'0'}
-              color={'pink'}
-              color2={'light pink'}
-              width={'260px'}
-              height={'329px'}
-              contentLeft={'12px'}
-              contentTop={'70px'}
-              contentWidth={'230px'}
-              contentFont={'16px'}
-              lineLeft={'23%'}
-              titleTop={'3px'}
-              imgLeft={'7px'}
-              viewStatementLeft={'50px'}
-              addToCartLeft={'6px'}
-              frontLeft={'20px'}
-              display={'none'}
-            />
-            <EventCard
-              top={'7vh'}
-              title={'game'}
-              type={'djndjdf'}
-              link={'dcjhcjdf'}
-              price={'69'}
-              prize={'69'}
-              content={'ewjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'}
-              item={'dkjdsjkkjd'}
-              key={'0'}
-              color={'pink'}
-              color2={'light pink'}
-              width={'260px'}
-              height={'329px'}
-              contentLeft={'12px'}
-              contentTop={'70px'}
-              contentWidth={'230px'}
-              contentFont={'16px'}
-              lineLeft={'23%'}
-              titleTop={'3px'}
-              imgLeft={'7px'}
-              viewStatementLeft={'50px'}
-              addToCartLeft={'6px'}
-              frontLeft={'20px'}
-              display={'none'}
-            />
             {userData.cartItems.map((item, index) => {
               if (item.Type === 'Contest') {
                 return (
@@ -349,6 +193,20 @@ function DashBoardNew() {
                     key={index}
                     color={item.color}
                     color2={item.color2}
+                    top={'7vh'}
+                    width={'260px'}
+                    height={'329px'}
+                    contentLeft={'12px'}
+                    contentTop={'70px'}
+                    contentWidth={'230px'}
+                    contentFont={'16px'}
+                    lineLeft={'23%'}
+                    titleTop={'3px'}
+                    imgLeft={'7px'}
+                    viewStatementLeft={'50px'}
+                    addToCartLeft={'6px'}
+                    frontLeft={'20px'}
+                    display={'none'}
                   />
                 );
               }
