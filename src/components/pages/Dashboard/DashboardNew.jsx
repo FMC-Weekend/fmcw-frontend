@@ -14,15 +14,15 @@ function DashBoardNew() {
   const { items } = useCart();
   const [isLoading, setIsLoading] = useState(false);
   const [userData, setUserData] = useState({
-    name: '',
-    email: '',
+    name: 'Harsh Shrivastava',
+    email: 'harsh.shrivastava.eee21@itbhu.ajsjsjdjhdsc.in',
     college: 'Foo',
     phone: 'XXXXXXXXXX',
-    year: '0',
+    yearOfStudy: '2',
     instaHandle: '_blah_',
     userType: '-1',
     cartItems: [],
-    refCode: ''
+    refCode: '45646'
   });
   const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
   const logoutHandler = () => {
@@ -107,64 +107,266 @@ function DashBoardNew() {
     <div className={Classes.section}>
       <div className={Classes.section_top}>
         <div className={Classes.illus}>
-          <img src='dashboard.svg' alt='illustration'/>
-          </div>
-        <h3>Hi, </h3> 
-        <h2>{userData.name}!</h2>
+          <img src="dashboard.svg" alt="illustration" />
+        </div>
+        <h3>Hi, </h3>
+        <h2 className={Classes.userName}>{userData.name}!</h2>
         <section className={Classes.user_details}>
-          <h2>Email: <span>{userData.email}</span></h2>
-          <h2>College: <span>{userData.college}</span></h2>
-          <h2>Year of Study: <span>{userData.yearOfStudy}</span></h2>
-          <h2>Referral Code: <span>{userData.refCode}</span></h2>
-          <h2>Instagram Handle: <span>{userData.instaHandle}</span></h2>
+          <h2>
+            Email: <span>{userData.email}</span>
+          </h2>
+          <h2>
+            College: <span>{userData.college}</span>
+          </h2>
+          <h2>
+            Year of Study: <span>{userData.yearOfStudy}</span>
+          </h2>
+          <h2>
+            Referral Code: <span>{userData.refCode}</span>
+          </h2>
+          <h2>
+            Instagram Handle: <span>{userData.instaHandle}</span>
+          </h2>
           <h2>{userData.userType == '2' ? 'Campus Ambassador' : 'Participant'}</h2>
         </section>
+      </div>
+      <div className={Classes.section_top} style={{ marginTop: '0px' }}>
         <div className={Classes.registered_contest}>
           <h2>Registered Contests</h2>
         </div>
       </div>
-      <div className={Classes.contest_cards}>
-      <a href='/events'>
+      <div className={Classes.lapTopView}>
+        <div className={Classes.contest_cards}>
+          {/* <a href='/events'>
           <section className={Classes.addContest}>
             <h1>+</h1>
             <h2>Add more contest</h2>
           </section>
-          </a>
-        {/* <div className="event-cards"> */}
-        <div className={Classes.event_cards}>
-          {userData.cartItems.map((item, index) => {
-            if (item.Type === 'Contest') {
-              return (
-                <EventCard
-                img={item.img}
-                title={item.title}
-                type={item.type}
-                link={item.link}
-                price={item.price}
-                prize={item.prize}
-                content={item.content}
-                item={item}
-                key={index}
-                color={item.color}
-                color2={item.color2}
-                />
-              );
-            }
-            return '';
-          })}
-          
+          </a> */}
+          {/* <div className="event-cards"> */}
+          <div className={Classes.event_cards}>
+            <EventCard
+              top={'7vh'}
+              title={'game'}
+              type={'djndjdf'}
+              link={'dcjhcjdf'}
+              price={'69'}
+              prize={'69'}
+              content={'ewjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'}
+              item={'dkjdsjkkjd'}
+              key={'0'}
+              color={'pink'}
+              color2={'light pink'}
+            />
+            <EventCard
+              top={'7vh'}
+              title={'game'}
+              type={'djndjdf'}
+              link={'dcjhcjdf'}
+              price={'69'}
+              prize={'69'}
+              content={'ewjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'}
+              item={'dkjdsjkkjd'}
+              key={'0'}
+              color={'pink'}
+              color2={'light pink'}
+            />
+            <EventCard
+              top={'7vh'}
+              title={'game'}
+              type={'djndjdf'}
+              link={'dcjhcjdf'}
+              price={'69'}
+              prize={'69'}
+              content={'ewjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'}
+              item={'dkjdsjkkjd'}
+              key={'0'}
+              color={'pink'}
+              color2={'light pink'}
+            />
+            <EventCard
+              top={'7vh'}
+              title={'game'}
+              type={'djndjdf'}
+              link={'dcjhcjdf'}
+              price={'69'}
+              prize={'69'}
+              content={'ewjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'}
+              item={'dkjdsjkkjd'}
+              key={'0'}
+              color={'pink'}
+              color2={'light pink'}
+            />
+            {userData.cartItems.map((item, index) => {
+              if (item.Type === 'Contest') {
+                return (
+                  <EventCard
+                    img={item.img}
+                    title={item.title}
+                    type={item.type}
+                    link={item.link}
+                    price={item.price}
+                    prize={item.prize}
+                    content={item.content}
+                    item={item}
+                    key={index}
+                    color={item.color}
+                    color2={item.color2}
+                  />
+                );
+              }
+              return '';
+            })}
+          </div>
         </div>
       </div>
-      <div className={`${Classes.registered_contest} ${Classes.section_top}`}>
-        <h2>Registered Workshops</h2>
+      <div className={Classes.mobileView}>
+        <div className={Classes.contest_cards}>
+          {/* <a href='/events'>
+          <section className={Classes.addContest}>
+            <h1>+</h1>
+            <h2>Add more contest</h2>
+          </section>
+          </a> */}
+          {/* <div className="event-cards"> */}
+          <div className={Classes.event_cards}>
+            <EventCard
+              top={'7vh'}
+              title={'game'}
+              type={'djndjdf'}
+              link={'dcjhcjdf'}
+              price={'69'}
+              prize={'69'}
+              content={'ewjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'}
+              item={'dkjdsjkkjd'}
+              key={'0'}
+              color={'pink'}
+              color2={'light pink'}
+              width={'260px'}
+              height={'329px'}
+              contentLeft={'12px'}
+              contentTop={'70px'}
+              contentWidth={'230px'}
+              contentFont={'16px'}
+              lineLeft={'23%'}
+              titleTop={'3px'}
+              imgLeft={'7px'}
+              viewStatementLeft={'50px'}
+              addToCartLeft={'6px'}
+              frontLeft={'20px'}
+              display={'none'}
+            />
+            <EventCard
+              top={'7vh'}
+              title={'game'}
+              type={'djndjdf'}
+              link={'dcjhcjdf'}
+              price={'69'}
+              prize={'69'}
+              content={'ewjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'}
+              item={'dkjdsjkkjd'}
+              key={'0'}
+              color={'pink'}
+              color2={'light pink'}
+              width={'260px'}
+              height={'329px'}
+              contentLeft={'12px'}
+              contentTop={'70px'}
+              contentWidth={'230px'}
+              contentFont={'16px'}
+              lineLeft={'23%'}
+              titleTop={'3px'}
+              imgLeft={'7px'}
+              viewStatementLeft={'50px'}
+              addToCartLeft={'6px'}
+              frontLeft={'20px'}
+              display={'none'}
+            />
+            <EventCard
+              top={'7vh'}
+              title={'game'}
+              type={'djndjdf'}
+              link={'dcjhcjdf'}
+              price={'69'}
+              prize={'69'}
+              content={'ewjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'}
+              item={'dkjdsjkkjd'}
+              key={'0'}
+              color={'pink'}
+              color2={'light pink'}
+              width={'260px'}
+              height={'329px'}
+              contentLeft={'12px'}
+              contentTop={'70px'}
+              contentWidth={'230px'}
+              contentFont={'16px'}
+              lineLeft={'23%'}
+              titleTop={'3px'}
+              imgLeft={'7px'}
+              viewStatementLeft={'50px'}
+              addToCartLeft={'6px'}
+              frontLeft={'20px'}
+              display={'none'}
+            />
+            <EventCard
+              top={'7vh'}
+              title={'game'}
+              type={'djndjdf'}
+              link={'dcjhcjdf'}
+              price={'69'}
+              prize={'69'}
+              content={'ewjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj'}
+              item={'dkjdsjkkjd'}
+              key={'0'}
+              color={'pink'}
+              color2={'light pink'}
+              width={'260px'}
+              height={'329px'}
+              contentLeft={'12px'}
+              contentTop={'70px'}
+              contentWidth={'230px'}
+              contentFont={'16px'}
+              lineLeft={'23%'}
+              titleTop={'3px'}
+              imgLeft={'7px'}
+              viewStatementLeft={'50px'}
+              addToCartLeft={'6px'}
+              frontLeft={'20px'}
+              display={'none'}
+            />
+            {userData.cartItems.map((item, index) => {
+              if (item.Type === 'Contest') {
+                return (
+                  <EventCard
+                    img={item.img}
+                    title={item.title}
+                    type={item.type}
+                    link={item.link}
+                    price={item.price}
+                    prize={item.prize}
+                    content={item.content}
+                    item={item}
+                    key={index}
+                    color={item.color}
+                    color2={item.color2}
+                  />
+                );
+              }
+              return '';
+            })}
+          </div>
+        </div>
       </div>
+      {/* <div className={`${Classes.registered_contest} ${Classes.section_top}`}>
+        <h2>Registered Workshops</h2>
+      </div> */}
       <div className={Classes.contest_cards}>
-      <a href='/events'>
+        {/* <a href='/events'>
           <section className={Classes.addWorkshop}>
             <h1>+</h1>
             <h2>Add more workshop</h2>
           </section>
-          </a>
+          </a> */}
         {/* <div className="event-cards"> */}
         {/* <div className={Classes.event_cards}>
           {userData.cartItems.map((item, index) => {
@@ -187,10 +389,9 @@ function DashBoardNew() {
           })}
         </div> */}
       </div>
-      <button className={Classes.logout_button}
-          onClick={logoutHandler}>
-          LOG OUT
-        </button>
+      <button className={Classes.logout_button} onClick={logoutHandler}>
+        LOG OUT
+      </button>
       <Footer />
     </div>
   );

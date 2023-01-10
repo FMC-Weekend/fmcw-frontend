@@ -17,7 +17,7 @@ align-items: center;
 padding: 8px 24px;
 gap: 4px;
 width: 200px;
-margin: 10px;
+margin: 10vh;
 margin-left: 80px;
 font-weight: 700;
 font-size: 1.8em;
@@ -97,9 +97,12 @@ text-decoration: none;
 }
 .user_details h2 {
   font-size: 4em;
+  overflow: hidden;
+  margin: 0 10px;
   margin-top: -20px;
   font-family: Montserrat;
   color: rgb(136, 0, 255);
+  padding-bottom: 1.5vh !important;
 }
 .illus img {
   display: flex;
@@ -119,7 +122,18 @@ text-decoration: none;
   .section_title h1,
   .section_top h2 {
     text-align: center;
-    padding-left: 5vw;
+    padding-left: 0 !important;
+  }
+  .userName {
+    font-size: 3em !important;
+  }
+  .section_top h3{
+    text-align: center;
+  }
+  .illus img{
+    float: none !important;
+    margin: auto;
+    top: -23vh !important;
   }
   
 }
@@ -156,7 +170,7 @@ justify-content: right;
   font-style: normal;
   font-weight: 600;
   font-size: 4em;
-  line-height: 40px;
+  line-height: 60px;
   color: rgb(24, 24, 24);
   padding-left: 5vw;
   padding-bottom: 5vh;
@@ -186,7 +200,7 @@ justify-content: right;
 .illus img {
   display: flex;
   position: relative;
-  top: -25vh;
+  top: -20vh;
   float: right;
 }
 .user_details span {
@@ -222,7 +236,8 @@ justify-content: right;
 }
 
 .contest_cards {
-  padding-left: 5vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
   /* width: 60vw; */
 }
 .contest_cards a {
@@ -231,14 +246,25 @@ justify-content: right;
 .event_cards {
   display: flex;
   flex-wrap: wrap;
-  width: 70vw;
+  position: relative;
+}
+.lapTopView{
+  display: block;
+}
+.mobileView{
+  display: none;
 }
 @media screen and (max-width: 960px) {
   .event_cards {
     justify-content: space-around;
     position: relative;
-    top: 325px;
   }
-
-  
+}
+@media screen and (max-width: 1006px) {
+  .lapTopView{
+    display: none;
+  }
+  .mobileView{
+    display: block;
+  }
 }

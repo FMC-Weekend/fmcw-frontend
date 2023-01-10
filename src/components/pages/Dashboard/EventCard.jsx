@@ -13,10 +13,10 @@ import styled from 'styled-components';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useCart } from 'react-use-cart';
-// import rectangle from './Rectangle133.png'
-// import arrow from './Vector59.png'
-// import frontImg from './Group7175.png'
-// import viewProbImg from './Vector.png'
+import rectangle from '../Events/Rectangle133.png'
+import arrow from '../Events/Vector59.png';
+import frontImg from '../Events/Group7175.png';
+import viewProbImg from '../Events/Vector.png';
 
 const CardTitle = styled.h2`
   transform: translateZ(55px);
@@ -42,9 +42,7 @@ function EventCard(props) {
   }
 
   async function addItemToCart(item) {
-    // console.log('yash');
     const userID = sessionStorage.getItem('userID');
-    // e.preventDefault();
     let obj = {
       userID: userID,
       cartItem: item
@@ -57,9 +55,6 @@ function EventCard(props) {
         'Content-Type': 'application/json'
       }
     });
-    // console.log({ obj });
-
-    // alert('Item added to cart successfully!');/
     window.setTimeout(function () {
       location.reload();
     }, 1000);
@@ -84,32 +79,70 @@ function EventCard(props) {
     scale: 1.06
   };
   return (
-    <div className="card card-flip" style={{background: props.color}}>
+    <div
+      className="card card-flip"
+      style={{
+        top: props.top,
+        background: props.color,
+        left: props.left,
+        height: props.height,
+        width: props.width,
+        marginRight: props.marginRight,
+      }}>
       <div className="card-front card-div">
-        <b className="type">{props.type}</b>
-          <img className='front-arrow' src='Vector59.png'></img>
-        <b className="front-title">{props.title}</b>
-          <b className="prizes-front">Prizes Worth- {props.prize}</b>
-          <b className='front-price'>RS.{props.price}</b>
-          <img className='front-img' src='Group7175.png'></img>
-          <img className='three-dots1' src='Rectangle133.png'></img>
-          <img className='three-dots2' src='Rectangle133.png'></img>
-          <img className='three-dots3' src='Rectangle133.png'></img>
+        <b className="type" style={{ left: props.frontLeft }}>
+          {props.type}
+        </b>
+        <img className="front-arrow" src={arrow} style={{ display: props.display }}></img>
+        <b className="front-title" style={{ left: props.frontLeft }}>
+          {props.title}
+        </b>
+        <b className="prizes-front" style={{ left: props.frontLeft }}>
+          Prizes Worth- {props.prize}
+        </b>
+        <b className="front-price" style={{ left: props.frontLeft }}>
+          RS.{props.price}
+        </b>
+        <img className="front-img" src={frontImg} style={{ left: props.frontLeft }}></img>
+        <img className="three-dots1" src={rectangle} style={{ display: props.display }}></img>
+        <img className="three-dots2" src={rectangle} style={{ display: props.display }}></img>
+        <img className="three-dots3" src={rectangle} style={{ display: props.display }}></img>
       </div>
 
       <div className="card-back card-div">
         
-        <div className="card-title">
+        <div className="card-title" style={{width: props.width}}>
           {props.title}
-          <div className="lineTitle"></div>
+          <div className="lineTitle" style={{left: props.lineLeft}}></div>
         </div>
-        <div className="contents">
+        ;
+        <div
+          className="contents"
+          style={{
+            left: props.contentLeft,
+            top: props.contentTop,
+            width: props.contentWidth,
+            fontSize: props.contentFont
+          }}>
           <b>{props.content}</b>
         </div>
-        <img className='viewProbImg' src='circle-arrow-right-solid.svg' alt='arrow' />
-        <a href={props.link} target="_blank" className="btnView" rel="noreferrer">
+        <img className='viewProbImg' src={viewProbImg} style={{ left: props.imgLeft }}></img>
+        <a href={props.link} target="_blank" className="btnView" rel="noreferrer" style={{ left: props.viewStatementLeft }}>
           {props.ps}
         </a>
+        {sessionStorage.getItem('isLoggedIn') == 'true' && (
+          <div className="addToCart" style={{background: props.color2}} onClick={() => {
+              // send post request to database
+
+              addItemToCart(props.item);
+              // addItem(props.item);
+
+              // change();
+            }}>
+            {props.ps2}
+          
+        </div>
+        )}
       </div>
     </div>
   );
@@ -120,6 +153,7 @@ EventCard.defaultProps = {
   ps: 'View Problem Statement',
   ps2: 'Add To Cart',
   content: 150,
+  color: '#000',
   color2: '#2ED9FC',
 };
 export default EventCard;
