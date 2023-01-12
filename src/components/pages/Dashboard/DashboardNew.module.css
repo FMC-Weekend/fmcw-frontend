@@ -101,7 +101,7 @@ text-decoration: none;
   margin: 0 10px;
   margin-top: -20px;
   font-family: Montserrat;
-  color: rgb(136, 0, 255);
+  color: #121212;
   padding-bottom: 1.5vh !important;
 }
 .illus img {
@@ -113,7 +113,7 @@ text-decoration: none;
 .user_details span {
   margin: 10px 40px;
   font-family: Montserrat;
-  color: rgb(249, 18, 95);
+  color: #121212;
 }
 @media screen and (max-width: 786px) {
   .section {
@@ -195,7 +195,7 @@ justify-content: right;
   font-size: 1.4em;
   margin-top: -20px;
   font-family: Montserrat;
-  color: rgb(136, 0, 255);
+  color: #121212;
 }
 .illus img {
   display: flex;
@@ -207,7 +207,7 @@ justify-content: right;
   margin: 10px 40px;
   display: contents;
   font-family: Montserrat;
-  color: rgb(249, 18, 95);
+  color: #121212;
 }
 .referral h2 {
   font-family: 'Nunito Sans';
