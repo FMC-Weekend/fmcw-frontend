@@ -16,12 +16,14 @@ import banner4 from './banner4.svg';
 import backButton from './backButton.png';
 import forwardButton from './forwardButton.png';
 import { Link } from 'react-router-dom';
-import Testimonials from './Testimonials/Testimonials.jsx';
+import Testimonials from '../Testimonials/Testimonials';
 import Fade from 'react-reveal/Fade';
 import Marquee from 'react-fast-marquee';
+import CountUp from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
 
-// import Testimonials from "./Testimonials/Testimonials.jsx";
 function landingPage() {
+  const [counterOn, setCounterOn] = useState(false);
   const [button, setButton] = useState(true);
 
   const showButton = () => {
@@ -49,6 +51,7 @@ function landingPage() {
           <Fade bottom>
             <h1 className={Classes.div1_heading}>A FEST FOR xyz</h1>
 
+            {/* <Link to='/authentication'>  */}
             {/* <Link to="/authentication">  */}
             <a href="/authentication">
               <button className={Classes.register_button}>
@@ -69,37 +72,36 @@ function landingPage() {
             <h2>VISTA</h2>
           </Marquee>
         </div>
-          <div className={Classes.div2}>
-            <Fade right>
-              <h1>FOR CREATIVE ENTHUSIASTS</h1>
-              <h2>FROM FIELDS OF</h2>
-              <section className={Classes.button_1}>
-                <button className={Classes.design}>
-                  {' '}
-                  <p>Design</p>
-                </button>
-                <button className={Classes.photography}>
-                  <p>Photography</p>
-                </button>
-                <button className={Classes.media}>
-                  <p>Media</p>
-                </button>
-              </section>
-              <section className={Classes.button_2}>
-                <button className={Classes.cine}>
-                  <p>Cine</p>
-                </button>
-                <button className={Classes.animation}>
-                  <p>Animation</p>
-                </button>
-                <button className={Classes.outreach}>
-                  <p>Outreach</p>
-                </button>
-              </section>
-            </Fade>
-          </div>
+        <div className={Classes.div2}>
+          <Fade right>
+            <h1>FOR CREATIVE ENTHUSIASTS</h1>
+            <h2>FROM FIELDS OF</h2>
+            <section className={Classes.button_1}>
+              <button className={Classes.design}>
+                {' '}
+                <p>Design</p>
+              </button>
+              <button className={Classes.photography}>
+                <p>Photography</p>
+              </button>
+              <button className={Classes.media}>
+                <p>Media</p>
+              </button>
+            </section>
+            <section className={Classes.button_2}>
+              <button className={Classes.cine}>
+                <p>Cine</p>
+              </button>
+              <button className={Classes.animation}>
+                <p>Animation</p>
+              </button>
+              <button className={Classes.outreach}>
+                <p>Outreach</p>
+              </button>
+            </section>
+          </Fade>
+        </div>
         <div className={Classes.eventBox}>
-
           <div className={Classes.div3}>
             <div className={Classes.banner1}>
               <img src={winner1} />
@@ -107,73 +109,79 @@ function landingPage() {
             <Fade bottom>
               <h1>COMPETITIONS</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in. Pellentesque
-                et tempor tortor enim ac sit. Egestas est lacus nullam dignissim semper. Tellus mauris
-                sed ultricies nunc posuere non placerat{' '}
+                Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in.
+                Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim
+                semper. Tellus mauris sed ultricies nunc posuere non placerat{' '}
               </p>
-
-              <button place>Explore</button>
+              <a href="/events">
+                <button place>Explore</button>
+              </a>
             </Fade>
           </div>
-        <div className={Classes.div4}>
-          <div className={Classes.banner2}>
-            <img src={briefing} />
-          </div>
-          <Fade bottom>
-            <h1>WORKSHOPS</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in. Pellentesque
-              et tempor tortor enim ac sit. Egestas est lacus nullam dignissim semper. Tellus mauris
-              sed ultricies nunc posuere non placerat{' '}
-            </p>
-
-            <button place>Explore</button>
-          </Fade>
-        </div>
-        </div>
-        <div className={Classes.eventBox}>
-          <div className={Classes.div5}>
-            <div className={Classes.banner3}>
-              <img src={redcarpet} />
+          <div className={Classes.div4}>
+            <div className={Classes.banner2}>
+              <img src={briefing} />
             </div>
             <Fade bottom>
-              <h1>PRONITES</h1>
+              <h1>WORKSHOPS</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in. Pellentesque
-                et tempor tortor enim ac sit. Egestas est lacus nullam dignissim semper. Tellus mauris
-                sed ultricies nunc posuere non placerat{' '}
+                Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in.
+                Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim
+                semper. Tellus mauris sed ultricies nunc posuere non placerat{' '}
               </p>
-
-              <button place>Explore</button>
+              <a href="/events">
+                <button place>Explore</button>
+              </a>
             </Fade>
           </div>
-          <div className={Classes.div6}>
-            <div className={Classes.banner4}>
-              <img src={banner4} />
+        </div>
+        {/* FOR DYNAMIC DIGITS ON SCROLLING */}
+        <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
+          <div className={Classes.eventBox}>
+            <div className={Classes.div5}>
+              <div className={Classes.banner3}>
+                <img src={redcarpet} />
+              </div>
+
+              <Fade bottom>
+                <h1>PRONITES</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in.
+                  Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim
+                  semper. Tellus mauris sed ultricies nunc posuere non placerat{' '}
+                </p>
+
+                <button place>Explore</button>
+              </Fade>
             </div>
-            <Fade bottom>
-              <h1>OPEN AIR THEATRES</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in. Pellentesque
-                et tempor tortor enim ac sit. Egestas est lacus nullam dignissim semper. Tellus mauris
-                sed ultricies nunc posuere non placerat{' '}
-              </p>
+            <div className={Classes.div6}>
+              <div className={Classes.banner4}>
+                <img src={banner4} />
+              </div>
+              <Fade bottom>
+                <h1>OPEN AIR THEATRES</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in.
+                  Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim
+                  semper. Tellus mauris sed ultricies nunc posuere non placerat{' '}
+                </p>
 
-              <button place>Explore</button>
+                <button place>Explore</button>
+              </Fade>
+            </div>
+          </div>
+          <div className={Classes.div7}>
+            <Fade right>
+              <h1>{counterOn && <CountUp start={100} end={75269} duration={2} delay={0} />}+</h1>;
+              <h2>
+                Creative enthusiasts visiting the fest, building a culture and community of digital
+                art
+              </h2>
             </Fade>
           </div>
-        </div>
-        <div className={Classes.div7}>
-          <Fade right>
-            <h1>75,269</h1>
-            <h2>
-              Creative enthusiasts visiting the fest, building a culture and community of digital
-              art
-            </h2>
-          </Fade>
-        </div>
+        </ScrollTrigger>
       </div>
-      <Testimonials />
+
       <div className={Classes.footer}>
         <Footer />
       </div>

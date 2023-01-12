@@ -1,26 +1,23 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true,
-        "node": true
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["plugin:react/jsx-runtime"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": [
-        "plugin:react/jsx-runtime"
-    ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 13,
-        
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react", "prettier"
-    ],
-    "rules": {
-        "prettier/prettier": "warn",
-        "react/react-in-jsx-scope": "off",
-        "react/prop-types": "off"
-    }
+    "ecmaVersion": 13,
+
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier"],
+
+  "rules": {
+    "prettier/prettier": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off"
+  }
 }

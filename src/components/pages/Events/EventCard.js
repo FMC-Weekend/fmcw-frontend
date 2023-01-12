@@ -13,10 +13,10 @@ import styled from 'styled-components';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useCart } from 'react-use-cart';
-import rectangle from './Rectangle133.png'
-import arrow from './Vector59.png'
-import frontImg from './Group7175.png'
-import viewProbImg from './Vector.png'
+import rectangle from './Rectangle133.png';
+import arrow from './Vector59.png';
+import frontImg from './Group7175.png';
+import viewProbImg from './Vector.png';
 
 const CardTitle = styled.h2`
   transform: translateZ(55px);
@@ -86,7 +86,7 @@ function EventCard(props) {
         left: props.left,
         height: props.height,
         width: props.width,
-        marginRight: props.marginRight,
+        marginRight: props.marginRight
       }}>
       <div className="card-front card-div">
         <b className="type" style={{ left: props.frontLeft }}>
@@ -109,10 +109,9 @@ function EventCard(props) {
       </div>
 
       <div className="card-back card-div">
-        
-        <div className="card-title" style={{width: props.width}}>
+        <div className="card-title" style={{ width: props.width }}>
           {props.title}
-          <div className="lineTitle" style={{left: props.lineLeft}}></div>
+          <div className="lineTitle" style={{ left: props.lineLeft }}></div>
         </div>
         ;
         <div
@@ -125,12 +124,20 @@ function EventCard(props) {
           }}>
           <b>{props.content}</b>
         </div>
-        <img className='viewProbImg' src={viewProbImg} style={{ left: props.imgLeft }}></img>
-        <a href={props.link} target="_blank" className="btnView" rel="noreferrer" style={{ left: props.viewStatementLeft }}>
+        <img className="viewProbImg" src={viewProbImg} style={{ left: props.imgLeft }}></img>
+        <a
+          href={props.link}
+          target="_blank"
+          className="btnView"
+          rel="noreferrer"
+          style={{ left: props.viewStatementLeft }}>
           {props.ps}
         </a>
         {sessionStorage.getItem('isLoggedIn') == 'true' && (
-          <div className="addToCart" style={{background: props.color2}} onClick={() => {
+          <div
+            className="addToCart"
+            style={{ background: props.color2 }}
+            onClick={() => {
               // send post request to database
 
               addItemToCart(props.item);
@@ -139,8 +146,7 @@ function EventCard(props) {
               // change();
             }}>
             {props.ps2}
-          
-        </div>
+          </div>
         )}
       </div>
     </div>
@@ -153,6 +159,6 @@ EventCard.defaultProps = {
   ps2: 'Add To Cart',
   content: 150,
   color: '#000',
-  color2: '#2ED9FC',
+  color2: '#2ED9FC'
 };
 export default EventCard;

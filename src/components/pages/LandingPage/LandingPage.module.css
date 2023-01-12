@@ -170,7 +170,7 @@ border-radius: 4px;
   top: 30vh;
   /* left: 80px; */
   display: flex;
-  margin: 10px 90px;
+  margin: 10px 90px ;
 }
 .div2 .button_2 {
   padding: 10px 30px;
@@ -188,7 +188,7 @@ border-radius: 4px;
   align-items: center;
   padding: 12px 36px;
   gap: 4px;
-  margin: 0 12px;
+  margin: 0 50px;
   position: relative;
   width: auto;
   height: 10vh;
@@ -207,7 +207,7 @@ border-radius: 4px;
   align-items: center;
   padding: 12px 36px;
   gap: 4px;
-  margin: 0 12px;
+  
 
   position: relative;
   width: auto;
@@ -227,7 +227,7 @@ border-radius: 4px;
   align-items: center;
   padding: 12px 36px;
   gap: 4px;
-  margin: 0 12px;
+  margin: 0 0 0 12px;
 
   position: relative;
   width: auto;
@@ -247,7 +247,7 @@ border-radius: 4px;
   align-items: center;
   padding: 12px 36px;
   gap: 4px; 
-   margin: 0 12px;
+  margin: 0 50px;
   position: relative;
   width: auto;
   height: 10vh;
@@ -266,7 +266,7 @@ border-radius: 4px;
   align-items: center;
   padding: 12px 36px;
   gap: 4px;
-  margin: 0 12px;
+  /* margin: 0 12px; */
 
   position: relative;
   width: auto;

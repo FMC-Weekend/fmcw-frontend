@@ -1,5 +1,5 @@
 body {
-  font-family: Marcellus;
+  font-family: manrope;
   background-color: #1d033e;
 }
 .event_page {
@@ -156,11 +156,12 @@ flip card
   bottom: 60px;
   font-family: 'Manrope';
   font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 18px;
   line-height: 22px;
   text-align: justify;
   text-decoration: none;
+  color: #ffffff;
 }
 .btnView:hover {
   color: #000;
@@ -192,7 +193,8 @@ flip card
     border: 2px solid #000000;
     border-radius: 0px 0px 22px 22px;
 }
-.addToCart:hover {
+
+.addToCartBtn:hover {
   color: #ffffff;
 }
 .card-content {
@@ -223,9 +225,8 @@ flip card
 }
 .viewProbImg {
   position: absolute;
-  width: 32px;
-  height: 32px;
-  color: #000;
+  width: 28px;
+  height: 28px;
   left: 30px;
   bottom: 65px;
 }
@@ -333,7 +334,7 @@ flip card
 .workshop-card-title {
   margin: 0 auto;
   color: #fff;
-  font-family: Marcellus;
+  font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -368,7 +369,7 @@ flip card
 #vertical-tab-4,
 #vertical-tab-5,
 #vertical-tab-6 {
-  font-family: Marcellus;
+  font-family: Manrope;
   font-size: 0.4em;
   font-style: normal;
   font-weight: 400;
@@ -482,13 +483,13 @@ flip card
 }
 #modal-modal-title {
   color: #fff;
-  font-family: Marcellus;
+  font-family: Montserrat;
   border-bottom: 2px solid #ffffff;
   padding-bottom: 20px;
 }
 #modal-modal-description {
   color: #ffffff;
-  font-family: Marcellus;
+  font-family: Montserrat;
   border-bottom: 2px solid #ffffff;
 }
 .table {
@@ -526,7 +527,7 @@ flip card
   width: 800px;
   overflow-x: hidden;
   margin: auto;
-  font-family: Marcellus;
+  font-family: manrope;
 }
 .workshop-modal {
   width: 80vw;
@@ -552,7 +553,7 @@ flip card
   float: right;
   display: flex;
   position: absolute;
-  font-family: Marcellus;
+  font-family: manrope;
 }
 .workshop-modal .guest-details p {
   display: flex;
@@ -560,14 +561,14 @@ flip card
   color: #fff;
   margin: 45px;
   font-size: 1.3em;
-  font-family: Marcellus;
+  font-family: manrope;
 }
 .workshop-modal .guest-details h2 {
   color: #fcc907;
   font-size: 1.6em;
   position: absolute;
   left: 293px;
-  font-family: Marcellus;
+  font-family: manrope;
 }
 .workshop-modal .guest-details h3 {
   color: #fcc907;
@@ -575,7 +576,7 @@ flip card
   position: absolute;
   left: 293px;
   bottom: 0;
-  font-family: Marcellus;
+  font-family: manrope;
 }
 .time {
   margin-left: 250px;
@@ -583,7 +584,7 @@ flip card
 .workshop-modal .guest-details span {
   color: #fff;
   font-size: 1em;
-  font-family: Marcellus;
+  font-family: manrope;
 }
 .workshop-modal-img {
   object-fit: cover;
@@ -597,11 +598,11 @@ flip card
 }
 #modal-modal-description ul li span {
   color: #fff;
-  font-family: Marcellus;
+  font-family: manrope;
   font-size: 1.4em;
 }
 #modal-modal-description h3 {
-  font-family: Marcellus;
+  font-family: manrope;
   font-size: 1.4em;
   margin-top: 3px;
   padding-left: 20px;
@@ -626,12 +627,12 @@ flip card
   transition: all 0.4s ease;
 }
 #modal-modal-description p {
-  font-family: Marcellus;
+  font-family: manrope;
   font-size: 1.4em;
   padding-left: 20px;
 }
 #modal-modal-description a {
-  font-family: Marcellus;
+  font-family: manrope;
   font-size: 1.4em;
   text-decoration: none;
   padding: 20px;
@@ -712,7 +713,7 @@ flip card
     display: contents;
     flex-direction: column;
     position: absolute;
-    font-family: Marcellus;
+    font-family: manrope;
   }
   .workshop-modal .guest-details p {
     color: #fff;
@@ -720,7 +721,7 @@ flip card
     position: relative;
     font-size: 1.2em;
     text-align: center;
-    font-family: Marcellus;
+    font-family: manrope;
   }
   .workshop-modal .guest-details h2 {
     color: #fcc907;
@@ -728,7 +729,7 @@ flip card
     position: relative;
     right: 0px;
     left: 0;
-    font-family: Marcellus;
+    font-family: manrope;
   }
   .workshop-modal .guest-details h3 {
     color: #fcc907;
@@ -736,7 +737,7 @@ flip card
     bottom: -40px;
     left: 0;
     display: contents;
-    font-family: Marcellus;
+    font-family: manrope;
   }
   .time {
     margin-top: 40px;
@@ -750,7 +751,7 @@ flip card
   .workshop-modal .guest-details span {
     color: #fff;
     font-size: 1em;
-    font-family: Marcellus;
+    font-family: manrope;
   }
   .workshop-modal-img {
     object-fit: cover;
@@ -760,7 +761,7 @@ flip card
     border-radius: 50%;
   }
   .mobile h2 {
-    font-family: Marcellus;
+    font-family: manrope;
     font-style: normal;
     font-weight: normal;
     font-size: 1.6em;
@@ -777,7 +778,7 @@ flip card
     color: #fff;
     padding: 20px;
     list-style: none;
-    font-family: Marcellus;
+    font-family: manrope;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -843,22 +844,22 @@ flip card
   }
   #modal-modal-description ul li span {
     color: #fff;
-    font-family: Marcellus;
+    font-family: manrope;
     padding-right: 5px;
     font-size: 0.8em;
   }
   #modal-modal-description h3 {
-    font-family: Marcellus;
+    font-family: manrope;
     font-size: 0.9em;
     padding-left: 4px;
     margin-top: 3px;
   }
   #modal-modal-description p {
-    font-family: Marcellus;
+    font-family: manrope;
     font-size: 0.8em;
   }
   #modal-modal-description a {
-    font-family: Marcellus;
+    font-family: manrope;
     font-size: 1em;
     text-decoration: none;
     color: #fff;
@@ -876,6 +877,9 @@ flip card
     position: relative;
     font-size: 0.9em;
     text-align: center;
-    font-family: Marcellus;
-   }
+    font-family: manrope;
+  }
 }
+
+
+

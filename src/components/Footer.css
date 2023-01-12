@@ -1,4 +1,5 @@
 .footer-container {
+  font-family: 'Montserrat';
   background-color: #f3f3f3;
   padding-bottom: 10px;
   display: grid;
@@ -15,16 +16,19 @@
   height: 500px;
 }
 /* Social Icons */
+.social-media {
+  margin-top: 10px;
+}
 .social-icons {
   display: flex;
   flex-direction: row;
   align-items: center;
   align-self: center;
-  justify-content: space-evenly;
-  margin-bottom: 40px;
+  /* justify-content: space-evenly; */
+  justify-content: flex-start;
+  margin-bottom: 10px;
   width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 0;
   height: fit-content+10px;
 }
 
@@ -48,23 +52,37 @@
   background: #00CCF5;
   padding: 5px;
   margin: 10px;
+  margin-left: 0;
+}
+.facebook:hover{
+  background:#4267B2;
 }
 .instagram {
   background: #FE6263;
-  padding: 5px;
+  padding: 3px;
+  margin: 10px;
+ 
+}
+.instagram:hover {
+ background: #d6249f;
+ background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+ .youtube {
+  background: #685EDA;
+  padding: 4px;
   margin: 10px;
 }
-.youtube {
-  background: #685EDA;
-  padding: 5px;
-  margin: 10px;
+.youtube:hover{
+  background: #FF0000;
 }
 .linkedin {
   background: #14F0B9;
   padding: 5px;
   margin: 10px;
 }
-
+.linkedin:hover{
+  background: #0A66C2;
+}
 .footer {
   background-color: #f3f3f3;
   width: 100%;
@@ -91,6 +109,7 @@
 .contact-section {
   padding-left: 2rem;
   border-left: 2px solid #000000;
+  margin-top: 20px;
 }
 
 .contact-form {
@@ -101,10 +120,10 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 44px;
   /* identical to box height */
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   color: #000000;
 }
 
@@ -150,7 +169,7 @@ textarea::placeholder {
   font-size: 24px;
   line-height: 33px;
   /* identical to box height */
-  margin-left: 10px;
+  margin-left: 20px;
   color: #000000;
 }
 
@@ -169,8 +188,8 @@ textarea::placeholder {
 .contact-details {
   display: flex;
   flex-direction: column;
-    padding-top: 2rem;
-  font-family: 'Montserrat';
+    padding-top: 1rem;
+  font-family: 'Manrope';
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -238,9 +257,6 @@ textarea::placeholder {
   }
 
   
-  .social-media {
-    margin-top: 10px;
-  }
   
   
 }

@@ -16,8 +16,28 @@ function Footer() {
               className="image"
               alt="logo with image"></img>
           </section>
-          <section className="social-media">
-        <div className="social-icons">
+      
+        </div>
+        
+      </footer>
+      <div className="contact-section">
+        <div className="contact-heading">CONTACT US</div>
+        <div className="contact-form">
+        <textarea type="name" className="contact-text" placeholder="Tell us about anything and everything" required />
+        <input type="submit" value="Send" className="contact-submit-btn" />
+        </div>
+        <div className="contact-info">
+          <div className="contact-details">
+            <div>PUBLICITY HEAD 1</div>
+            <div>9876543210</div>
+          </div>
+          <div className="contact-details">
+            <div>PUBLICITY HEAD 2</div>
+            <div>9876543210</div>
+          </div>
+        </div>
+              <div className="social-media">
+           <div className="social-icons">
           <a
             className="social-icon-link facebook"
             href="https://www.facebook.com/fmcweekendiitbhu"
@@ -51,28 +71,9 @@ function Footer() {
             <i className="fab fa-linkedin" />
           </a>
         </div>
-      </section>
-        </div>
-        
-      </footer>
-      <div className="contact-section">
-        <div className="contact-heading">CONTACT US</div>
-        <div className="contact-form">
-        <textarea type="name" className="contact-text" placeholder="Tell us about anything and everything" required />
-        <input type="submit" value="Send" className="contact-submit-btn" />
-        </div>
-        <div className="contact-info">
-          <div className="contact-details">
-            <div>PUBLICITY HEAD 1</div>
-            <div>9876543210</div>
-          </div>
-          <div className="contact-details">
-            <div>PUBLICITY HEAD 2</div>
-            <div>9876543210</div>
-          </div>
-          
-        </div>
       </div>
+      </div>
+      
 
       
     </div>
