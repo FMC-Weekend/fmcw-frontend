@@ -14,7 +14,8 @@ export const Button = ({
   onClick,
   buttonStyle,
   buttonSize,
-  isInternalLink
+  isInternalLink,
+  className
 }) => {
   const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
 
@@ -25,7 +26,7 @@ export const Button = ({
       {isInternalLink ? (
         <Link to={toLink} className="btn-mobile">
           <button
-            className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+            className={`btn ${className} ${checkButtonStyle} ${checkButtonSize}`}
             onClick={onClick}
             type={type}>
             {children}
@@ -34,7 +35,7 @@ export const Button = ({
       ) : (
         <a href={toLink} className="btn-mobile">
           <button
-            className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+            className={`btn ${className} ${checkButtonStyle} ${checkButtonSize}`}
             onClick={onClick}
             type={type}>
             {children}

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { useState, useEffect, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Button } from './Button';
@@ -171,7 +172,7 @@ function Navbar() {
               EVENTS
             </NavLink>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <NavLink
               to="/pronites"
               className="nav-links"
@@ -179,7 +180,7 @@ function Navbar() {
               onClick={closeMobileMenu}>
               PRONITES
             </NavLink>
-          </li>
+          </li> */}
           <li className="nav-item">
             <NavLink
               to="/passes"

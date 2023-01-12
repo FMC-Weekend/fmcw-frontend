@@ -13,9 +13,11 @@
   padding-top: 0rem;
   padding-bottom: 0rem;
 }
+
 ul {
   margin-bottom: 0rem !important;
 }
+
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -36,12 +38,11 @@ ul {
   align-items: center;
   justify-items: center;
 }
-.icon-container {
-  height: 60%;
-}
+
 .add-shadow {
   box-shadow: 0px 2px 15px 0px #0e001fb2;
 }
+
 .navbar-logo {
   color: rgb(243, 243, 243);
   justify-self: start;
@@ -68,6 +69,7 @@ ul {
   justify-content: center;
   height: 100%;
 }
+
 .cartBtn {
   position: absolute;
   top: 25px;
@@ -80,9 +82,11 @@ ul {
   outline: none;
   border: none;
 }
-.nav-item {  
-height: 100%;
+
+.nav-item {
+  height: 100%;
 }
+
 .img {
   height: 80px;
   width: 100px;
@@ -97,11 +101,11 @@ height: 100%;
   color: #000;
   height: 100%;
   font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 1.25rem;
-line-height: 29px;
-border-radius: 0 !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 29px;
+  border-radius: 0 !important;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -119,9 +123,11 @@ border-radius: 0 !important;
   color: #000 !important;
 
 }
+
 .target {
   background: #ff90e8;
 }
+
 .fa-bars {
   color: rgb(0, 0, 0);
   font-size: 1.55rem;
@@ -139,10 +145,12 @@ border-radius: 0 !important;
   margin-right: -30px;
   padding: 4px 20px;
 }
-.navbar{
+
+.navbar {
   border: 2px solid #000;
-  width:100%;
+  width: 100%;
 }
+
 .nav-register-btn {
   background: #00ccf5;
   height: 100%;
@@ -159,18 +167,18 @@ border-radius: 0 !important;
   line-height: 29px;
   border-radius: 0 !important;
   color: #000000;
-  display: flex;
-  justify-items: center;
-  align-items: center;
 }
+
 .fas {
   color: #000;
   font-size: 1.25rem;
 }
+
 @media screen and (max-width: 1200px) {
   .navbar {
     height: 85px;
   }
+
   .nav-links {
     padding-left: 0.2rem;
     padding-right: 0.2rem;
@@ -181,16 +189,19 @@ border-radius: 0 !important;
     font-size: 1rem;
   }
 }
+
 @media screen and (max-width: 960px) {
 
   .NavbarItems {
     position: relative;
   }
+
   .img {
     height: 80px;
     width: 80px;
     top: 3px;
   }
+
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -199,13 +210,14 @@ border-radius: 0 !important;
     width: 100%;
     height: auto;
     position: absolute;
-    top: 95px;
+    top: 80px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
     border: 2px solid #000;
-    
+
   }
+
   .nav-item {
     width: fit-content;
     height: 4rem;
@@ -213,10 +225,11 @@ border-radius: 0 !important;
     text-align: center;
     margin: 0 auto 10px auto;
   }
+
   .nav-menu.active {
     padding-left: 0px;
     padding-top: 10px;
-    padding-bottom: 10px ;
+    padding-bottom: 10px;
     background: #fff;
     left: 0;
     opacity: 1;
@@ -225,9 +238,9 @@ border-radius: 0 !important;
   }
 
   .nav-links {
-   text-align: center;
+    text-align: center;
     padding: 2rem;
-    margin: 0 auto 10px auto ;
+    margin: 0 auto 10px auto;
     justify-self: center;
   }
 
@@ -239,7 +252,7 @@ border-radius: 0 !important;
     height: 4rem;
     text-align: center;
     padding: 1rem;
-    margin: 0 auto ;
+    margin: 0 auto;
     justify-self: center;
     width: fit-content;
   }
@@ -253,8 +266,9 @@ border-radius: 0 !important;
     position: absolute;
     top: 0;
     left: 0;
-    
+
   }
+
   .menu-icon {
     display: flex;
     position: absolute;
@@ -264,20 +278,24 @@ border-radius: 0 !important;
     font-size: 4rem;
     cursor: pointer;
   }
+
   .sign {
     position: absolute;
     top: 400px;
   }
+
   .fa-times {
-    color:#000;
+    color: #000;
     font-size: 2rem;
   }
+
   .fa-bars {
     color: #000;
     font-size: 2rem;
     align-self: center;
     justify-self: center;
   }
+
   .nav-links-mobile {
     display: block;
     text-align: center;
@@ -298,6 +316,7 @@ border-radius: 0 !important;
     color: #242424;
     transition: 250ms;
   }
+
   .cartBtn {
     bottom: 0 !important;
     right: 70px;
@@ -311,4 +330,19 @@ border-radius: 0 !important;
 
 .empty_cart {
   color: white !important;
+}
+
+@media screen and (max-width: 500px) {
+
+  .navbar {
+    height: 50px;
+  }
+
+  .icon-container a svg {
+    width: 50px;
+  }
+
+  .nav-menu.active {
+    top: 46px
+  }
 }
