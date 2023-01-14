@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { useState, useEffect } from 'react';
 import Banner from './Banner/Banner';
 import Image from './merchandise.png';
@@ -78,7 +79,6 @@ function landingPage() {
             <h2>FROM FIELDS OF</h2>
             <section className={Classes.button_1}>
               <button className={Classes.design}>
-                {' '}
                 <p>Design</p>
               </button>
               <button className={Classes.photography}>
