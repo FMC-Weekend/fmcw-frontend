@@ -50,7 +50,7 @@ function landingPage() {
       <div>
         <div className={Classes.div1}>
           <Fade bottom>
-            <h1 className={Classes.div1_heading}>A FEST FOR xyz</h1>
+            <h1 className={Classes.div1_heading}>A FEST FOR ARTISTS/CREATORS/INNOVATORS</h1>
 
             {/* <Link to='/authentication'>  */}
             {/* <Link to="/authentication">  */}
@@ -125,9 +125,7 @@ function landingPage() {
             <Fade bottom>
               <h1>WORKSHOPS</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in.
-                Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim
-                semper. Tellus mauris sed ultricies nunc posuere non placerat{' '}
+              The glorious ninth edition of FMC Weekend brings you an opportunity to learn & dive into the world of magical creativity and lively imagination. Attend the most insightful workshop on creative writing, photography, cinematography, design, and animation from the masters in the respective domain, and witness the transition from amateur to apprentice.{' '}
               </p>
               <a href="/events">
                 <button place>Explore</button>
@@ -161,9 +159,7 @@ function landingPage() {
               <Fade bottom>
                 <h1>OPEN AIR THEATRES</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in.
-                  Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim
-                  semper. Tellus mauris sed ultricies nunc posuere non placerat{' '}
+                Gone are the days when the cinema would be just confined to 4 walls. Unconventional ways or Open-Air Theatres have made their way to us under the stars, cool breezes, and an undefined sense of freedom. Bringing you a step closer to these unconventional experiences, FMC Weekend presents to you a blockbuster screening event beneath the night sky.{' '}
                 </p>
 
                 <button place>Explore</button>

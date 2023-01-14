@@ -12,7 +12,7 @@
 
 .div1_heading {
   position: absolute;
-  /* width: 100%; */
+  /* width: 20%; */
   height: 76px;
   left: 130px;
   top: 323px;
@@ -51,6 +51,7 @@
 
 .register_button:hover {
   box-shadow: 0px 0px 0px;
+  transform: translate(4px, 6px);
 }
 
 .register_button p {
@@ -323,6 +324,7 @@
 
 .div2 button:hover {
   box-shadow: 0px 0px 0px;
+  transform: translate(4px, 6px);
 }
 
 .div2 button:focus {
@@ -459,7 +461,9 @@
 .div5 button:hover,
 .div6 button:hover {
   box-shadow: 0px 0px 0px;
+  transform: translate(4px, 6px);
 }
+
 
 /* .div3 button:focus,.div4 button:focus,.div5 button:focus,.div6 button:focus{
   background-color:  #0e08af;
