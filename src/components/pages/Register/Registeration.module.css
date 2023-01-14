@@ -1,6 +1,6 @@
 .section {
   padding-top: clamp(220px, 26vh, 100px);
-  background-color: #1b083d;
+  background-color: #FE6263;
   position: relative;
   height: 100%;
   overflow: hidden;
@@ -12,19 +12,15 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  width: 500px;
+  width: 800px;
   /* position: absolute; */
   position: relative;
-  left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background: white;
-  -webkit-box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
-  -moz-box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
-  box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
-  /* padding-bottom: 30vh; */
+  margin-bottom: 30vh;
+  background: #00CCF5;
+border: 2px solid #000000;
+box-shadow: 4px 6px 0px #000000;
+border-radius: 4px;
 }
 @media only screen and (max-width: 600px) {
   .container {
@@ -36,11 +32,11 @@
 }
 /* Full-width input fields */
 input, select, option{
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0 10px 0;
+  width: 70%;
+  padding: 15px;
+  margin: 5px 100px 15px 100px;
   display: inline-block;
-  border: none;
+  border: 2px solid #000000;
   background: #f7f7f7;
 	font-family: Montserrat,Arial, Helvetica, sans-serif;
 }
@@ -48,20 +44,20 @@ input, select, option{
 .form_class input,
 .form-class select,
 .form-class option {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0 15px 0;
+  width: 70%;
+  padding: 15px;
+  margin: 5px 100px 15px 100px;
   display: inline-block;
-  border: none;
+  border: 2px solid #000000;
   background: #f7f7f7;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 .form_class select {
-  width: 100%;
+  width: 70%;
   padding: 15px;
-  margin: 5px 0 22px 0;
+  margin: 5px 100px 15px 100px;
   display: inline-block;
-  border: none;
+  border: 2px solid #000000;
   background: #f7f7f7;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
@@ -69,19 +65,24 @@ input, select, option{
   text-align: center !important;
   /* justify-content: center;
   align-items: center; */
-  background-color: #0eb7f4;
   /* position: absolute; */
-  color: white;
+  color: black;
   padding: 14px 20px;
   /* margin: 8px 0; */
-  border: none;
   /* cursor: pointer; */
   /* width: 100%; */
+  font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
   opacity: 1;
   font-size: 16px;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
-  border-radius: 10px;
-  width: 50%;
+  width: 20%;
+  background: #F2FF00;
+border: 2px solid #000000;
+box-shadow: 4px 6px 0px #000000;
+border-radius: 4px;
 }
 
 /* .form_group_2_div {
@@ -161,3 +162,27 @@ input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, sel
      width: 100%;
   }
 } */
+
+.title{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+display: flex;
+align-items: center;
+margin-left: 100px;
+
+color: #000000;
+};
+
+.vector{
+margin-left: -40px;
+}
+
+.cube{
+  width: 123px;
+  height: 144px;
+  margin-top: 900px;
+  margin-left: -40px;
+  position: relative;
+}

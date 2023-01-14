@@ -1,6 +1,8 @@
 import { Fragment, useContext } from 'react';
 import AuthContext from '../../../store/auth-context';
 import Classes from './Registeration.module.css';
+import star from './Vector.svg';
+import cube from './Group 7253.svg';
 function RegisterationForm() {
   async function handleSubmit(e) {
     e.preventDefault();
@@ -39,11 +41,12 @@ function RegisterationForm() {
         className={`${Classes.section} ${Classes.form_class}`}
         onSubmit={(e) => handleSubmit(e)}>
         <div className={Classes.container}>
-          <label htmlFor="name">
+        {/* <img src={star} className={Classes.vector}/> */}
+          <label htmlFor="name" className={Classes.title}>
             <b>Name</b>
           </label>
           <input type="text" name="name" value={sessionStorage.getItem('name')} required readOnly />
-          <label htmlFor="email">
+          <label htmlFor="email" className={Classes.title}>
             <b>E-mail</b>
           </label>
           <input
@@ -53,8 +56,8 @@ function RegisterationForm() {
             required
             readOnly
           />
-          <label htmlFor="college">
-            <b>University / College</b>
+          <label htmlFor="college" className={Classes.title}>
+            <b>University / College Name</b>
           </label>
           {sessionStorage.getItem('email').endsWith('@iitbhu.ac.in') ||
           sessionStorage.getItem('email').endsWith('@itbhu.ac.in') ? (
@@ -73,12 +76,11 @@ function RegisterationForm() {
               required
             />
           )}
-
-          <label htmlFor="phone">
+          <label htmlFor="phone" className={Classes.title}>
             <b>Phone Number (+91)</b>
           </label>
           <input type="tel" name="phone" required />
-          <label htmlFor="year">
+          <label htmlFor="year" className={Classes.title}>
             <b>Year of Study</b>
           </label>
           <select name="year">
@@ -88,15 +90,15 @@ function RegisterationForm() {
             <option value="4">IV</option>
             <option value="5">V</option>
           </select>
-          <label htmlFor="redeem">
+          <label htmlFor="redeem" className={Classes.title}>
             <b>Referral Code</b>
           </label>
           <input type="text" name="redeem" placeholder="XXXXXX" />
-          <label htmlFor="insta">
+          <label htmlFor="insta" className={Classes.title}>
             <b>Instagram Handle</b>
           </label>
           <input type="text" name="insta" placeholder="" required />
-          <label htmlFor="position">
+          <label htmlFor="position" className={Classes.title}>
             <b>Wanna be a?</b>
           </label>
           <select name="position">
@@ -115,6 +117,7 @@ function RegisterationForm() {
           </div>
         </div>
       </form>
+      <img src={cube} className={Classes.cube} />
     </div>
     //     <form>
 
