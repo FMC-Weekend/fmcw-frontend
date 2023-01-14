@@ -41,7 +41,6 @@ function RegisterationForm() {
         className={`${Classes.section} ${Classes.form_class}`}
         onSubmit={(e) => handleSubmit(e)}>
         <div className={Classes.container}>
-        {/* <img src={star} className={Classes.vector}/> */}
           <label htmlFor="name" className={Classes.title}>
             <b>Name</b>
           </label>
