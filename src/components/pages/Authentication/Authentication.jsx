@@ -64,7 +64,7 @@ function Authentication() {
     sessionStorage.removeItem('loginData');
   };
   return (
-    <div className={Classes.auth_section}>
+      <div className={Classes.auth_section}>
       {/* <h1>Hello World!</h1> */}
       <div className={Classes.authenticateButton}>
         <GoogleLogin

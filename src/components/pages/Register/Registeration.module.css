@@ -1,125 +1,66 @@
 .section {
-  padding-top: clamp(220px, 26vh, 100px);
-  background-color: #1b083d;
+  background-color: #FE6263;
   position: relative;
   height: 100%;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 100px;
 }
+
 .container {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  width: 500px;
-  /* position: absolute; */
+  padding: 60px 60px 0px 60px;
+  width: 800px;
   position: relative;
-  left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background: white;
-  -webkit-box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
-  -moz-box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
-  box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
-  /* padding-bottom: 30vh; */
-}
-@media only screen and (max-width: 600px) {
-  .container {
-    width: 90vw;
-    /* min-width: 200px; */
-    /* justify-content: center;     */
-    align-items: center;
-  }
-}
-/* Full-width input fields */
-input, select, option{
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0 10px 0;
-  display: inline-block;
-  border: none;
-  background: #f7f7f7;
-	font-family: Montserrat,Arial, Helvetica, sans-serif;
+  margin-bottom: 10vh;
+  background: #00CCF5;
+  border: 2px solid #000000;
+  box-shadow: 4px 6px 0px #000000;
+  border-radius: 4px;
+  align-items: center;
 }
 
+
+/* Full-width input fields */
+
 .form_class input,
-.form-class select,
-.form-class option {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0 15px 0;
-  display: inline-block;
-  border: none;
-  background: #f7f7f7;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
-}
+.form_class option,
 .form_class select {
-  width: 100%;
+  width: 70%;
   padding: 15px;
-  margin: 5px 0 22px 0;
   display: inline-block;
-  border: none;
+  border: 2px solid #000000;
   background: #f7f7f7;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
 }
+
 .form_class button {
   text-align: center !important;
-  /* justify-content: center;
-  align-items: center; */
-  background-color: #0eb7f4;
-  /* position: absolute; */
-  color: white;
+  color: black;
   padding: 14px 20px;
-  /* margin: 8px 0; */
-  border: none;
-  /* cursor: pointer; */
-  /* width: 100%; */
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
   opacity: 1;
   font-size: 16px;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
-  border-radius: 10px;
-  width: 50%;
+  width: 20%;
+  background: #F2FF00;
+  border: 2px solid #000000;
+  box-shadow: 4px 6px 0px #000000;
+  border-radius: 4px;
 }
-
-/* .form_group_2_div {
-  display: flexbox;
-  width: 100%;
-  text-align: right;
-}
-.form_group_2_div input,.form_group_2_div select, .form_group_2_div option,.form_group_2_div label {
-  width: 40%;
-  text-align: center;
-}
-.form_group_2_div label{
-  text-align: right;
-} */
 
 .button_div {
-  display: flex;
-  width: 100%;
-  justify-content: center;
+  margin-top: 35px;
 }
-/* select {
-  width: 18%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f7f7f7;
-	font-family: Montserrat,Arial, Helvetica, sans-serif;
-} */
 
-/* input[type=phone] {
-  width: 81%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f7f7f7;
-} */
 .form_class input[type='text']:focus,
 .form_class input[type='password']:focus,
 .form_class input[type='phone']:focus,
@@ -127,37 +68,68 @@ input, select, option{
   background-color: #ddd;
   outline: none;
 }
-/* 
-input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, select:focus {
-  background-color: #ddd;
-  outline: none;
-} */
 
 
 
-/* Set a style for all buttons */
-/* button {
-  background-color: #0eb7f4;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-	font-size:16px;
-	font-family: Montserrat,Arial, Helvetica, sans-serif;
-	border-radius:10px;
-} */
-
-/* button:hover {
-  opacity:1;
-} */
+.title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  align-items: center;
+  color: #000000;
+  width: 70%;
+}
 
 
-/* Change styles for signup button on extra small screens */
-/* @media screen and (max-width: 300px) {
-  .signupbtn {
-     width: 100%;
+.star {
+  width: 200px;
+  height: 144px;
+  margin-left: -840px;
+  margin-top: -120px;
+  position: relative;
+}
+
+.cube {
+  width: 123px;
+  height: 144px;
+  margin-left: 800px;
+  margin-bottom: -85px;
+  position: relative;
+}
+
+.submit {
+  min-width: fit-content;
+}
+
+.submit:hover {
+  transform: translate(4px, 6px);
+  box-shadow: 0px 0px 0px;
+}
+
+
+@media only screen and (max-width: 1035px) {
+  .container {
+    width: 90vw;
+    align-items: center;
+    padding: 60px 0px 50px 0px;
   }
-} */
+
+  .star,
+  .cube {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .title {
+    font-size: 15px;
+  }
+
+  .form_class input,
+  .form_class select,
+  .form-class option {
+    padding: 6px;
+  }
+
+}
