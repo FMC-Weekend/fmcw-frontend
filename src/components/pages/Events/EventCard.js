@@ -130,7 +130,8 @@ function EventCard(props) {
           target="_blank"
           className="btnView"
           rel="noreferrer"
-          style={{ left: props.viewStatementLeft }}>
+          // style={{ left: props.viewStatementLeft }}
+          >
           {props.ps}
         </a>
         {sessionStorage.getItem('isLoggedIn') == 'true' && (

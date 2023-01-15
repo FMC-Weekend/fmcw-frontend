@@ -50,7 +50,7 @@ function landingPage() {
       <div>
         <div className={Classes.div1}>
           <Fade bottom>
-            <h1 className={Classes.div1_heading}>A FEST FOR ARTISTS/CREATORS/INNOVATORS</h1>
+            <h1 className={Classes.div1_heading}>A FEST FOR xyz</h1>
 
             {/* <Link to='/authentication'>  */}
             {/* <Link to="/authentication">  */}

@@ -166,17 +166,18 @@ body {
 .card-title {
   margin: 0 auto;
   color: #000;
-  font-family: Marcellus;
-  font-size: 20px;
+  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 20px;
+
   margin-top: 10px;
   line-height: 30px;
   letter-spacing: 0em;
   text-align: center;
 }
 .card .prizes {
-  font-family: Nunito Sans;
+  font-family: 'Montserrat';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -416,7 +417,7 @@ body {
   }
   .showOnMobile {
     display: block;
-    background: #685EDA;
+    background: #685eda;
   }
   .card {
     width: 60vw;
@@ -481,13 +482,13 @@ body {
     text-align: center;
     padding: 20px;
     list-style: none;
-    background: #685EDA;
+    background: #685eda;
   }
   .btn-danger {
     margin-bottom: 30px;
   }
   .mobile h2 {
-        line-height: 1.5;
+    line-height: 1.5;
     font-size: 1.5em;
     text-transform: uppercase;
     font-weight: 600;
