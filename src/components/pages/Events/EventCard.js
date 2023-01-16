@@ -130,13 +130,13 @@ function EventCard(props) {
           target="_blank"
           className="btnView"
           rel="noreferrer"
-          style={{ left: props.viewStatementLeft }}>
+          style={{ left: props.viewStatementLeft, fontSize: '1.2em' }}>
           {props.ps}
         </a>
         {sessionStorage.getItem('isLoggedIn') == 'true' ? (
           <div
             className="addToCart"
-            style={{ background: props.color2 }}
+            style={{ background: props.color2, cursor: 'pointer' }}
             onClick={() => {
               // send post request to database
 

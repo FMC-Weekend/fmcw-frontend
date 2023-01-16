@@ -50,7 +50,7 @@ function landingPage() {
       <div>
         <div className={Classes.div1}>
           <Fade bottom>
-            <h1 className={Classes.div1_heading}>A FEST FOR xyz</h1>
+            <h1 className={Classes.div1_heading}>A Fest for Artists/ Creators/ Innovators</h1>
 
             {/* <Link to='/authentication'>  */}
             {/* <Link to="/authentication">  */}
@@ -60,7 +60,7 @@ function landingPage() {
               </button>
             </a>
             {/* </Link> */}
-            <img src={side_img} className={Classes.div1_img} />
+            <img src='0001-0210.gif' className={Classes.div1_img} />
           </Fade>
         </div>
 
@@ -109,9 +109,10 @@ function landingPage() {
             <Fade bottom>
               <h1>COMPETITIONS</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in.
-                Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim
-                semper. Tellus mauris sed ultricies nunc posuere non placerat{' '}
+              Do you fancy yourself as a flawless reporter, or are you someone who can put all your imagination to produce artistic designs? Do you think that you can perfectly integrate the choice of lighting, lenses and special effects
+or is photography your thing?
+Then what are you waiting for?
+The ninth edition of FMC weekend brings to you an opportunity to compete in the largest digital arts festival in India and also get a chance to win exciting prizes!!{' '}
               </p>
               <a href="/events">
                 <button place>Explore</button>
@@ -125,9 +126,7 @@ function landingPage() {
             <Fade bottom>
               <h1>WORKSHOPS</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in.
-                Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim
-                semper. Tellus mauris sed ultricies nunc posuere non placerat{' '}
+              The glorious ninth edition of FMC Weekend brings you an opportunity to learn & dive into the world of magical creativity and lively imagination. Attend the most insightful workshop on creative writing, photography, cinematography, design, and animation from the masters in the respective domain, and witness the transition from amateur to apprentice.{' '}
               </p>
               <a href="/events">
                 <button place>Explore</button>
@@ -146,9 +145,7 @@ function landingPage() {
               <Fade bottom>
                 <h1>PRONITES</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in.
-                  Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim
-                  semper. Tellus mauris sed ultricies nunc posuere non placerat{' '}
+                We present to you the most entertaining of nights, pronite! Where music meets the romantic, jokes meet the humour-lover, and entertainment meets all! Hold on to your seats as world-famous performers come to amuse you, and leave your minds in wonder in your very own FMC Weekend’s Pronite!{' '}
                 </p>
 
                 <button place>Explore</button>
@@ -161,9 +158,7 @@ function landingPage() {
               <Fade bottom>
                 <h1>OPEN AIR THEATRES</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in.
-                  Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim
-                  semper. Tellus mauris sed ultricies nunc posuere non placerat{' '}
+                Gone are the days when the cinema would be just confined to 4 walls. Unconventional ways or Open-Air Theatres have made their way to us under the stars, cool breezes, and an undefined sense of freedom. Bringing you a step closer to these unconventional experiences, FMC Weekend presents to you a blockbuster screening event beneath the night sky.{' '}
                 </p>
 
                 <button place>Explore</button>

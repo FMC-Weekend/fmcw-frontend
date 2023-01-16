@@ -153,7 +153,7 @@ EventCard.defaultProps = {
   ps: 'View Problem Statement',
   ps2: 'Add To Cart',
   content: 150,
-  color: '#000',
+  color: '#FE6263',
   color2: '#2ED9FC',
 };
 export default EventCard;

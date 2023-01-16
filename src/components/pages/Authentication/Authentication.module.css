@@ -1,9 +1,19 @@
 .auth_section {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: flex-end;
   background: #685eda;
   min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  padding-left: 140px;
+}
+.auth_section img {
+  display: flex;
+  width: 60vw;
+  padding-top: 50px;
+  padding-left: 500px;
+  justify-content: right;
 }
 .authenticateButton {
   display: flex;
@@ -17,9 +27,6 @@
   position: absolute;
   width: 340px;
   height: 71px;
-  left: 166px;
-  top: 558px;
-
   background: #ffffff;
   border: 2px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -46,63 +53,54 @@
   text-align: center;
 }
 
-.Avatar1 {
-  position: absolute;
-  right: 80px;
+.Avatar1 img {
+  position: relative;
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (max-width: 786px) {
   .auth_section {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    background: #685eda;
-    min-height: 100vh;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    padding: 20px;
+    height: auto;
+    /* overflow-x: hidden; */
+  }
+  .auth_section img {
+    width: 60vw;
+    min-width: 300px;
+    padding: 0;
+    margin: auto;
   }
   .authenticateButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 340px;
-    height: 71px;
-    left: 166px;
-    top: 558px;
-
-    background: #ffffff;
-    border: 2px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-
-    filter: drop-shadow(4px 6px 0px #000000);
+    position: relative;
+    width: 300px;
+    height: 50px;
+    top: 0;
+    margin: auto;
   }
-
-  .gButton {
-    width: 520px;
-    height: 70px;
-    background: #ffffff;
-    border-radius: 10px;
-    font-size: 26px;
-    font-weight: 500;
-  }
-
   .authenticateButton p {
-    font-size: 26px;
+    font-size: 1.0em;
     font-family: 'Montserrat';
     color: #000000;
     opacity: 1;
     align-items: center;
     text-align: center;
   }
-
-  .Avatar1 {
-    position: absolute;
-    right: 80px;
-    z-index: 0;
+  .gButton {
+    width: 320px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 500;
+  }
+  .Avatar1 img {
+    position: relative;
+    width: 200px;
+    left: 0;
+    right: 0;
   }
 }
