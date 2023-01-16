@@ -3,7 +3,7 @@ const data = {
   photographyData: [
     {
       id: 1,
-      img: process.env.REACT_APP_AWS_S3_URI + '/infocus-01.png',
+      img: '/Group7175.png',
       genre: 'photography',
       type: 'Contest',
       title: 'PhotoArt',
@@ -17,7 +17,7 @@ const data = {
     },
     {
       id: 2,
-      img: process.env.REACT_APP_AWS_S3_URI + '/snapIT-01.png',
+      img: '/Group7175.png',
       genre: 'photography',
       type: 'Contest',
       title: 'Portfolio in 24',
@@ -31,7 +31,7 @@ const data = {
     },
     {
       id: 3,
-      img: process.env.REACT_APP_AWS_S3_URI + '/photoArt-01.png',
+      img: '/Group7175.png',
       genre: 'photography',
       type: 'Contest',
       title: 'InFocus',
@@ -45,7 +45,7 @@ const data = {
     },
     {
       id: 4,
-      img: process.env.REACT_APP_AWS_S3_URI + '/photoArt-01.png',
+      img: '/Group7175.png',
       genre: 'photography',
       type: 'Contest',
       title: 'InstaMeet',
@@ -59,7 +59,7 @@ const data = {
     },
     {
       id: 5,
-      img: process.env.REACT_APP_AWS_S3_URI + '/photoArt-01.png',
+      img: '/Group7175.png',
       genre: 'photography',
       type: 'Contest',
       title: 'SnapChase',
@@ -75,7 +75,7 @@ const data = {
   outreachData: [
     {
       id: 6,
-      img: process.env.REACT_APP_AWS_S3_URI + '/vlogholic-01.png',
+      img: '/outreach.svg',
       genre: 'outreach',
       type: 'Contest',
       title: 'Vlogoholic',
@@ -89,7 +89,7 @@ const data = {
     },
     {
       id: 7,
-      img: process.env.REACT_APP_AWS_S3_URI + '/documentary-01.png',
+      img: '/outreach.svg',
       genre: 'outreach',
       type: 'Contest',
       title: 'Rant it',
@@ -103,7 +103,7 @@ const data = {
     },
     {
       id: 8,
-      img: process.env.REACT_APP_AWS_S3_URI + '/admad-01.png',
+      img: '/outreach.svg',
       genre: 'outreach',
       type: 'Contest',
       title: 'Ad-Mad',
@@ -119,7 +119,7 @@ const data = {
   cineData: [
     {
       id: 9,
-      img: process.env.REACT_APP_AWS_S3_URI + '/bRoll-01.png',
+      img: 'cine.svg',
       genre: 'cine',
       type: 'Contest',
       title: 'Thats how B-Roll',
@@ -133,7 +133,7 @@ const data = {
     },
     {
       id: 10,
-      img: process.env.REACT_APP_AWS_S3_URI + '/magic-01.png',
+      img: 'cine.svg',
       genre: 'cine',
       type: 'Contest',
       title: 'Frame By Frame',
@@ -147,7 +147,7 @@ const data = {
     },
     {
       id: 11,
-      img: process.env.REACT_APP_AWS_S3_URI + '/shortFilm-01.png',
+      img: 'cine.svg',
       genre: 'cine',
       type: 'Contest',
       title: 'Director’s Cut',
@@ -161,7 +161,7 @@ const data = {
     },
     {
       id: 12,
-      img: process.env.REACT_APP_AWS_S3_URI + '/shortFilm-01.png',
+      img: 'cine.svg',
       genre: 'cine',
       type: 'Contest',
       title: 'Trim it up',
@@ -177,7 +177,7 @@ const data = {
   designData: [
     {
       id: 13,
-      img: process.env.REACT_APP_AWS_S3_URI + '/designTunes-01.png',
+      img: 'cine.svg',
       genre: 'design',
       type: 'Contest',
       title: 'Design The Tunes',
@@ -191,7 +191,7 @@ const data = {
     },
     {
       id: 14,
-      img: process.env.REACT_APP_AWS_S3_URI + '/notJustWords-01.png',
+      img: 'cine.svg',
       genre: 'design',
       type: 'Contest',
       title: 'Design-a-thon',
@@ -205,7 +205,7 @@ const data = {
     },
     {
       id: 15,
-      img: process.env.REACT_APP_AWS_S3_URI + '/logoRedesign-01.png',
+      img: 'cine.svg',
       genre: 'design',
       type: 'Contest',
       title: 'FrameX',
@@ -221,7 +221,7 @@ const data = {
   mediaData: [
     {
       id: 16,
-      img: process.env.REACT_APP_AWS_S3_URI + '/hades_-01.png',
+      img: 'media.svg',
       genre: 'media',
       type: 'Contest',
       title: 'Straight from Site',
@@ -235,7 +235,7 @@ const data = {
     },
     {
       id: 17,
-      img: process.env.REACT_APP_AWS_S3_URI + '/straightSite-01.png',
+      img: 'media.svg',
       genre: 'media',
       type: 'Contest',
       title: "Editor's House",
@@ -249,7 +249,7 @@ const data = {
     },
     {
       id: 18,
-      img: process.env.REACT_APP_AWS_S3_URI + '/writer_block-01.png',
+      img: 'media.svg',
       genre: 'media',
       type: 'Contest',
       title: 'Infinite Tales',
@@ -263,7 +263,7 @@ const data = {
     },
     {
       id: 19,
-      img: process.env.REACT_APP_AWS_S3_URI + '/writer_block-01.png',
+      img: 'media.svg',
       genre: 'media',
       type: 'Contest',
       title: 'RJ hunt',
@@ -277,7 +277,7 @@ const data = {
     },
     {
       id: 20,
-      img: process.env.REACT_APP_AWS_S3_URI + '/writer_block-01.png',
+      img: 'media.svg',
       genre: 'media',
       type: 'Contest',
       title: 'Screenplay',
@@ -293,7 +293,7 @@ const data = {
   animationData: [
     {
       id: 21,
-      img: process.env.REACT_APP_AWS_S3_URI + '/capture-01.png',
+      img: 'anim.svg',
       genre: 'animation',
       type: 'Contest',
       title: 'Realm Of Wonders',
@@ -307,7 +307,7 @@ const data = {
     },
     {
       id: 22,
-      img: process.env.REACT_APP_AWS_S3_URI + '/realmOfWonder-01.png',
+      img: 'anim.svg',
       genre: 'animation',
       type: 'Contest',
       title: 'Artspace',
@@ -321,7 +321,7 @@ const data = {
     },
     {
       id: 23,
-      img: process.env.REACT_APP_AWS_S3_URI + '/unreal-01.png',
+      img: 'anim.svg',
       genre: 'animation',
       type: 'Contest',
       title: 'VFXorama',
@@ -335,7 +335,7 @@ const data = {
     },
     {
       id: 24,
-      img: process.env.REACT_APP_AWS_S3_URI + '/unreal-01.png',
+      img: 'anim.svg',
       genre: 'animation',
       type: 'Contest',
       title: 'Capture the Imagination',

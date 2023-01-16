@@ -13,9 +13,9 @@ import styled from 'styled-components';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useCart } from 'react-use-cart';
-import rectangle from '../Events/Rectangle133.png'
+import rectangle from '../Events/Rectangle133.png';
 import arrow from '../Events/Vector59.png';
-import frontImg from '../Events/Group7175.png';
+// import frontImg from '../Events/Group7175.png';
 import viewProbImg from '../Events/Vector.png';
 
 const CardTitle = styled.h2`
@@ -87,7 +87,7 @@ function EventCard(props) {
         left: props.left,
         height: props.height,
         width: props.width,
-        marginRight: props.marginRight,
+        marginRight: props.marginRight
       }}>
       <div className="card-front card-div">
         <b className="type" style={{ left: props.frontLeft }}>
@@ -103,17 +103,16 @@ function EventCard(props) {
         <b className="front-price" style={{ left: props.frontLeft }}>
           RS.{props.price}
         </b>
-        <img className="front-img" src={frontImg} style={{ left: props.frontLeft }}></img>
+        <img className="front-img" src={props.img} style={{ left: props.frontLeft }}></img>
         <img className="three-dots1" src={rectangle} style={{ display: props.display }}></img>
         <img className="three-dots2" src={rectangle} style={{ display: props.display }}></img>
         <img className="three-dots3" src={rectangle} style={{ display: props.display }}></img>
       </div>
 
       <div className="card-back card-div">
-        
-        <div className="card-title" style={{width: props.width}}>
+        <div className="card-title" style={{ width: props.width }}>
           {props.title}
-          <div className="lineTitle" style={{left: props.lineLeft}}></div>
+          <div className="lineTitle" style={{ left: props.lineLeft }}></div>
         </div>
         ;
         <div
@@ -126,12 +125,20 @@ function EventCard(props) {
           }}>
           <b>{props.content}</b>
         </div>
-        <img className='viewProbImg' src={viewProbImg} style={{ left: props.imgLeft }}></img>
-        <a href={props.link} target="_blank" className="btnView" rel="noreferrer" style={{ left: props.viewStatementLeft }}>
+        <img className="viewProbImg" src={viewProbImg} style={{ left: props.imgLeft }}></img>
+        <a
+          href={props.link}
+          target="_blank"
+          className="btnView"
+          rel="noreferrer"
+          style={{ left: props.viewStatementLeft }}>
           {props.ps}
         </a>
         {sessionStorage.getItem('isLoggedIn') == 'true' && (
-          <div className="addToCart" style={{background: props.color2}} onClick={() => {
+          <div
+            className="addToCart"
+            style={{ background: props.color2 }}
+            onClick={() => {
               // send post request to database
 
               addItemToCart(props.item);
@@ -140,8 +147,7 @@ function EventCard(props) {
               // change();
             }}>
             {props.ps2}
-          
-        </div>
+          </div>
         )}
       </div>
     </div>
@@ -154,6 +160,6 @@ EventCard.defaultProps = {
   ps2: 'Add To Cart',
   content: 150,
   color: '#FE6263',
-  color2: '#2ED9FC',
+  color2: '#2ED9FC'
 };
 export default EventCard;

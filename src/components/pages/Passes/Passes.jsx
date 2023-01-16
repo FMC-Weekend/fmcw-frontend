@@ -49,12 +49,12 @@ function Pass(props) {
           </NavLink>
 
           <NavLink to="/events">
-            <img src="Group7226.svg" className="pass_card" alt="" />
+            <img src="Group7271.png" className="pass_card" alt="" />
           </NavLink>
           <img src="club-pass.svg" className="pass_card" alt="" />
-          <img src="Group_7228.svg" className="pass_card" alt="" />
-          <img src="Group_7229.svg" className="pass_card" alt="" />
-          <img src="Group_7230.svg" className="pass_card" alt="" />
+          <img src="Group7267.png" className="pass_card" alt="" />
+          <img src="Group7268.png" className="pass_card" alt="" />
+          <img src="Group7269.png" className="pass_card" alt="" />
         </div>
       </section>
       <Footer />
