@@ -639,6 +639,10 @@ flip card
   color: #fff;
 }
 @media screen and (max-width: 1006px) {
+  .btnView{
+    font-size: 15px !important;
+
+  }
   .event_page {
     background-color: #1d033e;
   }

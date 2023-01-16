@@ -33,12 +33,10 @@ body {
 .card {
   /* margin-right: 50px; */
   /* margin-right: 70px; */
-  margin: auto;
-  margin-bottom: 50px;
-  margin-top: 0px;
   /* max-width: 450px;
     height: 420px; */
   max-width: 384px;
+  margin: 0 auto 50px;
   height: 327px;
   transition-duration: 300ms;
   transition-property: transform;
@@ -163,10 +161,71 @@ body {
   padding: 10px 20px;
   color: #000;
 }
+.cost {
+  display: flex;
+  justify-content: right;
+  right: 8vw;
+  position: relative;
+  margin: 40px;
+  margin-right: 0;
+}
+.checkout_button2 {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  right: 10vw;
+}
+.checkoutBtn {
+  margin-right: 50px;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 36px;
+  gap: 4px;
+  position: relative;
+  /* width: 10vw; */
+  /* height: 57px; */
+  /* left: 5vw; */
+  /* top: 15vh; */
+  background: #f9d82a;
+  border: 1px solid #000000;
+  box-shadow: 4px 6px 0px #000000;
+  border-radius: 4px;
+}
+.checkoutBtn:hover {
+  box-shadow: 0px 0px 0px;
+}
+.checkoutBtn p {
+  /* width: 97px; */
+  height: 33px;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.checkoutCost {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  margin-left: 40px;
+
+  text-align: center;
+
+  color: #000000;
+}
 .card-title {
   margin: 0 auto;
   color: #000;
-  font-family: Marcellus;
+  font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -397,7 +456,166 @@ body {
   padding: 20px;
   color: #fff;
 }
+.addContest h1,
+.addWorkshop h1 {
+  font-family: 'Comic Neue';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+.addContest:hover,
+.addWorkshop:hover {
+  box-shadow: none;
+  transition: all 0.3s ease-in;
+}
+.addContest h2,
+.addWorkshop h2 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  text-decoration: none;
+}
+.addContest {
+  margin: auto;
+  color: #000;
+  right: 75px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 19px;
+  position: absolute;
+  width: 60vw;
+  max-width: 400px;
+  min-width: 260px;
+  height: 327px;
+  display: flex;
+  box-shadow: 6px 8px 0px #000000;
+  flex-direction: column;
+  border: 2px solid black;
+  margin-right: 20px;
+  margin-left: 50px;
+}
+.lapTopView {
+  display: block;
+}
+.event_cards {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 78%;
+}
+.contest_cards {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  /* width: 60vw; */
+}
+.contest_cards a {
+  text-decoration: none;
+}
+.mobileView {
+  display: none;
+}
+.registered_contest h2 {
+  padding-top: 7vh;
+  font-size: 28px;
+  padding-bottom: 0;
+}
+.registered_contest {
+  display: contents;
+}
+.section_top {
+  margin-top: 100px;
+}
+.section_top h2 {
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4em;
+  line-height: 60px;
+  color: rgb(24, 24, 24);
+  padding-left: 5vw;
+  padding-bottom: 5vh;
+}
+.section_top h3 {
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3em;
+  line-height: 40px;
+  color: rgb(24, 24, 24);
+  padding-left: 5vw;
+  padding-bottom: 5vh;
+}
 @media screen and (max-width: 1006px) {
+  .cost {
+    justify-content: center;
+  }
+  .checkout_button2 {
+    right: auto;
+  }
+  .event_cards {
+    width: 100%;
+  }
+  .checkoutCost {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .addContest2 h1,
+  .addWorkshop h1 {
+    font-family: 'Comic Neue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .addContest2:hover,
+  .addWorkshop:hover {
+    box-shadow: none;
+    transition: all 0.3s ease-in;
+  }
+  .addContest2 h2,
+  .addWorkshop h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .addContest2 {
+    margin: auto;
+    color: #000;
+    /* right: 120px; */
+    text-align: center;
+    justify-content: center;
+    border-radius: 19px;
+    /* position: absolute; */
+    width: 60vw;
+    max-width: 400px;
+    min-width: 260px;
+    height: 327px;
+    display: flex;
+    box-shadow: 6px 8px 0px #000000;
+    flex-direction: column;
+    border: 2px solid black;
+    margin-bottom: 40px;
+    /* margin-right: 20px; */
+  }
+  .lapTopView {
+    display: none;
+  }
+  .mobileView {
+    display: block;
+  }
   .event_page {
     background-color: #1d033e;
   }
@@ -416,7 +634,7 @@ body {
   }
   .showOnMobile {
     display: block;
-    background: #685EDA;
+    background: #685eda;
   }
   .card {
     width: 60vw;
@@ -424,7 +642,7 @@ body {
     /* margin-right: -10px; */
     flex-wrap: wrap;
     min-width: 260px;
-    height: 400px;
+    /* height: 400px; */
     margin-top: 40px;
   }
   .w-card {
@@ -481,13 +699,13 @@ body {
     text-align: center;
     padding: 20px;
     list-style: none;
-    background: #685EDA;
+    background: #685eda;
   }
   .btn-danger {
     margin-bottom: 30px;
   }
   .mobile h2 {
-        line-height: 1.5;
+    line-height: 1.5;
     font-size: 1.5em;
     text-transform: uppercase;
     font-weight: 600;
@@ -593,5 +811,26 @@ body {
     font-size: 1em;
     text-decoration: none;
     color: #fff;
+  }
+}
+@media screen and (max-width: 960px) {
+  .event_cards {
+    justify-content: space-around;
+    position: relative;
+  }
+}
+@media screen and (max-width: 768px) {
+  .checkoutBtn {
+    left: auto;
+    display: block;
+    margin: auto;
+  }
+  .section_title h1,
+  .section_top h2 {
+    text-align: center;
+    padding-left: 0 !important;
+  }
+  .section_top h3 {
+    text-align: center;
   }
 }
