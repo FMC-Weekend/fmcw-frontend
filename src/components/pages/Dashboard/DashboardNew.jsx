@@ -14,8 +14,8 @@ function DashBoardNew() {
   const { items } = useCart();
   const [isLoading, setIsLoading] = useState(false);
   const [userData, setUserData] = useState({
-    name: 'Harsh Shrivastava',
-    email: 'harsh.shrivastava.eee21@itbhu.ac.in',
+    name: 'Tony Stark',
+    email: 'tony.stark@itbhu.ac.in',
     college: 'Foo',
     phone: 'XXXXXXXXXX',
     yearOfStudy: '2',
