@@ -15,6 +15,7 @@ export const Button = ({
   buttonStyle,
   buttonSize,
   isInternalLink,
+  className,
   width,
   padding
 }) => {
@@ -28,7 +29,7 @@ export const Button = ({
         <Link to={toLink} className="btn-mobile">
           <button
             style={{ width: width, paddingLeft: padding, paddingRight:padding }}
-            className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+            className={`btn ${className} ${checkButtonStyle} ${checkButtonSize}`}
             onClick={onClick}
             type={type}>
             {children}
@@ -38,7 +39,7 @@ export const Button = ({
         <a href={toLink} className="btn-mobile">
           <button
             style={{ width: width }}
-            className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+            className={`btn ${className} ${checkButtonStyle} ${checkButtonSize}`}
             onClick={onClick}
             type={type}>
             {children}
