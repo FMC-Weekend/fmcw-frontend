@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1ba474db.css",
+    "main.js": "/static/js/main.e788e9fb.js",
+    "static/media/navlogo.png": "/static/media/navlogo.2a63ea4bd8626dbe1f51.png",
+    "static/media/bg.png": "/static/media/bg.22c207ec55d9eab9cf77.png",
+    "static/media/side_img.svg": "/static/media/side_img.23fd96e859ab43837f5a31fa42d2a259.svg",
+    "static/media/foop.png": "/static/media/foop.abbdbc5a464b01fd57cb.png",
+    "static/media/foo.png": "/static/media/foo.1d198bf9c76203f32753.png",
+    "static/media/briefing.svg": "/static/media/briefing.7b5b4f104d32709bd71227102edc2468.svg",
+    "static/media/red-carpet.svg": "/static/media/red-carpet.d07f74c66ebaceeced7652b0544ad37e.svg",
+    "static/media/CartInfo2.png": "/static/media/CartInfo2.7710f676c13eb9d5c937.png",
+    "static/media/CartInfo1.png": "/static/media/CartInfo1.14dfd51c2fd2995f9372.png",
+    "static/media/winner.svg": "/static/media/winner.4fa69e9bd815cccbec70145501b68dc9.svg",
+    "static/media/icons8-google-480 1.svg": "/static/media/icons8-google-480 1.d35adb5524732c31bb7ed23453ac6aea.svg",
+    "static/media/Group 7211.png": "/static/media/Group 7211.fd0e0845b98fb155dd44.png",
+    "static/media/Star.png": "/static/media/Star.3ab73b221d334e0cdc3c.png",
+    "static/media/vector2.svg": "/static/media/vector2.c7f13608b452868ecaaa66208fcbac87.svg",
+    "index.html": "/index.html",
+    "static/media/Cube.svg": "/static/media/Cube.24be1174026390e16eb0675e22c81913.svg",
+    "static/media/banner4.svg": "/static/media/banner4.171ad494f56689af1732522b94681aeb.svg",
+    "main.1ba474db.css.map": "/static/css/main.1ba474db.css.map",
+    "main.e788e9fb.js.map": "/static/js/main.e788e9fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ba474db.css",
+    "static/js/main.e788e9fb.js"
+  ]
+}

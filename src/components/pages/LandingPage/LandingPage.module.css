@@ -649,6 +649,10 @@
   display: flex;
 }
 
+.events{
+  font-size: 20px;
+  font-weight: 800;
+}
 @media screen and (max-width: 1000px) {
   .eventBox {
     display: block;
@@ -947,6 +951,12 @@
     height: 5%;
   }
 
+  .events{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
   .anim {
     /* top: -30vh; */
   }
@@ -960,5 +970,11 @@
   .div6 p {
     /* font-weight: 300;*/
     font-size: 4vw;
+  }
+  
+  .events{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
   }
 }
