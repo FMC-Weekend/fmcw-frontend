@@ -202,7 +202,18 @@ function Cart(props) {
                     <h2>Add more contest</h2>
                   </section>
                 </a>
+              ):
+              (
+                <a href="/events">
+                  <section
+                    className="addContest">
+                    <h1>+</h1>
+                    <h2>Add more contest</h2>
+                  </section>
+                </a>
               )}
+              
+
             <div className="event_cards">
               {cartItems.map((item, index) => {
                 console.log(item, index, 'fdsdfghioluyjtrgfguiu');
