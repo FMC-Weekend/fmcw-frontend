@@ -10,6 +10,8 @@ import WorkshopCard from './WorkshopCard';
 import { makeStyles } from '@material-ui/core/styles';
 import { Fade } from 'react-reveal';
 import data from './Data/data';
+import Modal from '@mui/material/Modal';
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -125,7 +127,8 @@ export default function VerticalTabs() {
         <div className="workshop-cards">
           {data.photographyWorkshopData.map((item, index) => {
             return (
-              <WorkshopCard
+              // <Modal>
+                <WorkshopCard
                 img={item.img}
                 title={item.title}
                 type={item.type}
@@ -133,7 +136,12 @@ export default function VerticalTabs() {
                 name={item.name}
                 key={index}
                 color={item.color}
-              />
+                color2={item.color2}
+                desc={item.desc}
+                date={item.date}
+                time={item.time}
+                />
+              // </Modal>
             );
           })}
         </div>
@@ -178,6 +186,10 @@ export default function VerticalTabs() {
                 name={item.name}
                 key={index}
                 color={item.color}
+                color2={item.color2}
+                desc={item.desc}
+                date={item.date}
+                time={item.time}
               />
             );
           })}
@@ -209,7 +221,6 @@ export default function VerticalTabs() {
               })}
             </Fade>
           </div>
-
           <div className="workshop-cards">
             {data.outreachWorkshopData.map((item, index) => {
               return (
@@ -221,6 +232,10 @@ export default function VerticalTabs() {
                   name={item.name}
                   key={index}
                   color={item.color}
+                  color2={item.color2}
+                  desc={item.desc}
+                  date={item.date}
+                  time={item.time}
                 />
               );
             })}
@@ -265,6 +280,10 @@ export default function VerticalTabs() {
                   name={item.name}
                   key={index}
                   color={item.color}
+                  color2={item.color2}
+                  desc={item.desc}
+                  date={item.date}
+                  time={item.time}
                 />
               );
             })}
@@ -309,6 +328,10 @@ export default function VerticalTabs() {
                   name={item.name}
                   key={index}
                   color={item.color}
+                  color2={item.color2}
+                  desc={item.desc}
+                  date={item.date}
+                  time={item.time}
                 />
               );
             })}
@@ -353,6 +376,10 @@ export default function VerticalTabs() {
                   name={item.name}
                   key={index}
                   color={item.color}
+                  color2={item.color2}
+                  desc={item.desc}
+                  date={item.date}
+                  time={item.time}
                 />
               );
             })}

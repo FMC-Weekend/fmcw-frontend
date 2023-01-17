@@ -181,25 +181,85 @@ function WorkshopCard(props) {
 
     // return (
     <Fade right>
-      <div className="workshopCard" options={options} style={{background: props.color, marginLeft: props.margin, marginRight: props.margin, left: props.left}}>
+      <div
+        className="workshopCard"
+        options={options}
+        style={{
+          background: props.color,
+          marginLeft: props.margin,
+          marginRight: props.margin,
+          left: props.left
+        }}>
         <div>
           <CardTitle className="positionWorkshopType">{props.type}</CardTitle>
-        <CardTitle className="positionWorkshopPrice">Rs.{props.price}</CardTitle>
+          <CardTitle className="positionWorkshopPrice">Rs.{props.price}</CardTitle>
           <div className="workshopCardImg">
-            <img src={props.img} alt="" />
+            <img src={props.img} alt="" onClick={handleOpen} />
           </div>
 
           <CardTitle className="positionWorkshop">{props.title}</CardTitle>
         </div>
         <CardTitle className="cardTitleWorkshop">by {props.name}</CardTitle>
       </div>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+        className="workshop-modal" style={{background: props.color2}}>
+        <Box class={style}>
+          <Typography className="guest-details">
+            <h2>{props.name}</h2>
+            <div className="guest-profile">
+              <img src={props.img} alt="guest-profile" className="workshop-modal-img" />
+            </div>
+            <br></br>
+            <p>{props.desc}</p>
+
+            {/*
+          <a href={props.insta_id} className="" target="_blank" rel="noreferrer">
+            Instagram
+          </a> */}
+            <div className="timing">
+              <h3 className="dates">
+                Date: <span>{props.date}</span>
+              </h3>
+              <br></br>
+              <h3 className="time">
+                Timings: <span>{props.time}</span>
+              </h3>
+
+              <h3 style={{ bottom: '70px', fontSize: '1.5em' }}>Price: ₹ {props.price}</h3>
+              {sessionStorage.getItem('isLoggedIn') == 'true' && (
+                <button
+                  className="cart-btn w-cart"
+                  style={{background: props.color, border: `1px solid ${props.color}`}}
+                  onClick={() => {
+                    // send post request to database
+
+                    addItemToCart(props.item);
+                    // addItem(props.item);
+
+                    // change();
+                  }}>
+                  Add{' '}
+                  <img
+                    src={process.env.REACT_APP_AWS_S3_URI + '/add-cartPURPLE_OLD_1.svg'}
+                    alt="cart-icon"
+                  />
+                </button>
+              )}
+            </div>
+          </Typography>
+        </Box>
+      </Modal>
     </Fade>
     //   );
     // }
     // TeamCard.defaultProps = {
-      // };
-      // export default TeamCard;
-      );
+    // };
+    // export default TeamCard;
+  );
     }
     WorkshopCard.defaultProps = {
       type: 'Contest',

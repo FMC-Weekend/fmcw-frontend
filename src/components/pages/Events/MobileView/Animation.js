@@ -61,6 +61,10 @@ function Animation() {
                   name={item.name}
                   key={index}
                   color={item.color}
+                  color2={item.color2}
+                  desc={item.desc}
+                  date={item.date}
+                  time={item.time}
                 />
               );
             })}

@@ -442,7 +442,7 @@ flip card
   text-decoration: none;
 }
 .cart-btn:hover {
-  box-shadow: 0px 0px 24px 0px rgba(255, 212, 48, 0.7);
+  box-shadow: 0px 0px 18px 0px #ffffff !important;
 }
 .fees {
   color: #ffffff;
@@ -549,7 +549,7 @@ flip card
   float: right;
   display: flex;
   position: absolute;
-  font-family: manrope;
+  font-family: Montserrat;
 }
 .workshop-modal .guest-details p {
   display: flex;
@@ -557,22 +557,22 @@ flip card
   color: #fff;
   margin: 45px;
   font-size: 1.3em;
-  font-family: manrope;
+  font-family: Work Sans;
 }
 .workshop-modal .guest-details h2 {
-  color: #fcc907;
+  color: #000;
   font-size: 1.6em;
   position: absolute;
   left: 293px;
-  font-family: manrope;
+  font-family: Montserrat;
 }
 .workshop-modal .guest-details h3 {
-  color: #fcc907;
+  color: #000;
   font-size: 1.2em;
   position: absolute;
   left: 293px;
   bottom: 0;
-  font-family: manrope;
+  font-family: Montserrat;
 }
 .time {
   margin-left: 250px;
@@ -580,7 +580,7 @@ flip card
 .workshop-modal .guest-details span {
   color: #fff;
   font-size: 1em;
-  font-family: manrope;
+  font-family: Work Sans;
 }
 .workshop-modal-img {
   object-fit: cover;
@@ -821,7 +821,7 @@ color: #121212;
     display: contents;
     flex-direction: column;
     position: absolute;
-    font-family: manrope;
+    font-family: Work Sans;
   }
   .workshop-modal .guest-details p {
     color: #fff;
@@ -829,23 +829,23 @@ color: #121212;
     position: relative;
     font-size: 1.2em;
     text-align: center;
-    font-family: manrope;
+    font-family: Work Sans;
   }
   .workshop-modal .guest-details h2 {
-    color: #fcc907;
+    color: #000;
     font-size: 1.6em;
     position: relative;
     right: 0px;
     left: 0;
-    font-family: manrope;
+    font-family: Montserrat;
   }
   .workshop-modal .guest-details h3 {
-    color: #fcc907;
+    color: #000;
     font-size: 1em;
     bottom: -40px;
     left: 0;
     display: contents;
-    font-family: manrope;
+    font-family: Montserrat;
   }
   .time {
     margin-top: 40px;
@@ -859,7 +859,7 @@ color: #121212;
   .workshop-modal .guest-details span {
     color: #fff;
     font-size: 1em;
-    font-family: manrope;
+    font-family: Work Sans;
   }
   .workshop-modal-img {
     object-fit: cover;
@@ -869,7 +869,7 @@ color: #121212;
     border-radius: 50%;
   }
   .mobile h2 {
-    font-family: manrope;
+    font-family: Work Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 1.6em;
@@ -985,7 +985,7 @@ color: #121212;
     position: relative;
     font-size: 0.9em;
     text-align: center;
-    font-family: manrope;
+    font-family: Work Sans;
   }
   .workshopCard {
     /* max-width: calc(45% - 1em); */
@@ -1034,7 +1034,7 @@ color: #121212;
     position: relative;
     font-size: 0.9em;
     text-align: center;
-    font-family: manrope;
+    font-family: Work Sans;
   }
 }
 

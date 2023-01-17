@@ -192,9 +192,8 @@ function Cart(props) {
         </div>
         <div className="lapTopView">
           <div className="contest_cards">
-            <div className="event_cards">
-              {console.log(cartItems.size == undefined)}
-              {cartItems.size == undefined || cartItems.size == 0 ? (
+              {console.log(cartItems.length)}
+              {cartItems.length == undefined || cartItems.length == 0 ? (
                 <a href="/events">
                   <section
                     className="addContest"
@@ -211,6 +210,7 @@ function Cart(props) {
                   </section>
                 </a>
               )}
+            <div className="event_cards">
               {cartItems.map((item, index) => {
                 console.log(item, index, 'fdsdfghioluyjtrgfguiu');
                 if (item.Type === 'Contest') {
@@ -288,8 +288,8 @@ function Cart(props) {
         </div>
         <div className="lapTopView">
           <div className="contest_cards">
-            {console.log(cartItems.size == undefined)}
-            {cartItems.size == undefined || cartItems.size == 0 ? (
+            {console.log(cartItems,"harsh")}
+            {/* {cartItems.length == undefined || cartItems.length == 0 ? ( */}
                 <section
                   className="addWorkshop"
                   style={{ marginBottom: '50px', right: 'auto', position: 'relative' }}>
@@ -298,14 +298,14 @@ function Cart(props) {
                   <h2>Add more Workshop</h2>
               </a>
                 </section>
-            ) : (
-                <section className="addWorkshop">
-              <a href="/events">
-                  <h1>+</h1>
-                  <h2>Add more Workshops</h2>
-              </a>
-                </section>
-            )}
+            {/* // ) : (
+              //   <section className="addWorkshop">
+              // <a href="/events">
+              //     <h1>+</h1>
+              //     <h2>Add more Workshops</h2>
+              // </a>
+              //   </section>
+            // )} */}
             <div className="event_cards">
               {cartItems.map((item, index) => {
                 console.log(item, index);
@@ -319,6 +319,10 @@ function Cart(props) {
                       name={item.name}
                       key={index}
                       color={item.color}
+                      color2={item.color2}
+                      desc={item.desc}
+                      date={item.date}
+                      time={item.time}
                     />
                   );
                 }
@@ -343,6 +347,10 @@ function Cart(props) {
                       name={item.name}
                       key={index}
                       color={item.color}
+                      color2={item.color2}
+                      desc={item.desc}
+                      date={item.date}
+                      time={item.time}
                     />
                   );
                 }
