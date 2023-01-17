@@ -100,7 +100,7 @@ function CartCard_2(props) {
 CartCard_2.defaultProps = {
   type: 'Contest',
   title: 'That’s How B’roll',
-  ps: '',
+  ps: 'View Problem Statement',
   price: 150,
 };
 export default CartCard_2;

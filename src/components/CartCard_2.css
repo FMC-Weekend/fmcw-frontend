@@ -493,15 +493,15 @@ text-align: center;
   border-radius: 19px;
   position: absolute;
   width: 60vw;
-  max-width: 400px;
+  max-width: 380px;
   min-width: 260px;
   height: 327px;
   display: flex;
   box-shadow: 6px 8px 0px #000000;
   flex-direction: column;
   border: 2px solid black;
-  margin-right: 20px;
-  margin-left: 50px;
+  /* margin-right: 20px;
+  margin-left: 50px; */
 }
 .lapTopView {
   display: block;
@@ -510,11 +510,10 @@ text-align: center;
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  width: 78%;
 }
 .contest_cards {
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 3.45vw;
+  /* padding-right: 2vw; */
   /* width: 60vw; */
 }
 .contest_cards a {

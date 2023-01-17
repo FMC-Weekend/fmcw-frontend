@@ -134,7 +134,7 @@ function EventCard(props) {
           style={{ left: props.viewStatementLeft }}>
           {props.ps}
         </a>
-        {sessionStorage.getItem('isLoggedIn') == 'true' && (
+        {/* {sessionStorage.getItem('isLoggedIn') == 'true' && (
           <div
             className="addToCart"
             style={{ background: props.color2 }}
@@ -148,7 +148,7 @@ function EventCard(props) {
             }}>
             {props.ps2}
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );
