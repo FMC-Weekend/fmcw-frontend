@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { IconContext } from 'react-icons';
-import { TiArrowUpOutline, TiArrowDownThick } from 'react-icons/ti';
+import { TiArrowUpThick, TiArrowDownThick } from 'react-icons/ti';
 import { Data } from './Data';
 import Footer from '../../Footer';
 import { Fade } from 'react-reveal';
@@ -141,7 +141,7 @@ function Accordion() {
                     {item.question}
                   </h1>
                   <span style={{ fontFamily: 'Montserrat', fontStyle: 'normal' }}>
-                    {clicked === index ? <img src='Vector_58.svg' /> : <TiArrowDownThick />}
+                    {clicked === index ? <TiArrowUpThick /> : <TiArrowDownThick />}
                   </span>
                 </Wrap>
                 <hr style={{ color: 'black', border: '0.25px solid #000000' }}></hr>

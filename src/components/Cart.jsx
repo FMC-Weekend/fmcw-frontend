@@ -1,7 +1,7 @@
 import './Cart.css';
 import { useCart } from 'react-use-cart';
 import CartCard_2 from './CartCard_2';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 // import { Button } from '../components/Button';
 import * as React from 'react';
 import Box from '@mui/material/Box';
@@ -147,7 +147,7 @@ function Cart(props) {
           </div>
           <a href="/events">
             <button className="knowMoreBtn">
-              <p>Know More</p>
+              <Link to="/passes"><p>Know More</p></Link>
             </button>
           </a>
           <div className="imgDiv">

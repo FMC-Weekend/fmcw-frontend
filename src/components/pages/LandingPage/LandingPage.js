@@ -148,7 +148,7 @@ The ninth edition of FMC weekend brings to you an opportunity to compete in the 
                 We present to you the most entertaining of nights, pronite! Where music meets the romantic, jokes meet the humour-lover, and entertainment meets all! Hold on to your seats as world-famous performers come to amuse you, and leave your minds in wonder in your very own FMC Weekend’s Pronite!{' '}
                 </p>
 
-                <button place>Explore</button>
+                <button place>Coming soon</button>
               </Fade>
             </div>
             <div className={Classes.div6}>
@@ -161,13 +161,13 @@ The ninth edition of FMC weekend brings to you an opportunity to compete in the 
                 Gone are the days when the cinema would be just confined to 4 walls. Unconventional ways or Open-Air Theatres have made their way to us under the stars, cool breezes, and an undefined sense of freedom. Bringing you a step closer to these unconventional experiences, FMC Weekend presents to you a blockbuster screening event beneath the night sky.{' '}
                 </p>
 
-                <button place>Explore</button>
+                <button place>Coming soon</button>
               </Fade>
             </div>
           </div>
           <div className={Classes.div7}>
             <Fade right>
-              <h1>{counterOn && <CountUp start={100} end={75269} duration={2} delay={0} />}+</h1>;
+              <h1>{counterOn && <CountUp start={70000} end={75269} duration={2} delay={0} />}+</h1>;
               <h2>
                 Creative enthusiasts visiting the fest, building a culture and community of digital
                 art
