@@ -17,6 +17,7 @@ import leftStar from './leftStar.png';
 import rightStar from './rightStar.png';
 // import Button from './pages/LandingPage/Section/Button/Button';
 import Button from './Button_2';
+import WorkshopCard from './pages/Events/WorkshopCard';
 
 const style = {
   position: 'absolute',
@@ -191,8 +192,8 @@ function Cart(props) {
         </div>
         <div className="lapTopView">
           <div className="contest_cards">
-            <div className="event_cards">
-              {console.log(cartItems.size == undefined)}
+              {console.log(cartItems.length)}
+              {cartItems.length == undefined || cartItems.length == 0 ? (
                 <a href="/events">
                   <section
                     className="addContest"
@@ -201,6 +202,19 @@ function Cart(props) {
                     <h2>Add more contest</h2>
                   </section>
                 </a>
+              ):
+              (
+                <a href="/events">
+                  <section
+                    className="addContest">
+                    <h1>+</h1>
+                    <h2>Add more contest</h2>
+                  </section>
+                </a>
+              )}
+              
+
+            <div className="event_cards">
               {cartItems.map((item, index) => {
                 console.log(item, index, 'fdsdfghioluyjtrgfguiu');
                 if (item.Type === 'Contest') {
@@ -266,6 +280,90 @@ function Cart(props) {
                 <section className="addContest2">
                   <h1>+</h1>
                   <h2>Add more contest</h2>
+                </section>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="section_top" style={{ marginTop: '0px' }}>
+          <div className="registered_contest">
+            <h2>Workshops</h2>
+          </div>
+        </div>
+        <div className="lapTopView">
+          <div className="contest_cards">
+            {console.log(cartItems,"harsh")}
+            {/* {cartItems.length == undefined || cartItems.length == 0 ? ( */}
+                <section
+                  className="addWorkshop"
+                  style={{ marginBottom: '50px', right: 'auto', position: 'relative' }}>
+              <a href="/events">
+                  <h1>+</h1>
+                  <h2>Add more Workshop</h2>
+              </a>
+                </section>
+            {/* // ) : (
+              //   <section className="addWorkshop">
+              // <a href="/events">
+              //     <h1>+</h1>
+              //     <h2>Add more Workshops</h2>
+              // </a>
+              //   </section>
+            // )} */}
+            <div className="event_cards">
+              {cartItems.map((item, index) => {
+                console.log(item, index);
+                if (item.Type === 'Workshop') {
+                  return (
+                    <WorkshopCard
+                      img={item.img}
+                      title={item.title}
+                      type={item.type}
+                      price={item.price}
+                      name={item.name}
+                      key={index}
+                      color={item.color}
+                      color2={item.color2}
+                      desc={item.desc}
+                      date={item.date}
+                      time={item.time}
+                    />
+                  );
+                }
+                return '';
+              })}
+            </div>
+          </div>
+        </div>
+        <div className="mobileView">
+          <div className="contest_cards">
+            <div className="event_cards">
+              {cartItems.map((item, index) => {
+                if (item.Type === 'Workshop') {
+                  return (
+                    <WorkshopCard
+                      margin={'0'}
+                      left={'0'}
+                      img={item.img}
+                      title={item.title}
+                      type={item.type}
+                      price={item.price}
+                      name={item.name}
+                      key={index}
+                      color={item.color}
+                      color2={item.color2}
+                      desc={item.desc}
+                      date={item.date}
+                      time={item.time}
+                    />
+                  );
+                }
+                return '';
+              })}
+              <a href="/events">
+                <section className="addContest2">
+                  <h1>+</h1>
+                  <h2>Add more Workshops</h2>
                 </section>
               </a>
             </div>

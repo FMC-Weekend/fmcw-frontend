@@ -1,8 +1,8 @@
 .loading_div {
     padding-top: 30vh;
-    color:white;
+    color:#000;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    background-color: #fff;
 }

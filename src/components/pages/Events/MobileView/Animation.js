@@ -4,6 +4,7 @@ import data from '../Data/data';
 import { Link } from 'react-router-dom';
 import Footer from '../../../Footer';
 import { ToastContainer } from 'react-toastify';
+import WorkshopCard from '../WorkshopCard';
 function Animation() {
   return (
     <div style={{ background: '#1D033E', overflow: 'hidden' }}>
@@ -45,6 +46,25 @@ function Animation() {
                   addToCartLeft={'6px'}
                   frontLeft={'20px'}
                   display={'none'}
+                />
+              );
+            })}
+          </div>
+          <div className="workshop-cards">
+            {data.animationWorkshopData.map((item, index) => {
+              return (
+                <WorkshopCard
+                  img={item.img}
+                  title={item.title}
+                  type={item.type}
+                  price={item.price}
+                  name={item.name}
+                  key={index}
+                  color={item.color}
+                  color2={item.color2}
+                  desc={item.desc}
+                  date={item.date}
+                  time={item.time}
                 />
               );
             })}

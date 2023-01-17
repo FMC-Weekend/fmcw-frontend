@@ -50,25 +50,25 @@ function Design() {
               );
             })}
           </div>
-          {/* <div className="workshop-cards">
+          <div className="workshop-cards">
             {data.designWorkshopData.map((item, index) => {
               return (
                 <WorkshopCard
                   img={item.img}
                   title={item.title}
                   type={item.type}
-                  link={item.link}
                   price={item.price}
-                  prize={item.prize}
+                  name={item.name}
+                  key={index}
+                  color={item.color}
+                  color2={item.color2}
                   desc={item.desc}
                   date={item.date}
                   time={item.time}
-                  item={item}
-                  key={index}
                 />
               );
             })}
-          </div> */}
+          </div>
         </div>
       </section>
       <Footer />

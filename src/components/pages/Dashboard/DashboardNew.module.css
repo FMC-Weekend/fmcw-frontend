@@ -232,7 +232,7 @@ justify-content: right;
 .registered_contest h2 {
   padding-top: 7vh;
   font-size: 28px;
-  padding-bottom: 0;
+  padding-bottom: 50px;
 }
 
 .contest_cards {

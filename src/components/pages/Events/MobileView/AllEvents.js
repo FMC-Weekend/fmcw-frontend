@@ -43,6 +43,25 @@ function AllEvents() {
               );
             })}
           </div>
+          <div className="workshop-cards">
+            {data.allEventsWorkshopData.map((item, index) => {
+              return (
+                <WorkshopCard
+                  img={item.img}
+                  title={item.title}
+                  type={item.type}
+                  price={item.price}
+                  name={item.name}
+                  key={index}
+                  color={item.color}
+                  color2={item.color2}
+                  desc={item.desc}
+                  date={item.date}
+                  time={item.time}
+                />
+              );
+            })}
+          </div>
         </div>
       </section>
     </div>
