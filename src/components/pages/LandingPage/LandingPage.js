@@ -107,8 +107,8 @@ function landingPage() {
               <img src={winner1} />
             </div>
             <Fade bottom>
-              <h1>COMPETITIONS</h1>
-              <p>
+              <h1 className={Classes.events}>COMPETITIONS</h1>
+              <p className={Classes.events}>
               Do you fancy yourself as a flawless reporter, or are you someone who can put all your imagination to produce artistic designs? Do you think that you can perfectly integrate the choice of lighting, lenses and special effects
 or is photography your thing?
 Then what are you waiting for?
@@ -124,8 +124,8 @@ The ninth edition of FMC weekend brings to you an opportunity to compete in the 
               <img src={briefing} />
             </div>
             <Fade bottom>
-              <h1>WORKSHOPS</h1>
-              <p>
+              <h1 className={Classes.events}>WORKSHOPS</h1>
+              <p className={Classes.events}>
               The glorious ninth edition of FMC Weekend brings you an opportunity to learn & dive into the world of magical creativity and lively imagination. Attend the most insightful workshop on creative writing, photography, cinematography, design, and animation from the masters in the respective domain, and witness the transition from amateur to apprentice.{' '}
               </p>
               <a href="/events">
@@ -143,8 +143,8 @@ The ninth edition of FMC weekend brings to you an opportunity to compete in the 
               </div>
 
               <Fade bottom>
-                <h1>PRONITES</h1>
-                <p>
+                <h1 className={Classes.events}>PRONITES</h1>
+                <p className={Classes.events}>
                 We present to you the most entertaining of nights, pronite! Where music meets the romantic, jokes meet the humour-lover, and entertainment meets all! Hold on to your seats as world-famous performers come to amuse you, and leave your minds in wonder in your very own FMC Weekend’s Pronite!{' '}
                 </p>
 
@@ -156,8 +156,8 @@ The ninth edition of FMC weekend brings to you an opportunity to compete in the 
                 <img src={banner4} />
               </div>
               <Fade bottom>
-                <h1>OPEN AIR THEATRES</h1>
-                <p>
+                <h1 className={Classes.events}>OPEN AIR THEATRES</h1>
+                <p className={Classes.events}>
                 Gone are the days when the cinema would be just confined to 4 walls. Unconventional ways or Open-Air Theatres have made their way to us under the stars, cool breezes, and an undefined sense of freedom. Bringing you a step closer to these unconventional experiences, FMC Weekend presents to you a blockbuster screening event beneath the night sky.{' '}
                 </p>
 
