@@ -3,7 +3,7 @@ import Loading from '../../Loading';
 import { useState, useEffect, useContext } from 'react';
 import Classes from './DashboardNew.module.css';
 import EventCard from './EventCard';
-import WorkshopCard from './WorkshopCard';
+import WorkshopCard from '../Events/WorkshopCard';
 import { useCart } from 'react-use-cart';
 import Button from './Button/Button';
 import Footer from '../../Footer';
@@ -14,8 +14,8 @@ function DashBoardNew() {
   const { items } = useCart();
   const [isLoading, setIsLoading] = useState(false);
   const [userData, setUserData] = useState({
-    name: 'Harsh Shrivastava',
-    email: 'harsh.shrivastava.eee21@itbhu.ac.in',
+    name: 'Tony Stark',
+    email: 'tony.stark@itbhu.ac.in',
     college: 'Foo',
     phone: 'XXXXXXXXXX',
     yearOfStudy: '2',
@@ -107,7 +107,11 @@ function DashBoardNew() {
     <div className={Classes.section}>
       <div className={Classes.section_top}>
         <div className={Classes.illus}>
-          <img src="dashboard.svg" alt="illustration" style={{paddingTop:"5vh", paddingRight:"5vw"}} />
+          <img
+            src="dashboard.svg"
+            alt="illustration"
+            style={{ paddingTop: '5vh', paddingRight: '5vw' }}
+          />
         </div>
         <h3>Hi, </h3>
         <h2 className={Classes.userName}>{userData.name}!</h2>
@@ -149,6 +153,7 @@ function DashBoardNew() {
               if (item.Type === 'Contest') {
                 return (
                   <EventCard
+                    top={"0"}
                     img={item.img}
                     title={item.title}
                     type={item.type}
@@ -215,38 +220,79 @@ function DashBoardNew() {
           </div>
         </div>
       </div>
-      {/* <div className={`${Classes.registered_contest} ${Classes.section_top}`}>
+      <div className={`${Classes.registered_contest} ${Classes.section_top}`}>
         <h2>Registered Workshops</h2>
-      </div> */}
+      </div>
+            <div className={Classes.lapTopView}>
+              
       <div className={Classes.contest_cards}>
         {/* <a href='/events'>
           <section className={Classes.addWorkshop}>
-            <h1>+</h1>
-            <h2>Add more workshop</h2>
+          <h1>+</h1>
+          <h2>Add more workshop</h2>
           </section>
-          </a> */}
+        </a> */}
         {/* <div className="event-cards"> */}
-        {/* <div className={Classes.event_cards}>
+        <div className={Classes.event_cards}>
           {userData.cartItems.map((item, index) => {
             if (item.Type === 'Workshop') {
               return (
                 <WorkshopCard
                   img={item.img}
                   title={item.title}
-                  type={item.Type}
-                  link={item.link}
+                  type={item.type}
                   price={item.price}
-                  prize={item.prize}
-                  desc={item.desc}
-                  item={item}
+                  name={item.name}
                   key={index}
+                  color={item.color}
+                  color2={item.color2}
+                  desc={item.desc}
+                  date={item.date}
+                  time={item.time}
                 />
               );
-            }
-            return '';
-          })}
-        </div> */}
+              }
+              return '';
+            })}
+        </div>
       </div>
+            </div>
+            <div className={Classes.mobileView}>
+              
+      <div className={Classes.contest_cards}>
+        {/* <a href='/events'>
+          <section className={Classes.addWorkshop}>
+          <h1>+</h1>
+          <h2>Add more workshop</h2>
+          </section>
+        </a> */}
+        {/* <div className="event-cards"> */}
+        <div className={Classes.event_cards}>
+          {userData.cartItems.map((item, index) => {
+            if (item.Type === 'Workshop') {
+              return (
+                <WorkshopCard
+                  margin={'0'}
+                  left={'0'}
+                  img={item.img}
+                  title={item.title}
+                  type={item.type}
+                  price={item.price}
+                  name={item.name}
+                  key={index}
+                  color={item.color}
+                  color2={item.color2}
+                  desc={item.desc}
+                  date={item.date}
+                  time={item.time}
+                />
+              );
+              }
+              return '';
+            })}
+        </div>
+      </div>
+            </div>
       <button className={Classes.logout_button} onClick={logoutHandler}>
         LOG OUT
       </button>

@@ -503,6 +503,25 @@ text-align: center;
   /* margin-right: 20px;
   margin-left: 50px; */
 }
+.addWorkshop {
+  margin: auto;
+  color: #000;
+  right: 70px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 19px;
+  position: absolute;
+  width: 60vw;
+  max-width: 295px;
+  min-width: 230px;
+  height: 420px;
+  display: flex;
+  box-shadow: 6px 8px 0px #000000;
+  flex-direction: column;
+  border: 2px solid black;
+  margin-right: 20px;
+  margin-left: 50px;
+}
 .lapTopView {
   display: block;
 }
