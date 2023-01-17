@@ -1,6 +1,6 @@
 import './Cart.css';
 import { useCart } from 'react-use-cart';
-import EventCard from './pages/Events/EventCard';
+import CartCard_2 from './CartCard_2';
 import { NavLink } from 'react-router-dom';
 // import { Button } from '../components/Button';
 import * as React from 'react';
@@ -9,8 +9,12 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Footer from './Footer';
 import CheckoutButton from './CheckoutButton/CheckoutButton';
-import CartCard_2 from './CartCard_2';
+import './CartCard_2.css';
 import { useState, useEffect } from 'react';
+import img1 from './CartInfo1.png';
+import img2 from './CartInfo2.png';
+import leftStar from './leftStar.png';
+import rightStar from './rightStar.png';
 // import Button from './pages/LandingPage/Section/Button/Button';
 import Button from './Button_2';
 
@@ -77,11 +81,11 @@ function Cart(props) {
       email: document.getElementById('email').value,
       phone: document.getElementById('phone').value,
       amount: paymentAmount,
-      redirect_url: process.env.REACT_APP_BACKEND_URI+'/api/pay/callback'
+      redirect_url: process.env.REACT_APP_BACKEND_URI + '/api/pay/callback'
     };
     console.log(obj);
 
-    const res = await fetch(process.env.REACT_APP_BACKEND_URI+'/api/pay', {
+    const res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/pay', {
       method: 'POST',
       body: JSON.stringify(obj),
       headers: {
@@ -92,8 +96,6 @@ function Cart(props) {
     const data = await res.json();
     console.log(data);
 
-
-    
     //ToDo: You just have to make an API request to /api/send-mail to send the email to the user with the details of the
     // event they have booked and the total payment amount
     // The body of the API request should contain: name, email, phone and paymentAmount of the user.
@@ -121,22 +123,45 @@ function Cart(props) {
   return (
     <div>
       <section className="cart-page">
-        <h1>Cart</h1>
-        <div className="purchase_details">
-          <h3>Total Items: ({cartItems.length})</h3>
-          <h3>Total Price = ₹ {paymentAmount.toFixed(2)} </h3>
-
-          <div className="checkout_button">
-            <CheckoutButton onClick={handleOpen}>CHECKOUT</CheckoutButton>
+        <div className="cartTitle">
+          <div>
+            <img className="star1" src={leftStar}></img>
           </div>
-
-          {/* <a href="/events">
+          <div>
+            <span className="heading">CART</span>
+          </div>
+          <div>
+            <img className="star2" src={rightStar}></img>
+          </div>
+        </div>
+        <div className="cartInfo">
+          <div className="cartInfoHeading">
+            Know how you can get access to more events within your budget
+          </div>
+          <div className="cartInfoDescription">
+            Get ready to traverse the arena of digital arts with these exclusive passes that give
+            you access to the grand 8th edition of FMC Weekend. We have a range of different passes
+            including the super-combo called club passes which give you access to the complete
+            package from any chosen category.
+          </div>
+          <a href="/events">
+            <button className="knowMoreBtn">
+              <p>Know More</p>
+            </button>
+          </a>
+          <div className="imgDiv">
+            <img className="cartImg1" src={img1}></img>
+            <img className="cartImg2" src={img2}></img>
+          </div>
+        </div>
+        {/* <div className="purchase_details"> */}
+        {/* <a href="/events">
           <div className="add-more-cards">
             <span>+</span>
             <h3>Purchase More Cards</h3>
           </div>
         </a> */}
-          <div className="cart_cards">
+        {/* <div className="cart_cards">
             {cartItems.map((item, index) => {
               return (
                 <div key={index} className="cart-container">
@@ -158,8 +183,104 @@ function Cart(props) {
                 </div>
               );
             })}
+          </div> */}
+        <div className="section_top" style={{ marginTop: '0px' }}>
+          <div className="registered_contest">
+            <h2>Contests</h2>
           </div>
         </div>
+        <div className="lapTopView">
+          <div className="contest_cards">
+            <div className="event_cards">
+              {console.log(cartItems.size == undefined)}
+              {cartItems.size == undefined || cartItems.size == 0 ? (
+                <a href="/events">
+                  <section
+                    className="addContest"
+                    style={{ marginBottom: '50px', right: 'auto', position: 'relative' }}>
+                    <h1>+</h1>
+                    <h2>Add more contest</h2>
+                  </section>
+                </a>
+              ) : (
+                <a href="/events">
+                  <section className="addContest">
+                    <h1>+</h1>
+                    <h2>Add more contest</h2>
+                  </section>
+                </a>
+              )}
+              {cartItems.map((item, index) => {
+                console.log(item, index, 'fdsdfghioluyjtrgfguiu');
+                if (item.Type === 'Contest') {
+                  return (
+                    <CartCard_2
+                      img={item.img}
+                      title={item.title}
+                      type={item.type}
+                      link={item.link}
+                      price={item.price}
+                      prize={item.prize}
+                      content={item.content}
+                      item={item}
+                      key={index}
+                      color={item.color}
+                      color2={item.color2}
+                    />
+                  );
+                }
+                return '';
+              })}
+            </div>
+          </div>
+        </div>
+        <div className="mobileView">
+          <div className="contest_cards">
+            <div className="event_cards">
+              {cartItems.map((item, index) => {
+                if (item.Type === 'Contest') {
+                  return (
+                    <CartCard_2
+                      img={item.img}
+                      title={item.title}
+                      type={item.type}
+                      link={item.link}
+                      price={item.price}
+                      prize={item.prize}
+                      content={item.content}
+                      item={item}
+                      key={index}
+                      color={item.color}
+                      color2={item.color2}
+                      top={'7vh'}
+                      width={'260px'}
+                      height={'329px'}
+                      contentLeft={'12px'}
+                      contentTop={'70px'}
+                      contentWidth={'230px'}
+                      contentFont={'16px'}
+                      lineLeft={'23%'}
+                      titleTop={'3px'}
+                      imgLeft={'7px'}
+                      viewStatementLeft={'50px'}
+                      addToCartLeft={'6px'}
+                      frontLeft={'20px'}
+                      display={'none'}
+                    />
+                  );
+                }
+                return '';
+              })}
+              <a href="/events">
+                <section className="addContest2">
+                  <h1>+</h1>
+                  <h2>Add more contest</h2>
+                </section>
+              </a>
+            </div>
+          </div>
+        </div>
+        {/* </div> */}
         <Modal
           open={open}
           onClose={handleClose}
@@ -173,17 +294,35 @@ function Cart(props) {
               <h1 className="reg-text">REGISTER</h1>
               <div className="reg-form">
                 <div className="text">
-                  <input className="register-input" type="text" id="name" placeholder="Name" required />
+                  <input
+                    className="register-input"
+                    type="text"
+                    id="name"
+                    placeholder="Name"
+                    required
+                  />
                   <hr />
-                  <input className="register-input" type="email" id="email" placeholder="Email" required />
+                  <input
+                    className="register-input"
+                    type="email"
+                    id="email"
+                    placeholder="Email"
+                    required
+                  />
                   <hr />
-                  <input className="register-input" type="phone" id="phone" placeholder="Contact Number" required />
+                  <input
+                    className="register-input"
+                    type="phone"
+                    id="phone"
+                    placeholder="Contact Number"
+                    required
+                  />
                   <br></br>
                   <label htmlFor="cart-amount">
-                    <h3 className='price-info'>Total Price = ₹ {paymentAmount} </h3>
+                    <h3 className="price-info">Total Price = ₹ {paymentAmount} </h3>
                   </label>
                 </div>
-                <button onClick={checkoutHandler} name="registor-button" className='register-btn'>
+                <button onClick={checkoutHandler} name="registor-button" className="register-btn">
                   Pay Now
                 </button>
               </div>
@@ -232,6 +371,19 @@ function Cart(props) {
             </Typography> */}
           </Box>
         </Modal>
+        <div className="purchase_details">
+          <div className="checkout_button2">
+            {/* <CheckoutButton onClick={handleOpen}>CHECKOUT</CheckoutButton>*/}
+            <button className="checkoutBtn" onClick={handleOpen}>
+              <p>CHECKOUT</p>
+            </button>
+          </div>
+          {/* <h3>Total Items: ({cartItems.length})</h3> */}
+          <div className="cost">
+            <span className="checkoutCost">Total Cost</span>
+            <span className="checkoutCost"> Rs {paymentAmount.toFixed(2)} </span>
+          </div>
+        </div>
       </section>
 
       <Footer />

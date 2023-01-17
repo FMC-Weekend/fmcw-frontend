@@ -107,7 +107,7 @@ function DashBoardNew() {
     <div className={Classes.section}>
       <div className={Classes.section_top}>
         <div className={Classes.illus}>
-          <img src="dashboard.svg" alt="illustration" />
+          <img src="dashboard.svg" alt="illustration" style={{paddingTop:"5vh", paddingRight:"5vw"}} />
         </div>
         <h3>Hi, </h3>
         <h2 className={Classes.userName}>{userData.name}!</h2>

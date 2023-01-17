@@ -15,7 +15,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useCart } from 'react-use-cart';
 import rectangle from './Rectangle133.png';
 import arrow from './Vector59.png';
-import frontImg from './Group7175.png';
+// import frontImg from './Group7175.png';
 import viewProbImg from './Vector.png';
 
 const CardTitle = styled.h2`
@@ -102,7 +102,7 @@ function EventCard(props) {
         <b className="front-price" style={{ left: props.frontLeft }}>
           RS.{props.price}
         </b>
-        <img className="front-img" src={frontImg} style={{ left: props.frontLeft }}></img>
+        <img className="front-img" src={props.img} style={{ left: props.frontLeft }}></img>
         <img className="three-dots1" src={rectangle} style={{ display: props.display }}></img>
         <img className="three-dots2" src={rectangle} style={{ display: props.display }}></img>
         <img className="three-dots3" src={rectangle} style={{ display: props.display }}></img>
@@ -130,13 +130,13 @@ function EventCard(props) {
           target="_blank"
           className="btnView"
           rel="noreferrer"
-          style={{ left: props.viewStatementLeft }}>
+          style={{ left: props.viewStatementLeft, fontSize: '1.2em' }}>
           {props.ps}
         </a>
-        {sessionStorage.getItem('isLoggedIn') == 'true' && (
+        {sessionStorage.getItem('isLoggedIn') == 'true' ? (
           <div
             className="addToCart"
-            style={{ background: props.color2 }}
+            style={{ background: props.color2, cursor: 'pointer' }}
             onClick={() => {
               // send post request to database
 
@@ -147,6 +147,16 @@ function EventCard(props) {
             }}>
             {props.ps2}
           </div>
+        ) : (
+          <a
+            className="addToCart"
+            target="_blank"
+            href="/authentication"
+            rel="noreferrer"
+            style={{ background: props.color2 }}
+            >
+            Login To Add
+          </a>
         )}
       </div>
     </div>

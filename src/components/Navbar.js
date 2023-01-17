@@ -168,6 +168,7 @@ function Navbar() {
               to="/events"
               className="nav-links"
               activeClassName="target"
+              // style={{marginLeft: "30px"}}
               onClick={closeMobileMenu}>
               EVENTS
             </NavLink>
@@ -218,32 +219,39 @@ function Navbar() {
             </NavLink>
           </li>
           <li className="nav-item">
+            {sessionStorage.getItem('isLoggedIn') == 'true' && (
+              <NavLink to="/cart" activeClassName="target" onClick={closeMobileMenu}
+                className={cartItems.length ? 'cartBtn nav-links' : 'cartBtn empty_cart nav-links'}>
+                <span id="quantity">
+                  <p style={{ fontSize: '13px' }}>{cartItems.length}</p>
+                </span>
+                <i className="fas fa-shopping-cart" style={{display: "flex"}}><p className='cartText'>CART</p></i>
+              </NavLink>
+            )}
+          </li>
+          <li className="nav-item">
             {sessionStorage.getItem('isLoggedIn') == 'true' ? (
               <Button
+                width={'auto'}
                 isInternalLink
                 toLink="/dashboard"
                 className="nav-register-btn"
                 onClick={closeMobileMenu}>
-                <div className='register-btn-text'>DASHBOARD</div>
+                <div className="register-btn-text">DASHBOARD</div>
               </Button>
             ) : (
               <Button
+                width={'auto'}
+                padding={'3vw'}
                 isInternalLink
                 toLink="/authentication"
                 className="nav-register-btn"
                 onClick={closeMobileMenu}>
-                <div className='register-btn-text'>REGISTER</div>
+                <div className="register-btn-text">REGISTER</div>
               </Button>
             )}
           </li>
         </ul>
-
-        {sessionStorage.getItem('isLoggedIn') == 'true' && (
-          <NavLink to="/cart" className={cartItems.length ? 'cartBtn' : 'cartBtn empty_cart'}>
-            <span id="quantity">{cartItems.length} </span>
-            <i className="fas fa-shopping-cart"></i>
-          </NavLink>
-        )}
       </div>
     </nav>
   );

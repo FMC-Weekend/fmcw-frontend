@@ -1,43 +1,74 @@
 .passes-page {
-    background-color: #1b083d;
+    background-color: #fff;
     position: relative;
     min-height: 100vh;
     height: 100%;
     overflow: hidden;
-    padding: 30px;
-    color: #fcc907;
+    /* padding: 30px; */
+    color: #000;
+  }
+  .passes-page .pass-header {
+    background: #FF8800;
+    width: 100%;
+    position: relative;
+    height: 30vh;
+    margin: auto;
+  }
+  .pass-header img {
+    margin: auto;
+    top: 20px;
+    position: relative;
+  }
+  .pass-header .head {
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 128px;
+    /* line-height: 156px; */
+    /* identical to box height */
+    top: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: auto;
+    /* border: 3px solid #000000; */
+    text-shadow: 4px 8px 0px #000000;
   }
   .passes-page h1 {
   }
   .passes-content {
       text-align: left;
-      width: 40vw;
-      padding: 30px;
+      width: 60vw;
+      padding: 100px;
       margin: 30px;
   }
   .passes-content h1 {
-      
+    font-family: Montserrat;
+    font-size: 3.5em;
+    font-weight: 600;
+    line-height: 51px;
+    letter-spacing: 0em;
     text-align: left;
-    color: #fcc907;
-    font-family: Marcellus;
-    padding-bottom: 3vh;
+    
   }
   .passes-content p {
       
     text-align: left;
-    color: #fff;
-    font-size: 1.4em;
-    font-family: Marcellus;
+    color: #000;
+    font-size: 2.0em;
+    font-family: Nunito Sans;
     margin-top: 20px;
-    width: 30vw;
+    font-weight: 400;
   }
   .pass-cards {
-    width: 80vw;
+    width: 95vw;
     margin-top: 10px;
-    /* margin-left: auto; */
-    display: grid;
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    grid-gap: 0.5rem;
+    grid-gap: 5.5rem;
     padding: 48px;
   }
   .pass_card {
@@ -48,8 +79,10 @@
     align-items: center;
     justify-content: right;
     position: absolute;
-    top: 100px;
-    right: 95px;
+    padding: 30px;
+    top: 200px;
+    width: 40vw;
+    right: 40px;
   }
   .cart-card {
     width: 300px;
@@ -183,16 +216,17 @@ transform: scale(2);
     }
     .pass-cards {
       width: 50vw;
-      margin-top: 10px;
+      margin-top: 30px;
       margin: auto;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       grid-gap: 0.5rem;
-      padding: 0;
+      padding: 30px;
       justify-content: center;
     }
     .pass_card {
       width: 300px;
+      padding: 30px;
   }
   .passes-content {
     text-align: center;
@@ -200,12 +234,34 @@ transform: scale(2);
     padding: 0;
     margin: auto;
 }
+.passes-page .pass-header {
+  background: #FF8800;
+  width: 100%;
+  position: relative;
+  height: 30vh;
+  margin: auto;
+}
+.pass-header .head {
+  position: relative;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4em;
+  /* line-height: 156px; */
+  /* identical to box height */
+  top: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: auto;
+  /* border: 3px solid #000000; */
+  text-shadow: 4px 4px 0px #000000;
+}
 .passes-content h1 {
   text-align: center;
 }
 .passes-content p {
   text-align: center;
-  color: #fff;
+  /* color: #fff; */
   font-size: 1.2em;
   font-family: Marcellus;
   margin-top: 20px;

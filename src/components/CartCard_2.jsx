@@ -55,7 +55,7 @@ function CartCard_2(props) {
     scale: 1.06
   };
   return (
-    <div className="card card-flip" style={{background: props.color}}>
+    <div className='card card-flip' style={{background: props.color, top : "0", margin: "0 30px 50px"}}>
       <div className="card-front card-div">
         
      
@@ -71,7 +71,7 @@ function CartCard_2(props) {
       </div>
 
       <div className="card-back card-div">
-      {!props.verified && (
+      {/* {!props.verified && (
           <button
             className="cart-btn"
             onClick={() => {
@@ -80,7 +80,7 @@ function CartCard_2(props) {
             }}>
             <CloseIcon />
           </button>
-        )}
+        )} */}
         <div className="card-title">
           {props.title}
           <div className="lineTitle"></div>
