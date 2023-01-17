@@ -1,18 +1,16 @@
 .auth_section {
+  position: relative;
   display: grid;
   justify-content: center;
-  align-items: flex-end;
   background: #685eda;
-  min-height: 100vh;
-  height: 100vh;
-  overflow: hidden;
-  padding-left: 140px;
+  height: 87vh;
 }
 .auth_section img {
   display: flex;
-  width: 60vw;
-  padding-top: 50px;
-  padding-left: 500px;
+  width: 22vw;
+  position: absolute;
+  right: 180px;
+  top: 60px;
   justify-content: right;
 }
 .authenticateButton {
@@ -20,27 +18,31 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 50%;
-
+  top: 40%;
   box-sizing: border-box;
 
   position: absolute;
-  width: 340px;
+  width: 30vw;
   height: 71px;
   background: #ffffff;
   border: 2px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-
+  left: 150px;
   filter: drop-shadow(4px 6px 0px #000000);
+  
 }
 
 .gButton {
-  width: 520px;
-  height: 70px;
+  width: 620px;
+  height: 71px;
   background: #ffffff;
-  border-radius: 10px;
+  border-radius: 50px;
   font-size: 26px;
+  opacity: 0.7;
+  z-index: -1;
+  margin: auto;
+  text-align: center;
   font-weight: 500;
 }
 
@@ -65,20 +67,23 @@
     width: 100%;
     padding-left: 0;
     padding: 20px;
-    height: auto;
+    max-height: 140vh;
+    height: 140vh;
     /* overflow-x: hidden; */
   }
   .auth_section img {
     width: 60vw;
     min-width: 300px;
     padding: 0;
+    right: 0;
     margin: auto;
   }
   .authenticateButton {
     position: relative;
     width: 300px;
     height: 50px;
-    top: 0;
+    left: 0;
+    top: 50vh;
     margin: auto;
   }
   .authenticateButton p {

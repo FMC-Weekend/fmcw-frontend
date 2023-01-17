@@ -17,7 +17,7 @@ import banner4 from './banner4.svg';
 import backButton from './backButton.png';
 import forwardButton from './forwardButton.png';
 import { Link } from 'react-router-dom';
-import Testimonials from '../Testimonials/Testimonials';
+import Testimonials from './Testimonials/Testimonials';
 import Fade from 'react-reveal/Fade';
 import Marquee from 'react-fast-marquee';
 import CountUp from 'react-countup';
@@ -176,7 +176,7 @@ The ninth edition of FMC weekend brings to you an opportunity to compete in the 
           </div>
         </ScrollTrigger>
       </div>
-
+    <Testimonials />
       <div className={Classes.footer}>
         <Footer />
       </div>

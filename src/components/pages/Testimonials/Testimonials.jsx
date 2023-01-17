@@ -34,7 +34,7 @@ const Testimonials = () => {
     <section className="bg-#1b083d dark:bg-#1b083d">
       <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
         <figure className="max-w-screen-md mx-auto">
-          <img src='Group_7211.svg' />
+          <img src="Group_7211.svg" />
           <div className="flex align-center justify-center gap-10">
             <ArrowBackIcon
               onClick={() => {
@@ -63,7 +63,6 @@ const Testimonials = () => {
             />
           </div>
           <figcaption className="flex items-center justify-center mt-6 space-x-3">
-           
             <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
               <div className="pr-3 font-medium text-gray-900 dark:text-white">
                 {testimonials[index].name}

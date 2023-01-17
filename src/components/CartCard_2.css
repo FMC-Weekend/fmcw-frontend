@@ -225,8 +225,12 @@ body {
 .card-title {
   margin: 0 auto;
   color: #000;
-  font-family: Montserrat;
-  font-size: 20px;
+  font-family: Work Sans;
+font-size: 25px;
+font-weight: 500;
+line-height: 35px;
+letter-spacing: 0em;
+text-align: center;
   font-style: normal;
   font-weight: 400;
   margin-top: 10px;

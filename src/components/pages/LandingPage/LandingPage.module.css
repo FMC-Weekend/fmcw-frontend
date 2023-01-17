@@ -50,6 +50,7 @@
 }
 
 .register_button:hover {
+  transform: translate(4px, 8px);
   box-shadow: 0px 0px 0px;
 }
 
@@ -324,12 +325,10 @@
 }
 
 .div2 button:hover {
+  transform: translate(4px, 8px);
   box-shadow: 0px 0px 0px;
 }
 
-.div2 button:focus {
-  background-color: powderblue;
-}
 
 .div3456 {
   background-color: #FFFFFF;
@@ -395,7 +394,7 @@
   width: 36vw;
   height: 63px;
   left: 108px;
-  top: 43vh;
+  top: 36vh;
   /* margin: auto; */
   font-family: 'Montserrat';
   font-style: normal;
@@ -416,7 +415,7 @@
   max-width: 35vw;
   height: 170px;
   left: 110px;
-  top: 43vh;
+  top: 37vh;
 
   font-family: 'Manrope';
   font-style: normal;
@@ -460,6 +459,7 @@
 .div4 button:hover,
 .div5 button:hover,
 .div6 button:hover {
+  transform: translate(4px, 8px);
   box-shadow: 0px 0px 0px;
 }
 
