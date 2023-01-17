@@ -136,7 +136,7 @@ function EventCard(props) {
         {sessionStorage.getItem('isLoggedIn') == 'true' ? (
           <div
             className="addToCart"
-            style={{ background: props.color2, cursor: 'pointer' }}
+            style={{ background: props.color2, cursor: 'pointer', fontFamily:"Manrope" }}
             onClick={() => {
               // send post request to database
 
