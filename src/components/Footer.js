@@ -11,7 +11,7 @@ function Footer() {
       <footer>
         <div className="footer">
           <section>
-            <img src="Group_7097.svg" className="image" alt="logo with image"></img>
+            <img src="LOGOFMC.png" className="image" alt="logo with image"></img>
           </section>
         </div>
       </footer>
