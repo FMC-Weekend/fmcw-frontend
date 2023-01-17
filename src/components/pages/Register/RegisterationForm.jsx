@@ -78,7 +78,7 @@ function RegisterationForm() {
         <label htmlFor="phone" className={Classes.title}>
           <b>Phone Number (+91)</b>
         </label>
-        <input type="tel" name="phone" required />
+        <input type="tel" name="phone" placeholder="" required pattern="^[0-9]{10,10}$" />
         <label htmlFor="year" className={Classes.title}>
           <b>Year of Study</b>
         </label>
