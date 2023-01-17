@@ -197,14 +197,7 @@ function Cart(props) {
                 <a href="/events">
                   <section
                     className="addContest"
-                    style={{ marginBottom: '50px', right: 'auto', position: 'relative' }}>
-                    <h1>+</h1>
-                    <h2>Add more contest</h2>
-                  </section>
-                </a>
-              ) : (
-                <a href="/events">
-                  <section className="addContest">
+                    style={{ margin: '0px 30px 50px', right: 'auto', position: 'relative' }}>
                     <h1>+</h1>
                     <h2>Add more contest</h2>
                   </section>
