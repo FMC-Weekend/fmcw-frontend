@@ -193,23 +193,14 @@ function Cart(props) {
           <div className="contest_cards">
             <div className="event_cards">
               {console.log(cartItems.size == undefined)}
-              {cartItems.size == undefined || cartItems.size == 0 ? (
                 <a href="/events">
                   <section
                     className="addContest"
-                    style={{ marginBottom: '50px', right: 'auto', position: 'relative' }}>
+                    style={{ margin: '0px 30px 50px', right: 'auto', position: 'relative' }}>
                     <h1>+</h1>
                     <h2>Add more contest</h2>
                   </section>
                 </a>
-              ) : (
-                <a href="/events">
-                  <section className="addContest">
-                    <h1>+</h1>
-                    <h2>Add more contest</h2>
-                  </section>
-                </a>
-              )}
               {cartItems.map((item, index) => {
                 console.log(item, index, 'fdsdfghioluyjtrgfguiu');
                 if (item.Type === 'Contest') {

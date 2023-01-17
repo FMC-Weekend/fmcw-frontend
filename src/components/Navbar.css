@@ -154,7 +154,7 @@ ul {
   border: 2px solid #000;
   position: absolute;
   /* width: 12.5%; */
-  /* right: 60px; */
+  right: 60px;
   height: 100%;
   font-family: 'Montserrat';
   font-style: normal;
@@ -182,7 +182,7 @@ ul {
     text-decoration: none;
     padding-left: 10px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1330px) {
   .navbar {
     height: 85px;
   }
@@ -190,7 +190,7 @@ ul {
   .nav-links {
     padding-left: 0.2rem;
     padding-right: 0.2rem;
-    font-size: 1.05rem;
+    font-size: 1.25rem;
   }
 
   .nav-register-btn {
