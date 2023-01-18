@@ -8,7 +8,7 @@ import Classes from './LandingPage.module.css';
 import Footer from '../../Footer';
 import { Button } from '../../Button';
 import closeMobileMenu from '../../Navbar';
-import side_img from './side_img.svg';
+import HeroAnimNew from './HeroAnimNew.gif';
 import winner1 from './winner.svg';
 import briefing from './briefing.svg';
 import redcarpet from './red-carpet.svg';
@@ -70,7 +70,7 @@ function landingPage() {
               </button>
             </a>
             {/* </Link> */}
-            <img src={side_img} className={Classes.div1_img} />;
+            <img src={HeroAnimNew} className={Classes.div1_img} />;
             {/* <img src="0001-0210.gif" className={Classes.div1_img} /> */}
           </Fade>
         </div>
