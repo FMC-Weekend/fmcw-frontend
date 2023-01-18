@@ -29,7 +29,7 @@
   margin-bottom: 10px;
   width: 50%;
   padding-left: 0;
-  height: fit-content+10px;
+  height: fit-content + 10px;
 }
 
 .social-icon-link {
@@ -49,39 +49,45 @@
   box-shadow: 0px 0px 0px;
 }
 .facebook {
-  background: #00CCF5;
+  background: #00ccf5;
   padding: 5px;
   margin: 10px;
   margin-left: 0;
 }
-.facebook:hover{
-  background:#4267B2;
+.facebook:hover {
+  background: #4267b2;
 }
 .instagram {
-  background: #FE6263;
+  background: #fe6263;
   padding: 3px;
   margin: 10px;
- 
 }
 .instagram:hover {
- background: #d6249f;
- background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
 }
- .youtube {
-  background: #685EDA;
+.youtube {
+  background: #685eda;
   padding: 4px;
   margin: 10px;
 }
-.youtube:hover{
-  background: #FF0000;
+.youtube:hover {
+  background: #ff0000;
 }
 .linkedin {
-  background: #14F0B9;
+  background: #14f0b9;
   padding: 5px;
   margin: 10px;
 }
-.linkedin:hover{
-  background: #0A66C2;
+.linkedin:hover {
+  background: #0a66c2;
 }
 .footer {
   background-color: #f3f3f3;
@@ -148,7 +154,6 @@ textarea::placeholder {
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
   position: absolute;
-
 }
 .contact-submit-btn {
   width: 20%;
@@ -188,7 +193,7 @@ textarea::placeholder {
 .contact-details {
   display: flex;
   flex-direction: column;
-    padding-top: 1rem;
+  padding-top: 1rem;
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 600;
@@ -199,7 +204,7 @@ textarea::placeholder {
 @media screen and (max-width: 1000px) {
   .footer-container {
     display: flex;
-    flex-direction: column-reverse;   
+    flex-direction: column-reverse;
   }
   .contact-heading {
     margin-bottom: 20px;
@@ -220,12 +225,11 @@ textarea::placeholder {
   }
 
   .contact-details {
-  font-size: 0.95rem;
+    font-size: 0.95rem;
   }
 
   textarea::placeholder {
     font-size: 14px;
-  
   }
 
   .facebook {
@@ -249,14 +253,9 @@ textarea::placeholder {
   }
 }
 @media screen and (max-width: 768px) {
-  
   .image {
     /* height: 300px; */
     width: 300px;
     height: auto;
   }
-
-  
-  
-  
 }

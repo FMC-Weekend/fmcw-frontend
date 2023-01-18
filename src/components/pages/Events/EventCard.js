@@ -113,7 +113,6 @@ function EventCard(props) {
           {props.title}
           <div className="lineTitle" style={{ left: props.lineLeft }}></div>
         </div>
-        ;
         <div
           className="contents"
           style={{

@@ -5,6 +5,8 @@ import { TiArrowUpThick, TiArrowDownThick } from 'react-icons/ti';
 import { Data } from './Data';
 import Footer from '../../Footer';
 import { Fade } from 'react-reveal';
+import leftStar from '../../leftStar.png';
+import rightStar from '../../rightStar.png';
 // import './FAQ.css';
 
 const AccordionSection = styled.div`
@@ -40,7 +42,9 @@ const Heading = styled.div`
   max-width: 1600px;
   width: 102vw;
   border: 3px solid #000000;
-  h1 {
+  display: flex;
+  justify-content: center;
+  h1
     padding: 15px;
     font-size: 60px;
     text-align: center;
@@ -53,11 +57,13 @@ const Heading = styled.div`
     text-shadow: 4px 5px 0px #000000;
   }
   img {
+    max-width: 84px;
+    max-height: 80px;
     position: relative;
-    width: 30vw;
-    height: 30vh;
-    left: 35vw;
-    top: 0vh;
+    top: 30%;
+  }
+  span{
+    top : 9%;
   }
   @media (max-width: 768px) {
     // width: 100vw;
@@ -118,9 +124,17 @@ function Accordion() {
     <div className="HEADER" style={{overflow: "hidden"}}>
       
       <Heading>
-      <Fade right>
-        <img src='Group_7167.svg' />
-        
+      <Fade right >
+        {/* <img src='Group_7167.svg' /> */}
+        <div>
+        <img className="star1" src={leftStar}></img>
+        </div>
+        <div>
+        <span className="heading">FAQ</span>
+        </div>
+        <div>
+        <img className="star2" src={rightStar}></img>
+        </div>
       </Fade>
       </Heading>
       <IconContext.Provider value={{ color: 'black', size: '47px' }}>

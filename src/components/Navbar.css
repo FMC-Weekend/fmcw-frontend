@@ -37,6 +37,7 @@ ul {
   display: flex;
   align-items: center;
   justify-items: center;
+  margin-left: 0;
 }
 
 .add-shadow {
@@ -105,13 +106,11 @@ ul {
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 4rem;
+  padding-right: 4rem;
   padding-top: 0px !important;
   padding-bottom: 0px !important;
   margin-right: 20px;
-  padding-left: 2rem;
-  padding-right: 40px;
 }
 
 .nav-links:hover {
@@ -150,11 +149,12 @@ ul {
   background: #00ccf5;
   height: 100%;
   color: #000;
-  border: 2px solid #000;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
   position: absolute;
   /* width: 12.5%; */
-  right: 60px;
-  height: 100%;
+  right: 0px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;

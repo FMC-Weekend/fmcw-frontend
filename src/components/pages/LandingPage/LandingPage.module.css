@@ -4,9 +4,9 @@
   box-sizing: border-box;
   position: relative;
   width: 100%;
-  height: 110vh;
+  height: 80vh;
   top: 0;
-  background: #685eda;
+  background: #655cd9;
   border: 2px solid #000000;
 }
 
@@ -15,6 +15,24 @@
   width: 40%;
   height: 76px;
   left: 130px;
+  top: 250px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4em;
+  line-height: 76px;
+  /* identical to box height */
+
+  text-align: left;
+
+  color: #ffffff;
+}
+.div1_headanime {
+  position: absolute;
+  width: 40%;
+  height: 76px;
+  left: 400px;
+  margin-left: 20px;
   top: 250px;
   font-family: 'Montserrat';
   font-style: normal;
@@ -40,7 +58,7 @@
   width: 10vw;
   height: 57px;
   left: 130px;
-  top: 480px;
+  top: 380px;
 
   background: #ff90e8;
   border: 1px solid #000000;
@@ -73,12 +91,12 @@
   flex-grow: 0;
 }
 
-.div1 img {
+.div1_img {
   position: relative;
-  width: 37vw;
-  height: 100vh;
+  width: 35vw;
+  height: 70vh;
   left: 60%;
-  top: 0vh;
+  top: 4vh;
 }
 
 .div2 {
@@ -117,7 +135,7 @@
   width: 320px;
   height: 47px;
   left: 120px;
-  top: 20%;
+  top: 24%;
   /* top:8%; */
   /* font-family: 'Montserrat'; */
   font-style: normal;
@@ -700,7 +718,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-top: 46vh;
+    margin-top: 42vh;
   }
 
   .div3 img,
