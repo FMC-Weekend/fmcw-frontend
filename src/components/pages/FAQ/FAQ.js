@@ -37,8 +37,8 @@ const Heading = styled.div`
   background: #fe6263;
   height: 30vh;
   left: 0px;
-  max-width: 1600px;
-  width: 102vw;
+  max-width: 100vw;
+  width: 100vw;
   border: 3px solid #000000;
   h1 {
     padding: 15px;

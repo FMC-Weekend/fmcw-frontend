@@ -56,6 +56,13 @@ flip card
   color: #fcc907;
   left: 18px;
 }
+.card-div a{
+  font-family: Montserrat;
+}
+.card-div a:hover{
+  font-weight: 600;
+  color:#000000;
+}
 .card {
   position: relative;
   width: 388px;

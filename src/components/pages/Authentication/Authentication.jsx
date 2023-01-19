@@ -67,8 +67,12 @@ function Authentication() {
   return (
     <div className={Classes.auth_section}>
       {/* <h1>Hello World!</h1> */}
-      
+
       <img src="Group_7265.svg" />
+      <div>
+        <h1 className={Classes.signupheading1}>Let's sign you in</h1>
+        <p className={Classes.signuppara}>Register to become a part of <br/> India's Largest Digital Art Fest</p>
+      </div>
       <div className={Classes.authenticateButton}>
         <GoogleLogin
           clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
@@ -80,7 +84,6 @@ function Authentication() {
           className={Classes.gButton}>
           <p>Sign in with Google</p>
         </GoogleLogin>
-        
       </div>
     </div>
   );

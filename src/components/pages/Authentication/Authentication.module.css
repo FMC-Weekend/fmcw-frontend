@@ -30,7 +30,6 @@
   border-radius: 10px;
   left: 15%;
   filter: drop-shadow(4px 6px 0px #000000);
-  
 }
 
 .gButton {
@@ -62,6 +61,24 @@
   position: relative;
 }
 
+.signupheading1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 68px;
+  color: #ffffff;
+}
+
+.signuppara {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  color: #ffffff;
+}
+
 @media screen and (max-width: 786px) {
   .auth_section {
     display: flex;
@@ -88,7 +105,7 @@
     margin: auto;
   }
   .authenticateButton p {
-    font-size: 1.0em;
+    font-size: 1em;
     font-family: 'Montserrat';
     color: #000000;
     opacity: 1;
@@ -111,7 +128,7 @@
   }
 }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 350px) {
   .auth_section img {
     position: relative;
     width: 200px;
