@@ -113,7 +113,6 @@ function EventCard(props) {
           {props.title}
           <div className="lineTitle" style={{ left: props.lineLeft }}></div>
         </div>
-        ;
         <div
           className="contents"
           style={{
@@ -137,6 +136,7 @@ function EventCard(props) {
           <div
             className="addToCart"
             style={{ background: props.color2, cursor: 'pointer', fontFamily:"Manrope" }}
+
             onClick={() => {
               // send post request to database
 

@@ -1,4 +1,5 @@
 /* eslint-disable react/react-in-jsx-scope */
+// fmc 2022 site
 import Classes from './Banner.module.css';
 import Fade from 'react-reveal/Fade';
 
@@ -6,7 +7,7 @@ function Banner(props) {
   return (
     <Fade big duration={1000}>
       <div className={Classes.banner}>
-        <link 
+        <link
           rel="preload"
           as="image"
           src={process.env.REACT_APP_AWS_S3_URI + '/HERO-WO-LOGO-011.svg'}

@@ -5,6 +5,8 @@ import { TiArrowUpThick, TiArrowDownThick } from 'react-icons/ti';
 import { Data } from './Data';
 import Footer from '../../Footer';
 import { Fade } from 'react-reveal';
+import leftStar from '../../leftStar.png';
+import rightStar from '../../rightStar.png';
 // import './FAQ.css';
 
 const AccordionSection = styled.div`
@@ -40,7 +42,9 @@ const Heading = styled.div`
   max-width: 100vw;
   width: 100vw;
   border: 3px solid #000000;
-  h1 {
+  display: flex;
+  justify-content: center;
+  h1
     padding: 15px;
     font-size: 60px;
     text-align: center;
@@ -53,14 +57,25 @@ const Heading = styled.div`
     text-shadow: 4px 5px 0px #000000;
   }
   img {
+    max-width: 84px;
+    max-height: 80px;
     position: relative;
-    width: 30vw;
-    height: 30vh;
-    left: 35vw;
-    top: 0vh;
+    top: 30%;
   }
-  @media (max-width: 768px) {
-    // width: 100vw;
+  span{
+    top : 13%;
+  }
+  @media (max-width: 1330px) {
+      height: 15vh;
+      span {
+        font-size: 50px;
+        top :-37%;
+        text-shadow: 3px 4px 0px #000000;
+      }
+      img {
+        max-width : 70px;
+        top: 23%; 
+      }
   }
 `;
 
@@ -74,14 +89,15 @@ const Wrap = styled.div`
   text-align: center;
   cursor: pointer;
   position: relative;
-  h1 {
-    padding: 15px;
-    font-size: 20px;
-    text-align: center;
-    font-family: Marcellus;
-  }
   span {
     margin-right: 1.5rem;
+  }
+  @media (max-width: 400px) {
+    h1{
+      font-weight : 400;
+      font-size : 25px;
+      line-height : 33px;
+    }
   }
 `;
 
@@ -118,9 +134,17 @@ function Accordion() {
     <div className="HEADER" style={{overflow: "hidden"}}>
       
       <Heading>
-      <Fade right>
-        <img src='Group_7167.svg' />
-        
+      <Fade right >
+        {/* <img src='Group_7167.svg' /> */}
+        <div>
+        <img className="star1" src={leftStar}></img>
+        </div>
+        <div>
+        <span className="heading">FAQ</span>
+        </div>
+        <div>
+        <img className="star2" src={rightStar}></img>
+        </div>
       </Fade>
       </Heading>
       <IconContext.Provider value={{ color: 'black', size: '47px' }}>
@@ -129,8 +153,10 @@ function Accordion() {
             {Data.map((item, index) => (
               <>
                 <Wrap onClick={() => toggle(index)} key={index}>
+                  <div>
                   <h1
                     style={{
+                      padding: "15px",
                       fontFamily: 'Montserrat',
                       fontStyle: 'normal',
                       color: 'black',
@@ -140,6 +166,7 @@ function Accordion() {
                     }}>
                     {item.question}
                   </h1>
+                  </div>
                   <span style={{ fontFamily: 'Montserrat', fontStyle: 'normal' }}>
                     {clicked === index ? <TiArrowUpThick /> : <TiArrowDownThick />}
                   </span>

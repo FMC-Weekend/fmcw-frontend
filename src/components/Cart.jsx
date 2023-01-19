@@ -193,7 +193,7 @@ function Cart(props) {
         <div className="lapTopView">
           <div className="contest_cards">
               {console.log(cartItems.length)}
-              {cartItems.length == undefined || cartItems.length == 0 ? (
+              {/* {cartItems.length == undefined || cartItems.length == 0 ? (
                 <a href="/events">
                   <section
                     className="addContest"
@@ -202,8 +202,8 @@ function Cart(props) {
                     <h2>Add more contest</h2>
                   </section>
                 </a>
-              ):
-              (
+              ): */}
+              {/* ( */}
                 <a href="/events">
                   <section
                     className="addContest">
@@ -211,7 +211,7 @@ function Cart(props) {
                     <h2>Add more contest</h2>
                   </section>
                 </a>
-              )}
+              {/* )} */}
               
 
             <div className="event_cards">

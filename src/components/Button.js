@@ -28,7 +28,7 @@ export const Button = ({
       {isInternalLink ? (
         <Link to={toLink} className="btn-mobile">
           <button
-            style={{ width: width, paddingLeft: padding, paddingRight:padding }}
+            style={{ width: width, paddingLeft: padding, paddingRight: padding }}
             className={`btn ${className} ${checkButtonStyle} ${checkButtonSize}`}
             onClick={onClick}
             type={type}>

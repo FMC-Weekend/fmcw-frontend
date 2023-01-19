@@ -8,7 +8,7 @@ import Classes from './LandingPage.module.css';
 import Footer from '../../Footer';
 import { Button } from '../../Button';
 import closeMobileMenu from '../../Navbar';
-import side_img from './side_img.svg';
+import HeroAnimNew from './HeroAnimNew.gif';
 import winner1 from './winner.svg';
 import briefing from './briefing.svg';
 import redcarpet from './red-carpet.svg';
@@ -22,6 +22,9 @@ import Fade from 'react-reveal/Fade';
 import Marquee from 'react-fast-marquee';
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
+import Typewriter from 'typewriter-effect';
+import fmclogogroup from './fmclogogroup.svg';
+import { margin } from '@mui/system';
 
 function landingPage() {
   const [counterOn, setCounterOn] = useState(false);
@@ -50,8 +53,17 @@ function landingPage() {
       <div>
         <div className={Classes.div1}>
           <Fade bottom>
-            <h1 className={Classes.div1_heading}>A Fest for Artists/ Creators/ Innovators</h1>
-
+            <h1 className={Classes.div1_heading}>A Fest for </h1>
+            <h1 className={Classes.div1_headanime}>
+              <Typewriter
+                options={{
+                  autoStart: true,
+                  loop: true,
+                  delay: 80,
+                  strings: ['Artists', 'Creators', 'Innovators']
+                }}
+              />
+            </h1>
             {/* <Link to='/authentication'>  */}
             {/* <Link to="/authentication">  */}
             <a href="/authentication">
@@ -60,7 +72,8 @@ function landingPage() {
               </button>
             </a>
             {/* </Link> */}
-            <img src="0001-0210.gif" className={Classes.div1_img} />
+            <img src={HeroAnimNew} className={Classes.div1_img} />;
+            {/* <img src="0001-0210.gif" className={Classes.div1_img} /> */}
           </Fade>
         </div>
 
@@ -109,11 +122,12 @@ function landingPage() {
             <Fade bottom>
               <h1 className={Classes.events}>COMPETITIONS</h1>
               <p className={Classes.events}>
-                Do you fancy yourself as a flawless reporter, or are you someone who can produce
-                artistic designs? Do you think that you can perfectly integrate lighting, lenses and
-                special effects to click photos or make movies?Then what are you waiting for? The
-                ninth edition of FMC weekend brings to you an opportunity to compete in the largest
-                digital arts festival in India!
+                Do you fancy yourself as a flawless reporter, or are you someone who can put all
+                your imagination to produce artistic designs? Do you think that you can perfectly
+                integrate the choice of lighting, lenses and special effects or is photography your
+                thing? Then what are you waiting for? The ninth edition of FMC weekend brings to you
+                an opportunity to compete in the largest digital arts festival in India and also get
+                a chance to win exciting prizes!!{' '}
               </p>
               <a href="/events">
                 <button place>Explore</button>
@@ -188,7 +202,7 @@ function landingPage() {
           </div>
         </ScrollTrigger>
       </div>
-      <Testimonials />
+      {/* <Testimonials /> */}
       <div className={Classes.footer}>
         <Footer />
       </div>
