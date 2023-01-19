@@ -23,6 +23,7 @@ import Marquee from 'react-fast-marquee';
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
 import Typewriter from 'typewriter-effect';
+import fmclogogroup from './fmclogogroup.svg';
 
 function landingPage() {
   const [counterOn, setCounterOn] = useState(false);
@@ -51,6 +52,10 @@ function landingPage() {
       <div>
         <div className={Classes.div1}>
           <Fade bottom>
+            {/* <div className={Classes.banner1}>
+              <img src={fmclogo} />
+            </div> */}
+            <img src={fmclogogroup} className={Classes.div1_logo} />;
             <h1 className={Classes.div1_heading}>A Fest for </h1>
             <h1 className={Classes.div1_headanime}>
               <Typewriter
@@ -76,18 +81,18 @@ function landingPage() {
         </div>
 
         <div className={Classes.anim}>
-          <Marquee gradient={false} speed={50}>
+          <Marquee gradient={false} speed={50} delay={0}>
             <h2>FMC WEEKEND</h2>
             <h2>HUES IN HARMONY</h2>
             <h2>9TH EDITION</h2>
             <h2>IIT (BHU) VARANASI</h2>
-            <h2>VISTA</h2>
+            <h2>10TH-12TH FEBRUARY</h2>
           </Marquee>
         </div>
         <div className={Classes.div2}>
           <Fade right>
-            <h1>FOR CREATIVE ENTHUSIASTS</h1>
-            <h2>FROM FIELDS OF</h2>
+            <h1>For Creative Enthusiasts</h1>
+            <h2>From Fields Of</h2>
             <section className={Classes.button_1}>
               <button className={Classes.design}>
                 <p>Design</p>
@@ -101,7 +106,7 @@ function landingPage() {
             </section>
             <section className={Classes.button_2}>
               <button className={Classes.cine}>
-                <p>Cine</p>
+                <p>Cinematography</p>
               </button>
               <button className={Classes.animation}>
                 <p>Animation</p>
@@ -152,43 +157,44 @@ function landingPage() {
           </div>
         </div>
         {/* FOR DYNAMIC DIGITS ON SCROLLING */}
-        <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
-          <div className={Classes.eventBox}>
-            <div className={Classes.div5}>
-              <div className={Classes.banner3}>
-                <img src={redcarpet} />
-              </div>
 
-              <Fade bottom>
-                <h1 className={Classes.events}>PRONITES</h1>
-                <p className={Classes.events}>
-                  We present to you the most entertaining of nights, pronite! Where music meets the
-                  romantic, jokes meet the humour-lover, and entertainment meets all! Hold on to
-                  your seats as world-famous performers come to amuse you, and leave your minds in
-                  wonder in your very own FMC Weekend’s Pronite!{' '}
-                </p>
-
-                <button place>Coming soon</button>
-              </Fade>
+        <div className={Classes.eventBox}>
+          <div className={Classes.div5}>
+            <div className={Classes.banner3}>
+              <img src={redcarpet} />
             </div>
-            <div className={Classes.div6}>
-              <div className={Classes.banner4}>
-                <img src={banner4} />
-              </div>
-              <Fade bottom>
-                <h1 className={Classes.events}>OPEN AIR THEATRES</h1>
-                <p className={Classes.events}>
-                  Gone are the days when the cinema would be just confined to 4 walls.
-                  Unconventional ways or Open-Air Theatres have made their way to us under the
-                  stars, cool breezes, and an undefined sense of freedom. Bringing you a step closer
-                  to these unconventional experiences, FMC Weekend presents to you a blockbuster
-                  screening event beneath the night sky.{' '}
-                </p>
 
-                <button place>Coming soon</button>
-              </Fade>
-            </div>
+            <Fade bottom>
+              <h1 className={Classes.events}>PRONITES</h1>
+              <p className={Classes.events}>
+                We present to you the most entertaining of nights, pronite! Where music meets the
+                romantic, jokes meet the humour-lover, and entertainment meets all! Hold on to your
+                seats as world-famous performers come to amuse you, and leave your minds in wonder
+                in your very own FMC Weekend’s Pronite!{' '}
+              </p>
+
+              <button place>Coming soon</button>
+            </Fade>
           </div>
+          <div className={Classes.div6}>
+            <div className={Classes.banner4}>
+              <img src={banner4} />
+            </div>
+            <Fade bottom>
+              <h1 className={Classes.events}>OPEN AIR THEATRES</h1>
+              <p className={Classes.events}>
+                Gone are the days when the cinema would be just confined to 4 walls. Unconventional
+                ways or Open-Air Theatres have made their way to us under the stars, cool breezes,
+                and an undefined sense of freedom. Bringing you a step closer to these
+                unconventional experiences, FMC Weekend presents to you a blockbuster screening
+                event beneath the night sky.{' '}
+              </p>
+
+              <button place>Coming soon</button>
+            </Fade>
+          </div>
+        </div>
+        <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
           <div className={Classes.div7}>
             <Fade right>
               <h1>{counterOn && <CountUp start={70000} end={75269} duration={2} delay={0} />}+</h1>;

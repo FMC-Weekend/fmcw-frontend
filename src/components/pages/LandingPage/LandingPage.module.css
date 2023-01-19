@@ -15,11 +15,11 @@
   width: 40%;
   height: 76px;
   left: 130px;
-  top: 250px;
+  top: 230px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 4em;
+  font-size: 3em;
   line-height: 76px;
   /* identical to box height */
 
@@ -27,17 +27,25 @@
 
   color: #ffffff;
 }
+.div1_logo {
+  position: absolute;
+  height: 50px;
+  left: 130px;
+  top: 180px;
+  margin-bottom: 100px;
+}
+
 .div1_headanime {
   position: absolute;
   width: 40%;
   height: 76px;
-  left: 400px;
+  left: 330px;
   margin-left: 20px;
-  top: 250px;
+  top: 230px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 4em;
+  font-size: 3em;
   line-height: 76px;
   /* identical to box height */
 
@@ -58,7 +66,7 @@
   width: 10vw;
   height: 57px;
   left: 130px;
-  top: 380px;
+  top: 320px;
 
   background: #ff90e8;
   border: 1px solid #000000;
@@ -124,7 +132,7 @@
   font-weight: 500;
   font-size: 52px;
   line-height: 80px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin: 2px;
 
   color: #ffffff;
@@ -142,7 +150,7 @@
   font-weight: 500;
   font-size: 36px;
   line-height: 44px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 
   color: #ffffff;
 }
@@ -163,7 +171,7 @@
 }
 
 .anim h2 {
-  margin-left: 100px;
+  margin-left: 22vh;
   font-size: 1.2em;
   font-weight: 600;
 }
@@ -446,8 +454,8 @@
   padding: 12px 36px;
   gap: 4px;
   font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 400;
+  font-style: bold;
+  font-weight: 600;
   font-size: 1.4rem;
   line-height: 33px;
   text-align: justify;
@@ -530,7 +538,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Manrope';
-  font-style: normal;
+  font-style: bold;
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
@@ -540,7 +548,7 @@
   box-sizing: border-box;
   position: relative;
   width: 100%;
-  height: 61vh;
+  height: 90vh;
   /* bottom: 108vh; */
   /* left: -69px; */
   background: #685eda;
@@ -550,11 +558,10 @@
 .div7 h1 {
   position: relative;
   width: 50vw;
-  height: 0vh;
   left: 0;
   margin: auto;
   right: 0;
-  top: 10%;
+  top: 20vh;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -569,7 +576,7 @@
   width: 75vw;
   /* height: 116px; */
   /* left: 236px; */
-  top: 33vh;
+  top: 15vh;
   margin: auto;
   font-family: 'Montserrat';
   font-style: normal;
