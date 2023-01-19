@@ -23,7 +23,7 @@ import Marquee from 'react-fast-marquee';
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
 import Typewriter from 'typewriter-effect';
-import fmclogo from './logoGroup.svg';
+import fmclogogroup from './fmclogogroup.svg';
 
 function landingPage() {
   const [counterOn, setCounterOn] = useState(false);
@@ -55,7 +55,7 @@ function landingPage() {
             {/* <div className={Classes.banner1}>
               <img src={fmclogo} />
             </div> */}
-            <img src={fmclogo} className={Classes.div1_logo} />;
+            <img src={fmclogogroup} className={Classes.div1_logo} />;
             <h1 className={Classes.div1_heading}>A Fest for </h1>
             <h1 className={Classes.div1_headanime}>
               <Typewriter
