@@ -53,6 +53,7 @@ function landingPage() {
       <div>
         <div className={Classes.div1}>
           <Fade bottom>
+          <img src={fmclogogroup} className={Classes.div1_logo} />;
             <h1 className={Classes.div1_heading}>A Fest for </h1>
             <h1 className={Classes.div1_headanime}>
               <Typewriter
