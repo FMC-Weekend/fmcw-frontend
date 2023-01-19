@@ -1,3 +1,4 @@
+import Loading from './Loading';
 import './Cart.css';
 import { useCart } from 'react-use-cart';
 import CartCard_2 from './CartCard_2';
@@ -30,6 +31,7 @@ const style = {
   p: 4
 };
 function Cart(props) {
+  const [isLoading, setIsLoading] = useState(true);
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
     if (sessionStorage.getItem('isLoggedIn') == 'true') {
@@ -42,10 +44,10 @@ function Cart(props) {
 
   const handleClose = () => setOpen(false);
   const { isEmpty, items, totalItems, cartTotal, removeItem, emptyCart, updateItemQuantity } =
-    useCart();
+  useCart();
   useEffect(() => {
     const getCartItems = async () => {
-      // setIsLoading(true);
+      console.log(isLoading),"jhgdfsa";
       const token = sessionStorage.getItem('tokenID');
       try {
         const res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/user', {
@@ -55,9 +57,10 @@ function Cart(props) {
             token: token
           }
         });
+        setIsLoading(false);
         const data = await res.json();
         // console.log(data);
-
+        
         if (data.message === 'success') {
           console.log(data);
           // console.log(data.user.userID.userCart.cartItems);
@@ -158,19 +161,19 @@ function Cart(props) {
         {/* <div className="purchase_details"> */}
         {/* <a href="/events">
           <div className="add-more-cards">
-            <span>+</span>
-            <h3>Purchase More Cards</h3>
+          <span>+</span>
+          <h3>Purchase More Cards</h3>
           </div>
         </a> */}
         {/* <div className="cart_cards">
             {cartItems.map((item, index) => {
               return (
                 <div key={index} className="cart-container">
-                  <CartCard_2
-                    className="cart-card"
-                    title={item.title}
-                    type={item.Type}
-                    link={item.link}
+                <CartCard_2
+                className="cart-card"
+                title={item.title}
+                type={item.Type}
+                link={item.link}
                     price={item.price}
                     prize={item.prize}
                     name={item.name}
@@ -185,6 +188,8 @@ function Cart(props) {
               );
             })}
           </div> */}
+          {isLoading?(<Loading/>):(<>
+  
         <div className="section_top" style={{ marginTop: '0px' }}>
           <div className="registered_contest">
             <h2>Contests</h2>
@@ -369,6 +374,7 @@ function Cart(props) {
             </div>
           </div>
         </div>
+          </>)}
         {/* </div> */}
         <Modal
           open={open}
