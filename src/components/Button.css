@@ -1,61 +1,56 @@
 :root {
-    --primary: #00CCF5;;
-  }
-  
-  .btn {
-    height: 100%;
-    background: #00b3d6;
-    width: 100px;
-    font-family: 'Montserrat';
+  --primary: #00ccf5;
+}
+
+.btn {
+  height: 100%;
+  background: #00b3d6;
+  width: 100px;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 29px;
   border-radius: 0 !important;
   color: #000000;
-  }
-  
+}
+
+.btn--primary {
+  background: var(--primary);
+  height: 100%;
+  color: #000;
+  border: 2px solid #000;
+  position: absolute;
+  width: 12.5%;
+  height: 100%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 29px;
+  border-radius: 0 !important;
+  color: #000000;
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: #000;
+  padding: 8px 20px;
+  border: 1px solid var(--primary);
+}
+
+.btn--large {
+  padding: 12px 26px;
+  font-size: 20px;
+}
+
+.btn--large:hover,
+.btn--medium:hover {
+  background: var(--primary);
+}
+
+@media screen and (max-width: 960px) {
   .btn--primary {
-    background: var(--primary);
-    height: 100%;
-    color: #000;
-    border: 2px solid #000;
-    position: absolute;
-    width: 12.5%;
-    height: 100%;
-    font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.25rem;
-  line-height: 29px;
-  border-radius: 0 !important;
-  color: #000000;
+    position: relative;
   }
-  
-  .btn--outline {
-    background-color: transparent;
-    color: #000;
-    padding: 8px 20px;
-    border: 1px solid var(--primary);
-
-  }
-  
- 
-  
-  .btn--large {
-    padding: 12px 26px;
-    font-size: 20px;
-  }
-  
-  .btn--large:hover,
-  .btn--medium:hover {
-
-    background: var(--primary);
-
-  }
-
-  @media screen and (max-width: 960px) {
-    .btn--primary {
-      position: relative;
-    }
-  }
+}

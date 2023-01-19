@@ -182,7 +182,7 @@ function Navbar() {
               PRONITES
             </NavLink>
           </li> */}
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <NavLink
               to="/passes"
               className="nav-links"
@@ -190,7 +190,7 @@ function Navbar() {
               onClick={closeMobileMenu}>
               GLIMPSES
             </NavLink>
-          </li>
+          </li> */}
           <li className="nav-item">
             <NavLink
               to="/FAQ"

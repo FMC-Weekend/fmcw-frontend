@@ -37,6 +37,7 @@ ul {
   display: flex;
   align-items: center;
   justify-items: center;
+  margin-left: 0;
 }
 
 .add-shadow {
@@ -94,30 +95,27 @@ ul {
 }
 
 .nav-links {
-    color: #000;
-    height: 100%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 29px;
-    border-radius: 0 !important;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-    margin-right: 20px;
-    padding-left: 2rem;
-    padding-right: 40px;
+  color: #000;
+  height: 100%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 29px;
+  border-radius: 0 !important;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-right: 20px;
 }
 
 .nav-links:hover {
   background: #ff90e8;
   color: #000 !important;
-
 }
 
 .target {
@@ -151,11 +149,12 @@ ul {
   background: #00ccf5;
   height: 100%;
   color: #000;
-  border: 2px solid #000;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
   position: absolute;
   /* width: 12.5%; */
-  right: 60px;
-  height: 100%;
+  right: 0px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -169,18 +168,18 @@ ul {
   color: #000;
   font-size: 1.25rem;
 }
-.cartText{
+.cartText {
   position: relative;
   top: -3px;
-      color: #000;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.25rem;
-    border-radius: 0 !important;
-    align-items: center;
-    text-decoration: none;
-    padding-left: 10px;
+  color: #000;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border-radius: 0 !important;
+  align-items: center;
+  text-decoration: none;
+  padding-left: 10px;
 }
 @media screen and (max-width: 1330px) {
   .navbar {
@@ -199,7 +198,6 @@ ul {
 }
 
 @media screen and (max-width: 960px) {
-
   .NavbarItems {
     position: relative;
   }
@@ -223,7 +221,6 @@ ul {
     opacity: 1;
     transition: all 0.5s ease;
     border: 2px solid #000;
-
   }
 
   .nav-item {
@@ -252,11 +249,10 @@ ul {
     justify-self: center;
   }
 
-
   .nav-register-btn {
     position: inherit;
     margin-left: 20px;
-    width: fit-content+38px;
+    width: fit-content + 38px;
     height: 4rem;
     text-align: center;
     padding: 1rem;
@@ -264,7 +260,6 @@ ul {
     justify-self: center;
     width: fit-content;
   }
-
 
   .nav-links:hover {
     background: #ff90e8;
@@ -274,7 +269,6 @@ ul {
     position: absolute;
     top: 0;
     left: 0;
-
   }
 
   .menu-icon {
@@ -334,25 +328,24 @@ ul {
   }
 }
 
-#quantity{
-   text-align: center;
-    background: yellow;
-    width: 20px;
-    height: 20px;
-    /* right: 16vw; */
-    top: -15px;
-    left: 30px;
-    position: relative;
-    /* margin: 0 auto; */
-    border: radius;
-    border-radius: 50%;
+#quantity {
+  text-align: center;
+  background: yellow;
+  width: 20px;
+  height: 20px;
+  /* right: 16vw; */
+  top: -15px;
+  left: 30px;
+  position: relative;
+  /* margin: 0 auto; */
+  border: radius;
+  border-radius: 50%;
 }
 .empty_cart {
   /* color: #F2FF00 !important; */
 }
 
 @media screen and (max-width: 500px) {
-
   .navbar {
     height: 50px;
   }
@@ -362,6 +355,6 @@ ul {
   }
 
   .nav-menu.active {
-    top: 46px
+    top: 46px;
   }
 }

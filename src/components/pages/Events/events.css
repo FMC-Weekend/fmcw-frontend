@@ -133,7 +133,7 @@ flip card
   text-decoration: none;
 }
 .btnView {
-  color:#fff;
+  color: #fff;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -165,29 +165,29 @@ flip card
 }
 .addToCart {
   margin: auto;
-    box-sizing: border-box;
-    position: relative;
-    width: 390px;
-    height: 55px;
-    color: #000;
-    padding: 8px 10px;
-    top: 140px;
-    font-size: 1.4em;
-    border: 2px solid #000000;
-    border-radius: 0px 0px 22px 22px;
+  box-sizing: border-box;
+  position: relative;
+  width: 390px;
+  height: 55px;
+  color: #000;
+  padding: 8px 10px;
+  top: 140px;
+  font-size: 1.4em;
+  border: 2px solid #000000;
+  border-radius: 0px 0px 22px 22px;
 }
 .addToCartBtn {
   margin: auto;
-    box-sizing: border-box;
-    position: relative;
-    width: 390px;
-    height: 55px;
-    padding: 8px 10px;
-    top: 140px;
-    font-size: 1.4em;
-    color: #fff;
-    border: 2px solid #000000;
-    border-radius: 0px 0px 22px 22px;
+  box-sizing: border-box;
+  position: relative;
+  width: 390px;
+  height: 55px;
+  padding: 8px 10px;
+  top: 140px;
+  font-size: 1.4em;
+  color: #fff;
+  border: 2px solid #000000;
+  border-radius: 0px 0px 22px 22px;
 }
 
 .addToCartBtn:hover {
@@ -639,7 +639,7 @@ flip card
   height: 420px;
   margin-right: 5%;
   margin-bottom: 5%;
-  background: #00CCF5;
+  background: #00ccf5;
   border: 2px solid #000000;
   box-shadow: 4px 8px 0px #000000;
   border-radius: 19px;
@@ -651,17 +651,17 @@ flip card
   box-shadow: 0px 0px 0px;
   transition: all 0.4s ease;
 }
-.workshopCardImg{
+.workshopCardImg {
   object-fit: cover;
   width: 241px;
   height: 240px;
   margin: 70px 0px 0px 25px;
   overflow: hidden;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 2px solid #000000;
   box-shadow: 4px 0px 0px #000000;
   border-radius: 19px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .workshopCardImg:hover {
@@ -669,13 +669,13 @@ flip card
   transition: all 0.4s ease;
 }
 
-.workshopCardImg img{
+.workshopCardImg img {
   object-fit: cover;
   width: 241px;
   height: 240px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 19px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .workshopCardImg img:hover {
@@ -688,43 +688,43 @@ flip card
   width: 302px;
   top: 330px;
   font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 19px;
-line-height: 24px;
-text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  text-align: center;
 
-color: #121212;
+  color: #121212;
 }
 .positionWorkshopType {
   height: 29px;
   position: absolute;
   width: 302px;
   top: 18px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 22px;
-text-align: center;
-text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 .positionWorkshopPrice {
   height: 29px;
   position: absolute;
   width: 302px;
   top: 40px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 22px;
-text-align: center;
-text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
 
-color: #000000;
+  color: #000000;
 }
 .cardTitleWorkshop {
   height: 33px;
@@ -733,19 +733,17 @@ color: #000000;
   top: 372px;
   text-align: center;
   font-family: 'Manrope';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 33px;
-/* identical to box height */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
 
-
-color: #121212;
+  color: #121212;
 }
 @media screen and (max-width: 1006px) {
-  .btnView{
+  .btnView {
     font-size: 15px !important;
-
   }
   .event_page {
     background-color: #1d033e;
@@ -996,36 +994,35 @@ color: #121212;
     display: flex;
     justify-content: space-between;
   }
-  .workshopCardImg{
+  .workshopCardImg {
     width: 225px;
     height: 230px;
   }
 
-  .workshopCardImg img{
+  .workshopCardImg img {
     width: 235px;
     height: 230px;
   }
-   .positionWorkshop{
+  .positionWorkshop {
     position: absolute;
     top: 330px;
     width: 280px;
   }
-   .positionWorkshopType{
+  .positionWorkshopType {
     position: absolute;
     top: 18px;
     width: 280px;
   }
-   .positionWorkshopPrice{
+  .positionWorkshopPrice {
     position: absolute;
     top: 40px;
     width: 280px;
   }
-  .cardTitleWorkshop{
-    position:absolute;
+  .cardTitleWorkshop {
+    position: absolute;
     top: 360px;
     width: 280px;
   }
-
 }
 @media screen and (max-width: 500px) {
   .workshop-modal .guest-details p {
@@ -1037,6 +1034,3 @@ color: #121212;
     font-family: Work Sans;
   }
 }
-
-
-
