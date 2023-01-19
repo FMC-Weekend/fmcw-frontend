@@ -28,12 +28,12 @@ function Footer() {
         </div>
         <div className="contact-info">
           <div className="contact-details">
-            <div>PUBLICITY HEAD 1</div>
-            <div>9876543210</div>
+            <div>Sai Karthik</div>
+            <div> 70139 56199</div>
           </div>
           <div className="contact-details">
-            <div>PUBLICITY HEAD 2</div>
-            <div>9876543210</div>
+            <div>Aditya Surana</div>
+            <div>77760 04343</div>
           </div>
         </div>
         <div className="social-media">
