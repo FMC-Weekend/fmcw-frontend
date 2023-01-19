@@ -24,6 +24,7 @@ import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
 import Typewriter from 'typewriter-effect';
 import fmclogogroup from './fmclogogroup.svg';
+import { margin } from '@mui/system';
 
 function landingPage() {
   const [counterOn, setCounterOn] = useState(false);

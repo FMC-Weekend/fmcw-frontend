@@ -55,7 +55,7 @@ function CartCard_2(props) {
     scale: 1.06
   };
   return (
-    <div className='card card-flip' style={{background: props.color, top : "0", margin: "0 30px 50px"}}>
+    <div className='card card-flip' style={{background: props.color, top : "0", margin: "50px 30px 0px"}}>
       <div className="card-front card-div">
         
      

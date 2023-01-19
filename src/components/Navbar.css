@@ -259,6 +259,7 @@ ul {
     margin: 0 auto;
     justify-self: center;
     width: fit-content;
+    border-left: none;
   }
 
   .nav-links:hover {

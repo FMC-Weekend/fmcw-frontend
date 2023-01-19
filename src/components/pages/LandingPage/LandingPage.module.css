@@ -437,7 +437,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 1.1vw;
-  line-height: 45px;
+  line-height: 35px;
   text-align: justify;
 
   color: #000000;
@@ -670,18 +670,18 @@
     display: block;
   }
   .div1 {
-    height: 100vh;
+    height: 88vh;
   }
   .div1 img {
     top: 0;
     width: 75%;
     left: 15%;
-    height: 60vh;
-    top: -22vh;
+    height: 50vh;
+    top: -5vh;
   }
 
   .div1 h1 {
-    top: 66vh;
+    top: 3vh;
     width: auto;
     left: 0;
     position: relative;
@@ -691,8 +691,13 @@
     /* background-image: url("./side_img.svg"); */
   }
 
+  .div1_headanime {
+    line-height: 10px;
+    margin-top: -36px;
+  }
+
   .div1 button {
-    top: 67vh;
+    top: 57vh;
     left: 0;
     position: relative;
     margin: auto;
@@ -701,7 +706,7 @@
 
   .div2 {
     width: 100%;
-    height: 118vh;
+    height: 102vh;
     box-sizing: border-box;
     margin: auto;
     display: flex;
@@ -717,7 +722,7 @@
     display: flex;
     flex-direction: column;
     margin: 10px 10px;
-    margin-top: 5vh;
+    margin-top: -10vh;
     align-items: center;
   }
 
@@ -725,7 +730,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-top: 27vh;
+    margin-top: 12vh;
   }
 
   .div3 {
@@ -761,6 +766,7 @@
     width: 100vw;
     max-width: 100%;
     font-size: 5vw;
+    margin-top: -60px;
   }
 
   .div3 button,
@@ -778,7 +784,7 @@
     /* font-weight: 300;*/
     font-size: 20px;
     font-weight: 800;
-    top: 30vh;
+    top: 33vh;
   }
 
   .div3 p,
@@ -787,7 +793,7 @@
   .div6 p {
     /* font-weight: 300;*/
     font-size: 3vw;
-    top: 30vh;
+    top: 40vh;
   }
 
   .div4 {
@@ -832,7 +838,7 @@
     font-size: 5vw;
     text-align: center;
     margin: auto;
-    top: 26vh;
+    top: 13vh;
   }
 
   .photography {
@@ -845,7 +851,7 @@
     font-size: 0.7em;
     margin: 10px 12px;
     position: relative;
-    width: 240px;
+    width: 200px;
     height: 10vh;
   }
 
@@ -988,7 +994,7 @@
     /* font-weight: 300;*/
     font-size: 4vw;
     line-height: 33px;
-    top: 30vh;
+    top: 40vh;
   }
 
   .events {
