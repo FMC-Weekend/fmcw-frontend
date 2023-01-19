@@ -428,8 +428,8 @@
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 400;
-  font-size: 1.4vw;
-  line-height: 33px;
+  font-size: 1.1vw;
+  line-height: 45px;
   text-align: justify;
 
   color: #000000;
@@ -663,18 +663,18 @@
     display: block;
   }
   .div1 {
-    height: 120vh;
+    height: 100vh;
   }
   .div1 img {
     top: 0;
     width: 75%;
     left: 15%;
-    height: 70vh;
-    top: -13vh;
+    height: 60vh;
+    top: -22vh;
   }
 
   .div1 h1 {
-    top: 75vh;
+    top: 66vh;
     width: auto;
     left: 0;
     position: relative;
@@ -685,7 +685,7 @@
   }
 
   .div1 button {
-    top: 90vh;
+    top: 67vh;
     left: 0;
     position: relative;
     margin: auto;
@@ -694,7 +694,7 @@
 
   .div2 {
     width: 100%;
-    height: 140vh;
+    height: 118vh;
     box-sizing: border-box;
     margin: auto;
     display: flex;
@@ -710,7 +710,7 @@
     display: flex;
     flex-direction: column;
     margin: 10px 10px;
-    margin-top: 20vh;
+    margin-top: 5vh;
     align-items: center;
   }
 
@@ -718,15 +718,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-top: 42vh;
-  }
-
-  .div3 img,
-  .div4 img,
-  .div5 img,
-  .div6 img {
-    top: 10%;
-    left: 10%;
+    margin-top: 27vh;
   }
 
   .div3 {
@@ -737,12 +729,15 @@
     /* top: 2000px; */
     left: 0;
     align-items: center;
+    padding: 40px;
   }
 
   .div4 {
     position: relative;
     /* top: 50%; */
     line-height: normal;
+    align-items: center;
+    padding: 40px;
   }
 
   .div2 h1,
@@ -755,9 +750,10 @@
   .div5 p,
   .div6 h1,
   .div6 p {
-    left: 2%;
-    width: 85vw;
+    left: 0%;
+    width: 100vw;
     max-width: 100%;
+    font-size: 5vw;
   }
 
   .div3 button,
@@ -765,6 +761,7 @@
   .div5 button,
   .div6 button {
     max-width: 100%;
+    left: 23vw;
   }
 
   .div3 h1,
@@ -774,6 +771,7 @@
     /* font-weight: 300;*/
     font-size: 20px;
     font-weight: 800;
+    top: 30vh;
   }
 
   .div3 p,
@@ -782,6 +780,7 @@
   .div6 p {
     /* font-weight: 300;*/
     font-size: 3vw;
+    top: 30vh;
   }
 
   .div4 {
@@ -794,12 +793,14 @@
     /* top: 98vh; */
     left: 0px;
     width: 100%;
+    padding: 40px;
   }
 
   .div6 {
     /* top: 98vh; */
     left: 0px;
     width: 100%;
+    padding: 40px;
   }
 
   .div7 {
@@ -821,11 +822,10 @@
   }
 
   .div2 h2 {
-    font-size: 8vw;
+    font-size: 5vw;
     text-align: center;
     margin: auto;
-    left: 20px;
-    margin-top: 70px;
+    top: 26vh;
   }
 
   .photography {
@@ -945,6 +945,10 @@
     border-radius: 4px;
   }
 
+  .banner1, .banner2, .banner3, .banner4 {
+    left: 28vw;
+  }
+
   .footer {
     /* top: 98vh; */
     left: 0px;
@@ -976,6 +980,8 @@
   .div6 p {
     /* font-weight: 300;*/
     font-size: 4vw;
+    line-height: 33px;
+    top: 30vh;
   }
 
   .events {

@@ -63,10 +63,19 @@ const Heading = styled.div`
     top: 30%;
   }
   span{
-    top : 9%;
+    top : 13%;
   }
-  @media (max-width: 768px) {
-    // width: 100vw;
+  @media (max-width: 1330px) {
+      height: 15vh;
+      span {
+        font-size: 50px;
+        top :-37%;
+        text-shadow: 3px 4px 0px #000000;
+      }
+      img {
+        max-width : 70px;
+        top: 23%; 
+      }
   }
 `;
 
@@ -80,14 +89,15 @@ const Wrap = styled.div`
   text-align: center;
   cursor: pointer;
   position: relative;
-  h1 {
-    padding: 15px;
-    font-size: 20px;
-    text-align: center;
-    font-family: Marcellus;
-  }
   span {
     margin-right: 1.5rem;
+  }
+  @media (max-width: 400px) {
+    h1{
+      font-weight : 400;
+      font-size : 25px;
+      line-height : 33px;
+    }
   }
 `;
 
@@ -143,8 +153,10 @@ function Accordion() {
             {Data.map((item, index) => (
               <>
                 <Wrap onClick={() => toggle(index)} key={index}>
+                  <div>
                   <h1
                     style={{
+                      padding: "15px",
                       fontFamily: 'Montserrat',
                       fontStyle: 'normal',
                       color: 'black',
@@ -154,6 +166,7 @@ function Accordion() {
                     }}>
                     {item.question}
                   </h1>
+                  </div>
                   <span style={{ fontFamily: 'Montserrat', fontStyle: 'normal' }}>
                     {clicked === index ? <TiArrowUpThick /> : <TiArrowDownThick />}
                   </span>
