@@ -15,11 +15,11 @@
   width: 40%;
   height: 76px;
   left: 130px;
-  top: 250px;
+  top: 230px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 4em;
+  font-size: 3em;
   line-height: 76px;
   /* identical to box height */
 
@@ -27,17 +27,25 @@
 
   color: #ffffff;
 }
+.div1_logo {
+  position: absolute;
+  height: 50px;
+  left: 130px;
+  top: 180px;
+  margin-bottom: 100px;
+}
+
 .div1_headanime {
   position: absolute;
   width: 40%;
   height: 76px;
-  left: 400px;
+  left: 330px;
   margin-left: 20px;
-  top: 250px;
+  top: 230px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 4em;
+  font-size: 3em;
   line-height: 76px;
   /* identical to box height */
 
@@ -58,7 +66,7 @@
   width: 10vw;
   height: 57px;
   left: 130px;
-  top: 380px;
+  top: 320px;
 
   background: #ff90e8;
   border: 1px solid #000000;
@@ -124,7 +132,7 @@
   font-weight: 500;
   font-size: 52px;
   line-height: 80px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin: 2px;
 
   color: #ffffff;
@@ -142,7 +150,7 @@
   font-weight: 500;
   font-size: 36px;
   line-height: 44px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 
   color: #ffffff;
 }
@@ -163,7 +171,7 @@
 }
 
 .anim h2 {
-  margin-left: 100px;
+  margin-left: 22vh;
   font-size: 1.2em;
   font-weight: 600;
 }
@@ -428,8 +436,8 @@
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 400;
-  font-size: 1.4vw;
-  line-height: 33px;
+  font-size: 1.1vw;
+  line-height: 35px;
   text-align: justify;
 
   color: #000000;
@@ -446,8 +454,8 @@
   padding: 12px 36px;
   gap: 4px;
   font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 400;
+  font-style: bold;
+  font-weight: 600;
   font-size: 1.4rem;
   line-height: 33px;
   text-align: justify;
@@ -530,7 +538,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Manrope';
-  font-style: normal;
+  font-style: bold;
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
@@ -540,7 +548,7 @@
   box-sizing: border-box;
   position: relative;
   width: 100%;
-  height: 61vh;
+  height: 90vh;
   /* bottom: 108vh; */
   /* left: -69px; */
   background: #685eda;
@@ -550,11 +558,10 @@
 .div7 h1 {
   position: relative;
   width: 50vw;
-  height: 0vh;
   left: 0;
   margin: auto;
   right: 0;
-  top: 10%;
+  top: 20vh;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -569,7 +576,7 @@
   width: 75vw;
   /* height: 116px; */
   /* left: 236px; */
-  top: 33vh;
+  top: 15vh;
   margin: auto;
   font-family: 'Montserrat';
   font-style: normal;
@@ -663,18 +670,18 @@
     display: block;
   }
   .div1 {
-    height: 120vh;
+    height: 88vh;
   }
   .div1 img {
     top: 0;
     width: 75%;
     left: 15%;
-    height: 70vh;
-    top: -13vh;
+    height: 50vh;
+    top: -5vh;
   }
 
   .div1 h1 {
-    top: 75vh;
+    top: 3vh;
     width: auto;
     left: 0;
     position: relative;
@@ -684,8 +691,13 @@
     /* background-image: url("./side_img.svg"); */
   }
 
+  .div1_headanime {
+    line-height: 10px;
+    margin-top: -36px;
+  }
+
   .div1 button {
-    top: 90vh;
+    top: 57vh;
     left: 0;
     position: relative;
     margin: auto;
@@ -694,7 +706,7 @@
 
   .div2 {
     width: 100%;
-    height: 140vh;
+    height: 102vh;
     box-sizing: border-box;
     margin: auto;
     display: flex;
@@ -710,7 +722,7 @@
     display: flex;
     flex-direction: column;
     margin: 10px 10px;
-    margin-top: 20vh;
+    margin-top: -10vh;
     align-items: center;
   }
 
@@ -718,15 +730,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-top: 42vh;
-  }
-
-  .div3 img,
-  .div4 img,
-  .div5 img,
-  .div6 img {
-    top: 10%;
-    left: 10%;
+    margin-top: 12vh;
   }
 
   .div3 {
@@ -737,12 +741,15 @@
     /* top: 2000px; */
     left: 0;
     align-items: center;
+    padding: 40px;
   }
 
   .div4 {
     position: relative;
     /* top: 50%; */
     line-height: normal;
+    align-items: center;
+    padding: 40px;
   }
 
   .div2 h1,
@@ -755,9 +762,11 @@
   .div5 p,
   .div6 h1,
   .div6 p {
-    left: 2%;
-    width: 85vw;
+    left: 0%;
+    width: 100vw;
     max-width: 100%;
+    font-size: 5vw;
+    margin-top: -60px;
   }
 
   .div3 button,
@@ -765,6 +774,7 @@
   .div5 button,
   .div6 button {
     max-width: 100%;
+    left: 23vw;
   }
 
   .div3 h1,
@@ -774,6 +784,7 @@
     /* font-weight: 300;*/
     font-size: 20px;
     font-weight: 800;
+    top: 33vh;
   }
 
   .div3 p,
@@ -782,6 +793,7 @@
   .div6 p {
     /* font-weight: 300;*/
     font-size: 3vw;
+    top: 40vh;
   }
 
   .div4 {
@@ -794,12 +806,14 @@
     /* top: 98vh; */
     left: 0px;
     width: 100%;
+    padding: 40px;
   }
 
   .div6 {
     /* top: 98vh; */
     left: 0px;
     width: 100%;
+    padding: 40px;
   }
 
   .div7 {
@@ -821,11 +835,10 @@
   }
 
   .div2 h2 {
-    font-size: 8vw;
+    font-size: 5vw;
     text-align: center;
     margin: auto;
-    left: 20px;
-    margin-top: 70px;
+    top: 13vh;
   }
 
   .photography {
@@ -838,7 +851,7 @@
     font-size: 0.7em;
     margin: 10px 12px;
     position: relative;
-    width: 240px;
+    width: 200px;
     height: 10vh;
   }
 
@@ -945,6 +958,10 @@
     border-radius: 4px;
   }
 
+  .banner1, .banner2, .banner3, .banner4 {
+    left: 28vw;
+  }
+
   .footer {
     /* top: 98vh; */
     left: 0px;
@@ -976,6 +993,8 @@
   .div6 p {
     /* font-weight: 300;*/
     font-size: 4vw;
+    line-height: 33px;
+    top: 40vh;
   }
 
   .events {

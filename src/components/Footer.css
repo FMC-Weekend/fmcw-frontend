@@ -1,6 +1,6 @@
 .footer-container {
   font-family: 'Montserrat';
-  background-color: #f3f3f3;
+  background-color: #fff;
   padding-bottom: 10px;
   display: grid;
   grid-template-columns: 4fr 6fr;
@@ -90,7 +90,7 @@
   background: #0a66c2;
 }
 .footer {
-  background-color: #f3f3f3;
+  background-color: #fff;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -137,23 +137,24 @@
   resize: none;
   width: 65%;
   height: 100px;
-  background: #ffffff;
+  background: #fcfcfc;
   border: 2px solid #000000;
   border-radius: 8px;
   padding: 10px;
 }
 .contact-text:active {
-  border: 2px solid #f2ff00;
+  border: 2px solid #ffc900;
 }
 
 textarea::placeholder {
   font-family: 'Manrope';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   line-height: 25px;
-  color: rgba(0, 0, 0, 0.8);
+  color: #838383;
   position: absolute;
+  /* background-color: #f3f3f3; */
 }
 .contact-submit-btn {
   width: 20%;
@@ -164,7 +165,7 @@ textarea::placeholder {
   align-items: center;
   padding: 8px 24px;
   gap: 4px;
-  background: #f2ff00;
+  background: #ffcf00;
   border: 2px solid #000000;
   box-shadow: 4px 6px 0px #000000;
   border-radius: 4px;

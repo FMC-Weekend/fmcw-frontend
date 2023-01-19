@@ -491,7 +491,7 @@ text-align: center;
   text-align: center;
   justify-content: center;
   border-radius: 19px;
-  position: absolute;
+  /* position: absolute; */
   width: 60vw;
   max-width: 380px;
   min-width: 260px;
@@ -500,8 +500,8 @@ text-align: center;
   box-shadow: 6px 8px 0px #000000;
   flex-direction: column;
   border: 2px solid black;
-  /* margin-right: 20px;
-  margin-left: 50px; */
+  margin-right: 20px;
+  margin-left: 27px;
 }
 .addWorkshop {
   margin: auto;
@@ -520,7 +520,7 @@ text-align: center;
   flex-direction: column;
   border: 2px solid black;
   margin-right: 20px;
-  margin-left: 50px;
+  margin-left: 27px;
 }
 .lapTopView {
   display: block;
@@ -529,6 +529,7 @@ text-align: center;
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  margin-left: -6px;
 }
 .contest_cards {
   padding-left: 3.45vw;
@@ -631,6 +632,7 @@ text-align: center;
     border: 2px solid black;
     margin-bottom: 40px;
     /* margin-right: 20px; */
+    margin-top: 50px;
   }
   .lapTopView {
     display: none;
