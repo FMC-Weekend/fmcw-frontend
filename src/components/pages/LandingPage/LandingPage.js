@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import Banner from './Banner/Banner';
 import Image from './merchandise.png';
-import sectionImage from '../../bg.png';
 import Section from './Section/Section';
 import Classes from './LandingPage.module.css';
 import Footer from '../../Footer';
@@ -53,6 +52,7 @@ function landingPage() {
       <div>
         <div className={Classes.div1}>
           <Fade bottom>
+          <img src={fmclogogroup} className={Classes.div1_logo} />;
             <h1 className={Classes.div1_heading}>A Fest for </h1>
             <h1 className={Classes.div1_headanime}>
               <Typewriter
@@ -72,7 +72,7 @@ function landingPage() {
               </button>
             </a>
             {/* </Link> */}
-            <img src={HeroAnimNew} className={Classes.div1_img} />;
+            <img src={process.env.REACT_APP_AWS_S3_URI + '/HeroAnim1.gif'} className={Classes.div1_img} />;
             {/* <img src="0001-0210.gif" className={Classes.div1_img} /> */}
           </Fade>
         </div>

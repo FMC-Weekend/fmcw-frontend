@@ -696,6 +696,14 @@
     margin-top: -36px;
   }
 
+  .div1_logo {
+    position: absolute;
+    height: 50px;
+    left: 130px;
+    top: 180px;
+    margin-bottom: 100px;
+  }
+
   .div1 button {
     top: 57vh;
     left: 0;

@@ -34,7 +34,7 @@ const Testimonials = () => {
     <section className="bg-#1b083d dark:bg-#1b083d">
       <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
         <figure className="max-w-screen-md mx-auto">
-          <img src="Group_7211.svg" />
+          <img src={process.env.REACT_APP_AWS_S3_URI + '/Group_7211.svg'} />
           <div className="flex align-center justify-center gap-10">
             <ArrowBackIcon
               onClick={() => {

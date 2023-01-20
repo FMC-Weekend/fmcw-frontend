@@ -27,7 +27,7 @@ function SponsorSection(props) {
 
         <div className={classes.cards}>
           {data.genSecData.map((item, index) => (
-                <Card img={item.img} position={item.position} name={item.name} key={index} />
+            <Card img={item.img} position={item.position} name={item.name} key={index} />
           ))}
         </div>
       </div>
@@ -36,8 +36,8 @@ function SponsorSection(props) {
 
         <div className={classes.cards}>
           {data.contentData.map((item, index) => (
-                <Card img={item.img} position={item.position} name={item.name} key={index} />
-              ))}
+            <Card img={item.img} position={item.position} name={item.name} key={index} />
+          ))}
         </div>
       </div>
       <div className={classes.sponsor_title} id="sponsor_4">
@@ -54,8 +54,8 @@ function SponsorSection(props) {
 
         <div className={classes.cards}>
           {data.eventData.map((item, index) => (
-                <Card img={item.img} position={item.position} name={item.name} key={index} />
-              ))}
+            <Card img={item.img} position={item.position} name={item.name} key={index} />
+          ))}
         </div>
       </div>
 
@@ -106,8 +106,8 @@ function SponsorSection(props) {
 
         <div className={classes.cards}>
           {data.secretariesData.map((item, index) => (
-                <Card img={item.img} position={item.position} name={item.name} key={index} />
-              ))}
+            <Card img={item.img} position={item.position} name={item.name} key={index} />
+          ))}
         </div>
       </div>
     </div>

@@ -7,7 +7,6 @@ image {
 }
 
 .hero-container {
-  background: url('/src/components/bg.png') center ;
   height: 100vh;
   width: 100%;
   display: flex;

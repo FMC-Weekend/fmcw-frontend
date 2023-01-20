@@ -17,7 +17,6 @@ const CardTitle = styled.h2`
   transform: translateZ(55px);
 `;
 
-
 function CartCard_2(props) {
   const { isEmpty, items, totalItems, cartTotal, removeItem, emptyCart, updateItemQuantity } =
     useCart();
@@ -55,32 +54,28 @@ function CartCard_2(props) {
     scale: 1.06
   };
   return (
-    <div className='card card-flip' style={{background: props.color, top : "0", margin: "50px 30px 0px"}}>
+    <div
+      className="card card-flip"
+      style={{ background: props.color, top: '0', margin: '0 30px 50px' }}>
       <div className="card-front card-div">
-        
-     
         <b className="type">{props.type}</b>
-          <img className='front-arrow' src='Vector59.png'></img>
+        <img className="front-arrow" src={process.env.REACT_APP_AWS_S3_URI + '/Vector59.png'}></img>
         <b className="front-title">{props.title}</b>
-          <b className="prizes-front">Prizes Worth- {props.prize}</b>
-          <b className='front-price'>RS.{props.price}</b>
-          <img className='front-img' src='Group7175.png'></img>
-          <img className='three-dots1' src='Rectangle133.png'></img>
-          <img className='three-dots2' src='Rectangle133.png'></img>
-          <img className='three-dots3' src='Rectangle133.png'></img>
+        <b className="prizes-front">Prizes Worth- {props.prize}</b>
+        <b className="front-price">RS.{props.price}</b>
+        <img className="front-img" src={props.img}></img>
+        <img
+          className="three-dots1"
+          src={process.env.REACT_APP_AWS_S3_URI + '/Rectangle133.png'}></img>
+        <img
+          className="three-dots2"
+          src={process.env.REACT_APP_AWS_S3_URI + '/Rectangle133.png'}></img>
+        <img
+          className="three-dots3"
+          src={process.env.REACT_APP_AWS_S3_URI + '/Rectangle133.png'}></img>
       </div>
 
       <div className="card-back card-div">
-      {/* {!props.verified && (
-          <button
-            className="cart-btn"
-            onClick={() => {
-              onDelete(props.mongooseId);
-              // change();
-            }}>
-            <CloseIcon />
-          </button>
-        )} */}
         <div className="card-title">
           {props.title}
           <div className="lineTitle"></div>
@@ -88,19 +83,33 @@ function CartCard_2(props) {
         <div className="contents">
           <b>{props.content}</b>
         </div>
-        <img className='viewProbImg' src='circle-arrow-right-solid.svg' alt='arrow' />
+        <img
+          className="viewProbImg"
+          src={process.env.REACT_APP_AWS_S3_URI + '/circle-arrow-right-solid.svg'}
+          alt="arrow"
+        />
         <a href={props.link} target="_blank" className="btnView" rel="noreferrer">
           {props.ps}
         </a>
+        {!props.verified && (
+          <button
+            className="addToCart"
+            style={{ background: props.color2, cursor: 'pointer', fontFamily: 'Manrope' }}
+            onClick={() => {
+              onDelete(props.mongooseId);
+              // change();
+            }}>
+            Delete
+          </button>
+        )}
       </div>
     </div>
-       
   );
 }
 CartCard_2.defaultProps = {
   type: 'Contest',
   title: 'That’s How B’roll',
   ps: 'View Problem Statement',
-  price: 150,
+  price: 150
 };
 export default CartCard_2;

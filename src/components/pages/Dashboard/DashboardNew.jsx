@@ -108,7 +108,7 @@ function DashBoardNew() {
       <div className={Classes.section_top}>
         <div className={Classes.illus}>
           <img
-            src="dashboard.svg"
+            src={process.env.REACT_APP_AWS_S3_URI + '/dashboard.svg'}
             alt="illustration"
             style={{ paddingTop: '5vh', paddingRight: '5vw' }}
           />
@@ -150,10 +150,10 @@ function DashBoardNew() {
           {/* <div className="event-cards"> */}
           <div className={Classes.event_cards}>
             {userData.cartItems.map((item, index) => {
-              if (item.Type === 'Contest') {
+              if (item.Type === 'Contest' && item.verifyStatus) {
                 return (
                   <EventCard
-                    top={"0"}
+                    top={'0'}
                     img={item.img}
                     title={item.title}
                     type={item.type}
@@ -165,6 +165,7 @@ function DashBoardNew() {
                     key={index}
                     color={item.color}
                     color2={item.color2}
+                    verified={item.verifyStatus}
                   />
                 );
               }
@@ -223,76 +224,74 @@ function DashBoardNew() {
       <div className={`${Classes.registered_contest} ${Classes.section_top}`}>
         <h2>Registered Workshops</h2>
       </div>
-            <div className={Classes.lapTopView}>
-              
-      <div className={Classes.contest_cards}>
-        {/* <a href='/events'>
+      <div className={Classes.lapTopView}>
+        <div className={Classes.contest_cards}>
+          {/* <a href='/events'>
           <section className={Classes.addWorkshop}>
           <h1>+</h1>
           <h2>Add more workshop</h2>
           </section>
         </a> */}
-        {/* <div className="event-cards"> */}
-        <div className={Classes.event_cards}>
-          {userData.cartItems.map((item, index) => {
-            if (item.Type === 'Workshop') {
-              return (
-                <WorkshopCard
-                  img={item.img}
-                  title={item.title}
-                  type={item.type}
-                  price={item.price}
-                  name={item.name}
-                  key={index}
-                  color={item.color}
-                  color2={item.color2}
-                  desc={item.desc}
-                  date={item.date}
-                  time={item.time}
-                />
-              );
+          {/* <div className="event-cards"> */}
+          <div className={Classes.event_cards}>
+            {userData.cartItems.map((item, index) => {
+              if (item.Type === 'Workshop') {
+                return (
+                  <WorkshopCard
+                    img={item.img}
+                    title={item.title}
+                    type={item.type}
+                    price={item.price}
+                    name={item.name}
+                    key={index}
+                    color={item.color}
+                    color2={item.color2}
+                    desc={item.desc}
+                    date={item.date}
+                    time={item.time}
+                  />
+                );
               }
               return '';
             })}
+          </div>
         </div>
       </div>
-            </div>
-            <div className={Classes.mobileView}>
-              
-      <div className={Classes.contest_cards}>
-        {/* <a href='/events'>
+      <div className={Classes.mobileView}>
+        <div className={Classes.contest_cards}>
+          {/* <a href='/events'>
           <section className={Classes.addWorkshop}>
           <h1>+</h1>
           <h2>Add more workshop</h2>
           </section>
         </a> */}
-        {/* <div className="event-cards"> */}
-        <div className={Classes.event_cards}>
-          {userData.cartItems.map((item, index) => {
-            if (item.Type === 'Workshop') {
-              return (
-                <WorkshopCard
-                  margin={'0'}
-                  left={'0'}
-                  img={item.img}
-                  title={item.title}
-                  type={item.type}
-                  price={item.price}
-                  name={item.name}
-                  key={index}
-                  color={item.color}
-                  color2={item.color2}
-                  desc={item.desc}
-                  date={item.date}
-                  time={item.time}
-                />
-              );
+          {/* <div className="event-cards"> */}
+          <div className={Classes.event_cards}>
+            {userData.cartItems.map((item, index) => {
+              if (item.Type === 'Workshop') {
+                return (
+                  <WorkshopCard
+                    margin={'0'}
+                    left={'0'}
+                    img={item.img}
+                    title={item.title}
+                    type={item.type}
+                    price={item.price}
+                    name={item.name}
+                    key={index}
+                    color={item.color}
+                    color2={item.color2}
+                    desc={item.desc}
+                    date={item.date}
+                    time={item.time}
+                  />
+                );
               }
               return '';
             })}
+          </div>
         </div>
       </div>
-            </div>
       <button className={Classes.logout_button} onClick={logoutHandler}>
         LOG OUT
       </button>

@@ -29,7 +29,7 @@ function Pass(props) {
     <div>
       <section className="passes-page">
         <div className="pass-header">
-          <img src="passes-header.svg" />
+          <img src={process.env.REACT_APP_AWS_S3_URI + '/passes-header.svg'} />
         </div>
         <div className="passes-content">
           <h1>Know how you can get access to more events within your budget</h1>
@@ -41,20 +41,44 @@ function Pass(props) {
           </p>
         </div>
         <div className="pass-img">
-          <img src="Group_7256.svg" alt="" />
+          <img src={process.env.REACT_APP_AWS_S3_URI + '/Group_7256.svg'} alt="" />
         </div>
         <div className="pass-cards">
           <NavLink to="/events">
-            <img src="event-pass.svg" className="pass_card" alt="" />
+            <img
+              src={process.env.REACT_APP_AWS_S3_URI + '/event-pass.svg'}
+              className="pass_card"
+              alt=""
+            />
           </NavLink>
 
           <NavLink to="/events">
-            <img src="Group7271.png" className="pass_card" alt="" />
+            <img
+              src={process.env.REACT_APP_AWS_S3_URI + '/Group7271.png'}
+              className="pass_card"
+              alt=""
+            />
           </NavLink>
-          <img src="club-pass.svg" className="pass_card" alt="" />
-          <img src="Group7267.png" className="pass_card" alt="" />
-          <img src="Group7268.png" className="pass_card" alt="" />
-          <img src="Group7269.png" className="pass_card" alt="" />
+          <img
+            src={process.env.REACT_APP_AWS_S3_URI + '/club-pass.svg'}
+            className="pass_card"
+            alt=""
+          />
+          <img
+            src={process.env.REACT_APP_AWS_S3_URI + '/Group7267.png'}
+            className="pass_card"
+            alt=""
+          />
+          <img
+            src={process.env.REACT_APP_AWS_S3_URI + '/Group7268.png'}
+            className="pass_card"
+            alt=""
+          />
+          <img
+            src={process.env.REACT_APP_AWS_S3_URI + '/Group7269.png'}
+            className="pass_card"
+            alt=""
+          />
         </div>
       </section>
       <Footer />

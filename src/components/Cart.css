@@ -78,6 +78,10 @@
   position: relative;
   top: 30%;
 }
+.qr {
+  position: relative;
+  height: 400px;
+}
 .star2{
   max-width: 84px;
   max-height: 80px;

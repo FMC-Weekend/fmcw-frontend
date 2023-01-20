@@ -125,6 +125,12 @@ function Navbar() {
     getCartItems();
     // console.log(isTokenValid());
   }, []);
+  let length=0;
+  for(const item of cartItems) {
+    if(!item.verifyStatus) {
+      length += 1;
+    }
+  }
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -221,9 +227,9 @@ function Navbar() {
           <li className="nav-item">
             {sessionStorage.getItem('isLoggedIn') == 'true' && (
               <NavLink to="/cart" activeClassName="target" onClick={closeMobileMenu}
-                className={cartItems.length ? 'cartBtn nav-links' : 'cartBtn empty_cart nav-links'}>
+                className={length ? 'cartBtn nav-links' : 'cartBtn empty_cart nav-links'}>
                 <span id="quantity">
-                  <p style={{ fontSize: '13px' }}>{cartItems.length}</p>
+                  <p style={{ fontSize: '13px' }}>{length}</p>
                 </span>
                 <i className="fas fa-shopping-cart" style={{display: "flex"}}><p className='cartText'>CART</p></i>
               </NavLink>

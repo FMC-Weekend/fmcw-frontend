@@ -2,8 +2,6 @@ import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
 import { Button } from './Button';
-import logo from './foo.png';
-import temp from './foop.png';
 
 function Footer() {
   return (
@@ -11,7 +9,10 @@ function Footer() {
       <footer>
         <div className="footer">
           <section>
-            <img src="LOGOFMC.png" className="image" alt="logo with image"></img>
+            <img
+              src={process.env.REACT_APP_AWS_S3_URI + '/LOGOFMC.png'}
+              className="image"
+              alt="logo with image"></img>
           </section>
         </div>
       </footer>
