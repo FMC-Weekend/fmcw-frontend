@@ -92,20 +92,18 @@ function EventCard(props) {
         <b className="type" style={{ left: props.frontLeft }}>
           {props.type}
         </b>
+        <b className='type2' style={{ left: props.frontLeft }}>online</b> 
         <img className="front-arrow" src={arrow} style={{ display: props.display }}></img>
         <b className="front-title" style={{ left: props.frontLeft }}>
           {props.title}
         </b>
-        <b className="prizes-front" style={{ left: props.frontLeft }}>
-          Prizes Worth- {props.prize}
+        <b className="prizes-front">
+          {props.prize}
         </b>
         <b className="front-price" style={{ left: props.frontLeft }}>
           RS.{props.price}
         </b>
-        <img className="front-img" src={props.img} style={{ left: props.frontLeft }}></img>
-        <img className="three-dots1" src={rectangle} style={{ display: props.display }}></img>
-        <img className="three-dots2" src={rectangle} style={{ display: props.display }}></img>
-        <img className="three-dots3" src={rectangle} style={{ display: props.display }}></img>
+        <img className="front-img" src={props.img} style={{ right: props.frontLeft, right : '10px' }}></img>
       </div>
 
       <div className="card-back card-div">
@@ -152,7 +150,7 @@ function EventCard(props) {
             target="_blank"
             href="/authentication"
             rel="noreferrer"
-            style={{ background: props.color2 }}>
+            style={{ background: props.color2,  }}>
             Login To Add
           </a>
         )}

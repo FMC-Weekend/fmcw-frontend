@@ -38,6 +38,8 @@ function RegisterationForm() {
     <form className={`${Classes.section} ${Classes.form_class}`} onSubmit={(e) => handleSubmit(e)}>
       <div className={Classes.container}>
         <img src="Star.png" className={Classes.star} />
+        <p className={Classes.main_title}>Register</p>
+        <p className={Classes.top}> Let's get to know you a bit. We are a step closer to the world of FMC Weekend. </p>
         <input
           type="text"
           name="name"

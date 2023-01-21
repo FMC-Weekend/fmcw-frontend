@@ -38,7 +38,6 @@ function MenuItem({ anchorId, itemName, active }) {
                 backgroundColor: 'white',
                 marginLeft: 0,
                 border: '2px solid #000000',
-                transform: 'translateX(1px)'
               }
             : { color: 'white', marginLeft: 0 }
         }>

@@ -9,7 +9,7 @@ const data = {
       title: 'PhotoArt',
       link: 'https://iitbhuacin-my.sharepoint.com/:w:/g/personal/vaibhav_sinha_phe21_iitbhu_ac_in/EdC0oFVQKa9BgUAlTsZ-478BzqCHxT4u1JxH_xdfn4gGpg?e=IM7zKs',
       price: 129,
-      prize: '12K',
+      prize: 'Prizes Worth- 12K',
       color: '#00CCF5',
       color2: '#2ED9FC',
       content:
@@ -23,7 +23,7 @@ const data = {
       title: 'Portfolio in 24',
       link: 'https://docs.google.com/document/d/1AIc4URCDZddJ0EZjV5FCrkVSUaTirZXvPQwXb8Sbp_I/edit?usp=sharing',
       price: 129,
-      prize: '8K',
+      prize: 'Prizes Worth- 8K',
       color: '#00CCF5',
       color2: '#2ED9FC',
       content:
@@ -37,7 +37,7 @@ const data = {
       title: 'InFocus',
       link: 'https://docs.google.com/document/d/1am6Q14ZGIHs83RyEYyrcUuCX4TXOF4xRlGU9EhAH7RM/edit?usp=drivesdk',
       price: 129,
-      prize: '14K',
+      prize: 'Prizes Worth- 14K',
       color: '#00CCF5',
       color2: '#2ED9FC',
       content:
@@ -51,7 +51,7 @@ const data = {
       title: 'InstaMeet',
       link: 'https://docs.google.com/document/d/1SuC5eWRvRM9zPJD_YfDZakiAdSGon_IUsnWnb0qm-Ws/edit?usp=sharing',
       price: 129,
-      prize: '14K',
+      prize: 'Prizes Worth- 14K',
       color: '#00CCF5',
       color2: '#2ED9FC',
       content:
@@ -65,7 +65,7 @@ const data = {
       title: 'SnapChase',
       link: 'https://docs.google.com/document/d/1gpkcbcFulNc2haFFD6PAo6ieglO0qjQAUG6WcU9QGfI/edit?usp=drivesdk',
       price: 129,
-      prize: '14K',
+      prize: 'Prizes Worth- 14K',
       color: '#00CCF5',
       color2: '#2ED9FC',
       content:
@@ -81,7 +81,7 @@ const data = {
       title: 'Vlogoholic',
       link: 'https://docs.google.com/document/d/1PlGyzKJo_OZSJC35ZZaJmv8brSf6GMx77xl47qz-Rxg/edit?usp=sharing',
       price: 129,
-      prize: '10K',
+      prize: 'Prizes Worth- 10K',
       color: '#FFC900',
       color2: '#FFDC5A',
       content:
@@ -95,7 +95,7 @@ const data = {
       title: 'Rant it',
       link: 'https://docs.google.com/document/d/1dWAbsuj0r3L1pNtiwiC24AGOPpQ0oAEoffjPWhXlsFg/edit?usp=sharing',
       price: 129,
-      prize: '10K',
+      prize: 'Prizes Worth- 10K',
       color: '#FFC900',
       color2: '#FFDC5A',
       content:
@@ -109,7 +109,7 @@ const data = {
       title: 'Ad-Mad',
       link: 'https://docs.google.com/document/d/13K_BvRrRAHGDk2SbgXOjM3YDaAlzNwnVP1VJW0SRpZY/edit',
       price: 129,
-      prize: '9K',
+      prize: 'Prizes Worth- 9K',
       color: '#FFC900',
       color2: '#FFDC5A',
       content:
@@ -125,7 +125,7 @@ const data = {
       title: 'Thats how B-Roll',
       link: 'https://1drv.ms/w/s!AieflRg28nxYgydLqafGrtwhUywk?e=DMhy7j',
       price: 129,
-      prize: '10K',
+      prize: 'Prizes Worth- 10K',
       color: '#14F0B9',
       color2: '#62FFD8',
       content:
@@ -139,7 +139,7 @@ const data = {
       title: 'Frame By Frame',
       link: 'https://docs.google.com/document/d/1zN4n8oHEixgfW8yYV472Y7gsipoN4V-SzqHcsuNiumk/edit?usp=sharing',
       price: 129,
-      prize: '15K',
+      prize: 'Prizes Worth- 15K',
       color: '#14F0B9',
       color2: '#62FFD8',
       content:
@@ -153,7 +153,7 @@ const data = {
       title: 'Director’s Cut',
       link: 'https://docs.google.com/document/d/1xhgdOSMRK4rGPc4-tMtt5q3nrQAWwRYWE5RAt5b1nRU/edit?usp=sharing',
       price: 129,
-      prize: '8K',
+      prize: 'Prizes Worth- 8K',
       color: '#14F0B9',
       color2: '#62FFD8',
       content:
@@ -167,7 +167,7 @@ const data = {
       title: 'Trim it up',
       link: 'https://docs.google.com/document/d/11s6Lq2zMBV09CH9md7L_ANTv8npZnM5GF3gwWcLhJxU/edit',
       price: 129,
-      prize: '8K',
+      prize: 'Prizes Worth- 8K',
       color: '#14F0B9',
       color2: '#62FFD8',
       content:
@@ -183,7 +183,7 @@ const data = {
       title: 'Design The Tunes',
       link: 'https://drive.google.com/file/d/1-VApwFFzYsxfs5Kc8vGfzK5YowaJ7DYP/view?usp=sharing',
       price: 129,
-      prize: '10K',
+      prize: 'Prizes Worth- 10K',
       color: '#685EDA',
       color2: '#9990FF',
       content:
@@ -197,7 +197,7 @@ const data = {
       title: 'Design-a-thon',
       link: 'https://drive.google.com/file/d/1ULnLIRNCJzkgYD57vRQM73EEs_vcY3Ls/view?usp=sharinghttps://docs.google.com/document/d/1yUcO3FqBB-imYYFEegLGVHt06iduS8zwnrKhuDNX1b8/edit?usp=sharing',
       price: 129,
-      prize: '8K',
+      prize: 'Prizes Worth- 8K',
       color: '#685EDA',
       color2: '#9990FF',
       content:
@@ -211,7 +211,7 @@ const data = {
       title: 'FrameX',
       link: 'https://docs.google.com/document/d/1SiMd1_DVWT6_i0oD3kntLXQQpjXpHquoL6X5A4zaOSA/edit?usp=drivesdk',
       price: 129,
-      prize: '12K',
+      prize: 'Prizes Worth- 12K',
       color: '#685EDA',
       color2: '#9990FF',
       content:
@@ -227,7 +227,7 @@ const data = {
       title: 'Straight from Site',
       link: 'https://docs.google.com/document/d/1uoFKCqAf9mtdaotzTcb59WmR44Qv7e7OAYJpwfbkDaM/edit?usp=drivesdk',
       price: 129,
-      prize: '8K',
+      prize: 'Prizes Worth- 8K',
       color: '#FF90E8',
       color2: '#FFC8F4',
       content:
@@ -241,7 +241,7 @@ const data = {
       title: "Editor's House",
       link: 'https://docs.google.com/document/d/1TJe8P8cJy7rOfmiszenCmY5IAh0xrOBnHHHUX9vsZ30/edit?usp=drivesdk',
       price: 129,
-      prize: '8K',
+      prize: 'Prizes Worth- 8K',
       color: '#FF90E8',
       color2: '#FFC8F4',
       content:
@@ -255,7 +255,7 @@ const data = {
       title: 'Infinite Tales',
       link: 'https://docs.google.com/document/d/18GCWEEJE2fHWpozcodEo791zxT1cRtB_PzATKhTjBoA/edit?usp=sharing',
       price: 129,
-      prize: '8K',
+      prize: 'Prizes Worth- 8K',
       color: '#FF90E8',
       color2: '#FFC8F4',
       content:
@@ -269,7 +269,7 @@ const data = {
       title: 'RJ hunt',
       link: 'https://docs.google.com/document/d/1Z9fW4LqzpUvOg2oNqwqkPZ_eYl8jhGOij02nMpnS2AE/edit?usp=sharing',
       price: 129,
-      prize: '8K',
+      prize: 'Prizes Worth- 8K',
       color: '#FF90E8',
       color2: '#FFC8F4',
       content:
@@ -283,7 +283,7 @@ const data = {
       title: 'Screenplay',
       link: 'https://docs.google.com/document/d/112ZyMtoYplavhAwdVlVpykN5TiMX9Y9DcAA4a2KKcqw/edit?usp=drivesdk',
       price: 129,
-      prize: '8K',
+      prize: 'Prizes Worth- 8K',
       color: '#FF90E8',
       color2: '#FFC8F4',
       content:
@@ -299,7 +299,7 @@ const data = {
       title: 'Realm Of Wonders',
       link: 'https://docs.google.com/document/d/1arU2WyTGO1LT1SZVoD9BCLVeTmdM5PPkrvxcIPTqSVg/edit?usp=sharing',
       price: 129,
-      prize: '10K',
+      prize: 'Prizes Worth- 10K',
       color: '#FE6263',
       color2: '#FD8A8B',
       content:
@@ -313,7 +313,7 @@ const data = {
       title: 'Artspace',
       link: 'https://docs.google.com/document/d/1sRZnNcLPIriGLbQZyMndMilqP47oOSkn7E8e0nVTKMM/edit?usp=sharing',
       price: 129,
-      prize: '9K',
+      prize: 'Prizes Worth- 9K',
       color: '#FE6263',
       color2: '#FD8A8B',
       content:
@@ -327,7 +327,7 @@ const data = {
       title: 'VFXorama',
       link: 'https://docs.google.com/document/d/1wD3INF7sSEfODUXvCLn-A3RkhC_GicMMQxFQ_ANCtkE/edit?usp=sharing',
       price: 129,
-      prize: '6K',
+      prize: 'Prizes Worth- 6K',
       color: '#FE6263',
       color2: '#FD8A8B',
       content:
@@ -341,7 +341,7 @@ const data = {
       title: 'Capture the Imagination',
       link: 'https://docs.google.com/document/d/19CvHkSsEhQqBdU49dtRzucydoI3ICqccNMuPZkzqKcM/edit?usp=sharing',
       price: 129,
-      prize: '6K',
+      prize: 'Prizes Worth- 6K',
       color: '#FE6263',
       color2: '#FD8A8B',
       content:

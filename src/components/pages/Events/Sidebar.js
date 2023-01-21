@@ -70,7 +70,6 @@ export default function VerticalTabs() {
           marginTop: '0px',
           boxSizing: 'border-box',
           width: '360px',
-          left: '1px',
           top: '0px',
           background: color,
           border: '2px solid #000000',
