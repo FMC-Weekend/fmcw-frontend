@@ -91,26 +91,39 @@ function landingPage() {
             <h1>FOR CREATIVE ENTHUSIASTS</h1>
             <h2>FROM FIELDS OF</h2>
             <section className={Classes.button_1}>
+              <a href="/events/#vertical-tabpanel-4">
               <button className={Classes.design}>
                 <p>Design</p>
               </button>
+            </a>
+            <a href="/events/#photog">
               <button className={Classes.photography}>
+                
                 <p>Photography</p>
               </button>
+              </a>
+              <a href="/events/#vertical-tab-3">
               <button className={Classes.media}>
                 <p>Media</p>
               </button>
+              </a>
             </section>
             <section className={Classes.button_2}>
+            <a href="/events/#vertical-tab-1">
               <button className={Classes.cine}>
                 <p>Cine</p>
               </button>
+              </a>
+              <a href="/events/#vertical-tab-5">
               <button className={Classes.animation}>
                 <p>Animation</p>
               </button>
+              </a>
+              <a href="/events/#vertical-tab-2">
               <button className={Classes.outreach}>
                 <p>Outreach</p>
               </button>
+              </a>
             </section>
           </Fade>
         </div>

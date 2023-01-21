@@ -50,7 +50,7 @@
   font-family: Marcellus;
 }
 .payment-modal {
-  width: 80vw;
+  /* width: 80vw; */
 }
 .cartTitle{
   max-height: 295px;
@@ -78,9 +78,146 @@
   position: relative;
   top: 30%;
 }
+.form-section {
+  background-color: #FE6263;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 60px 0px 60px;
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  margin-top: 8vh;
+  background: #00CCF5;
+  border: 2px solid #000000;
+  box-shadow: 4px 6px 0px #000000;
+  border-radius: 4px;
+  align-items: center;
+}
+
+
+/* Full-width input fields */
+
+.container input,
+.container option,
+.container select {
+  width: 70%;
+  padding: 15px;
+  display: inline-block;
+  border: 2px solid #000000;
+  background: #f7f7f7;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+
+.container button {
+  text-align: center !important;
+  color: black;
+  padding: 14px 20px;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  opacity: 1;
+  font-size: 16px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  width: 20%;
+  background: #F2FF00;
+  border: 2px solid #000000;
+  box-shadow: 4px 6px 0px #000000;
+  border-radius: 4px;
+}
+
+.button_div {
+  margin-top: 35px;
+}
+
+.container input[type='text']:focus,
+.container input[type='password']:focus,
+.container input[type='phone']:focus,
+.container select:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+.title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  align-items: center;
+  color: #000000;
+  width: 70%;
+}
+
+
+.star3 {
+  width: 120px;
+  height: 80px;
+  margin-left: -540px;
+  margin-top: -640px;
+  position: absolute;
+}
+
+.cube1 {
+  width: 123px;
+  height: 144px;
+  margin-left: 534px;
+  margin-bottom: -85px;
+  position: relative;
+}
+
+.submit {
+  min-width: 200px;
+}
+
+.submit:hover {
+  transform: translate(4px, 6px);
+  box-shadow: 0px 0px 0px;
+}
+
+
+@media only screen and (max-width: 1035px) {
+  .container {
+    width: 90vw;
+    align-items: center;
+    padding: 60px 0px 50px 0px;
+  }
+
+  .star,
+  .cube {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .title {
+    font-size: 15px;
+  }
+
+  .container input,
+  .container select,
+  .container option {
+    padding: 6px;
+  }
+
+}
 .qr {
   position: relative;
-  height: 400px;
+  height: 200px;
 }
 .star2{
   max-width: 84px;
@@ -377,11 +514,11 @@ padding: 0 2vw;
 }
 
 .price-info {
-  color: #fff;
-  font-family: Nunito Sans;
+  color: #000;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 2em;
   text-transform: capitalize;
   padding-top: 1rem;
   padding-bottom: 1rem;

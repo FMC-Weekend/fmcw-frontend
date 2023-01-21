@@ -1,8 +1,7 @@
 import { Fragment, useContext } from 'react';
 import AuthContext from '../../../store/auth-context';
 import Classes from './Registeration.module.css';
-import star from './Star.png';
-import cube from './Cube.svg';
+
 function RegisterationForm() {
   async function handleSubmit(e) {
     e.preventDefault();
@@ -38,7 +37,7 @@ function RegisterationForm() {
   return (
     <form className={`${Classes.section} ${Classes.form_class}`} onSubmit={(e) => handleSubmit(e)}>
       <div className={Classes.container}>
-        <img src={star} className={Classes.star} />
+        <img src="Star.png" className={Classes.star} />
         <input
           type="text"
           name="name"
@@ -116,7 +115,7 @@ function RegisterationForm() {
             Submit
           </button>
         </div>
-        <img src={cube} className={Classes.cube} />
+        <img src="Cube.svg" className={Classes.cube} />
       </div>
     </form>
   );

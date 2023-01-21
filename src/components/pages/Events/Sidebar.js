@@ -96,7 +96,7 @@ export default function VerticalTabs() {
         <Tab label="Animation" {...a11yProps(5)} onClick={() => setColor('#FE6263')} />
       </Tabs>
 
-      <TabPanel value={value} index={0} className="tab-panel">
+      <TabPanel value={value} index={0} id="photog" className="tab-panel">
         <div className="card-container">
           <div className="event-cards">
             <Fade right>

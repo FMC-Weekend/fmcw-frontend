@@ -16,7 +16,7 @@ import img1 from './CartInfo1.png';
 import img2 from './CartInfo2.png';
 import leftStar from './leftStar.png';
 import rightStar from './rightStar.png';
-import GooglePayButton from '@google-pay/button-react';
+// import GooglePayButton from '@google-pay/button-react';
 // import Button from './pages/LandingPage/Section/Button/Button';
 import Button from './Button_2';
 import WorkshopCard from './pages/Events/WorkshopCard';
@@ -45,10 +45,10 @@ function Cart(props) {
 
   const handleClose = () => setOpen(false);
   const { isEmpty, items, totalItems, cartTotal, removeItem, emptyCart, updateItemQuantity } =
-  useCart();
+    useCart();
   useEffect(() => {
     const getCartItems = async () => {
-      console.log(isLoading),"jhgdfsa";
+      console.log(isLoading), 'jhgdfsa';
       const token = sessionStorage.getItem('tokenID');
       try {
         const res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/user', {
@@ -61,7 +61,7 @@ function Cart(props) {
         setIsLoading(false);
         const data = await res.json();
         // console.log(data);
-        
+
         if (data.message === 'success') {
           console.log(data);
           // console.log(data.user.userID.userCart.cartItems);
@@ -80,18 +80,19 @@ function Cart(props) {
     // console.log(isTokenValid());
   }, []);
 
-  async function checkoutHandler() {
+  async function checkoutHandler(item) {
     let obj = {
       name: document.getElementById('name').value,
       email: document.getElementById('email').value,
       phone: document.getElementById('phone').value,
       amount: paymentAmount,
+      cartItems: item,
       transactionID: document.getElementById('ref').value,
       redirect_url: process.env.REACT_APP_BACKEND_URI + '/api/pay/callback'
     };
     console.log(obj);
 
-    const res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/cart', {
+    const res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/pay', {
       method: 'POST',
       body: JSON.stringify(obj),
       headers: {
@@ -195,125 +196,127 @@ function Cart(props) {
               );
             })}
           </div> */}
-          {isLoading?(<Loading/>):(<>
-  
-        <div className="section_top" style={{ marginTop: '0px' }}>
-          <div className="registered_contest">
-            <h2>Contests</h2>
-          </div>
-        </div>
-        <div className="lapTopView">
-          <div className="contest_cards">
-            {console.log(cartItems.length)}
-            {cartItems.length == undefined || cartItems.length == 0 ? (
-              <a href="/events">
-                <section
-                  className="addContest"
-                  style={{ margin: '0px 30px 50px', right: 'auto', position: 'relative' }}>
-                  <h1>+</h1>
-                  <h2>Add more contest</h2>
-                </section>
-              </a>
-            ) : (
-              <a href="/events">
-                <section className="addContest">
-                  <h1>+</h1>
-                  <h2>Add more contest</h2>
-                </section>
-              </a>
-            )}
+        {isLoading ? (
+          <Loading />
+        ) : (
+          <>
+            <div className="section_top" style={{ marginTop: '0px' }}>
+              <div className="registered_contest">
+                <h2>Contests</h2>
+              </div>
+            </div>
+            <div className="lapTopView">
+              <div className="contest_cards">
+                {console.log(cartItems.length)}
+                {cartItems.length == undefined || cartItems.length == 0 ? (
+                  <a href="/events">
+                    <section
+                      className="addContest"
+                      style={{ margin: '0px 30px 50px', right: 'auto', position: 'relative' }}>
+                      <h1>+</h1>
+                      <h2>Add more contest</h2>
+                    </section>
+                  </a>
+                ) : (
+                  <a href="/events">
+                    <section className="addContest">
+                      <h1>+</h1>
+                      <h2>Add more contest</h2>
+                    </section>
+                  </a>
+                )}
 
-            <div className="event_cards">
-              {cartItems.map((item, index) => {
-                console.log(item, index, 'fdsdfghioluyjtrgfguiu');
-                if (item.Type === 'Contest' && !item.verifyStatus) {
-                  return (
-                    <CartCard_2
-                      img={item.img}
-                      title={item.title}
-                      type={item.type}
-                      link={item.link}
-                      price={item.price}
-                      prize={item.prize}
-                      content={item.content}
-                      item={item}
-                      key={index}
-                      color={item.color}
-                      color2={item.color2}
-                      verified={item.verifyStatus}
-                      mongooseId={item._id}
-                    />
-                  );
-                }
-                return '';
-              })}
+                <div className="event_cards">
+                  {cartItems.map((item, index) => {
+                    console.log(item, index, 'fdsdfghioluyjtrgfguiu');
+                    if (item.Type === 'Contest' && !item.verifyStatus) {
+                      return (
+                        <CartCard_2
+                          img={item.img}
+                          title={item.title}
+                          type={item.type}
+                          link={item.link}
+                          price={item.price}
+                          prize={item.prize}
+                          content={item.content}
+                          item={item}
+                          key={index}
+                          color={item.color}
+                          color2={item.color2}
+                          verified={item.verifyStatus}
+                          mongooseId={item._id}
+                        />
+                      );
+                    }
+                    return '';
+                  })}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className="mobileView">
-          <div className="contest_cards">
-            <div className="event_cards">
-              {cartItems.map((item, index) => {
-                if (item.Type === 'Contest' && !item.verifyStatus) {
-                  return (
-                    <CartCard_2
-                      img={item.img}
-                      title={item.title}
-                      type={item.type}
-                      link={item.link}
-                      price={item.price}
-                      prize={item.prize}
-                      content={item.content}
-                      item={item}
-                      key={index}
-                      color={item.color}
-                      color2={item.color2}
-                      top={'7vh'}
-                      width={'260px'}
-                      height={'329px'}
-                      contentLeft={'12px'}
-                      contentTop={'70px'}
-                      contentWidth={'230px'}
-                      contentFont={'16px'}
-                      lineLeft={'23%'}
-                      titleTop={'3px'}
-                      imgLeft={'7px'}
-                      viewStatementLeft={'50px'}
-                      addToCartLeft={'6px'}
-                      frontLeft={'20px'}
-                      display={'none'}
-                    />
-                  );
-                }
-                return '';
-              })}
-              <a href="/events">
-                <section className="addContest2">
-                  <h1>+</h1>
-                  <h2>Add more contest</h2>
+            <div className="mobileView">
+              <div className="contest_cards">
+                <div className="event_cards">
+                  {cartItems.map((item, index) => {
+                    if (item.Type === 'Contest' && !item.verifyStatus) {
+                      return (
+                        <CartCard_2
+                          img={item.img}
+                          title={item.title}
+                          type={item.type}
+                          link={item.link}
+                          price={item.price}
+                          prize={item.prize}
+                          content={item.content}
+                          item={item}
+                          key={index}
+                          color={item.color}
+                          color2={item.color2}
+                          top={'7vh'}
+                          width={'260px'}
+                          height={'329px'}
+                          contentLeft={'12px'}
+                          contentTop={'70px'}
+                          contentWidth={'230px'}
+                          contentFont={'16px'}
+                          lineLeft={'23%'}
+                          titleTop={'3px'}
+                          imgLeft={'7px'}
+                          viewStatementLeft={'50px'}
+                          addToCartLeft={'6px'}
+                          frontLeft={'20px'}
+                          display={'none'}
+                        />
+                      );
+                    }
+                    return '';
+                  })}
+                  <a href="/events">
+                    <section className="addContest2">
+                      <h1>+</h1>
+                      <h2>Add more contest</h2>
+                    </section>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="section_top" style={{ marginTop: '0px' }}>
+              <div className="registered_contest">
+                <h2>Workshops</h2>
+              </div>
+            </div>
+            <div className="lapTopView">
+              <div className="contest_cards">
+                {console.log(cartItems)}
+                {/* {cartItems.length == undefined || cartItems.length == 0 ? ( */}
+                <section
+                  className="addWorkshop"
+                  style={{ marginBottom: '50px', right: 'auto', position: 'relative' }}>
+                  <a href="/events">
+                    <h1>+</h1>
+                    <h2>Add more Workshop</h2>
+                  </a>
                 </section>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="section_top" style={{ marginTop: '0px' }}>
-          <div className="registered_contest">
-            <h2>Workshops</h2>
-          </div>
-        </div>
-        <div className="lapTopView">
-          <div className="contest_cards">
-            {console.log(cartItems)}
-            {/* {cartItems.length == undefined || cartItems.length == 0 ? ( */}
-            <section
-              className="addWorkshop"
-              style={{ marginBottom: '50px', right: 'auto', position: 'relative' }}>
-              <a href="/events">
-                <h1>+</h1>
-                <h2>Add more Workshop</h2>
-              </a>
-            </section>
-            {/* // ) : (
+                {/* // ) : (
               //   <section className="addWorkshop">
               // <a href="/events">
               //     <h1>+</h1>
@@ -321,68 +324,69 @@ function Cart(props) {
               // </a>
               //   </section>
             // )} */}
-            <div className="event_cards">
-              {cartItems.map((item, index) => {
-                console.log(item, index);
-                if (item.Type === 'Workshop' && !item.verifyStatus) {
-                  return (
-                    <WorkshopCard
-                      img={item.img}
-                      title={item.title}
-                      type={item.type}
-                      price={item.price}
-                      name={item.name}
-                      key={index}
-                      color={item.color}
-                      color2={item.color2}
-                      verified={item.verifyStatus}
-                      mongooseId={item._id}
-                      desc={item.desc}
-                      date={item.date}
-                      time={item.time}
-                    />
-                  );
-                }
-                return '';
-              })}
+                <div className="event_cards">
+                  {cartItems.map((item, index) => {
+                    console.log(item, index);
+                    if (item.Type === 'Workshop' && !item.verifyStatus) {
+                      return (
+                        <WorkshopCard
+                          img={item.img}
+                          title={item.title}
+                          type={item.type}
+                          price={item.price}
+                          name={item.name}
+                          key={index}
+                          color={item.color}
+                          color2={item.color2}
+                          verified={item.verifyStatus}
+                          mongooseId={item._id}
+                          desc={item.desc}
+                          date={item.date}
+                          time={item.time}
+                        />
+                      );
+                    }
+                    return '';
+                  })}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className="mobileView">
-          <div className="contest_cards">
-            <div className="event_cards">
-              {cartItems.map((item, index) => {
-                if (item.Type === 'Workshop' && !item.verifyStatus) {
-                  return (
-                    <WorkshopCard
-                      margin={'0'}
-                      left={'0'}
-                      img={item.img}
-                      title={item.title}
-                      type={item.type}
-                      price={item.price}
-                      name={item.name}
-                      key={index}
-                      color={item.color}
-                      color2={item.color2}
-                      desc={item.desc}
-                      date={item.date}
-                      time={item.time}
-                    />
-                  );
-                }
-                return '';
-              })}
-              <a href="/events">
-                <section className="addContest2">
-                  <h1>+</h1>
-                  <h2>Add more Workshops</h2>
-                </section>
-              </a>
+            <div className="mobileView">
+              <div className="contest_cards">
+                <div className="event_cards">
+                  {cartItems.map((item, index) => {
+                    if (item.Type === 'Workshop' && !item.verifyStatus) {
+                      return (
+                        <WorkshopCard
+                          margin={'0'}
+                          left={'0'}
+                          img={item.img}
+                          title={item.title}
+                          type={item.type}
+                          price={item.price}
+                          name={item.name}
+                          key={index}
+                          color={item.color}
+                          color2={item.color2}
+                          desc={item.desc}
+                          date={item.date}
+                          time={item.time}
+                        />
+                      );
+                    }
+                    return '';
+                  })}
+                  <a href="/events">
+                    <section className="addContest2">
+                      <h1>+</h1>
+                      <h2>Add more Workshops</h2>
+                    </section>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-          </>)}
+          </>
+        )}
         {/* </div> */}
         <Modal
           open={open}
@@ -393,53 +397,57 @@ function Cart(props) {
           <Box>
             <div className="back"></div>
 
-            <img src="qr.jpeg" className="qr" />
-            <div className="register-form">
-              <h1 className="reg-text">REGISTER</h1>
-              <div className="reg-form">
-                <div className="text">
-                  <input
-                    className="register-input"
-                    value={sessionStorage.getItem('name')}
-                    type="text"
-                    id="name"
-                    placeholder="Name"
-                    required
-                  />
-                  <hr />
-                  <input
-                    className="register-input"
-                    value={sessionStorage.getItem('email')}
-                    type="email"
-                    id="email"
-                    placeholder="Email"
-                    required
-                  />
-                  <hr />
-                  <input
-                    className="register-input"
-                    type="phone"
-                    id="phone"
-                    placeholder="Contact Number"
-                    required
-                  />
-                  <input
-                    className="register-input"
-                    type="text"
-                    id="ref"
-                    placeholder="Transaction ID/Ref No"
-                    required
-                  />
-                  <br></br>
-                  <label htmlFor="cart-amount">
-                    <h3 className="price-info">Total Price = ₹ {paymentAmount} </h3>
-                  </label>
-                </div>
-                <button onClick={checkoutHandler} name="registor-button" className="register-btn">
-                  Pay Now
-                </button>
+            <form className="container" onSubmit={(e) => checkoutHandler(e)}>
+              <img src="Star.png" className="star3" />
+              <img src="qr_fmc.jpeg" className="qr" />
+              <div className="text">
+                <input
+                  className="register-input"
+                  value={sessionStorage.getItem('name')}
+                  type="text"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
+                <hr />
+                <input
+                  className="register-input"
+                  value={sessionStorage.getItem('email')}
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+                <hr />
+                <input
+                  className="register-input"
+                  type="phone"
+                  id="phone"
+                  placeholder="Contact Number"
+                  required
+                  pattern="^[0-9]{10,10}$"
+                />
+                <input
+                  className="register-input"
+                  type="text"
+                  id="ref"
+                  placeholder="Transaction ID/Ref No"
+                  required
+                  pattern="^[0-9]{12,12}$"
+                />
+                <br></br>
+                <label htmlFor="cart-amount">
+                  <h3 className="price-info">Total Price = ₹ {paymentAmount} </h3>
+                </label>
               </div>
-            </div>
+              <button
+                onClick={checkoutHandler}
+                name="registor-button"
+                className="register-btn submit">
+                Submit
+              </button>
+              <img src="Cube.svg" className="cube1" />
+            </form>
             {/* <Typography id="modal-modal-title" variant="h6" component="h2">
               <h1>Payment Details</h1>
             </Typography>

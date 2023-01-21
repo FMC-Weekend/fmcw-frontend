@@ -18,7 +18,7 @@ import Media from './components/pages/Events/MobileView/Media';
 import Animation from './components/pages/Events/MobileView/Animation';
 import Authentication from './components/pages/Authentication/Authentication';
 import RegisterationForm from './components/pages/Register/RegisterationForm';
-import Dashboard from './components/pages/Dashboard/Old';
+// import Dashboard from './components/pages/Dashboard/Old';
 import AuthContext from './store/auth-context';
 import PrivateRoute from './components/PrivateRoute';
 import Team from './components/pages/Team/Teams';

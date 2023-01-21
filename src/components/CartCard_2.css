@@ -421,10 +421,9 @@ text-align: center;
   padding: 10px;
 }
 .payment-modal {
-  background: #27094b;
+  /* background: #27094b; */
   font-family: Marcellus;
-  width: 80vw;
-  height: 90vh;
+
 }
 #modal-modal-description ul li {
   display: flex;

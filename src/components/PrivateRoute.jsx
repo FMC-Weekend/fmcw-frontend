@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Redirect } from 'react-router-dom';
-import Dashboard from './pages/Dashboard/Old';
+// import Dashboard from './pages/Dashboard/Old';
 import Error from './Error';
 import Loading from './Loading';
 // var isValid = false;
@@ -12,7 +12,7 @@ const PrivateRoute = (props) => {
   const [isNewUser, setIsNewUser] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
+  // const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
 
   useEffect(() => {
     const isTokenValid = async () => {
