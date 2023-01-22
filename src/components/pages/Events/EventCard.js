@@ -84,7 +84,7 @@ function EventCard(props) {
       style={{
         background: props.color,
         left: props.left,
-        height: props.height,
+        height: '300px',
         width: props.width,
         marginRight: props.marginRight
       }}>

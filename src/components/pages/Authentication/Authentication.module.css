@@ -5,11 +5,38 @@
   background: #685eda;
   height: 87vh;
 }
+.top{
+  position: absolute;
+  width: 568px;
+  height: 58px;
+  left: 12%;
+  top: 21%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 68px;
+  color: #FFFFFF;
+}
+.top2{
+  position: absolute;
+  width: 552px;
+  height: 58px;
+  left: 12%;
+  top: 34%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+
+}
 .auth_section img {
   display: flex;
   width: 22vw;
   position: absolute;
-  right: 20%;
+  right: 17%;
   top: 60px;
   justify-content: right;
 }
@@ -18,7 +45,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 40%;
+  top: 55%;
   box-sizing: border-box;
 
   position: absolute;
@@ -28,7 +55,7 @@
   border: 2px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  left: 15%;
+  left: 12%;
   filter: drop-shadow(4px 6px 0px #000000);
   
 }
@@ -116,5 +143,50 @@
     position: relative;
     width: 200px;
     left: 1%;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .auth_section img {
+    right: 13%;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .auth_section img {
+    right: 11%;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .auth_section img {
+    right: 7%;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .auth_section img {
+    right: 3%;
+  }
+  .top{
+    width: 300px;
+    top: 66%;
+    font-size: 36px;
+    left: 5%;
+    margin: auto;
+  }
+  .top2{
+    width: 300px;
+    top: 74%;
+    font-size: 27px;
+    left: 5%;
+    line-height: 32px;
+  }
+  .authenticateButton {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    top: 16vh;
+    margin: auto;
   }
 }
