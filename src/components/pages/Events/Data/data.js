@@ -8,10 +8,11 @@ const data = {
       type: 'Contest',
       title: 'PhotoArt',
       link: 'https://iitbhuacin-my.sharepoint.com/:w:/g/personal/vaibhav_sinha_phe21_iitbhu_ac_in/EdC0oFVQKa9BgUAlTsZ-478BzqCHxT4u1JxH_xdfn4gGpg?e=IM7zKs',
-      price: 129,
+      price: 179,
       prize: 'Prizes Worth- 12K',
       color: '#00CCF5',
       color2: '#2ED9FC',
+      mode: 'ONLINE',
       content:
         '"Manipulation is the art of blending seemingly opposite realities into a single image." Photoart brings to you the opportunity to fill the canvas with master- strokes and create an ethereal piece of art! "'
     },
@@ -22,10 +23,11 @@ const data = {
       type: 'Contest',
       title: 'Portfolio in 24',
       link: 'https://docs.google.com/document/d/1AIc4URCDZddJ0EZjV5FCrkVSUaTirZXvPQwXb8Sbp_I/edit?usp=sharing',
-      price: 129,
+      price: 249,
       prize: 'Prizes Worth- 8K',
       color: '#00CCF5',
       color2: '#2ED9FC',
+      mode: 'OFFLINE',
       content:
         'We click a number of pictures and put them in the gallery, but  Portfolio in 24 hrs of FMC Weekend brings you a chance to show your skills on India’s largest digital art festival.'
     },
@@ -36,10 +38,11 @@ const data = {
       type: 'Contest',
       title: 'InFocus',
       link: 'https://docs.google.com/document/d/1am6Q14ZGIHs83RyEYyrcUuCX4TXOF4xRlGU9EhAH7RM/edit?usp=drivesdk',
-      price: 129,
+      price: 179,
       prize: 'Prizes Worth- 14K',
       color: '#00CCF5',
       color2: '#2ED9FC',
+      mode: 'ONLINE',
       content:
         'A blank canvas provides one with endless possibilities to create magnificent artworks. Your submissions should belong to any of the given themes. Long exposure Minimalism Architecture Colors of India Winter Conceptual portraits Monochrome'
     },
@@ -50,10 +53,11 @@ const data = {
       type: 'Contest',
       title: 'InstaMeet',
       link: 'https://docs.google.com/document/d/1SuC5eWRvRM9zPJD_YfDZakiAdSGon_IUsnWnb0qm-Ws/edit?usp=sharing',
-      price: 129,
+      price: 249,
       prize: 'Prizes Worth- 14K',
       color: '#00CCF5',
       color2: '#2ED9FC',
+      mode: 'OFFLINE',
       content:
         '"Banaras is older than history; older than tradition, older than even legends and looks twice as old as all of them out together. Show us your perspective of mystic cultures through your lens.'
     },
@@ -64,10 +68,11 @@ const data = {
       type: 'Contest',
       title: 'SnapChase',
       link: 'https://docs.google.com/document/d/1gpkcbcFulNc2haFFD6PAo6ieglO0qjQAUG6WcU9QGfI/edit?usp=drivesdk',
-      price: 129,
+      price: 249,
       prize: 'Prizes Worth- 14K',
       color: '#00CCF5',
       color2: '#2ED9FC',
+      mode: 'OFFLINE',
       content:
         'Snapchase a unique photographic treasure hunt, takes you through an adrenaline rush in a chose around the campus. So get ready and enjoy the ride'
     }
@@ -80,10 +85,11 @@ const data = {
       type: 'Contest',
       title: 'Vlogoholic',
       link: 'https://docs.google.com/document/d/1PlGyzKJo_OZSJC35ZZaJmv8brSf6GMx77xl47qz-Rxg/edit?usp=sharing',
-      price: 129,
+      price: 179,
       prize: 'Prizes Worth- 10K',
       color: '#FFC900',
       color2: '#FFDC5A',
+      mode: 'ONLINE',
       content:
         'You have to make a video log in the range of 60-600 seconds. It can be about anything- visiting nearby attractions, indulging in festive activities, pulling pranks on people, etc. - as long as it is exciting and in which you can show the theme “COLOUR OF MY CITY”.'
     },
@@ -94,10 +100,11 @@ const data = {
       type: 'Contest',
       title: 'Rant it',
       link: 'https://docs.google.com/document/d/1dWAbsuj0r3L1pNtiwiC24AGOPpQ0oAEoffjPWhXlsFg/edit?usp=sharing',
-      price: 129,
+      price: 249,
       prize: 'Prizes Worth- 10K',
       color: '#FFC900',
       color2: '#FFDC5A',
+      mode: 'OFFLINE',
       content:
         'You will have to give a live solo open-mic performance of your rant. It could be a monologue, an interview, a prank or anything else that can captivate the interest of the public.'
     },
@@ -108,10 +115,11 @@ const data = {
       type: 'Contest',
       title: 'Ad-Mad',
       link: 'https://docs.google.com/document/d/13K_BvRrRAHGDk2SbgXOjM3YDaAlzNwnVP1VJW0SRpZY/edit',
-      price: 129,
+      price: 179,
       prize: 'Prizes Worth- 9K',
       color: '#FFC900',
       color2: '#FFDC5A',
+      mode: 'ONLINE',
       content:
         'The participants need to make an advertisement on the provided, within 36 hrs. The themes for the same would be released at the start of the event and participants need to submit their entries in due time.'
     }
@@ -124,10 +132,11 @@ const data = {
       type: 'Contest',
       title: 'Thats how B-Roll',
       link: 'https://1drv.ms/w/s!AieflRg28nxYgydLqafGrtwhUywk?e=DMhy7j',
-      price: 129,
+      price: 179,
       prize: 'Prizes Worth- 10K',
       color: '#14F0B9',
       color2: '#62FFD8',
+      mode: 'ONLINE',
       content:
         'For this event, however, you’ve got to aim those lenses inwards and tell an interesting story about yourself; hence the theme - “I, Me and My Things – A Story”. Weave a tale involving your personal effects and belongings and make everyone and their friends turn their heads.'
     },
@@ -138,10 +147,11 @@ const data = {
       type: 'Contest',
       title: 'Frame By Frame',
       link: 'https://docs.google.com/document/d/1zN4n8oHEixgfW8yYV472Y7gsipoN4V-SzqHcsuNiumk/edit?usp=sharing',
-      price: 129,
+      price: 179,
       prize: 'Prizes Worth- 15K',
       color: '#14F0B9',
       color2: '#62FFD8',
+      mode: 'ONLINE',
       content:
         'Frame by Frame is an Open-theme Online Stop motion making event, and stop-motion entries are to be submitted in due time. The participants need to create a stop-motion movie using only inanimate objects.'
     },
@@ -152,10 +162,11 @@ const data = {
       type: 'Contest',
       title: 'Director’s Cut',
       link: 'https://docs.google.com/document/d/1xhgdOSMRK4rGPc4-tMtt5q3nrQAWwRYWE5RAt5b1nRU/edit?usp=sharing',
-      price: 129,
+      price: 249,
       prize: 'Prizes Worth- 8K',
       color: '#14F0B9',
       color2: '#62FFD8',
+      mode: 'OFFLINE',
       content:
         'Participants need to make a short film within 50 hours based on the theme provided to them in the campus at the start of the event.'
     },
@@ -166,10 +177,11 @@ const data = {
       type: 'Contest',
       title: 'Trim it up',
       link: 'https://docs.google.com/document/d/11s6Lq2zMBV09CH9md7L_ANTv8npZnM5GF3gwWcLhJxU/edit',
-      price: 129,
+      price: 249,
       prize: 'Prizes Worth- 8K',
       color: '#14F0B9',
       color2: '#62FFD8',
+      mode: 'OFFLINE',
       content:
         'Participants will be given different genres ,from which they will choose to make a video based on the clips given to them .The time duration of the video can be from 30-60 seconds.'
     }
@@ -181,11 +193,12 @@ const data = {
       genre: 'design',
       type: 'Contest',
       title: 'Design The Tunes',
-      link: 'https://drive.google.com/file/d/1-VApwFFzYsxfs5Kc8vGfzK5YowaJ7DYP/view?usp=sharing',
-      price: 129,
+      link: 'https://docs.google.com/document/d/1oEuYpjbbW5jLGGf-h_Zi1mQ_zMNGcVc2XV1Oue9Grgs/edit?usp=sharing',
+      price: 179,
       prize: 'Prizes Worth- 10K',
       color: '#685EDA',
       color2: '#9990FF',
+      mode: 'ONLINE',
       content:
         'It’s an Online design challenge to design the cover page of a song or an album.You can also use the elements of the songs or album for the cover.'
     },
@@ -195,11 +208,12 @@ const data = {
       genre: 'design',
       type: 'Contest',
       title: 'Design-a-thon',
-      link: 'https://drive.google.com/file/d/1ULnLIRNCJzkgYD57vRQM73EEs_vcY3Ls/view?usp=sharinghttps://docs.google.com/document/d/1yUcO3FqBB-imYYFEegLGVHt06iduS8zwnrKhuDNX1b8/edit?usp=sharing',
-      price: 129,
+      link: 'https://docs.google.com/document/d/1yUcO3FqBB-imYYFEegLGVHt06iduS8zwnrKhuDNX1b8/edit?usp=sharing',
+      price: 249,
       prize: 'Prizes Worth- 8K',
       color: '#685EDA',
       color2: '#9990FF',
+      mode: 'OFFLINE',
       content:
         "It's a 24- hour offline event having team of 1-4 people each in which you'll have to rebrand an intriguing company using a different product line than the one it now uses."
     },
@@ -210,10 +224,11 @@ const data = {
       type: 'Contest',
       title: 'FrameX',
       link: 'https://docs.google.com/document/d/1SiMd1_DVWT6_i0oD3kntLXQQpjXpHquoL6X5A4zaOSA/edit?usp=drivesdk',
-      price: 129,
+      price: 179,
       prize: 'Prizes Worth- 12K',
       color: '#685EDA',
       color2: '#9990FF',
+      mode: 'ONLINE',
       content:
         "FrameX is a 7 days long design challenge, in which you'll have to submit an app wireframe and Ui of given PS."
     }
@@ -226,10 +241,11 @@ const data = {
       type: 'Contest',
       title: 'Straight from Site',
       link: 'https://docs.google.com/document/d/1uoFKCqAf9mtdaotzTcb59WmR44Qv7e7OAYJpwfbkDaM/edit?usp=drivesdk',
-      price: 129,
+      price: 249,
       prize: 'Prizes Worth- 8K',
       color: '#FF90E8',
       color2: '#FFC8F4',
+      mode: 'OFFLINE',
       content:
         'The participants will be provided with a set of "scenes" and will have to observe them and consolidate their thoughts, after which they would\'ve have to deliver a report just like an on-site reporter by connecting two of those scenes and forming a coherent plot.'
     },
@@ -240,10 +256,11 @@ const data = {
       type: 'Contest',
       title: "Editor's House",
       link: 'https://docs.google.com/document/d/1TJe8P8cJy7rOfmiszenCmY5IAh0xrOBnHHHUX9vsZ30/edit?usp=drivesdk',
-      price: 129,
+      price: 179,
       prize: 'Prizes Worth- 8K',
       color: '#FF90E8',
       color2: '#FFC8F4',
+      mode: 'ONLINE',
       content:
         'Prompts will be given to the participants. They have to write their opinion upon a particular prompt. it will be in an editorial form.'
     },
@@ -254,10 +271,11 @@ const data = {
       type: 'Contest',
       title: 'Infinite Tales',
       link: 'https://docs.google.com/document/d/18GCWEEJE2fHWpozcodEo791zxT1cRtB_PzATKhTjBoA/edit?usp=sharing',
-      price: 129,
+      price: 249,
       prize: 'Prizes Worth- 8K',
       color: '#FF90E8',
       color2: '#FFC8F4',
+      mode: 'OFFLINE',
       content:
         'Participants have to come in pairs at the allotted location.They will be provided with the topics randomly. You and your partner have to complete the story by adding sentences alternatively.'
     },
@@ -282,10 +300,11 @@ const data = {
       type: 'Contest',
       title: 'Screenplay',
       link: 'https://docs.google.com/document/d/112ZyMtoYplavhAwdVlVpykN5TiMX9Y9DcAA4a2KKcqw/edit?usp=drivesdk',
-      price: 129,
+      price: 179,
       prize: 'Prizes Worth- 8K',
       color: '#FF90E8',
       color2: '#FFC8F4',
+      mode: 'ONLINE',
       content:
         '"To make a great film you need three things - the script, the script and the script."  - Alfred Hitchcock "'
     }
@@ -298,10 +317,11 @@ const data = {
       type: 'Contest',
       title: 'Realm Of Wonders',
       link: 'https://docs.google.com/document/d/1arU2WyTGO1LT1SZVoD9BCLVeTmdM5PPkrvxcIPTqSVg/edit?usp=sharing',
-      price: 129,
+      price: 179,
       prize: 'Prizes Worth- 10K',
       color: '#FE6263',
       color2: '#FD8A8B',
+      mode: 'ONLINE',
       content:
         'Every great animation began with just an idea. What if we gave you the idea of where to start and you show us the best result you can come up with?'
     },
@@ -312,10 +332,11 @@ const data = {
       type: 'Contest',
       title: 'Artspace',
       link: 'https://docs.google.com/document/d/1sRZnNcLPIriGLbQZyMndMilqP47oOSkn7E8e0nVTKMM/edit?usp=sharing',
-      price: 129,
+      price: 249,
       prize: 'Prizes Worth- 9K',
       color: '#FE6263',
       color2: '#FD8A8B',
+      mode: 'OFFLINE',
       content:
         'Take reference of some place in Varanasi or campus and create it. (or some scene which represents the essence of Varanasi)'
     },
@@ -326,10 +347,11 @@ const data = {
       type: 'Contest',
       title: 'VFXorama',
       link: 'https://docs.google.com/document/d/1wD3INF7sSEfODUXvCLn-A3RkhC_GicMMQxFQ_ANCtkE/edit?usp=sharing',
-      price: 129,
+      price: 249,
       prize: 'Prizes Worth- 6K',
       color: '#FE6263',
       color2: '#FD8A8B',
+      mode: 'OFFLINE',
       content:
         'Participants have to create a VFX based video. The scene must be placed in Varanasi.'
     },
@@ -340,10 +362,11 @@ const data = {
       type: 'Contest',
       title: 'Capture the Imagination',
       link: 'https://docs.google.com/document/d/19CvHkSsEhQqBdU49dtRzucydoI3ICqccNMuPZkzqKcM/edit?usp=sharing',
-      price: 129,
+      price: 179,
       prize: 'Prizes Worth- 6K',
       color: '#FE6263',
       color2: '#FD8A8B',
+      mode: 'ONLINE',
       content:
         'You need to create a 3D scene. There is no theme. You can use any software to make your scene. Premade 3D models from the internet can be used. A single image will be sent to the judges. Ratings will be done based on the judgment criteria below.'
     }

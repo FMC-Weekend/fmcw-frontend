@@ -113,6 +113,7 @@ export default function VerticalTabs() {
                     color2={item.color2}
                     item={item}
                     key={index}
+                    mode={item.mode}
                     marginRight={'70px'}
                     left={'95px'}
                   />
@@ -164,6 +165,7 @@ export default function VerticalTabs() {
                     key={index}
                     color={item.color}
                     color2={item.color2}
+                    mode={item.mode}
                     marginRight={'70px'}
                     left={'95px'}
                   />
@@ -213,6 +215,7 @@ export default function VerticalTabs() {
                     key={index}
                     color={item.color}
                     color2={item.color2}
+                    mode={item.mode}
                     marginRight={'70px'}
                     left={'95px'}
                   />
@@ -260,6 +263,7 @@ export default function VerticalTabs() {
                     key={index}
                     color={item.color}
                     color2={item.color2}
+                    mode={item.mode}
                     marginRight={'70px'}
                     left={'95px'}
                   />
@@ -308,6 +312,7 @@ export default function VerticalTabs() {
                     key={index}
                     color={item.color}
                     color2={item.color2}
+                    mode={item.mode}
                     marginRight={'70px'}
                     left={'95px'}
                   />
@@ -356,6 +361,7 @@ export default function VerticalTabs() {
                     key={index}
                     color={item.color}
                     color2={item.color2}
+                    mode={item.mode}
                     marginRight={'70px'}
                     left={'95px'}
                   />

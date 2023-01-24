@@ -42,6 +42,7 @@ function Animation() {
                   lineLeft={'23%'}
                   titleTop={'3px'}
                   imgLeft={'7px'}
+                  mode={item.mode}
                   viewStatementLeft={'50px'}
                   addToCartLeft={'6px'}
                   frontLeft={'20px'}

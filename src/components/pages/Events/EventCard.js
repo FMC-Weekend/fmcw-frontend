@@ -94,7 +94,7 @@ function EventCard(props) {
             {props.type}
           </b>
           <b className="type2" style={{ left: props.frontLeft }}>
-            online
+            {props.mode}
           </b>
           <img className="front-arrow" src={arrow} style={{ display: props.display }}></img>
           <b className="front-title" style={{ left: props.frontLeft }}>

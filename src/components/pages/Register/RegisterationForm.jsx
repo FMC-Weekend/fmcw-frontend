@@ -25,6 +25,7 @@ function RegisterationForm() {
     console.log({ obj });
     const data = await res.json();
     console.log(data);
+    
     if (data.message === 'success') {
       window.location.href = '/dashboard';
     } else {
@@ -32,6 +33,9 @@ function RegisterationForm() {
       alert(data.message);
       // window.location.href = "/register";
     }
+    
+      
+    window.location.reload();
   }
   const authCtx = useContext(AuthContext);
   return (

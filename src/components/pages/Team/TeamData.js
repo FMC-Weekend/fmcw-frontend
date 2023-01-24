@@ -68,7 +68,7 @@ const data = {
     },
     {
       id: 8,
-      img: process.env.REACT_APP_AWS_S3_URI + '/preety.jpeg',
+      img: 'https://drive.google.com/uc?export=view&id=1ZPNl5EoD6_XMxbfoK2OTUQR8WtNXYbk5',
       position: 'Public Relations Head',
       name: 'Preety Sarwa'
     }
@@ -76,7 +76,7 @@ const data = {
   socialMediaData: [
     {
       id: 9,
-      img: process.env.REACT_APP_AWS_S3_URI + '/akanksha.jpeg',
+      img: 'https://drive.google.com/uc?export=view&id=1hsANNhclgQI7t03FSAbGnBGqNJFjCZ4k',
       position: 'Social Media Head',
       name: 'Akanksha Verma'
     },
@@ -100,7 +100,7 @@ const data = {
     },
     {
       id: 13,
-      img: process.env.REACT_APP_AWS_S3_URI + '/sfsf.jpeg',
+      img: 'https://drive.google.com/uc?export=view&id=1Hj2VBlwXBgCDAUNOPCc0bQGdNAl9tuDn',
       position: 'Social Media Head',
       name: 'Siddhart Verma'
     }
@@ -120,7 +120,7 @@ const data = {
     },
     {
       id: 16,
-      img: process.env.REACT_APP_AWS_S3_URI + '/shreyash.jpeg',
+      img: 'https://drive.google.com/uc?export=view&id=16iLkVRoudj5ER9vA9X1BNZN9ldZxSK2s',
       position: 'Tech Head',
       name: 'Shreyash Singh'
     }
@@ -148,7 +148,7 @@ const data = {
     },
     {
       id: 27,
-      img: process.env.REACT_APP_AWS_S3_URI + '/manhar.jpeg',
+      img: 'https://drive.google.com/uc?export=view&id=1PFdOPVa7U1GOWhIEBBfF0wTr8eJ_LfDI',
       position: 'Event Head',
       name: 'Manhar Joshi'
     }
@@ -156,7 +156,7 @@ const data = {
   convenorData: [
     {
       id: 20,
-      img: process.env.REACT_APP_AWS_S3_URI + '/parth.jpeg',
+      img: 'https://drive.google.com/uc?export=view&id=1K30q0HxCCT-cz2B8GoonKbQzWLBzWkMh',
       position: 'Convenor',
       name: 'Parth Khandelwal'
     },

@@ -3,7 +3,7 @@
   overflow: hidden;
 }
 .type2{
-  width: 74px;
+  width: 100px;
   height: 22px;
   font-family: 'Montserrat';
   font-style: normal;
@@ -289,7 +289,7 @@ flip card
   margin-top: 0px;
 }
 .front-price {
-  width: 80px;
+  width: 90px;
   height: 22px;
   font-family: 'Montserrat';
   font-style: normal;

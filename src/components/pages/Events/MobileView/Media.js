@@ -44,6 +44,7 @@ function Media() {
                   imgLeft={'7px'}
                   viewStatementLeft={'50px'}
                   addToCartLeft={'6px'}
+                  mode={item.mode}
                   frontLeft={'20px'}
                   display={'none'}
                 />
