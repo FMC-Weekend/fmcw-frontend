@@ -71,6 +71,14 @@ function Footer() {
               rel="noreferrer">
               <i className="fab fa-linkedin" />
             </a>
+            <a
+              className="social-icon-link twitter"
+              href="https://twitter.com/fmc_weekend?t=hFcFAL6AS5Cd6WYf4WQFwQ&s=08"
+              target="_blank"
+              aria-label="Twitter"
+              rel="noreferrer">
+             <i class="fab fa-twitter" />
+            </a>
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ const data = {
       color: '#00CCF5',
       color2: '#2ED9FC',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        '"Manipulation is the art of blending seemingly opposite realities into a single image." Photoart brings to you the opportunity to fill the canvas with master- strokes and create an ethereal piece of art! "'
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ const data = {
       color: '#00CCF5',
       color2: '#2ED9FC',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        'We click a number of pictures and put them in the gallery, but  Portfolio in 24 hrs of FMC Weekend brings you a chance to show your skills on India’s largest digital art festival.'
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ const data = {
       color: '#00CCF5',
       color2: '#2ED9FC',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        'A blank canvas provides one with endless possibilities to create magnificent artworks. Your submissions should belong to any of the given themes. Long exposure Minimalism Architecture Colors of India Winter Conceptual portraits Monochrome'
     },
     {
       id: 4,
@@ -55,7 +55,7 @@ const data = {
       color: '#00CCF5',
       color2: '#2ED9FC',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        '"Banaras is older than history; older than tradition, older than even legends and looks twice as old as all of them out together. Show us your perspective of mystic cultures through your lens.'
     },
     {
       id: 5,
@@ -69,7 +69,7 @@ const data = {
       color: '#00CCF5',
       color2: '#2ED9FC',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        'Snapchase a unique photographic treasure hunt, takes you through an adrenaline rush in a chose around the campus. So get ready and enjoy the ride'
     }
   ],
   outreachData: [
@@ -85,7 +85,7 @@ const data = {
       color: '#FFC900',
       color2: '#FFDC5A',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        'You have to make a video log in the range of 60-600 seconds. It can be about anything- visiting nearby attractions, indulging in festive activities, pulling pranks on people, etc. - as long as it is exciting and in which you can show the theme “COLOUR OF MY CITY”.'
     },
     {
       id: 7,
@@ -99,7 +99,7 @@ const data = {
       color: '#FFC900',
       color2: '#FFDC5A',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        'You will have to give a live solo open-mic performance of your rant. It could be a monologue, an interview, a prank or anything else that can captivate the interest of the public.'
     },
     {
       id: 8,
@@ -113,7 +113,7 @@ const data = {
       color: '#FFC900',
       color2: '#FFDC5A',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        'The participants need to make an advertisement on the provided, within 36 hrs. The themes for the same would be released at the start of the event and participants need to submit their entries in due time.'
     }
   ],
   cineData: [
@@ -129,7 +129,7 @@ const data = {
       color: '#14F0B9',
       color2: '#62FFD8',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        'For this event, however, you’ve got to aim those lenses inwards and tell an interesting story about yourself; hence the theme - “I, Me and My Things – A Story”. Weave a tale involving your personal effects and belongings and make everyone and their friends turn their heads.'
     },
     {
       id: 10,
@@ -143,7 +143,7 @@ const data = {
       color: '#14F0B9',
       color2: '#62FFD8',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        'Frame by Frame is an Open-theme Online Stop motion making event, and stop-motion entries are to be submitted in due time. The participants need to create a stop-motion movie using only inanimate objects.'
     },
     {
       id: 11,
@@ -157,7 +157,7 @@ const data = {
       color: '#14F0B9',
       color2: '#62FFD8',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        'Participants need to make a short film within 50 hours based on the theme provided to them in the campus at the start of the event.'
     },
     {
       id: 12,
@@ -171,7 +171,7 @@ const data = {
       color: '#14F0B9',
       color2: '#62FFD8',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        'Participants will be given different genres ,from which they will choose to make a video based on the clips given to them .The time duration of the video can be from 30-60 seconds.'
     }
   ],
   designData: [
@@ -187,7 +187,7 @@ const data = {
       color: '#685EDA',
       color2: '#9990FF',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        'It’s an Online design challenge to design the cover page of a song or an album.You can also use the elements of the songs or album for the cover.'
     },
     {
       id: 14,
@@ -201,7 +201,7 @@ const data = {
       color: '#685EDA',
       color2: '#9990FF',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        "It's a 24- hour offline event having team of 1-4 people each in which you'll have to rebrand an intriguing company using a different product line than the one it now uses."
     },
     {
       id: 15,
@@ -215,7 +215,7 @@ const data = {
       color: '#685EDA',
       color2: '#9990FF',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        "FrameX is a 7 days long design challenge, in which you'll have to submit an app wireframe and Ui of given PS."
     }
   ],
   mediaData: [
@@ -231,7 +231,7 @@ const data = {
       color: '#FF90E8',
       color2: '#FFC8F4',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        'The participants will be provided with a set of "scenes" and will have to observe them and consolidate their thoughts, after which they would\'ve have to deliver a report just like an on-site reporter by connecting two of those scenes and forming a coherent plot.'
     },
     {
       id: 17,
@@ -245,7 +245,7 @@ const data = {
       color: '#FF90E8',
       color2: '#FFC8F4',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        'Prompts will be given to the participants. They have to write their opinion upon a particular prompt. it will be in an editorial form.'
     },
     {
       id: 18,
@@ -259,22 +259,22 @@ const data = {
       color: '#FF90E8',
       color2: '#FFC8F4',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        'Participants have to come in pairs at the allotted location.They will be provided with the topics randomly. You and your partner have to complete the story by adding sentences alternatively.'
     },
-    {
-      id: 19,
-      img: process.env.REACT_APP_AWS_S3_URI + '/media.svg',
-      genre: 'media',
-      type: 'Contest',
-      title: 'RJ hunt',
-      link: 'https://docs.google.com/document/d/1Z9fW4LqzpUvOg2oNqwqkPZ_eYl8jhGOij02nMpnS2AE/edit?usp=sharing',
-      price: 129,
-      prize: 'Prizes Worth- 8K',
-      color: '#FF90E8',
-      color2: '#FFC8F4',
-      content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
-    },
+    // {
+    //   id: 19,
+    //   img: process.env.REACT_APP_AWS_S3_URI + '/media.svg',
+    //   genre: 'media',
+    //   type: 'Contest',
+    //   title: 'RJ hunt',
+    //   link: 'https://docs.google.com/document/d/1Z9fW4LqzpUvOg2oNqwqkPZ_eYl8jhGOij02nMpnS2AE/edit?usp=sharing',
+    //   price: 129,
+    //   prize: 'Prizes Worth- 8K',
+    //   color: '#FF90E8',
+    //   color2: '#FFC8F4',
+    //   content:
+    //   'The Powerful yet energetic voices of  Radio Jockeys keep you hooked to the show just by their voices. They can make swirl a whole round of emotions around you. If you hold the power to hold the interests of a large audience just by your voice and entertain them throughout, Then FMC Weekend’s RJ hunt is definitely your thing; fasten your seat belt and be ready to get your ability tested by a Professional RJ Himself.'
+    // },
     {
       id: 20,
       img: process.env.REACT_APP_AWS_S3_URI + '/media.svg',
@@ -287,7 +287,7 @@ const data = {
       color: '#FF90E8',
       color2: '#FFC8F4',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        '"To make a great film you need three things - the script, the script and the script."  - Alfred Hitchcock "'
     }
   ],
   animationData: [
@@ -303,7 +303,7 @@ const data = {
       color: '#FE6263',
       color2: '#FD8A8B',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        'Every great animation began with just an idea. What if we gave you the idea of where to start and you show us the best result you can come up with?'
     },
     {
       id: 22,
@@ -317,7 +317,7 @@ const data = {
       color: '#FE6263',
       color2: '#FD8A8B',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        'Take reference of some place in Varanasi or campus and create it. (or some scene which represents the essence of Varanasi)'
     },
     {
       id: 23,
@@ -331,7 +331,7 @@ const data = {
       color: '#FE6263',
       color2: '#FD8A8B',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        'Participants have to create a VFX based video. The scene must be placed in Varanasi.'
     },
     {
       id: 24,
@@ -345,7 +345,7 @@ const data = {
       color: '#FE6263',
       color2: '#FD8A8B',
       content:
-        'Give a live performance of their rant. It could be a monologue, an interview, a prank, etc. Give a live performance of their rant. It could be a monologue, an interview, a prank, etc.'
+        'You need to create a 3D scene. There is no theme. You can use any software to make your scene. Premade 3D models from the internet can be used. A single image will be sent to the judges. Ratings will be done based on the judgment criteria below.'
     }
   ],
   photographyWorkshopData: [
