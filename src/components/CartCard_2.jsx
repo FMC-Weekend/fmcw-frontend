@@ -75,15 +75,17 @@ function CartCard_2(props) {
         <b className="prizes-front">{props.prize}</b>
         <b className="front-price">RS.{props.price}</b>
         <img className="front-img" src={props.img}></img>
-        <img
-          className="three-dots1"
-          src={process.env.REACT_APP_AWS_S3_URI + '/Rectangle133.png'}></img>
-        <img
-          className="three-dots2"
-          src={process.env.REACT_APP_AWS_S3_URI + '/Rectangle133.png'}></img>
-        <img
-          className="three-dots3"
-          src={process.env.REACT_APP_AWS_S3_URI + '/Rectangle133.png'}></img>
+        {/*
+         <img
+           className="three-dots1"
+           src={process.env.REACT_APP_AWS_S3_URI + '/Rectangle133.png'}></img>
+         <img
+           className="three-dots2"
+           src={process.env.REACT_APP_AWS_S3_URI + '/Rectangle133.png'}></img>
+         <img
+           className="three-dots3"
+           src={process.env.REACT_APP_AWS_S3_URI + '/Rectangle133.png'}></img> 
+        */}
       </div>
 
       <div className="card-back card-div">
