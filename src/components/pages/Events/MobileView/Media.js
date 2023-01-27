@@ -44,6 +44,7 @@ function Media() {
                   imgLeft={'7px'}
                   viewStatementLeft={'50px'}
                   addToCartLeft={'6px'}
+                  mode={item.mode}
                   frontLeft={'20px'}
                   display={'none'}
                 />
@@ -51,7 +52,7 @@ function Media() {
             })}
           </div>
           <div className="workshop-cards">
-            {data.mediaWorkshopData.map((item, index) => {
+            {/* {data.mediaWorkshopData.map((item, index) => {
               return (
                 <WorkshopCard
                   img={item.img}
@@ -67,7 +68,7 @@ function Media() {
                   time={item.time}
                 />
               );
-            })}
+            })} */}
           </div>
         </div>
       </section>

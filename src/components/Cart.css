@@ -93,19 +93,29 @@
   display: flex;
   flex-direction: column;
   padding: 60px 60px 0px 60px;
-  width: 800px;
-  height: 600px;
+  width: 1000px;
+  height: 700px;
   margin: auto;
   position: relative;
-  top: 50%;
-  margin-top: 8vh;
+  color: #000;
+  top: 40%;
+  margin-top: 2vh;
   background: #00CCF5;
   border: 2px solid #000000;
   box-shadow: 4px 6px 0px #000000;
   border-radius: 4px;
+  font-family: Montserrat;
   align-items: center;
 }
-
+.container p{
+  font-size: 1.4em;
+  font-weight: 500;
+  text-align: left;
+}
+.container h2 {
+  font-size: 2.4em;
+  font-weight: 600;
+}
 
 /* Full-width input fields */
 
@@ -120,7 +130,9 @@
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   margin-bottom: 15px;
 }
-
+.container .text {
+  text-align: left;
+}
 .container button {
   text-align: center !important;
   color: black;
@@ -173,15 +185,16 @@
 }
 
 .cube1 {
-  width: 123px;
-  height: 144px;
+  width: 103px;
+  height: 124px;
   margin-left: 534px;
-  margin-bottom: -85px;
+  margin-bottom: 10px;
   position: relative;
 }
 
 .submit {
   min-width: 200px;
+  background-color: #ffcf00;
 }
 
 .submit:hover {
@@ -194,7 +207,7 @@
   .container {
     width: 90vw;
     align-items: center;
-    padding: 60px 0px 50px 0px;
+    padding: 157px 29px 44px 14px;
   }
 
   .star,
@@ -217,7 +230,7 @@
 }
 .qr {
   position: relative;
-  height: 200px;
+  height: 100px;
 }
 .star2{
   max-width: 84px;
@@ -518,7 +531,7 @@ padding: 0 2vw;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.6em;
   text-transform: capitalize;
   padding-top: 1rem;
   padding-bottom: 1rem;

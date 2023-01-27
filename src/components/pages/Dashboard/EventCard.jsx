@@ -98,7 +98,7 @@ function EventCard(props) {
           {props.title}
         </b>
         <b className="prizes-front" style={{ left: props.frontLeft }}>
-          Prizes Worth- {props.prize}
+          {props.prize}
         </b>
         <b className="front-price" style={{ left: props.frontLeft }}>
           RS.{props.price}

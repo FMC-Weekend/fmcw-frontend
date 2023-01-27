@@ -56,12 +56,23 @@ function CartCard_2(props) {
   return (
     <div
       className="card card-flip"
-      style={{ background: props.color, top: '0', margin: '0 30px 50px' }}>
+      style={{
+        background: props.color,
+        left: props.left,
+        height: '330px',
+        width: props.width,
+        marginRight: props.marginRight
+      }}>
       <div className="card-front card-div">
-        <b className="type">{props.type}</b>
+        <b className="type" style={{ left: props.frontLeft }}>
+          {props.type}
+        </b>
+        <b className="type2" style={{ left: props.frontLeft }}>
+          online
+        </b>
         <img className="front-arrow" src={process.env.REACT_APP_AWS_S3_URI + '/Vector59.png'}></img>
         <b className="front-title">{props.title}</b>
-        <b className="prizes-front">Prizes Worth- {props.prize}</b>
+        <b className="prizes-front">{props.prize}</b>
         <b className="front-price">RS.{props.price}</b>
         <img className="front-img" src={props.img}></img>
         <img
@@ -76,28 +87,40 @@ function CartCard_2(props) {
       </div>
 
       <div className="card-back card-div">
-        <div className="card-title">
+        <div className="card-title" style={{ width: props.width }}>
           {props.title}
-          <div className="lineTitle"></div>
+          <div className="lineTitle" style={{ left: props.lineLeft }}></div>
         </div>
-        <div className="contents">
+        <div
+          className="contents"
+          style={{
+            left: props.contentLeft,
+            top: props.contentTop,
+            width: props.contentWidth,
+            fontSize: props.contentFont
+          }}>
           <b>{props.content}</b>
         </div>
         <img
           className="viewProbImg"
           src={process.env.REACT_APP_AWS_S3_URI + '/circle-arrow-right-solid.svg'}
           alt="arrow"
+          style={{ left: props.imgLeft }}
         />
-        <a href={props.link} target="_blank" className="btnView" rel="noreferrer">
+        <a
+          href={props.link}
+          target="_blank"
+          className="btnView"
+          rel="noreferrer"
+          style={{ left: props.viewStatementLeft, fontSize: '1.2em' }}>
           {props.ps}
         </a>
         {!props.verified && (
           <button
-            className="addToCart"
+            className="addToCart1"
             style={{ background: props.color2, cursor: 'pointer', fontFamily: 'Manrope' }}
             onClick={() => {
               onDelete(props.mongooseId);
-              // change();
             }}>
             Delete
           </button>

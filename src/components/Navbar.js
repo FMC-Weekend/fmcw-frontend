@@ -208,15 +208,6 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <NavLink
-              to="/sponsors"
-              className="nav-links"
-              activeClassName="target"
-              onClick={closeMobileMenu}>
-              SPONSORS
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink
               to="/team"
               className="nav-links"
               activeClassName="target"

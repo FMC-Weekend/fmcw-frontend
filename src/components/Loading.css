@@ -1,8 +1,9 @@
 .loading_div {
-    padding-top: 30vh;
+    /* padding-top: 0vh; */
     color:#000;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 95vh;
     background-color: #fff;
 }

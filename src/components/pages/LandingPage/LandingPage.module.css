@@ -670,18 +670,25 @@
     display: block;
   }
   .div1 {
-    height: 88vh;
+    height: 100vh;
   }
-  .div1 img {
+  .div1_img {
     top: 0;
     width: 75%;
     left: 15%;
     height: 50vh;
-    top: -5vh;
+    top: -8vh;
+  }
+  .register_button {
+    position: relative;
+    width: 10vw;
+    height: 57px;
+    left: 130px;
+    top: 0;
   }
 
   .div1 h1 {
-    top: 3vh;
+    top: -2vh;
     width: auto;
     left: 0;
     position: relative;
@@ -861,6 +868,14 @@
     position: relative;
     width: 200px;
     height: 10vh;
+  }
+  .div1_logo {
+    position: relative;
+    height: 28px;
+    left: 0;
+    margin: auto;
+    top: 50px;
+    margin-bottom: 100px;
   }
 
   .media {

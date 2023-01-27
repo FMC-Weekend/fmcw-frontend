@@ -157,6 +157,21 @@ body {
 .btn1:hover {
   color: #fff;
 }
+.addToCart1 {
+  margin: auto;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    max-width: 390px;
+    height: 50px;
+    color: #000;
+    top: 142px;
+    font-size: 1.4em;
+    border: 2px solid #000000;
+    border-radius: 0px 0px 22px 22px;
+}
 .card-content {
   padding: 10px 20px;
   color: #000;
@@ -225,8 +240,8 @@ body {
 .card-title {
   margin: 0 auto;
   color: #000;
-  font-family: Work Sans;
-font-size: 25px;
+  font-family: Montserrat;
+font-size: 23px;
 font-weight: 500;
 line-height: 35px;
 letter-spacing: 0em;
@@ -425,6 +440,7 @@ text-align: center;
   font-family: Marcellus;
 
 }
+
 #modal-modal-description ul li {
   display: flex;
   padding: 20px;

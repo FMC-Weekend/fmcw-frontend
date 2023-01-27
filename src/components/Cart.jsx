@@ -16,6 +16,7 @@ import img1 from './CartInfo1.png';
 import img2 from './CartInfo2.png';
 import leftStar from './leftStar.png';
 import rightStar from './rightStar.png';
+import Fade from 'react-reveal/Reveal';
 // import GooglePayButton from '@google-pay/button-react';
 // import Button from './pages/LandingPage/Section/Button/Button';
 import Button from './Button_2';
@@ -79,29 +80,42 @@ function Cart(props) {
     getCartItems();
     // console.log(isTokenValid());
   }, []);
+  async function checkoutHandler() {
+    const token = sessionStorage.getItem('tokenID');
+    try {
+      const res1 = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/user', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          token: token
+        }
+      });
+      const data1 = await res1.json();
+      let obj = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        userID: data1,
+        amount: paymentAmount,
+        transactionID: document.getElementById('ref').value,
+        cartItems: cartItems
+      };
+      console.log(obj);
 
-  async function checkoutHandler(item) {
-    let obj = {
-      name: document.getElementById('name').value,
-      email: document.getElementById('email').value,
-      phone: document.getElementById('phone').value,
-      amount: paymentAmount,
-      cartItems: item,
-      transactionID: document.getElementById('ref').value,
-      redirect_url: process.env.REACT_APP_BACKEND_URI + '/api/pay/callback'
-    };
-    console.log(obj);
-
-    const res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/pay', {
-      method: 'POST',
-      body: JSON.stringify(obj),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
-    // console.log({ obj });
-    const data = await res.json();
-    console.log(data);
+      const res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/pa', {
+        method: 'POST',
+        body: JSON.stringify(obj),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+      // console.log({ obj });
+      const data = await res.json();
+      console.log(data);
+    } catch (e) {
+      console.log(e);
+      alert('Error with authentication, login again');
+    }
 
     //ToDo: You just have to make an API request to /api/send-mail to send the email to the user with the details of the
     // event they have booked and the total payment amount
@@ -156,15 +170,18 @@ function Cart(props) {
           </div>
           <a href="/events">
             <button className="knowMoreBtn">
-              <Link to="/passes">
+              <Link to="/cart">
                 <p>Know More</p>
               </Link>
             </button>
           </a>
-          <div className="imgDiv">
-            <img className="cartImg1" src={img1}></img>
-            <img className="cartImg2" src={img2}></img>
-          </div>
+
+          <Fade right>
+            <div className="imgDiv">
+              <img className="cartImg1" src={img1}></img>
+              <img className="cartImg2" src={img2}></img>
+            </div>
+          </Fade>
         </div>
         {/* <div className="purchase_details"> */}
         {/* <a href="/events">
@@ -206,52 +223,54 @@ function Cart(props) {
               </div>
             </div>
             <div className="lapTopView">
-              <div className="contest_cards">
-                {console.log(cartItems.length)}
-                {cartItems.length == undefined || cartItems.length == 0 ? (
-                  <a href="/events">
-                    <section
-                      className="addContest"
-                      style={{ margin: '0px 30px 50px', right: 'auto', position: 'relative' }}>
-                      <h1>+</h1>
-                      <h2>Add more contest</h2>
-                    </section>
-                  </a>
-                ) : (
-                  <a href="/events">
-                    <section className="addContest">
-                      <h1>+</h1>
-                      <h2>Add more contest</h2>
-                    </section>
-                  </a>
-                )}
+              <Fade bottom>
+                <div className="contest_cards">
+                  {console.log(cartItems.length)}
+                  {cartItems.length == undefined || cartItems.length == 0 ? (
+                    <a href="/events">
+                      <section
+                        className="addContest"
+                        style={{ margin: '0px 30px 50px', right: 'auto', position: 'relative' }}>
+                        <h1>+</h1>
+                        <h2>Add more contest</h2>
+                      </section>
+                    </a>
+                  ) : (
+                    <a href="/events">
+                      <section className="addContest">
+                        <h1>+</h1>
+                        <h2>Add more contest</h2>
+                      </section>
+                    </a>
+                  )}
 
-                <div className="event_cards">
-                  {cartItems.map((item, index) => {
-                    console.log(item, index, 'fdsdfghioluyjtrgfguiu');
-                    if (item.Type === 'Contest' && !item.verifyStatus) {
-                      return (
-                        <CartCard_2
-                          img={item.img}
-                          title={item.title}
-                          type={item.type}
-                          link={item.link}
-                          price={item.price}
-                          prize={item.prize}
-                          content={item.content}
-                          item={item}
-                          key={index}
-                          color={item.color}
-                          color2={item.color2}
-                          verified={item.verifyStatus}
-                          mongooseId={item._id}
-                        />
-                      );
-                    }
-                    return '';
-                  })}
+                  <div className="event_cards">
+                    {cartItems.map((item, index) => {
+                      console.log(item, index, 'fdsdfghioluyjtrgfguiu');
+                      if (item.Type === 'Contest' && !item.verifyStatus) {
+                        return (
+                          <CartCard_2
+                            img={item.img}
+                            title={item.title}
+                            type={item.type}
+                            link={item.link}
+                            price={item.price}
+                            prize={item.prize}
+                            content={item.content}
+                            item={item}
+                            key={index}
+                            color={item.color}
+                            color2={item.color2}
+                            verified={item.verifyStatus}
+                            mongooseId={item._id}
+                          />
+                        );
+                      }
+                      return '';
+                    })}
+                  </div>
                 </div>
-              </div>
+              </Fade>
             </div>
             <div className="mobileView">
               <div className="contest_cards">
@@ -396,11 +415,17 @@ function Cart(props) {
           className="payment-modal">
           <Box>
             <div className="back"></div>
-
-            <form className="container" onSubmit={(e) => checkoutHandler(e)}>
+            <div className="container">
+              <h2>Checkout</h2>
+              <p>
+                Just one more step to go. Complete your transaction and be part of FMC Weekend’23.
+              </p>
               <img src="Star.png" className="star3" />
               <img src="qr_fmc.jpeg" className="qr" />
               <div className="text">
+                <label htmlFor="name" className="input-title">
+                  <b>Name</b>
+                </label>
                 <input
                   className="register-input"
                   value={sessionStorage.getItem('name')}
@@ -410,6 +435,9 @@ function Cart(props) {
                   required
                 />
                 <hr />
+                <label htmlFor="email" className="input-title">
+                  <b>Email ID</b>
+                </label>
                 <input
                   className="register-input"
                   value={sessionStorage.getItem('email')}
@@ -419,14 +447,20 @@ function Cart(props) {
                   required
                 />
                 <hr />
+                <label htmlFor="phone" className="input-title">
+                  <b>Phone No</b>
+                </label>
                 <input
                   className="register-input"
-                  type="phone"
+                  type="tel"
                   id="phone"
                   placeholder="Contact Number"
                   required
                   pattern="^[0-9]{10,10}$"
                 />
+                <label htmlFor="transactionID" className="input-title">
+                  <b>Transaction ID</b>
+                </label>
                 <input
                   className="register-input"
                   type="text"
@@ -447,7 +481,7 @@ function Cart(props) {
                 Submit
               </button>
               <img src="Cube.svg" className="cube1" />
-            </form>
+            </div>
             {/* <Typography id="modal-modal-title" variant="h6" component="h2">
               <h1>Payment Details</h1>
             </Typography>

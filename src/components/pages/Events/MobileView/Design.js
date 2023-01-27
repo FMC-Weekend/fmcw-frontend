@@ -44,6 +44,7 @@ function Design() {
                   imgLeft={'7px'}
                   viewStatementLeft={'50px'}
                   addToCartLeft={'6px'}
+                  mode={item.mode}
                   frontLeft={'20px'}
                   display={'none'}
                 />
@@ -51,7 +52,7 @@ function Design() {
             })}
           </div>
           <div className="workshop-cards">
-            {data.designWorkshopData.map((item, index) => {
+            {/* {data.designWorkshopData.map((item, index) => {
               return (
                 <WorkshopCard
                   img={item.img}
@@ -67,7 +68,7 @@ function Design() {
                   time={item.time}
                 />
               );
-            })}
+            })} */}
           </div>
         </div>
       </section>

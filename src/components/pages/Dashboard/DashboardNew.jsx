@@ -14,15 +14,15 @@ function DashBoardNew() {
   const { items } = useCart();
   const [isLoading, setIsLoading] = useState(false);
   const [userData, setUserData] = useState({
-    name: 'Tony Stark',
-    email: 'tony.stark@itbhu.ac.in',
-    college: 'Foo',
+    name: 'User',
+    email: '',
+    college: '',
     phone: 'XXXXXXXXXX',
-    yearOfStudy: '2',
-    instaHandle: '_blah_',
+    yearOfStudy: '',
+    instaHandle: '',
     userType: '-1',
     cartItems: [],
-    refCode: '45646'
+    refCode: ''
   });
   const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
   const logoutHandler = () => {
@@ -141,12 +141,12 @@ function DashBoardNew() {
       </div>
       <div className={Classes.lapTopView}>
         <div className={Classes.contest_cards}>
-          {/* <a href='/events'>
-          <section className={Classes.addContest}>
-            <h1>+</h1>
-            <h2>Add more contest</h2>
-          </section>
-          </a> */}
+          <a href="/events">
+            <section className={Classes.addContest}>
+              <h1>+</h1>
+              <h2>Add more contest</h2>
+            </section>
+          </a>
           {/* <div className="event-cards"> */}
           <div className={Classes.event_cards}>
             {userData.cartItems.map((item, index) => {
@@ -176,16 +176,16 @@ function DashBoardNew() {
       </div>
       <div className={Classes.mobileView}>
         <div className={Classes.contest_cards}>
-          {/* <a href='/events'>
-          <section className={Classes.addContest}>
-            <h1>+</h1>
-            <h2>Add more contest</h2>
-          </section>
-          </a> */}
+          <a href="/events">
+            <section className={Classes.addContest}>
+              <h1>+</h1>
+              <h2>Add more contest</h2>
+            </section>
+          </a>
           {/* <div className="event-cards"> */}
           <div className={Classes.event_cards}>
             {userData.cartItems.map((item, index) => {
-              if (item.Type === 'Contest') {
+              if (item.Type === 'Contest' && item.verifyStatus) {
                 return (
                   <EventCard
                     img={item.img}
@@ -226,16 +226,16 @@ function DashBoardNew() {
       </div>
       <div className={Classes.lapTopView}>
         <div className={Classes.contest_cards}>
-          {/* <a href='/events'>
-          <section className={Classes.addWorkshop}>
-          <h1>+</h1>
-          <h2>Add more workshop</h2>
-          </section>
-        </a> */}
+          <a href="/events">
+            <section className={Classes.addWorkshop}>
+              <h1>+</h1>
+              <h2>Add more workshop</h2>
+            </section>
+          </a>
           {/* <div className="event-cards"> */}
           <div className={Classes.event_cards}>
             {userData.cartItems.map((item, index) => {
-              if (item.Type === 'Workshop') {
+              if (item.Type === 'Workshop' && item.verifyStatus) {
                 return (
                   <WorkshopCard
                     img={item.img}
@@ -259,16 +259,16 @@ function DashBoardNew() {
       </div>
       <div className={Classes.mobileView}>
         <div className={Classes.contest_cards}>
-          {/* <a href='/events'>
+          <a href='/events'>
           <section className={Classes.addWorkshop}>
           <h1>+</h1>
           <h2>Add more workshop</h2>
           </section>
-        </a> */}
+        </a>
           {/* <div className="event-cards"> */}
           <div className={Classes.event_cards}>
             {userData.cartItems.map((item, index) => {
-              if (item.Type === 'Workshop') {
+              if (item.Type === 'Workshop' && item.verifyStatus) {
                 return (
                   <WorkshopCard
                     margin={'0'}

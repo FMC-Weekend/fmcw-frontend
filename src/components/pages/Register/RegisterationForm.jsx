@@ -25,6 +25,7 @@ function RegisterationForm() {
     console.log({ obj });
     const data = await res.json();
     console.log(data);
+    
     if (data.message === 'success') {
       window.location.href = '/dashboard';
     } else {
@@ -32,12 +33,17 @@ function RegisterationForm() {
       alert(data.message);
       // window.location.href = "/register";
     }
+    
+      
+    window.location.reload();
   }
   const authCtx = useContext(AuthContext);
   return (
     <form className={`${Classes.section} ${Classes.form_class}`} onSubmit={(e) => handleSubmit(e)}>
       <div className={Classes.container}>
         <img src="Star.png" className={Classes.star} />
+        <p className={Classes.main_title}>Register</p>
+        <p className={Classes.top}> Let's get to know you a bit. We are a step closer to the world of FMC Weekend. </p>
         <input
           type="text"
           name="name"

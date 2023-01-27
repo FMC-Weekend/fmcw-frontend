@@ -89,6 +89,14 @@
 .linkedin:hover {
   background: #0a66c2;
 }
+.twitter {
+  background: #00acee;
+  padding: 7px;
+  margin: 10px;
+}
+.twitter:hover {
+  background: #00acee;
+}
 .footer {
   background-color: #fff;
   width: 100%;

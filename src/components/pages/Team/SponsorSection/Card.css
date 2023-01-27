@@ -7,17 +7,15 @@
 }
 
 .position {
-  height: 29px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 22px;
   color: #121212;
-  position: absolute;
   width: 302px;
-  top: 340px;
   text-align: center;
+  margin-top: 17px;
 }
 
 .team-card {
@@ -109,7 +107,7 @@
   color: #000000;
   position: absolute;
   width: 302px;
-  top: 372px;
+  margin-top: 1px;
   text-align: center;
 }
 
@@ -120,7 +118,7 @@
     /* max-width: calc(45% - 1em); */
     width: 280px;
     height: 410px;
-    margin-left: -30px;
+    margin-left: -38px;
     display: flex;
     justify-content: space-between;
   }
@@ -132,8 +130,13 @@
   .cardImg{
     width: 225px;
     height: 270px;
+    margin: 33px 0px 0px 21px;
+
   }
 
+  .stars{
+    left: -29px;
+  }
   .cardImg img{
     width: 235px;
     height: 270px;
@@ -141,14 +144,16 @@
 
   .position{
     position: absolute;
-    top: 330px;
+    top: 309px;
     width: 280px;
+    font-size: 22px;
   }
 
   .cardTitle{
     position:absolute;
-    top: 360px;
+    top: 362px;
     width: 280px;
+    font-size: 22px;
   }
 
   .drink{

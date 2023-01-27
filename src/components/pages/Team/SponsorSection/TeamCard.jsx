@@ -3,9 +3,6 @@ import styled from 'styled-components';
 import './Card.css';
 import Fade from 'react-reveal/Fade';
 
-const CardTitle = styled.h3`
-  transform: translateZ(55px);
-`;
 
 function TeamCard(props) {
   const options = {
@@ -33,9 +30,9 @@ function TeamCard(props) {
             <img src={props.img} alt="" />
           </div>
 
-          <CardTitle className="position">{props.position}</CardTitle>
+          <h3 className="position">{props.position}</h3>
         </div>
-        <CardTitle className="cardTitle">{props.name}</CardTitle>
+        <h3 className="cardTitle">{props.name}</h3>
       </div>
     </Fade>
   );

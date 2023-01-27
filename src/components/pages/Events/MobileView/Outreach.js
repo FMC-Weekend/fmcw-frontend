@@ -44,6 +44,7 @@ function Outreach() {
                   imgLeft={'7px'}
                   viewStatementLeft={'50px'}
                   addToCartLeft={'6px'}
+                  mode={item.mode}
                   frontLeft={'20px'}
                   display={'none'}
                 />
@@ -51,7 +52,7 @@ function Outreach() {
             })}
           </div>
           <div className="workshop-cards">
-            {data.outreachWorkshopData.map((item, index) => {
+            {/* {data.outreachWorkshopData.map((item, index) => {
               return (
                 <WorkshopCard
                   img={item.img}
@@ -67,7 +68,7 @@ function Outreach() {
                   time={item.time}
                 />
               );
-            })}
+            })} */}
           </div>
         </div>
       </section>

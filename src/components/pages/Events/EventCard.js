@@ -17,7 +17,7 @@ import rectangle from './Rectangle133.png';
 import arrow from './Vector59.png';
 // import frontImg from './Group7175.png';
 import viewProbImg from './Vector.png';
-
+import Fade from 'react-reveal/Fade';
 const CardTitle = styled.h2`
   transform: translateZ(55px);
 `;
@@ -79,87 +79,88 @@ function EventCard(props) {
     scale: 1.06
   };
   return (
-    <div
-      className="card card-flip"
-      style={{
-        background: props.color,
-        left: props.left,
-        height: props.height,
-        width: props.width,
-        marginRight: props.marginRight
-      }}>
-      <div className="card-front card-div">
-        <b className="type" style={{ left: props.frontLeft }}>
-          {props.type}
-        </b>
-        <img className="front-arrow" src={arrow} style={{ display: props.display }}></img>
-        <b className="front-title" style={{ left: props.frontLeft }}>
-          {props.title}
-        </b>
-        <b className="prizes-front" style={{ left: props.frontLeft }}>
-          Prizes Worth- {props.prize}
-        </b>
-        <b className="front-price" style={{ left: props.frontLeft }}>
-          RS.{props.price}
-        </b>
-        <img className="front-img" src={props.img} style={{ left: props.frontLeft }}></img>
-        <img className="three-dots1" src={rectangle} style={{ display: props.display }}></img>
-        <img className="three-dots2" src={rectangle} style={{ display: props.display }}></img>
-        <img className="three-dots3" src={rectangle} style={{ display: props.display }}></img>
-      </div>
-
-      <div className="card-back card-div">
-        <div className="card-title" style={{ width: props.width }}>
-          {props.title}
-          <div className="lineTitle" style={{ left: props.lineLeft }}></div>
+    <Fade left>
+      <div
+        className="card card-flip"
+        style={{
+          background: props.color,
+          left: props.left,
+          height: '300px',
+          width: props.width,
+          marginRight: props.marginRight
+        }}>
+        <div className="card-front card-div">
+          <b className="type" style={{ left: props.frontLeft }}>
+            {props.type}
+          </b>
+          <b className="type2" style={{ left: props.frontLeft }}>
+            {props.mode}
+          </b>
+          <img className="front-arrow" src={arrow} style={{ display: props.display }}></img>
+          <b className="front-title" style={{ left: props.frontLeft }}>
+            {props.title}
+          </b>
+          <b className="prizes-front">{props.prize}</b>
+          <b className="front-price" style={{ left: props.frontLeft }}>
+            RS.{props.price}
+          </b>
+          <img
+            className="front-img"
+            src={props.img}
+            style={{ right: props.frontLeft, right: '10px' }}></img>
         </div>
-        <div
-          className="contents"
-          style={{
-            left: props.contentLeft,
-            top: props.contentTop,
-            width: props.contentWidth,
-            fontSize: props.contentFont
-          }}>
-          <b>{props.content}</b>
-        </div>
-        <img className="viewProbImg" src={viewProbImg} style={{ left: props.imgLeft }}></img>
-        <a
-          href={props.link}
-          target="_blank"
-          className="btnView"
-          rel="noreferrer"
-          style={{ left: props.viewStatementLeft, fontSize: '1.2em' }}>
-          {props.ps}
-        </a>
-        {sessionStorage.getItem('isLoggedIn') == 'true' ? (
-          <div
-            className="addToCart"
-            style={{ background: props.color2, cursor: 'pointer', fontFamily:"Manrope" }}
 
-            onClick={() => {
-              // send post request to database
-
-              addItemToCart(props.item);
-              // addItem(props.item);
-
-              // change();
-            }}>
-            {props.ps2}
+        <div className="card-back card-div">
+          <div className="card-title" style={{ width: props.width }}>
+            {props.title}
+            <div className="lineTitle" style={{ left: props.lineLeft }}></div>
           </div>
-        ) : (
+          <div
+            className="contents"
+            style={{
+              left: props.contentLeft,
+              top: props.contentTop,
+              width: props.contentWidth,
+              fontSize: props.contentFont
+            }}>
+            <b>{props.content}</b>
+          </div>
+          <img className="viewProbImg" src={viewProbImg} style={{ left: props.imgLeft }}></img>
           <a
-            className="addToCart"
+            href={props.link}
             target="_blank"
-            href="/authentication"
+            className="btnView"
             rel="noreferrer"
-            style={{ background: props.color2}}
-            >
-            Login To Add
+            style={{ left: props.viewStatementLeft, fontSize: '1.2em' }}>
+            {props.ps}
           </a>
-        )}
+          {sessionStorage.getItem('isLoggedIn') == 'true' ? (
+            <div
+              className="addToCart"
+              style={{ background: props.color2, cursor: 'pointer', fontFamily: 'Manrope' }}
+              onClick={() => {
+                // send post request to database
+
+                addItemToCart(props.item);
+                // addItem(props.item);
+
+                // change();
+              }}>
+              {props.ps2}
+            </div>
+          ) : (
+            <a
+              className="addToCart"
+              target="_blank"
+              href="/authentication"
+              rel="noreferrer"
+              style={{ background: props.color2 }}>
+              Login To Add
+            </a>
+          )}
+        </div>
       </div>
-    </div>
+    </Fade>
   );
 }
 EventCard.defaultProps = {

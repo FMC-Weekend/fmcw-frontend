@@ -70,7 +70,6 @@ export default function VerticalTabs() {
           marginTop: '0px',
           boxSizing: 'border-box',
           width: '360px',
-          left: '1px',
           top: '0px',
           background: color,
           border: '2px solid #000000',
@@ -114,6 +113,7 @@ export default function VerticalTabs() {
                     color2={item.color2}
                     item={item}
                     key={index}
+                    mode={item.mode}
                     marginRight={'70px'}
                     left={'95px'}
                   />
@@ -125,7 +125,7 @@ export default function VerticalTabs() {
         </div>
 
         <div className="workshop-cards">
-          {data.photographyWorkshopData.map((item, index) => {
+          {/* {data.photographyWorkshopData.map((item, index) => {
             return (
               // <Modal>
                 <WorkshopCard
@@ -143,7 +143,7 @@ export default function VerticalTabs() {
                 />
               // </Modal>
             );
-          })}
+          })} */}
         </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
@@ -165,6 +165,7 @@ export default function VerticalTabs() {
                     key={index}
                     color={item.color}
                     color2={item.color2}
+                    mode={item.mode}
                     marginRight={'70px'}
                     left={'95px'}
                   />
@@ -176,7 +177,7 @@ export default function VerticalTabs() {
         </div>
 
         <div className="workshop-cards">
-          {data.cineWorkshopData.map((item, index) => {
+          {/* {data.cineWorkshopData.map((item, index) => {
             return (
               <WorkshopCard
                 img={item.img}
@@ -192,7 +193,7 @@ export default function VerticalTabs() {
                 time={item.time}
               />
             );
-          })}
+          })} */}
         </div>
       </TabPanel>
       <Divider />
@@ -214,6 +215,7 @@ export default function VerticalTabs() {
                     key={index}
                     color={item.color}
                     color2={item.color2}
+                    mode={item.mode}
                     marginRight={'70px'}
                     left={'95px'}
                   />
@@ -222,7 +224,7 @@ export default function VerticalTabs() {
             </Fade>
           </div>
           <div className="workshop-cards">
-            {data.outreachWorkshopData.map((item, index) => {
+            {/* {data.outreachWorkshopData.map((item, index) => {
               return (
                 <WorkshopCard
                   img={item.img}
@@ -238,7 +240,7 @@ export default function VerticalTabs() {
                   time={item.time}
                 />
               );
-            })}
+            })} */}
           </div>
         </div>
       </TabPanel>
@@ -261,6 +263,7 @@ export default function VerticalTabs() {
                     key={index}
                     color={item.color}
                     color2={item.color2}
+                    mode={item.mode}
                     marginRight={'70px'}
                     left={'95px'}
                   />
@@ -270,7 +273,7 @@ export default function VerticalTabs() {
           </div>
 
           <div className="workshop-cards">
-            {data.mediaWorkshopData.map((item, index) => {
+            {/* {data.mediaWorkshopData.map((item, index) => {
               return (
                 <WorkshopCard
                   img={item.img}
@@ -286,7 +289,7 @@ export default function VerticalTabs() {
                   time={item.time}
                 />
               );
-            })}
+            })} */}
           </div>
         </div>
       </TabPanel>
@@ -309,6 +312,7 @@ export default function VerticalTabs() {
                     key={index}
                     color={item.color}
                     color2={item.color2}
+                    mode={item.mode}
                     marginRight={'70px'}
                     left={'95px'}
                   />
@@ -318,7 +322,7 @@ export default function VerticalTabs() {
           </div>
 
           <div className="workshop-cards">
-            {data.designWorkshopData.map((item, index) => {
+            {/* {data.designWorkshopData.map((item, index) => {
               return (
                 <WorkshopCard
                   img={item.img}
@@ -334,7 +338,7 @@ export default function VerticalTabs() {
                   time={item.time}
                 />
               );
-            })}
+            })} */}
           </div>
         </div>
       </TabPanel>
@@ -357,6 +361,7 @@ export default function VerticalTabs() {
                     key={index}
                     color={item.color}
                     color2={item.color2}
+                    mode={item.mode}
                     marginRight={'70px'}
                     left={'95px'}
                   />
@@ -366,7 +371,7 @@ export default function VerticalTabs() {
           </div>
 
           <div className="workshop-cards">
-            {data.animationWorkshopData.map((item, index) => {
+            {/* {data.animationWorkshopData.map((item, index) => {
               return (
                 <WorkshopCard
                   img={item.img}
@@ -382,7 +387,7 @@ export default function VerticalTabs() {
                   time={item.time}
                 />
               );
-            })}
+            })} */}
           </div>
         </div>
       </TabPanel>
