@@ -681,7 +681,7 @@ text-align: center;
     /* margin-right: -10px; */
     flex-wrap: wrap;
     min-width: 260px;
-    /* height: 400px; */
+    height: 350px !important ;
     margin-top: 40px;
   }
   .w-card {

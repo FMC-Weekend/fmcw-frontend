@@ -753,8 +753,15 @@ flip card
   color: #121212;
 }
 @media screen and (max-width: 1006px) {
+  .addToCart{
+    height: 50px;
+  }
   .btnView {
     font-size: 15px !important;
+    margin-top: 30px;
+  }
+  .viewProbImg{
+    margin-top: 30px;
   }
   .event_page {
     background-color: #1d033e;
