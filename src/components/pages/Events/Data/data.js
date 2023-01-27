@@ -177,11 +177,11 @@ const data = {
       type: 'Contest',
       title: 'Trim it up',
       link: 'https://drive.google.com/file/d/189zd_IScMRLzf3uAx4ZLx_VwK2VbMVoG/view?usp=share_link',
-      price: 249,
+      price: 179,
       prize: 'Prizes Worth- 10K',
       color: '#14F0B9',
       color2: '#62FFD8',
-      mode: 'OFFLINE',
+      mode: 'ONLINE',
       content:
         'Participants will be given different genres ,from which they will choose to make a video based on the clips given to them .The time duration of the video can be from 30-60 seconds.'
     }
@@ -330,7 +330,7 @@ const data = {
       img: process.env.REACT_APP_AWS_S3_URI + '/anim.svg',
       genre: 'animation',
       type: 'Contest',
-      title: 'Artspace',
+      title: 'Artspcape',
       link: 'https://drive.google.com/file/d/125YOCPabo-UTDNW4Hbxz3zqCpkq_qglL/view?usp=share_link',
       price: 249,
       prize: 'Prizes Worth- 15K',
