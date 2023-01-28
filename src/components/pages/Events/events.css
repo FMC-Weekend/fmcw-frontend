@@ -329,7 +329,7 @@ flip card
 .front-arrow {
   position: absolute;
   height: 60px;
-  left: 310px;
+  left: 300px;
   top: 17px;
 }
 .front-img {
@@ -753,6 +753,13 @@ flip card
   color: #121212;
 }
 @media screen and (max-width: 1006px) {
+  .front-arrow {
+    display: block !important;
+    position: absolute;
+    height: 50px;
+    left: 180px;
+    top: 30px;
+  }
   .addToCart{
     height: 50px;
   }
@@ -775,8 +782,12 @@ flip card
   .prizes-front, .front-price{
     font-size: 22px;
   }
+  .front-price {
+    margin-top: 75px;
+  }
   .front-img{
     margin-left: 151px;
+    margin-top: -40px;
   }
   body {
     background: #1d033e;

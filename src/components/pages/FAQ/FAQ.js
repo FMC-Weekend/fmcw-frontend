@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { IconContext } from 'react-icons';
-import { BsArrowDown } from 'react-icons/bs';
-import { TiArrowUpOutline} from 'react-icons/ti'
 import { Data } from './Data';
 import Footer from '../../Footer';
 import { Fade } from 'react-reveal';
 import leftStar from '../../leftStar.png';
 import rightStar from '../../rightStar.png';
+import UpArrow from '../../UpArrowFaq.svg';
+import DownArrow from '../../downArrowFaq.svg';
+import { width } from '@mui/system';
 // import './FAQ.css';
 
 const AccordionSection = styled.div`
@@ -168,7 +169,7 @@ function Accordion() {
                     </h1>
                   </div>
                   <span style={{ fontFamily: 'Montserrat', fontStyle: 'normal' }}>
-                    {clicked === index ? <TiArrowUpOutline /> : <BsArrowDown />}
+                    {clicked === index ? <img src={UpArrow} style={{maxWidth: "max-content"}} />  : <img style={{maxWidth: "max-content"}} src={DownArrow} /> }
                   </span>
                 </Wrap>
                 <hr style={{ color: 'black', border: '0.25px solid #000000' }}></hr>
