@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { IconContext } from 'react-icons';
-import { BsArrowDown } from 'react-icons/bs';
-import { TiArrowUpOutline} from 'react-icons/ti'
+import UpArrow from '../../UpArrowFaq.svg';
+import DownArrow from '../../downArrowFaq.svg';
 import { Data } from './Data';
 import Footer from '../../Footer';
 import { Fade } from 'react-reveal';
@@ -16,15 +16,18 @@ const AccordionSection = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 100vh;
+  height: 150vh;
   width: 100%;
   overflow-x: hidden;
   background: #fff;
   @media (max-width: 768px) {
-    height: 80vh;
+    height: 120vh;
+  }
+  @media (max-width: 500px) {
+    height: 150vh;
   }
 `;
-
+  
 const Container = styled.div`
   position: absolute;
   top: 5%;
@@ -168,7 +171,7 @@ function Accordion() {
                     </h1>
                   </div>
                   <span style={{ fontFamily: 'Montserrat', fontStyle: 'normal' }}>
-                    {clicked === index ? <TiArrowUpOutline /> : <BsArrowDown />}
+                    {clicked === index ? <img src={UpArrow} style={{maxWidth: "max-content"}} /> : <img style={{maxWidth: "max-content"}} src={DownArrow} />}
                   </span>
                 </Wrap>
                 <hr style={{ color: 'black', border: '0.25px solid #000000' }}></hr>
