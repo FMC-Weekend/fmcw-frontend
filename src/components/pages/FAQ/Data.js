@@ -24,6 +24,30 @@ export const Data = [
     question: 'How does the referral code work?',
     answer:
       "Each participant will be provided with a referral code, which they may distribute among their acquaintances, who would receive a 10% discount on their pass prices. The leaderboard will display the number of times a referral code has been used and rank the participants accordingly. Whosoever's referral code is used the maximum number of times will receive cash prizes worth 3k!"
+  },
+  {
+    question: 'Are vehicles allowed inside?',
+    answer: "Yes, vehicles are allowed."
+  },
+  {
+    question: 'Should I carry ID proof every time?',
+    answer: "It is preferable to carry an ID Card as well as Event Passes."
+  }, 
+  {
+    question: 'How will I find out about the timings of events?',
+    answer: "Stay tuned to our social handles and be in touch with event coordinators for event timings."
+  },
+  {
+    question: 'What are the specific venues for events in IIT BHU?',
+    answer: "FMC Weekend will take place in IIT BHU Campus. Specific Venues for all offline events and Pronites will be communicated on our social media handles (Instagram - @fmc_weekend, Facebook - FMC Weekend and LinkedIn - FMC Weekend) "
+  },
+  {
+    question: 'Are on-spot registrations allowed during the fest?',
+    answer: "Yes, on-spot registrations are allowed for offline events. For online events, registrations must be done before the event begins."
+  },
+  {
+    question: ' Are there any online competitions?',
+    answer: "Yes, there are both online and offline competitions, for more information regarding each event, check out https://www.fmcweekend.in/event"
   }
 
   // {

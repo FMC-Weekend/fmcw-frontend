@@ -108,7 +108,7 @@ function landingPage() {
             <section className={Classes.button_2}>
             <a href="/events/#vertical-tab-1">
               <button className={Classes.cine}>
-                <p>Cine</p>
+                <p>Cinematography</p>
               </button>
               </a>
               <a href="/events/#vertical-tab-5">
