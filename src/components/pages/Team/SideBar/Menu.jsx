@@ -22,7 +22,8 @@ const menuItems = {
   sponsor_7: null,
   sponsor_8: null,
   sponsor_9: null,
-  sponsor_10: null
+  sponsor_10: null,
+  sponsor_11: null
 };
 
 const menuItemNames = {
