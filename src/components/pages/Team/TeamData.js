@@ -172,7 +172,7 @@ const data = {
   convenorData: [
     {
       id: 20,
-      img: process.env.REACT_APP_AWS_S3_URI,
+      img: process.env.REACT_APP_AWS_S3_URI + '/Convenors/Nilesh.jpg',
       position: 'Convenor',
       name: 'Nilesh Prem Prakash'
     },
@@ -184,7 +184,7 @@ const data = {
     },
     {
       id: 22,
-      img: process.env.REACT_APP_AWS_S3_URI,
+      img: process.env.REACT_APP_AWS_S3_URI + '/Convenors/Siddharth.jpg',
       position: 'Co-Convenor',
       name: 'Siddhart Verma'
     }

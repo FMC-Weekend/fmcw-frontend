@@ -146,15 +146,13 @@
   }
 
   .position{
-    position: absolute;
-    top: 289px;
     width: 280px;
     font-size: 22px;
   }
 
   .cardTitle{
     position:absolute;
-    top: 322px;
+    margin-top: 330px;
     width: 280px;
     font-size: 22px;
   }
