@@ -22,23 +22,21 @@ const menuItems = {
   sponsor_7: null,
   sponsor_8: null,
   sponsor_9: null,
-  sponsor_10: null,
-  sponsor_11: null
+  sponsor_10: null
 };
 
 const menuItemNames = {
   // sponsors: "Sponsors",
   sponsor_1: 'Convenors',
   sponsor_2: 'General Secretary',
-  sponsor_3: 'Content Team',
-  sponsor_4: 'Design',
-  sponsor_5: 'Event',
-  sponsor_6: 'Marketing',
-  sponsor_7: 'Publicity',
-  sponsor_8: 'Public Relations',
-  sponsor_9: 'Social Media',
-  sponsor_10: 'Tech',
-  sponsor_11: 'Secretaries'
+  sponsor_3: 'Design',
+  sponsor_4: 'Event',
+  sponsor_5: 'Marketing',
+  sponsor_6: 'Publicity',
+  sponsor_7: 'Public Relations',
+  sponsor_8: 'Social Media',
+  sponsor_9: 'Tech',
+  sponsor_10: 'Secretaries'
 };
 
 /*
@@ -75,7 +73,7 @@ function Menu() {
    * Programmatically determine where to set AnchorPoints for our Menu
    */
   const getAnchorPoints = () => {
-    const curScroll = window.scrollY - 80;
+    const curScroll = window.scrollY - 60;
     // const viewPortHeight = Math.max(
     //   document.documentElement.clientHeight,
     //   window.innerHeight || 0

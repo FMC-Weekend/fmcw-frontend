@@ -22,7 +22,7 @@ const style = {
   width: 400,
   bgcolor: '#fff',
   boxShadow: 24,
-  p: 4
+  p: 5
 };
 function Pass(props) {
   return (
@@ -41,12 +41,15 @@ function Pass(props) {
           </p>
         </div>
         <div className="pass-img">
-          <img src={process.env.REACT_APP_AWS_S3_URI + '/Group_7256.svg'} alt=""/>
+        
+          <img src={process.env.REACT_APP_AWS_S3_URI + '/Group_7256.svg'} alt="" />
+
         </div>
         <div className="heading"><img src="/images/greenStar.svg" className="headingImg"/>OFFLINE<img src="/images/greenStar.svg" className="headingImg"/></div>
         
         <div className="pass-cards">
           <NavLink to="/events">
+
             {/*
              <img
                src={process.env.REACT_APP_AWS_S3_URI + '/event-pass.svg'}
@@ -94,7 +97,7 @@ function Pass(props) {
           <NavLink to="/events">
             <img src="/images/online2.svg" className='pass_card'/>
           </NavLink>
-
+         
         </div>
       </section>
       <Footer />

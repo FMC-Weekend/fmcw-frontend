@@ -1,6 +1,9 @@
-import { Fragment, useContext } from 'react';
+import { Fragment, useContext, useState } from 'react';
 import AuthContext from '../../../store/auth-context';
 import Classes from './Registeration.module.css';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
+import startsWith from 'lodash.startswith';
 
 function RegisterationForm() {
   async function handleSubmit(e) {
@@ -8,11 +11,11 @@ function RegisterationForm() {
     let obj = {
       email: e.target[1].value,
       college: e.target[2].value,
-      number: e.target[3].value,
-      year: e.target[4].value,
-      redeem: e.target[5].value,
-      instaHandle: e.target[6].value,
-      userType: e.target[7].value //insti user usertype 0
+      number: value,
+      // year: e.target[3].value,
+      redeem: e.target[4].value,
+      instaHandle: e.target[5].value,
+      userType: e.target[6].value //insti user usertype 0
     };
 
     const res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/user', {
@@ -34,8 +37,9 @@ function RegisterationForm() {
       // window.location.href = "/register";
     }
 
-    window.location.reload();
+    // window.location.reload();
   }
+  const [value, setValue] = useState();
   const authCtx = useContext(AuthContext);
   return (
     <form className={`${Classes.section} ${Classes.form_class}`} onSubmit={(e) => handleSubmit(e)}>
@@ -83,9 +87,32 @@ function RegisterationForm() {
           />
         )}
         <label htmlFor="phone" className={Classes.title}>
-          <b>Phone Number (+91)</b>
+          <b>Phone Number</b>
         </label>
-        <input type="tel" name="phone" placeholder="" required pattern="^[0-9]{10,10}$" />
+        <PhoneInput
+          inputProps={{
+            id: 'phone',
+            required: true
+          }}
+          inputStyle={{
+            width: '100%',
+            display: 'inline-block',
+            border: '2px solid #000000',
+            background: '#f7f7f7',
+            borderRadius: '0',
+            height: '58px',
+            fontFamily: 'Montserrat, Arial, Helvetica, sans-serif',
+            marginBottom: '15px'
+          }}
+          buttonStyle={{ borderRadius: '0', border: '2px solid black', margin: 'auto' }}
+          containerStyle={{ width: '70%' }}
+          country={'in'}
+          value={value}
+          onChange={setValue}
+          autoFormat="true"
+        />
+
+        {/* <input type="tel" name="phone" placeholder="" required pattern="^[0-9]{10,10}$" /> */}
         {sessionStorage.getItem('email').endsWith('@iitbhu.ac.in') ||
         sessionStorage.getItem('email').endsWith('@itbhu.ac.in') ? (
           <>
@@ -106,11 +133,11 @@ function RegisterationForm() {
         <label htmlFor="redeem" className={Classes.title}>
           <b>Referral Code</b>
         </label>
-        <input type="text" name="redeem" placeholder="XXXXXX" />
+        <input type="text" id="redeem" name="redeem" placeholder="XXXXXX" />
         <label htmlFor="insta" className={Classes.title}>
           <b>Instagram Handle</b>
         </label>
-        <input type="text" name="insta" placeholder="" required />
+        <input type="text" id="insta" name="insta" placeholder="" required />
         <label htmlFor="position" className={Classes.title}>
           <b>Wanna be a?</b>
         </label>

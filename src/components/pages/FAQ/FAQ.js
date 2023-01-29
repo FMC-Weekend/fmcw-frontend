@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { IconContext } from 'react-icons';
-import { TiArrowUpThick, TiArrowDownThick } from 'react-icons/ti';
+import { BsArrowDown } from 'react-icons/bs';
+import { TiArrowUpOutline} from 'react-icons/ti'
 import { Data } from './Data';
 import Footer from '../../Footer';
 import { Fade } from 'react-reveal';
@@ -167,7 +168,7 @@ function Accordion() {
                     </h1>
                   </div>
                   <span style={{ fontFamily: 'Montserrat', fontStyle: 'normal' }}>
-                    {clicked === index ? <TiArrowUpThick /> : <TiArrowDownThick />}
+                    {clicked === index ? <TiArrowUpOutline /> : <BsArrowDown />}
                   </span>
                 </Wrap>
                 <hr style={{ color: 'black', border: '0.25px solid #000000' }}></hr>

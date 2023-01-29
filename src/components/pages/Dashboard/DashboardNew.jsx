@@ -62,7 +62,7 @@ function DashBoardNew() {
               email: data.user.userID.email,
               college: data.user.userID.college,
               phone: data.user.userID.number,
-              // year: data.user.userID.yearOfStudy,
+              year: data.user.userID.yearOfStudy,
               instaHandle: data.user.userID.instaHandle,
               userType: data.user.userID.role,
               refCode: data.user.ref_code,
@@ -121,9 +121,6 @@ function DashBoardNew() {
           </h2>
           <h2>
             College: <span>{userData.college}</span>
-          </h2>
-          <h2>
-            Year of Study: <span>{userData.yearOfStudy}</span>
           </h2>
           <h2>
             Referral Code: <span>{userData.refCode}</span>

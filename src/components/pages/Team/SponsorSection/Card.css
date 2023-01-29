@@ -8,19 +8,21 @@
 
 .position {
   font-family: Montserrat;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 22px;
-  color: #121212;
-  width: 302px;
-  text-align: center;
-  margin-top: 17px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 22px;
+    color: #121212;
+    width: 200px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .team-card {
-  width: 295px;
-  height: 420px;
+  width: 220px;
+  height: 330px;
   margin-right: 5%;
   margin-bottom: 5%;
   background: #00CCF5;
@@ -39,8 +41,8 @@
   width: 50px;
   height: 50px;
   float: right;
-  top: 5px;
-  left: 0px;
+  top: -11px;
+  left: -24px;
   z-index: 1;
   margin: 10px 0px 0px 50px;
   transform: rotate(0deg);
@@ -48,20 +50,20 @@
 
 .drink{
   position: absolute;
-  width: 69px;
-  height: 69px;
+  width: 52px;
+  height: 53px;
   float: right;
-  top: 245px;
-  left: 170px;
+  top: 191px;
+  left: 128px;
   z-index: 1;
   margin: 15px 20px 0px 20px;
 }
 
 .cardImg{
   object-fit: cover;
-  width: 241px;
-  height: 280px;
-  margin: 40px 0px 0px 25px;
+  width: 180px;
+  height: 223px;
+  margin: 17px 0px 0px 17px;
   overflow: hidden;
   background: #FFFFFF;
   border: 2px solid #000000;
@@ -78,7 +80,7 @@
 .cardImg img{
   object-fit: cover;
   width: 241px;
-  height: 280px;
+  height: 250px;
   background: #FFFFFF;
   border-radius: 19px;
   transition: all .5s ease;
@@ -99,16 +101,16 @@
 
 .cardTitle {
   height: 33px;
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 550;
-  font-size: 24px;
-  line-height: 33px;
-  color: #000000;
-  position: absolute;
-  width: 302px;
-  margin-top: 1px;
-  text-align: center;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 21px;
+    line-height: 33px;
+    color: #000000;
+    position: relative;
+    width: 224px;
+    margin-top: 1px;
+    text-align: center;
 }
 
 
@@ -117,7 +119,7 @@
   .team-card {
     /* max-width: calc(45% - 1em); */
     width: 280px;
-    height: 410px;
+    height: 370px;
     margin-left: -38px;
     display: flex;
     justify-content: space-between;
@@ -129,12 +131,13 @@
 
   .cardImg{
     width: 225px;
-    height: 270px;
+    height: 250px;
     margin: 33px 0px 0px 21px;
 
   }
 
   .stars{
+    top: -1px;
     left: -29px;
   }
   .cardImg img{
@@ -144,21 +147,22 @@
 
   .position{
     position: absolute;
-    top: 309px;
+    top: 289px;
     width: 280px;
     font-size: 22px;
   }
 
   .cardTitle{
     position:absolute;
-    top: 362px;
+    top: 322px;
     width: 280px;
     font-size: 22px;
   }
 
   .drink{
     position: absolute;
-    top:235px;
+    top:227px;
+    left: 170px;
   }
 }
 
