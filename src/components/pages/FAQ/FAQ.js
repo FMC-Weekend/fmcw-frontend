@@ -45,7 +45,7 @@ const Heading = styled.div`
   border: 3px solid #000000;
   display: flex;
   justify-content: center;
-  h1
+  h1{
     padding: 15px;
     font-size: 60px;
     text-align: center;
