@@ -192,6 +192,8 @@ flip card
   top: 153px;
   font-size: 1.4em;
   border: 2px solid #000000;
+  border-left: none;
+  border-right: none;
   border-radius: 0px 0px 22px 22px;
 }
 .addToCart:hover {
