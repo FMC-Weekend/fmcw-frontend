@@ -13,6 +13,8 @@ import Footer from '../../Footer';
 import { useState, useEffect } from 'react';
 // import Button from './pages/LandingPage/Section/Button/Button';
 // import Button from './Button_2';
+import leftStar from '../../leftStar.png';
+import rightStar from '../../rightStar.png';
 
 const style = {
   position: 'absolute',
@@ -29,7 +31,9 @@ function Pass(props) {
     <div>
       <section className="passes-page">
         <div className="pass-header">
-          <img src={process.env.REACT_APP_AWS_S3_URI + '/passes-header.svg'} />
+          <img src={rightStar} className="headerImg"/>
+          <div className="headerHeading">Passes</div>
+          <img src={leftStar} className="headerImg"/>
         </div>
         <div className="passes-content">
           <h1>Know how you can get access to more events within your budget</h1>
@@ -43,7 +47,7 @@ function Pass(props) {
         <div className="pass-img">
           <img src={process.env.REACT_APP_AWS_S3_URI + '/Group_7256.svg'} alt=""/>
         </div>
-        <div className="heading"><img src="/images/greenStar.svg" className="headingImg"/>OFFLINE<img src="/images/greenStar.svg" className="headingImg"/></div>
+        <div className="headingk"><img src="/images/yellowStar.svg" className="headingImg"/>OFFLINE<img src="/images/greenStar.svg" className="headingImg"/></div>
         
         <div className="pass-cards">
           <NavLink to="/events">
@@ -63,7 +67,7 @@ function Pass(props) {
 
         </div>
         
-        <div className="heading"><img src="/images/greenStar.svg" className="headingImg"/>COMBOS<img src="/images/greenStar.svg" className="headingImg"/></div>
+        <div className="headingk"><img src="/images/yellowStar.svg" className="headingImg"/>COMBOS<img src="/images/greenStar.svg" className="headingImg"/></div>
   
         <div className="pass-cards">
           <NavLink to="/events">
@@ -84,7 +88,7 @@ function Pass(props) {
 
         </div>
         
-        <div className="heading"><img src="/images/greenStar.svg" className="headingImg"/>ONLINE<img src="/images/greenStar.svg" className="headingImg"/></div>
+        <div className="headingk"><img src="/images/yellowStar.svg" className="headingImg"/>ONLINE<img src="/images/greenStar.svg" className="headingImg"/></div>
         
         <div className="pass-cards">
           <NavLink to="/events">

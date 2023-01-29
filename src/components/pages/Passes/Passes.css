@@ -7,7 +7,12 @@
   /* padding: 30px; */
   color: #000;
 }
+
 .passes-page .pass-header {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
   background: #ff8800;
   width: 100%;
   position: relative;
@@ -15,9 +20,7 @@
   margin: auto;
 }
 .pass-header img {
-  margin: auto;
-  top: 20px;
-  position: relative;
+  margin: 20px;
 }
 .pass-header .head {
   position: relative;
@@ -25,9 +28,6 @@
   font-style: normal;
   font-weight: 600;
   font-size: 128px;
-  /* line-height: 156px; */
-  /* identical to box height */
-  top: 20px;
   text-align: center;
   color: #ffffff;
   margin: auto;
@@ -58,7 +58,16 @@
   margin-top: 20px;
   font-weight: 400;
 }
-.heading {
+.headerHeading {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 128px;
+  line-height: 156px;
+  color: #ffffff;
+  text-shadow: 4px 8px 0px #000000;
+}
+.headingk {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -72,10 +81,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #231F20;
+  background: #231f20;
   text-shadow: 1.49153px 2.98305px 0px #000000;
 }
-.headingImg{
+.headingImg {
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -256,8 +265,13 @@ hr {
     background: #ff8800;
     width: 100%;
     position: relative;
-    height: 30vh;
+    height: 25vh;
     margin: auto;
+  }
+  .headerHeading{
+    font-size: 60px;
+    text-shadow: 2px 4px 0px #000000;
+
   }
   .pass-header .head {
     position: relative;
@@ -316,6 +330,9 @@ hr {
     text-align: center;
     display: flex;
     flex-direction: column;
+  }
+  .headerImg{
+    width: 10%;
   }
 }
 
