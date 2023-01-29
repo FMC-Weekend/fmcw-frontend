@@ -1,5 +1,4 @@
 .parent_wrapper {
-
   width: 100%;
   display: flex;
   text-align: center;
@@ -9,32 +8,32 @@
 .position {
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 24px;
   line-height: 22px;
-  color: #121212;
+  color: #fff;
   width: 302px;
   text-align: center;
-  margin-top: 17px;
+  margin: 1.5rem 0;
 }
 
-.team-card {
+#sponsor-card {
   width: 295px;
   height: 420px;
   margin-right: 5%;
   margin-bottom: 5%;
-  background: #00CCF5;
+  background: #685eda;
   border: 2px solid #000000;
   box-shadow: 4px 8px 0px #000000;
   border-radius: 19px;
 }
 
-.team-card:hover {
+#sponsor-card:hover {
   box-shadow: 0px 0px 0px;
   transition: all 0.4s ease;
 }
 
-.stars{
+.stars {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -46,7 +45,7 @@
   transform: rotate(0deg);
 }
 
-.drink{
+.drink {
   position: absolute;
   width: 69px;
   height: 69px;
@@ -57,17 +56,18 @@
   margin: 15px 20px 0px 20px;
 }
 
-#cardImg{
-  object-fit: cover;
+.cardImg {
+  object-fit: contain;
+  padding: 1rem;
   width: 241px;
   height: 280px;
   margin: 40px 0px 0px 25px;
   overflow: hidden;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 2px solid #000000;
   box-shadow: 4px 0px 0px #000000;
   border-radius: 19px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .cardImg:hover {
@@ -75,16 +75,17 @@
   transition: all 0.4s ease;
 }
 
-#cardImg img{
-  object-fit: cover;
+.cardImg img {
+  object-fit: contain;
+  padding: 1rem;
   width: 241px;
   height: 280px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 19px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
-#cardImg img:hover {
+.cardImg img:hover {
   transform: scale(1.08);
   opacity: 0.8;
 }
@@ -101,20 +102,18 @@
   height: 33px;
   font-family: 'Manrope';
   font-style: normal;
-  font-weight: 550;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 1rem;
   line-height: 33px;
-  color: #000000;
+  color: #fff;
   position: absolute;
   width: 302px;
   margin-top: 1px;
   text-align: center;
 }
 
-
-
 @media screen and (max-width: 700px) {
-  .team-card {
+  #sponsor-card {
     /* max-width: calc(45% - 1em); */
     width: 280px;
     height: 410px;
@@ -123,42 +122,41 @@
     justify-content: space-between;
   }
 
-  .parent_wrapper{
+  .parent_wrapper {
     width: 100%;
   }
 
-  .cardImg{
+  .cardImg {
     width: 225px;
     height: 270px;
     margin: 33px 0px 0px 21px;
-
   }
 
-  .stars{
+  .stars {
     left: -29px;
   }
-  .cardImg img{
+  .cardImg img {
     width: 235px;
     height: 270px;
   }
 
-  .position{
+  .position {
     position: absolute;
     top: 309px;
     width: 280px;
     font-size: 22px;
   }
 
-  .cardTitle{
-    position:absolute;
+  .cardTitle {
+    position: absolute;
+    font-size: 1rem;
     top: 362px;
     width: 280px;
     font-size: 22px;
   }
 
-  .drink{
+  .drink {
     position: absolute;
-    top:235px;
+    top: 235px;
   }
 }
-
