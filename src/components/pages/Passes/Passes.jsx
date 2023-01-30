@@ -13,6 +13,8 @@ import Footer from '../../Footer';
 import { useState, useEffect } from 'react';
 // import Button from './pages/LandingPage/Section/Button/Button';
 // import Button from './Button_2';
+import leftStar from '../../leftStar.png';
+import rightStar from '../../rightStar.png';
 
 const style = {
   position: 'absolute',
@@ -29,7 +31,9 @@ function Pass(props) {
     <div>
       <section className="passes-page">
         <div className="pass-header">
-          <img src={process.env.REACT_APP_AWS_S3_URI_2 + '/passes-header.svg'}  alt="passes header" />
+          <img src={rightStar} className="headerImg"/>
+          <div className="headerHeading">Passes</div>
+          <img src={leftStar} className="headerImg"/>
         </div>
         <div className="passes-content">
           <h1>Know how you can get access to more events within your budget</h1>
@@ -41,44 +45,61 @@ function Pass(props) {
           </p>
         </div>
         <div className="pass-img">
-          <img src={process.env.REACT_APP_AWS_S3_URI_2 + '/Group_7256.svg'} alt="" />
+
+          <img src={process.env.REACT_APP_AWS_S3_URI + '/Group_7256.svg'} alt=""/>
         </div>
+        <div className="headingk"><img src="/images/yellowStar.svg" className="headingImg"/>OFFLINE<img src="/images/greenStar.svg" className="headingImg"/></div>
+        
         <div className="pass-cards">
           <NavLink to="/events">
-            <img
-              src={process.env.REACT_APP_AWS_S3_URI_2 + '/event-pass.svg'}
-              className="pass_card"
-              alt=""
-            />
+            {/*
+             <img
+               src={process.env.REACT_APP_AWS_S3_URI + '/event-pass.svg'}
+               className="pass_card"
+               
+             /> 
+            */}
+            <img src="/images/offlineWorkshop.svg" className='pass_card'/>
           </NavLink>
 
           <NavLink to="/events">
-            <img
-              src={process.env.REACT_APP_AWS_S3_URI_2 + '/Group7271.png'}
-              className="pass_card"
-              alt=""
-            />
+            <img src="/images/offlineEvents.svg" className='pass_card'/>
           </NavLink>
-          <img
-            src={process.env.REACT_APP_AWS_S3_URI_2 + '/club-pass.svg'}
-            className="pass_card"
-            alt=""
-          />
-          <img
-            src={process.env.REACT_APP_AWS_S3_URI_2 + '/Group7267.png'}
-            className="pass_card"
-            alt=""
-          />
-          <img
-            src={process.env.REACT_APP_AWS_S3_URI + '/Group7268.png'}
-            className="pass_card"
-            alt=""
-          />
-          <img
-            src={process.env.REACT_APP_AWS_S3_URI + '/Group7269.png'}
-            className="pass_card"
-            alt=""
-          />
+
+        </div>
+        
+        <div className="headingk"><img src="/images/yellowStar.svg" className="headingImg"/>COMBOS<img src="/images/greenStar.svg" className="headingImg"/></div>
+  
+        <div className="pass-cards">
+          <NavLink to="/events">
+            <img src="/images/combo1.svg" className='pass_card'/>
+          </NavLink>
+
+          <NavLink to="/events">
+            <img src="/images/combo2.svg" className='pass_card'/>
+          </NavLink>
+
+          <NavLink to="/events">
+            <img src="/images/combo3.svg" className='pass_card'/>
+          </NavLink>
+
+          <NavLink to="/events">
+            <img src="/images/combo4.svg" className='pass_card'/>
+          </NavLink>
+
+        </div>
+        
+        <div className="headingk"><img src="/images/yellowStar.svg" className="headingImg"/>ONLINE<img src="/images/greenStar.svg" className="headingImg"/></div>
+        
+        <div className="pass-cards">
+          <NavLink to="/events">
+            <img src="/images/online1.svg" className='pass_card'/>
+          </NavLink>
+
+          <NavLink to="/events">
+            <img src="/images/online2.svg" className='pass_card'/>
+          </NavLink>
+
         </div>
       </section>
       <Footer />

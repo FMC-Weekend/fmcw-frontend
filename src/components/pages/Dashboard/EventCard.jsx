@@ -103,10 +103,12 @@ function EventCard(props) {
         <b className="front-price" style={{ left: props.frontLeft }}>
           RS.{props.price}
         </b>
-        <img className="front-img" src={props.img} alt="design element" style={{ left: props.frontLeft }}></img>
-        <img className="three-dots1" src={rectangle} alt="design element" style={{ display: props.display }}></img>
-        <img className="three-dots2" src={rectangle} alt="design element" style={{ display: props.display }}></img>
-        <img className="three-dots3" src={rectangle} alt="design element" style={{ display: props.display }}></img>
+        <img className="front-img" src={props.img} style={{ left: props.frontLeft }}></img>
+       {/*
+         <img className="three-dots1" src={rectangle} style={{ display: props.display }}></img>
+         <img className="three-dots2" src={rectangle} style={{ display: props.display }}></img>
+         <img className="three-dots3" src={rectangle} style={{ display: props.display }}></img> 
+       */}
       </div>
 
       <div className="card-back card-div">
