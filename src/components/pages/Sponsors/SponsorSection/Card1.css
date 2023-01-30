@@ -98,18 +98,19 @@
   background: white;
 }
 
-.cardTitle {
-  height: 33px;
+#cardTitle {
+  height: 1.5rem;
   font-family: 'Manrope';
   font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
   line-height: 33px;
-  color: #fff;
+  color: #000;
   position: absolute;
-  width: 302px;
   margin-top: 1px;
+  margin-left: 60px;
   text-align: center;
+  justify-content: center !important;
 }
 
 @media screen and (max-width: 700px) {
@@ -142,17 +143,15 @@
 
   .position {
     position: absolute;
-    top: 309px;
+    top: 10px;
     width: 280px;
     font-size: 22px;
   }
 
-  .cardTitle {
+  #cardTitle {
     position: absolute;
-    font-size: 1rem;
-    top: 362px;
-    width: 280px;
-    font-size: 22px;
+    /* font-size: 1rem; */
+    justify-content: center;
   }
 
   .drink {

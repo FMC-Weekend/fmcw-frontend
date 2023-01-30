@@ -17,7 +17,7 @@ function SponsorCard(props) {
     <Fade right>
       <div className="team-card" id="sponsor-card" options={options}>
         {console.log(props)}
-        <h3 className="cardTitle">{props.title}</h3>
+        <h3 id="cardTitle">{props.title}</h3>
         <div>
           <div className="cardImg">
             <img src={props.img} alt="" />

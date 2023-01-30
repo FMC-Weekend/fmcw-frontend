@@ -78,11 +78,11 @@ const Sponsors1 = () => {
       {console.log(SponsorData.name)}
       <div className="flex justify-center flex-col w-screen">
         <h1 className="text-3xl font-bold text-center mt-3">Presents</h1>
-        <div className="lg:ml-96 lg:mr-96 sm:ml-10 sm:mr-10">
+        <div className="lg:ml-96 lg:mr-96 sm:ml-10 sm:mr-10 flex justify-center">
           <img
             src="https://drive.google.com/uc?export=view&id=1fsc_Fq1gE-eGUuDfPCbApWUxqs3Wqy6U"
             alt=""
-            className="text-center pt-6 pb-0"
+            className="text-center pt-6 pb-0 w-64 "
           />
         </div>
       </div>
@@ -90,11 +90,11 @@ const Sponsors1 = () => {
       <div className=" border-solid border-2 mt-6 mb-1 w-screen border-black"></div>
       <div className="flex justify-center flex-col w-screen">
         <h1 className="text-3xl font-bold text-center mt-3">Powered By</h1>
-        <div className="lg:ml-96 lg:mr-96 sm:ml-10 sm:mr-10">
+        <div className="lg:ml-96 lg:mr-96 sm:ml-10 sm:mr-10 flex justify-center">
           <img
             src="https://drive.google.com/uc?export=view&id=1g24NVNEBcteGSJTCjQxU2q4rQW37ouWX"
             alt=""
-            className="text-center w-auto pt-6 pb-0"
+            className="text-center w-64 pt-6 pb-0"
           />
         </div>
       </div>
@@ -102,21 +102,21 @@ const Sponsors1 = () => {
       <div class="flex justify-center w-screen">
         <div class="flex-1  border-r border-black">
           <h1 className="text-3xl font-bold text-center mt-3">Co-Powered By</h1>
-          <div className="object-contain">
+          <div className="object-contain flex justify-center align-middle">
             <img
               src="https://drive.google.com/uc?export=view&id=1g24NVNEBcteGSJTCjQxU2q4rQW37ouWX"
               alt=""
-              className="text-center p-10"
+              className="text-center p-10 w-72"
             />
           </div>
         </div>
         <div class=" flex-1  border-l border-black">
           <h1 className="text-3xl font-bold text-center mt-3">Co-Powered By</h1>
-          <div className="object-contain h">
+          <div className="object-contain flex justify-center align-middle">
             <img
               src="https://drive.google.com/uc?export=view&id=1g24NVNEBcteGSJTCjQxU2q4rQW37ouWX"
               alt=""
-              className="text-center p-10"
+              className="text-center p-10 w-72"
             />
           </div>
         </div>
