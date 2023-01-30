@@ -93,7 +93,7 @@ function EventCard(props) {
         <b className="type" style={{ left: props.frontLeft }}>
           {props.type}
         </b>
-        <img className="front-arrow" src={arrow} style={{ display: props.display }}></img>
+        <img className="front-arrow" src={arrow} alt="design element" style={{ display: props.display }}></img>
         <b className="front-title" style={{ left: props.frontLeft }}>
           {props.title}
         </b>
@@ -127,7 +127,7 @@ function EventCard(props) {
           }}>
           <b>{props.content}</b>
         </div>
-        <img className="viewProbImg" src={viewProbImg} style={{ left: props.imgLeft }}></img>
+        <img className="viewProbImg" src={viewProbImg} alt="problem design element" style={{ left: props.imgLeft }}></img>
         <a
           href={props.link}
           target="_blank"

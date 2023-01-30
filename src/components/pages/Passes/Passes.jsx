@@ -24,7 +24,7 @@ const style = {
   width: 400,
   bgcolor: '#fff',
   boxShadow: 24,
-  p: 4
+  p: 5
 };
 function Pass(props) {
   return (
@@ -98,7 +98,6 @@ function Pass(props) {
           <NavLink to="/events">
             <img src="/images/online2.svg" className='pass_card'/>
           </NavLink>
-
         </div>
       </section>
       <Footer />
