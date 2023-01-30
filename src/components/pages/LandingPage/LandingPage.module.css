@@ -666,6 +666,8 @@
   font-weight: 800;
 }
 @media screen and (max-width: 1000px) {
+  .design, .photography, .media, .cine, .animation, .outreach
+  { width: 270px !important;}
   .eventBox {
     display: block;
   }

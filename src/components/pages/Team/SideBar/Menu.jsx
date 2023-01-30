@@ -32,12 +32,13 @@ const menuItemNames = {
   sponsor_2: 'General Secretary',
   sponsor_3: 'Design',
   sponsor_4: 'Event',
-  sponsor_5: 'Marketing',
-  sponsor_6: 'Publicity',
-  sponsor_7: 'Public Relations',
-  sponsor_8: 'Social Media',
-  sponsor_9: 'Tech',
-  sponsor_10: 'Secretaries'
+  sponsor_5: 'Animation',
+  sponsor_6: 'Marketing',
+  sponsor_7: 'Publicity',
+  sponsor_8: 'Public Relations',
+  sponsor_9: 'Social Media',
+  sponsor_10: 'Tech',
+  sponsor_11: 'Secretaries'
 };
 
 /*

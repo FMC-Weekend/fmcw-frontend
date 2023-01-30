@@ -61,7 +61,7 @@ function SponsorSection(props) {
         <div className={classes.sponsor_title} id="sponsor_5">
           <h1>Animation Team</h1>
           <div className={classes.cards}>
-            {data.eventData.map((item, index) => (
+            {data.animationData.map((item, index) => (
               <Card img={item.img} position={item.position} name={item.name} key={index} />
             ))}
           </div>

@@ -29,7 +29,7 @@ function Pass(props) {
     <div>
       <section className="passes-page">
         <div className="pass-header">
-          <img src={process.env.REACT_APP_AWS_S3_URI_2 + '/passes-header.svg'} />
+          <img src={process.env.REACT_APP_AWS_S3_URI_2 + '/passes-header.svg'}  alt="passes header" />
         </div>
         <div className="passes-content">
           <h1>Know how you can get access to more events within your budget</h1>

@@ -132,7 +132,7 @@ const data = {
       id: 14,
       img: process.env.REACT_APP_AWS_S3_URI + '/Tech/sanskriti.jpg',
       position: 'Tech Head',
-      name: 'Sanskriti Srivastav'
+      name: 'Sanskriti Srivastava'
     },
     {
       id: 15,
@@ -167,6 +167,14 @@ const data = {
       img: process.env.REACT_APP_AWS_S3_URI + '/Events/PrathamMittal.jpg',
       position: 'Event Head',
       name: 'Pratham Mittal'
+    }
+  ],
+  animationData: [
+    {
+      id: 28,
+      img: process.env.REACT_APP_AWS_S3_URI + '/ClubSecretaries/GauravKumar_Animation.jpg',
+      position: 'Animation Head',
+      name: 'Gaurav Kumar'
     }
   ],
   convenorData: [

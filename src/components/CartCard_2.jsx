@@ -70,20 +70,23 @@ function CartCard_2(props) {
         <b className="type2" style={{ left: props.frontLeft }}>
           online
         </b>
-        <img className="front-arrow" src={process.env.REACT_APP_AWS_S3_URI + '/Vector59.png'}></img>
+        <img className="front-arrow" alt="" src={process.env.REACT_APP_AWS_S3_URI + '/Vector59.png'}></img>
         <b className="front-title">{props.title}</b>
         <b className="prizes-front">{props.prize}</b>
         <b className="front-price">RS.{props.price}</b>
-        <img className="front-img" src={props.img}></img>
+        <img className="front-img"  alt="" src={props.img}></img>
         <img
           className="three-dots1"
-          src={process.env.REACT_APP_AWS_S3_URI + '/Rectangle133.png'}></img>
+          src={process.env.REACT_APP_AWS_S3_URI + '/Rectangle133.png'}
+          alt="" ></img>
         <img
           className="three-dots2"
-          src={process.env.REACT_APP_AWS_S3_URI + '/Rectangle133.png'}></img>
+          src={process.env.REACT_APP_AWS_S3_URI + '/Rectangle133.png'}
+          alt="" ></img>
         <img
           className="three-dots3"
-          src={process.env.REACT_APP_AWS_S3_URI + '/Rectangle133.png'}></img>
+          src={process.env.REACT_APP_AWS_S3_URI + '/Rectangle133.png'}
+          alt="" ></img>
       </div>
 
       <div className="card-back card-div">
