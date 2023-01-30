@@ -143,6 +143,7 @@ function Navbar() {
                 viewBox="0 0 114 53"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg">
+                 <title>Header Logo</title> 
                 <path
                   d="M35.4048 43.0654V0H0.5L6.05963 6.8595H28.617V13.3434H11.3155L16.8733 20.2029H28.617V34.6921L35.4048 43.0654Z"
                   fill="black"

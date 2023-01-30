@@ -6,7 +6,7 @@ import Home from './components/pages/Home';
 import SignUp from './components/pages/Sign-up/SignUp';
 import events from './components/pages/Events/events';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Sponsors from './components/pages/Sponsors/Sponsors';
+import Sponsors from './components/pages/Sponsors/Sponsors1';
 import FAQ from './components/pages/FAQ/FAQ';
 import landingPage from './components/pages/LandingPage/LandingPage.js';
 // import BasicStack from './components/pages/Events/EventMobile/EventTab';

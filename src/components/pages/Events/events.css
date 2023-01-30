@@ -153,7 +153,7 @@ flip card
   text-align: center;
   position: relative;
   text-decoration: underline;
-  font-family: Nunito Sans;
+  font-family: 'Montserrat';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -229,8 +229,9 @@ flip card
   top: 6px;
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 800 !important;
-  font-size: 3em;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
   text-align: center;
 
   color: #ffffff;
@@ -331,7 +332,7 @@ flip card
 .front-arrow {
   position: absolute;
   height: 60px;
-  left: 310px;
+  left: 300px;
   top: 17px;
 }
 .front-img {
@@ -662,7 +663,6 @@ flip card
 
 .workshopCard:hover {
   box-shadow: 0px 0px 0px;
-  transition: all 0.4s ease;
 }
 .workshopCardImg {
   object-fit: cover;
@@ -755,8 +755,32 @@ flip card
   color: #121212;
 }
 @media screen and (max-width: 1006px) {
+  .front-arrow {
+    display: block !important;
+    position: absolute;
+    height: 50px;
+    left: 180px;
+    top: 30px;
+  }
+  .front-price {
+    margin-top: 60px;
+  }
+  .front-title{
+    margin-top: 25px;
+  }
+  .front-img{
+    margin-left: 151px;
+    margin-top: -40px;
+  }
+  .addToCart{
+    height: 50px;
+  }
   .btnView {
     font-size: 15px !important;
+    margin-top: 30px;
+  }
+  .viewProbImg{
+    margin-top: 30px;
   }
   .event_page {
     background-color: #1d033e;
@@ -770,9 +794,7 @@ flip card
   .prizes-front, .front-price{
     font-size: 22px;
   }
-  .front-img{
-    margin-left: 151px;
-  }
+ 
   body {
     background: #1d033e;
   }

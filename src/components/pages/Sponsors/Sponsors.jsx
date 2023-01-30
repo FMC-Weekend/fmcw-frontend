@@ -72,6 +72,7 @@ function Sponsors(props) {
             name="Design partner"
             position="Huion"
             websiteLink="https://www.huion.com/"
+            alt="sponsor logo" 
           />
           <SponsorCard
             className="sponsor-card"
@@ -79,6 +80,7 @@ function Sponsors(props) {
             name="Audio Electronics Partner"
             position="Urbanista"
             websiteLink="https://www.urbanista.com/gl/"
+            alt="sponsor logo" 
           />
           <SponsorCard
             className="sponsor-card"
@@ -86,6 +88,7 @@ function Sponsors(props) {
             name="MBA Prep Partner"
             position="IMS"
             websiteLink="https://www.imsindia.com/"
+            alt="sponsor logo" 
           />
           <SponsorCard
             className="sponsor-card"
@@ -93,6 +96,7 @@ function Sponsors(props) {
             name="Dating Partner"
             position="NyuCrush"
             websiteLink="https://www.nyucrush.com/"
+            alt="sponsor logo"
           />
           <SponsorCard
             className="sponsor-card"
@@ -100,6 +104,7 @@ function Sponsors(props) {
             name="Crypto Trading Partner"
             position="Giottus Technologies"
             websiteLink="https://giottus.com/"
+            alt="sponsor logo"
           />
           <SponsorCard
             className="sponsor-card"
@@ -107,6 +112,7 @@ function Sponsors(props) {
             name="Learning Partner"
             position="Geeks For Geeks"
             websiteLink="https://www.geeksforgeeks.org/"
+            alt="sponsor logo"
           />
           <SponsorCard
             className="sponsor-card"
@@ -114,6 +120,7 @@ function Sponsors(props) {
             name="Book Reading Partner"
             position="Billionbooks"
             websiteLink="https://thebillionbooks.store/"
+            alt="sponsor logo"
           />
           <SponsorCard
             className="sponsor-card"
@@ -121,6 +128,7 @@ function Sponsors(props) {
             name="Merch Partner"
             position="Festee"
             websiteLink="https://www.instagram.com/festee_official/?hl=en"
+            alt="sponsor logo"
           />
           <SponsorCard
             className="sponsor-card"
@@ -128,6 +136,7 @@ function Sponsors(props) {
             name="National Media Partner"
             position="Amar Ujala"
             websiteLink="https://www.amarujala.com/"
+            alt="sponsor logo"
           />
           <SponsorCard
             className="sponsor-card"
@@ -135,6 +144,7 @@ function Sponsors(props) {
             name="Media Partner"
             position="India Education"
             websiteLink="https://www.indiaeducation.net/"
+            alt="sponsor logo"
           />
         </div>
       </div>

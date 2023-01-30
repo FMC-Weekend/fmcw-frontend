@@ -24,7 +24,7 @@ const style = {
   width: 400,
   bgcolor: '#fff',
   boxShadow: 24,
-  p: 4
+  p: 5
 };
 function Pass(props) {
   return (
@@ -45,6 +45,7 @@ function Pass(props) {
           </p>
         </div>
         <div className="pass-img">
+
           <img src={process.env.REACT_APP_AWS_S3_URI + '/Group_7256.svg'} alt=""/>
         </div>
         <div className="headingk"><img src="/images/yellowStar.svg" className="headingImg"/>OFFLINE<img src="/images/greenStar.svg" className="headingImg"/></div>

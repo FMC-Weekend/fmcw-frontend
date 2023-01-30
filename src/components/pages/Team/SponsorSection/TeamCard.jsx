@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import './Card.css';
 import Fade from 'react-reveal/Fade';
 
-
 function TeamCard(props) {
   const options = {
     reverse: true,
@@ -19,15 +18,15 @@ function TeamCard(props) {
       <div className="team-card" options={options}>
         <div>
           <div className="stars">
-            <img src={process.env.REACT_APP_AWS_S3_URI + '/images/bi_stars.png'} alt="" />
+            <img src={process.env.REACT_APP_AWS_S3_URI + '/images/bi_stars.png'} alt="icon" />
           </div>
 
           <div className="drink">
-            <img src={process.env.REACT_APP_AWS_S3_URI + '/images/drink.png'} alt="" />
+            <img src={process.env.REACT_APP_AWS_S3_URI + '/images/drink.png'} alt="icon" />
           </div>
 
-          <div className="cardImg">
-            <img src={props.img} alt="" />
+          <div id="cardImg">
+            <img src={props.img} loading="lazy" alt="card" width="200" height="200" />
           </div>
 
           <h3 className="position">{props.position}</h3>

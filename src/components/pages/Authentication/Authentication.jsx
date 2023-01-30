@@ -68,7 +68,7 @@ function Authentication() {
     <div className={Classes.auth_section}>
       {/* <h1>Hello World!</h1> */}
 
-      <img src={process.env.REACT_APP_AWS_S3_URI + '/Group_7265.svg'} />
+      <img src={process.env.REACT_APP_AWS_S3_URI + '/Group_7265.svg'} alt="Auth Animation"/>
       <div className={Classes.top}>Let's sign you in</div>
       <div className={Classes.top2}>
         Register to become a part of India's Largest Digital Art Fest
