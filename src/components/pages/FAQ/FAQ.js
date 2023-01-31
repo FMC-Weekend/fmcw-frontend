@@ -175,9 +175,10 @@ function Accordion() {
                       {item.question}
                     </h1>
                   </div>
-                  <span style={{ fontFamily: 'Montserrat', fontStyle: 'normal' }}>
+                  <Fade bottom><span style={{ fontFamily: 'Montserrat', fontStyle: 'normal' }}>
                     {clicked === index ? <img src={UpArrow} style={{maxWidth: "max-content"}} /> : <img style={{maxWidth: "max-content"}} src={DownArrow} />}
                   </span>
+                  </Fade>
                 </Wrap>
                 <hr style={{ color: 'black',  marginTop: '30px', border: '0.25px solid #000000' }}></hr>
                 {clicked === index ? (
