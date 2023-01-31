@@ -69,8 +69,8 @@ function WorkshopCard(props) {
       body: JSON.stringify(obj),
       headers: {
         'Content-Type': 'application/json'
-      }
-    });
+      }  
+    });  
     // console.log({ obj });
 
     // alert('Item added to cart successfully!');/
@@ -195,7 +195,7 @@ function WorkshopCard(props) {
           <CardTitle className="positionWorkshopType">{props.price == 249 ? 'ONLINE' : 'OFFLINE'} {props.type}</CardTitle>
           <CardTitle className="positionWorkshopPrice">Rs.{props.price}</CardTitle>
           <div className="workshopCardImg">
-            <img src={props.img} alt=""  />
+            <img src={props.img} alt="" onClick={handleOpen} />
           </div>
 
           <CardTitle className="positionWorkshop">{props.title}</CardTitle>
@@ -235,7 +235,8 @@ function WorkshopCard(props) {
               </h3>
               <br></br>
               <h3 style={{ bottom: '70px', fontSize: '1.5em' }}>Price: ₹ {props.price}</h3>
-              {sessionStorage.getItem('isLoggedIn') == 'true' && (
+
+              {sessionStorage.getItem('isLoggedIn') == 'true' ? (
                 <button
                   className="cart-btn w-cart"
                   style={{ background: props.color, border: `1px solid ${props.color}` }}
@@ -250,7 +251,11 @@ function WorkshopCard(props) {
                   Add{' '}
                   <useCart></useCart>
                 </button>
-              )}
+              ) : (
+              <div>
+              Login To Add
+            </div>
+            )}
             </div>
           </Typography>
         </Box>

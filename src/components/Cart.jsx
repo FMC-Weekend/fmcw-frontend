@@ -301,7 +301,7 @@ function Cart(props) {
                 </div>
               </div>
             </div>
-            <div className="section_top" style={{ marginTop: '0px' }}>
+            {/* <div className="section_top" style={{ marginTop: '0px' }}>
               <div className="registered_contest">
                 <h2>Workshops</h2>
               </div>
@@ -309,7 +309,7 @@ function Cart(props) {
             <div className="lapTopView">
               <div className="contest_cards">
                 {console.log(cartItems)}
-                {/* {cartItems.length == undefined || cartItems.length == 0 ? ( */}
+               
                 <section
                   className="addWorkshop"
                   style={{ marginBottom: '50px', right: 'auto', position: 'relative' }}>
@@ -318,14 +318,7 @@ function Cart(props) {
                     <h2>Add more Workshop</h2>
                   </a>
                 </section>
-                {/* // ) : (
-              //   <section className="addWorkshop">
-              // <a href="/events">
-              //     <h1>+</h1>
-              //     <h2>Add more Workshops</h2>
-              // </a>
-              //   </section>
-            // )} */}
+                
                 <div className="event_cards">
                   {cartItems.map((item, index) => {
                     console.log(item, index);
@@ -352,8 +345,8 @@ function Cart(props) {
                   })}
                 </div>
               </div>
-            </div>
-            <div className="mobileView">
+            </div> */}
+            {/* <div className="mobileView">
               <div className="contest_cards">
                 <div className="event_cards">
                   {cartItems.map((item, index) => {
@@ -386,7 +379,7 @@ function Cart(props) {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
           </>
         )}
         {/* </div> */}

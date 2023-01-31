@@ -374,7 +374,7 @@ const data = {
   // Workshops Data starts here
   photographyWorkshopData: [
     {
-      id: 1,
+      id: 31,
       img: "/workshopimgs/deomanish.webp" ,
       color: '#00CCF5',
       color2: '#2ED9FC',
@@ -386,11 +386,11 @@ const data = {
       name: 'Manish Deo',
       date: '10th February',
       time: '4:00 p.m. - 5:00 p.m.',
-      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+      desc: `Chasing wanderlust, one frame at a time Manish Deo has made a career out of capturing life's adventures through his lens. His work tells a story and evokes emotion. Pack your bags and your camera! Explore the world and turn your passion for travel photography into a profession. Join us on a workshop on how to pursue travel photography as your profession in FMC Weekend’23 and take your skills to the next level. `,
     },
     {
-      id: 2,
-      img: "/workshopimgs/shubham_sharma.png" ,
+      id: 32,
+      img: "/workshopimgs/shubham.webp" ,
       color: '#00CCF5',
       color2: '#2ED9FC',
       genre: 'photography',
@@ -451,8 +451,42 @@ const data = {
     // }
   ],
   cineWorkshopData: [
+    // {
+    //   id: 4,
+    //   img: process.env.REACT_APP_AWS_S3_URI + '/priyankaoutreach.png',
+    //   color: '#FFC900',
+    //   color2: '#FFDC5A',
+    //   genre: 'outreach',
+    //   type: 'Workshop',
+    //   mode: 'ONLINE',
+    //   title: 'Travel Vlogging',
+    //   link: 'https://drive.google.com/file/d/1qTdAlnarcZ47eOS-R7O_ImNfsZPnvnBZ/view?usp=sharing',
+    //   price: 149,
+    //   name: 'Priyanka Chandola',
+    //   date: '11th February',
+    //   time: '4:00 p.m. - 5:00 p.m.',
+    //   desc: 'From a software engineer to a YouTuber, Priyanka Chandola is going places with her ‘Desi Girl Traveller’ channel on social media platforms. She creates prize on travel in the digital space with the aim to break societal norms. Here’s a look at her journey.'
+    // },
+    // {
+    //   id: 5,
+    //   img: process.env.REACT_APP_AWS_S3_URI + '/csvenketaram.jpeg',
+    //   color: '#FFC900',
+    //   color2: '#FFDC5A',
+    //   genre: 'outreach',
+    //   type: 'Workshop',
+    //   mode: 'ONLINE',
+    //   title: 'Documentary Filmmaking workshop',
+    //   link: 'https://drive.google.com/file/d/1-j7QXOXQpBTioe3S7jrTeydKBLGPkcZe/view?usp=sharing',
+    //   price: 149,
+    //   name: 'C.S. Venkateswaran',
+    //   date: '11th February',
+    //   time: '2:00 p.m. - 3:00 p.m.',
+    //   desc: 'He is a National-award winning film critic, professor, documentary filmmaker and writer.'
+    // }
+  ],
+  cineWorkshopData: [
     {
-      id: 3,
+      id: 33,
       img: "/workshopimgs/abhijeet.webp" ,
       color: '#14F0B9',
       color2: '#62FFD8',
@@ -467,7 +501,7 @@ const data = {
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
     },
     {
-      id: 4,
+      id: 34,
       img: "/workshopimgs/rashmi_chadha.png" ,
       color: '#14F0B9',
       color2: '#62FFD8',
@@ -512,10 +546,26 @@ const data = {
     //   desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
     // },
 
+    // {
+    //   id: 4,
+    //   img: "/workshopimgs/raheja.webp" ,
+    //   color: '#685EDA',
+    //   color2: '#9990FF',
+    //   genre: 'design',
+    //   type: 'Workshop',
+    //   title: 'NFT and Digital 3D Workshop',
+    //   link: 'https://drive.google.com/file/d/1ypZkoyI1x3Es-zCTiT0jytmZTazSXmNp/view?usp=sharing',
+    //   price: 249,
+    //   name: 'Shubhangi Raheja',
+    //   date: '10th January',
+    //   time: '5:00 p.m. - 6:00 p.m.',
+    //   desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+    // },
+
   ],
   mediaWorkshopData: [
     {
-      id: 4,
+      id: 35,
       img: "/workshopimgs/priyanka_deo_jain.png" ,
       color: '#FF90E8',
       color2: '#FFC8F4',
@@ -527,7 +577,8 @@ const data = {
       name: 'Priyanka Deo Jain and Sarvpriya Sangeaan',
       date: '11th February',
       time: '4:00 p.m. - 5:00 p.m.',
-      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+      desc: `"Breaking news! 📰 Experience the Power of the Pen: A Panel Discussion on Modern Journalism  with the Acclaimed Journalist , Sarvapriya Sangwan in India’s largest Digital Arts festival , FMC Weekend'23 !!
+      Don't miss this chance to hear from one of the brightest minds in modern journalism!"`
     },
     // {
     //   id: 15,
@@ -542,7 +593,9 @@ const data = {
     //   price: 149,
     //   date: '',
     //   time: '',
-    //   desc: 'He has worked with renowned news channels and has received numerous awards for his outstanding works including “India’s Best Gadget Show” by ENBA India for his show- Tech it out.',
+    //   desc: `"Breaking news! 📰 
+    //   Experience the Power of the Pen: A Panel Discussion on Modern Journalism  with the Acclaimed Journalist , Sarvapriya Sangwan in India’s largest Digital Arts festival , FMC Weekend'23 !!
+    //   Don't miss this chance to hear from one of the brightest minds in modern journalism!"`,
     //   namee: 'Ankit Tuteja'
     // }
   ],
@@ -560,7 +613,7 @@ const data = {
     //   name: 'Aman',
     //   date: '10th January',
     //   time: '5:00 p.m. - 6:00 p.m.',
-    //   desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+    //   desc: `Animation, vfx and videography could be an uphill task, but following one's passion and determined to do big in it is one's choice and decision. A big name in Animation and Vfx, Aman Bhatia has followed his heart and has become a highly popular Youtuber, thanks to his witty humor and animating skills.Want to unravel the mysteries behind a great animation and unbelievable vfx? Just join his workshop on VFX at FMC Weekend 23 and learn new crazy stuff from him!`
     // },
   ]
 };

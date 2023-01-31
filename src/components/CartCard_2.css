@@ -1,6 +1,4 @@
-body {
-  font-family: Marcellus;
-}
+
 .event_page {
   overflow: hidden;
 }
@@ -609,6 +607,49 @@ border-radius: 4px;
   padding-left: 5vw;
   padding-bottom: 5vh;
 }
+.cart-remove-btn {
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 24px;
+gap: 4px;
+margin-left: auto;
+margin-right: auto;
+width: 151px;
+height: 49px;
+background: #F2FF00;
+border: 2px solid #000000;
+box-shadow: 4px 6px 0px #000000;
+border-radius: 4px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.card-flip-2 > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-remove-btn:hover {
+  box-shadow: 0px 0px 0px;
+  transform: translate(4px, 6px);
+  box-shadow: 0px 0px 0px;
+}
+
 @media screen and (max-width: 1006px) {
   .cost {
     justify-content: center;
