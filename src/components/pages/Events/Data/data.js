@@ -223,7 +223,7 @@ const data = {
       genre: 'design',
       type: 'Contest',
       title: 'FrameX',
-      link: 'https://drive.google.com/file/d/1Txf7wih2v0Y1p-wVx4w_8_E4mh9K1wBA/view?usp=share_link',
+      link: 'https://drive.google.com/file/d/1JsrQ-QfvTjEWj7IZB2cxGU1qxsAJw0wt/view',
       price: 179,
       prize: 'Prizes Worth- 10K',
       color: '#685EDA',
