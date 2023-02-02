@@ -123,7 +123,7 @@ function Cart(props) {
       if (item.Type === 'Pass' && localStorage.getItem('checked')) {
         paymentAmount += item.price2;
       } else if (item.Type === 'Pass' && !localStorage.getItem('checked')) {
-        paymentAmount += itm.price2;
+        paymentAmount += item.price2;
       }
       else {
       paymentAmount += item.price;
