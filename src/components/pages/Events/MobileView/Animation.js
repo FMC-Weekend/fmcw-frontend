@@ -36,7 +36,7 @@ function Animation() {
                   width={'260px'}
                   height={'329px'}
                   contentLeft={'12px'}
-                  contentTop={'70px'}
+                  contentTop={'90px'}
                   contentWidth={'230px'}
                   contentFont={'16px'}
                   lineLeft={'23%'}
@@ -52,7 +52,7 @@ function Animation() {
             })}
           </div>
           <div className="workshop-cards">
-            {/* {data.animationWorkshopData.map((item, index) => {
+            {data.animationWorkshopData.map((item, index) => {
               return (
                 <WorkshopCard
                   img={item.img}
@@ -68,7 +68,7 @@ function Animation() {
                   time={item.time}
                 />
               );
-            })} */}
+            })}
           </div>
         </div>
       </section>

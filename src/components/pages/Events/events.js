@@ -5,9 +5,17 @@ import './events.css';
 import Footer from '../../Footer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useEffect, useRef } from 'react';
+
 function Events() {
+  const ref_container = useRef();
+  useEffect(() => {
+    const scrollDiv = document.getElementById("header").offsetTop;
+    window.scrollTo({top : scrollDiv-200 , behavior : "smooth"});
+  }, [])
+
   return (
-    <div className="event_page">
+    <div className="event_page" id="header" ref_container={useRef}>
       <ToastContainer
         draggable={true}
         toastClassName="toast-style"

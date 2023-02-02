@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect , useRef} from 'react';
 import Section from './Section/Section';
 import Classes from './LandingPage.module.css';
 import Footer from '../../Footer';
@@ -21,10 +21,26 @@ import ScrollTrigger from 'react-scroll-trigger';
 import Typewriter from 'typewriter-effect';
 import fmclogogroup from './fmclogogroup.svg';
 import { margin } from '@mui/system';
+import countapi from 'countapi-js';
+
+countapi.visits().then((result) => {
+  document.getElementById('visits').innerText = `${response.value}`;
+});
 
 function landingPage() {
   const [counterOn, setCounterOn] = useState(false);
   const [button, setButton] = useState(true);
+  const [visits, setVisits] = useState(0);
+
+
+
+  var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://api.countapi.xyz/hit/www.fmcweekend.in/visits");
+xhr.responseType = "json";
+xhr.onload = function() {
+    document.getElementById('visits').innerText = this.response.value;
+}
+xhr.send();
 
   const showButton = () => {
     if (window.innerWidth > 960) {
@@ -34,9 +50,12 @@ function landingPage() {
     }
   };
 
+  const ref_container = useRef();
   useEffect(() => {
+    const scrollDiv = document.getElementById("header").offsetTop;
+    window.scrollTo({top : scrollDiv-200 , behavior : "smooth"});
     showButton();
-  }, []);
+  }, [])
 
   const logoutHandler = () => {
     sessionStorage.clear();
@@ -46,10 +65,10 @@ function landingPage() {
 
   return (
     <>
-      <div>
+      <div id="header" ref_container={useRef}>
         <div className={Classes.div1}>
           <Fade bottom>
-          <img src="fmctextlogo.png" className={Classes.div1_logo} />
+          <img src="fmctextlogo.png" alt="logo" className={Classes.div1_logo} />
             <h1 className={Classes.div1_heading}>A Fest for </h1>
             <h1 className={Classes.div1_headanime}>
               <Typewriter
@@ -69,7 +88,7 @@ function landingPage() {
               </button>
             </a>
             {/* </Link> */}
-            <img src={process.env.REACT_APP_AWS_S3_URI + '/HeroAnim1.gif'} className={Classes.div1_img} />;
+            <img src={process.env.REACT_APP_AWS_S3_URI + '/HeroAnim1.gif'} className={Classes.div1_img} alt="hero animation"/>;
             {/* <img src="0001-0210.gif" className={Classes.div1_img} /> */}
           </Fade>
         </div>
@@ -108,7 +127,7 @@ function landingPage() {
             <section className={Classes.button_2}>
             <a href="/events/#vertical-tab-1">
               <button className={Classes.cine}>
-                <p>Cine</p>
+                <p>Cinematography</p>
               </button>
               </a>
               <a href="/events/#vertical-tab-5">
@@ -127,7 +146,7 @@ function landingPage() {
         <div className={Classes.eventBox}>
           <div className={Classes.div3}>
             <div className={Classes.banner1}>
-              <img src={winner1} />
+              <img src={winner1} alt=""/>
             </div>
             <Fade bottom>
               <h1 className={Classes.events}>COMPETITIONS</h1>
@@ -146,7 +165,7 @@ function landingPage() {
           </div>
           <div className={Classes.div4}>
             <div className={Classes.banner2}>
-              <img src={briefing} />
+              <img src={briefing} alt="" />
             </div>
             <Fade bottom>
               <h1 className={Classes.events}>WORKSHOPS</h1>
@@ -168,7 +187,7 @@ function landingPage() {
           <div className={Classes.eventBox}>
             <div className={Classes.div5}>
               <div className={Classes.banner3}>
-                <img src={redcarpet} />
+                <img src={redcarpet}  alt="" />
               </div>
 
               <Fade bottom>
@@ -185,7 +204,7 @@ function landingPage() {
             </div>
             <div className={Classes.div6}>
               <div className={Classes.banner4}>
-                <img src={banner4} />
+                <img src={banner4}  alt="" />
               </div>
               <Fade bottom>
                 <h1 className={Classes.events}>OPEN AIR THEATRES</h1>
@@ -204,7 +223,10 @@ function landingPage() {
           <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
           <div className={Classes.div7}>
             <Fade right>
-              <h1>{counterOn && <CountUp start={70000} end={75269} duration={2} delay={0} />}+</h1>;
+            <h3>
+                Over
+              </h3>
+             <h1 id='visits'></h1>
               <h2>
                 Creative enthusiasts visiting the fest, building a culture and community of digital
                 art

@@ -32,52 +32,7 @@ function EventCard(props) {
   const handleClick = () => {
     setClick(!click);
   };
-  function change() {
-    var elem = document.querySelector('.cart-btn');
-    if (elem.value == 'Add') {
-      elem.value = 'Added';
-    } else {
-      elem.value = 'Add';
-    }
-  }
 
-  async function addItemToCart(item) {
-    const userID = sessionStorage.getItem('userID');
-    let obj = {
-      userID: userID,
-      cartItem: item
-    };
-
-    const res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/cart', {
-      method: 'POST',
-      body: JSON.stringify(obj),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
-    window.setTimeout(function () {
-      location.reload();
-    }, 1000);
-    toast.warn('Event added to cart successfully!', {
-      position: 'top-center',
-      autoClose: 3000,
-      draggable: true,
-      icon: false
-    });
-
-    // post not working because status isn't upadated in data.js;
-
-    //only for show purposed
-    // window.location.href = "/register";
-  }
-  const options = {
-    reverse: true,
-    max: 15,
-    reset: true,
-    easing: 'cubic-bezier(.03,.98,.52,.99)',
-    perspective: 1000,
-    scale: 1.06
-  };
   return (
     <div
       className="card card-flip"
@@ -93,7 +48,7 @@ function EventCard(props) {
         <b className="type" style={{ left: props.frontLeft }}>
           {props.type}
         </b>
-        <img className="front-arrow" src={arrow} style={{ display: props.display }}></img>
+        <img className="front-arrow" src={arrow} alt="design element" style={{ display: props.display }}></img>
         <b className="front-title" style={{ left: props.frontLeft }}>
           {props.title}
         </b>
@@ -104,9 +59,11 @@ function EventCard(props) {
           RS.{props.price}
         </b>
         <img className="front-img" src={props.img} style={{ left: props.frontLeft }}></img>
-        <img className="three-dots1" src={rectangle} style={{ display: props.display }}></img>
-        <img className="three-dots2" src={rectangle} style={{ display: props.display }}></img>
-        <img className="three-dots3" src={rectangle} style={{ display: props.display }}></img>
+       {/*
+         <img className="three-dots1" src={rectangle} style={{ display: props.display }}></img>
+         <img className="three-dots2" src={rectangle} style={{ display: props.display }}></img>
+         <img className="three-dots3" src={rectangle} style={{ display: props.display }}></img> 
+       */}
       </div>
 
       <div className="card-back card-div">
@@ -125,7 +82,7 @@ function EventCard(props) {
           }}>
           <b>{props.content}</b>
         </div>
-        <img className="viewProbImg" src={viewProbImg} style={{ left: props.imgLeft }}></img>
+        <img className="viewProbImg" src={viewProbImg} alt="problem design element" style={{ left: props.imgLeft }}></img>
         <a
           href={props.link}
           target="_blank"

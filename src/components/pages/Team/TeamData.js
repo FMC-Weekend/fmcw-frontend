@@ -90,6 +90,12 @@ const data = {
     },
     {
       id: 8,
+      img: process.env.REACT_APP_AWS_S3_URI + '/PR/AbhigyanAgarwal.jpg',
+      position: 'Public Relations Head',
+      name: 'Abhigyan Agarwal'
+    },
+    {
+      id: 8,
       img: process.env.REACT_APP_AWS_S3_URI + '/PR/AditiRaj.jpg',
       position: 'Public Relations Head',
       name: 'Aditi Raj'
@@ -132,7 +138,7 @@ const data = {
       id: 14,
       img: process.env.REACT_APP_AWS_S3_URI + '/Tech/sanskriti.jpg',
       position: 'Tech Head',
-      name: 'Sanskriti Srivastav'
+      name: 'Sanskriti Srivastava'
     },
     {
       id: 15,
@@ -169,10 +175,24 @@ const data = {
       name: 'Pratham Mittal'
     }
   ],
+  animationData: [
+    {
+      id: 28,
+      img: process.env.REACT_APP_AWS_S3_URI + '/AnimationTeam/UtkarshJain.jpg',
+      position: 'Animation Head',
+      name: 'Utkarsh Jain'
+    },
+    {
+      id: 28,
+      img: process.env.REACT_APP_AWS_S3_URI + '/AnimationTeam/KalpitAdhao.jpg',
+      position: 'Animation Head',
+      name: 'Kalpit Adhao'
+    }
+  ],
   convenorData: [
     {
       id: 20,
-      img: process.env.REACT_APP_AWS_S3_URI,
+      img: process.env.REACT_APP_AWS_S3_URI + '/Convenors/Nilesh.jpg',
       position: 'Convenor',
       name: 'Nilesh Prem Prakash'
     },
@@ -184,7 +204,7 @@ const data = {
     },
     {
       id: 22,
-      img: process.env.REACT_APP_AWS_S3_URI,
+      img: process.env.REACT_APP_AWS_S3_URI + '/Convenors/Siddharth.jpg',
       position: 'Co-Convenor',
       name: 'Siddhart Verma'
     }

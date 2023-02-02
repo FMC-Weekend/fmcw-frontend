@@ -1,8 +1,7 @@
 // import React from 'react';
 import styled from 'styled-components';
 // import '../Team/SponsorSection/Card.css';
-import Fade from 'react-reveal/Fade'
-
+import Fade from 'react-reveal/Fade';
 
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
@@ -24,9 +23,9 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 // const CardTitle = styled.h2`
 //   transform: translateZ(55px);
-// `;  
+// `;
 const CardTitle = styled.h3`
-transform: translateZ(55px);
+  transform: translateZ(55px);
 `;
 const style = {
   position: 'absolute',
@@ -36,25 +35,25 @@ const style = {
   width: 400,
   boxShadow: 24,
   p: 4
-};  
+};
 function WorkshopCard(props) {
   const { isEmpty, items, totalItems, cartTotal, removeItem, emptyCart, updateItemQuantity } =
-  useCart();
-  const [click, setClick] = useState(false);  
+    useCart();
+  const [click, setClick] = useState(false);
   const [buttonText, setButtonText] = useState('Next');
   const { addItem, inCart } = useCart();
   const { getItem } = useCart();
   const handleClick = () => {
     setClick(!click);
-  };  
+  };
   function change() {
     var elem = document.querySelector('.cart-btn');
     if (elem.value == 'Add') {
       elem.value = 'Added';
     } else {
       elem.value = 'Add';
-    }  
-  }  
+    }
+  }
 
   async function addItemToCart(item) {
     // console.log('yash');
@@ -63,37 +62,37 @@ function WorkshopCard(props) {
     let obj = {
       userID: userID,
       cartItem: item
-    };  
+    };
 
     const res = await fetch(process.env.REACT_APP_BACKEND_URI + '/api/cart', {
       method: 'POST',
       body: JSON.stringify(obj),
       headers: {
         'Content-Type': 'application/json'
-      }  
-    });  
+      }
+    });
     // console.log({ obj });
 
     // alert('Item added to cart successfully!');/
     window.setTimeout(function () {
       location.reload();
-    }, 1000);  
+    }, 1000);
     toast.warn('Workshop added to cart successfully!', {
       position: 'top-center',
       autoClose: 3000,
       draggable: true,
       icon: false
-    });  
+    });
 
     // post not working because status isn't upadated in data.js;
 
     //only for show purposed
     // window.location.href = "/register";
-  }  
+  }
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
     setOpen(true);
-  };  
+  };
   const handleClose = () => setOpen(false);
   const options = {
     reverse: true,
@@ -102,7 +101,7 @@ function WorkshopCard(props) {
     easing: 'cubic-bezier(.03,.98,.52,.99)',
     perspective: 1000,
     scale: 1.06
-  };  
+  };
   // function TeamCard(props) {
   //   const options = {
   //     reverse: true,
@@ -111,7 +110,7 @@ function WorkshopCard(props) {
   //     easing: 'cubic-bezier(.03,.98,.52,.99)',
   //     perspective: 1000,
   //     scale: 1.06
-  //   };  
+  //   };
   return (
     // <div className="w-card">
     //   <div className="w-card-div">
@@ -180,7 +179,7 @@ function WorkshopCard(props) {
     // </div>
 
     // return (
-    <Fade right>
+    <Fade left>
       <div
         className="workshopCard"
         options={options}
@@ -189,24 +188,29 @@ function WorkshopCard(props) {
           marginLeft: props.margin,
           marginRight: props.margin,
           left: props.left
-        }}>
+        }}
+        onClick={handleOpen}>
         <div>
-          <CardTitle className="positionWorkshopType">{props.type}</CardTitle>
+          <CardTitle className="positionWorkshopType">
+            {props.price == 249 ? 'ONLINE' : 'OFFLINE'} {props.type}
+          </CardTitle>
           <CardTitle className="positionWorkshopPrice">Rs.{props.price}</CardTitle>
           <div className="workshopCardImg">
             <img src={props.img} alt="" onClick={handleOpen} />
           </div>
 
           <CardTitle className="positionWorkshop">{props.title}</CardTitle>
+          <CardTitle className="cardTitleWorkshop">by {props.name}</CardTitle>
         </div>
-        <CardTitle className="cardTitleWorkshop">by {props.name}</CardTitle>
+        <br></br>
       </div>
       <Modal
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
-        className="workshop-modal" style={{background: props.color2}}>
+        className="workshop-modal"
+        style={{ background: props.color2 }}>
         <Box class={style}>
           <Typography className="guest-details">
             <h2>{props.name}</h2>
@@ -214,7 +218,7 @@ function WorkshopCard(props) {
               <img src={props.img} alt="guest-profile" className="workshop-modal-img" />
             </div>
             <br></br>
-            <p>{props.desc}</p>
+            <p className="workshop-desc">{props.desc}</p>
 
             {/*
           <a href={props.insta_id} className="" target="_blank" rel="noreferrer">
@@ -228,12 +232,13 @@ function WorkshopCard(props) {
               <h3 className="time">
                 Timings: <span>{props.time}</span>
               </h3>
-
+              <br></br>
               <h3 style={{ bottom: '70px', fontSize: '1.5em' }}>Price: ₹ {props.price}</h3>
-              {sessionStorage.getItem('isLoggedIn') == 'true' && (
+
+              {sessionStorage.getItem('isLoggedIn') == 'true' ? (
                 <button
                   className="cart-btn w-cart"
-                  style={{background: props.color, border: `1px solid ${props.color}`}}
+                  style={{ background: props.color, border: `1px solid ${props.color}` }}
                   onClick={() => {
                     // send post request to database
 
@@ -242,12 +247,10 @@ function WorkshopCard(props) {
 
                     // change();
                   }}>
-                  Add{' '}
-                  <img
-                    src={process.env.REACT_APP_AWS_S3_URI + '/add-cartPURPLE_OLD_1.svg'}
-                    alt="cart-icon"
-                  />
+                  Add
                 </button>
+              ) : (
+                <div>Login To Add</div>
               )}
             </div>
           </Typography>
@@ -260,13 +263,9 @@ function WorkshopCard(props) {
     // };
     // export default TeamCard;
   );
-    }
-    WorkshopCard.defaultProps = {
-      type: 'Contest',
-      img: 'https://wallpapercave.com/wp/wp2831956.png',
-  title: 'That’s How B’roll',
-  ps: 'View Problem Statement',
-  price: 150
+}
+WorkshopCard.defaultProps = {
+  type: 'Workshop'
 };
 
 export default WorkshopCard;

@@ -59,12 +59,12 @@
 }
 
 .gButton {
-  width: 620px;
+  width: 30vw;
   height: 71px;
   background: #ffffff;
-  border-radius: 50px;
+  border-radius: 10px!important;
   font-size: 26px;
-  opacity: 0.7;
+  opacity: 1!important;
   z-index: -1;
   margin: auto;
   display: flex;

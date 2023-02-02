@@ -44,7 +44,7 @@ function RegisterationForm() {
   return (
     <form className={`${Classes.section} ${Classes.form_class}`} onSubmit={(e) => handleSubmit(e)}>
       <div className={Classes.container}>
-        <img src="Star.png" className={Classes.star} />
+        <img src="Star.png" className={Classes.star}  alt="" />
         <p className={Classes.main_title}>Register</p>
         <p className={Classes.top}>
           {' '}
@@ -157,7 +157,7 @@ function RegisterationForm() {
             Submit
           </button>
         </div>
-        <img src="Cube.svg" className={Classes.cube} />
+        <img src="Cube.svg" className={Classes.cube}  alt="" />
       </div>
     </form>
   );

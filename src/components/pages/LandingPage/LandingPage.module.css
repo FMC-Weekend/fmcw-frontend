@@ -262,6 +262,10 @@
   border-radius: 4px;
 }
 
+.visitor-counter {
+  display: flex;
+  flex-direction: row;
+}
 .cine {
   display: flex;
   flex-direction: row;
@@ -586,7 +590,21 @@
   text-align: center;
   color: #ffffff;
 }
-
+.div7 h3 {
+  position: relative;
+  width: 75vw;
+  /* height: 116px; */
+  /* left: 236px; */
+  top: 20vh;
+  margin: auto;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 44px;
+  text-align: center;
+  color: #ffffff;
+}
 .back {
   box-sizing: border-box;
   position: absolute;
@@ -666,6 +684,8 @@
   font-weight: 800;
 }
 @media screen and (max-width: 1000px) {
+  .design, .photography, .media, .cine, .animation, .outreach
+  { width: 270px !important;}
   .eventBox {
     display: block;
   }

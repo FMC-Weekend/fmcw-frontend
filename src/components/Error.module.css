@@ -1,0 +1,24 @@
+.error {
+    background-color: #fff;
+}
+
+.Error1 {
+    width: 15vw;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+}
+
+.Error2{
+    width: 35vw;
+    position: absolute;
+    left: 32%;
+    top: 30%;
+}
+
+.Error3{
+    width: 5vw;
+    position: absolute;
+    left: 82%;
+    top: 50%;
+}

@@ -2,7 +2,8 @@
   background: #f5f5f5 !important;
   overflow: hidden;
 }
-.type2{
+
+.type2 {
   width: 100px;
   height: 22px;
   font-family: 'Montserrat';
@@ -153,7 +154,7 @@ flip card
   text-align: center;
   position: relative;
   text-decoration: underline;
-  font-family: Nunito Sans;
+  font-family: 'Montserrat';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -192,6 +193,8 @@ flip card
   top: 153px;
   font-size: 1.4em;
   border: 2px solid #000000;
+  border-left: none;
+  border-right: none;
   border-radius: 0px 0px 22px 22px;
 }
 .addToCart:hover {
@@ -227,8 +230,9 @@ flip card
   top: 6px;
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 800 !important;
-  font-size: 3em;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
   text-align: center;
 
   color: #ffffff;
@@ -329,7 +333,7 @@ flip card
 .front-arrow {
   position: absolute;
   height: 60px;
-  left: 310px;
+  left: 300px;
   top: 17px;
 }
 .front-img {
@@ -560,22 +564,26 @@ flip card
   float: right;
   display: flex;
   position: absolute;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
 }
 .workshop-modal .guest-details p {
   display: flex;
   float: right;
   color: #fff;
   margin: 45px;
-  font-size: 1.3em;
-  font-family: Work Sans;
+  left: 13px;
+  width: 900px;
+  position: relative;
+  font-size: 1.125em;
+  font-family: 'Manrope';
 }
 .workshop-modal .guest-details h2 {
   color: #000;
   font-size: 1.6em;
   position: absolute;
   left: 293px;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
+  font-weight: 600;
 }
 .workshop-modal .guest-details h3 {
   color: #000;
@@ -583,21 +591,27 @@ flip card
   position: absolute;
   left: 293px;
   bottom: 0;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+.dates {
+  font-weight: 600;
 }
 .time {
   margin-left: 250px;
+  font-weight: 600;
 }
 .workshop-modal .guest-details span {
   color: #fff;
   font-size: 1em;
-  font-family: Work Sans;
+  font-family: 'Manrope';
 }
 .workshop-modal-img {
   object-fit: cover;
   position: relative;
   height: 250px;
-  width: 250px;
+  width: 235px;
+  max-width: 400px;
 }
 #modal-modal-description ul li {
   display: flex;
@@ -605,7 +619,7 @@ flip card
 }
 #modal-modal-description ul li span {
   color: #fff;
-  font-family: manrope;
+  font-family: 'Manrope';
   font-size: 1.4em;
 }
 #modal-modal-description h3 {
@@ -634,12 +648,12 @@ flip card
   transition: all 0.4s ease;
 }
 #modal-modal-description p {
-  font-family: manrope;
+  font-family: 'Manrope';
   font-size: 1.4em;
   padding-left: 20px;
 }
 #modal-modal-description a {
-  font-family: manrope;
+  font-family: 'Manrope';
   font-size: 1.4em;
   text-decoration: none;
   padding: 20px;
@@ -647,7 +661,7 @@ flip card
 }
 .workshopCard {
   width: 295px;
-  height: 420px;
+  height: 450px;
   margin-right: 5%;
   margin-bottom: 5%;
   background: #00ccf5;
@@ -660,7 +674,6 @@ flip card
 
 .workshopCard:hover {
   box-shadow: 0px 0px 0px;
-  transition: all 0.4s ease;
 }
 .workshopCardImg {
   object-fit: cover;
@@ -701,7 +714,7 @@ flip card
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 19px;
+  font-size: 16px;
   line-height: 24px;
   text-align: center;
 
@@ -712,6 +725,21 @@ flip card
   position: absolute;
   width: 302px;
   top: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.positionWorkshopMode {
+  height: 29px;
+  position: absolute;
+  width: 302px;
+  top: 32px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -753,6 +781,23 @@ flip card
   color: #121212;
 }
 @media screen and (max-width: 1006px) {
+  .front-arrow {
+    display: block !important;
+    position: absolute;
+    height: 50px;
+    left: 180px;
+    top: 30px;
+  }
+  .front-price {
+    margin-top: 60px;
+  }
+  .front-title{
+    margin-top: 25px;
+  }
+  .front-img{
+    margin-left: 151px;
+    margin-top: -40px;
+  }
   .addToCart{
     height: 50px;
   }
@@ -760,19 +805,24 @@ flip card
     font-size: 15px !important;
     margin-top: 30px;
   }
-  .viewProbImg{
+  .viewProbImg {
     margin-top: 30px;
   }
   .event_page {
     background-color: #1d033e;
   }
-  .type, .type2, .front-title, .prizes-front, .front-price{
+  .type,
+  .type2,
+  .front-title,
+  .prizes-front,
+  .front-price {
     margin-left: 12px;
   }
-  .type2{
+  .type2 {
     font-size: 17px;
   }
-  .prizes-front, .front-price{
+  .prizes-front,
+  .front-price {
     font-size: 22px;
   }
   .front-img{
@@ -828,7 +878,7 @@ flip card
     background: #35096b;
     opacity: 1;
     overflow: hidden;
-    height: 75vh;
+    height: 40vh;
     flex-direction: column;
     align-items: center;
     padding: 20px;
@@ -837,27 +887,25 @@ flip card
   .workshop-card-img {
     object-fit: cover;
     position: relative;
-    height: 280px;
+    height: 100%;
     width: 100%;
     background-color: #170231;
   }
   .workshop-modal .guest-details {
     margin: auto;
-    width: 60vw;
+    width: 50vw;
     text-align: center;
     left: 40px;
     display: contents;
     flex-direction: column;
     position: absolute;
-    font-family: Work Sans;
   }
   .workshop-modal .guest-details p {
     color: #fff;
     margin: auto;
     position: relative;
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: center;
-    font-family: Work Sans;
   }
   .workshop-modal .guest-details h2 {
     color: #000;
@@ -865,15 +913,14 @@ flip card
     position: relative;
     right: 0px;
     left: 0;
-    font-family: Montserrat;
   }
   .workshop-modal .guest-details h3 {
     color: #000;
     font-size: 1em;
-    bottom: -40px;
+    /* bottom: -30px; */
+    padding-top: 30px;
     left: 0;
     display: contents;
-    font-family: Montserrat;
   }
   .time {
     margin-top: 40px;
@@ -881,15 +928,17 @@ flip card
   .workshop-modal .guest-details .timing {
     flex-direction: column;
     display: flex;
-    margin-top: 120px;
+    margin-top: 60px;
     position: relative;
   }
   .workshop-modal .guest-details span {
     color: #fff;
     font-size: 1em;
-    font-family: Work Sans;
   }
   .workshop-modal-img {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.5rem;
     object-fit: cover;
     position: relative;
     height: 100px;
@@ -897,7 +946,6 @@ flip card
     border-radius: 50%;
   }
   .mobile h2 {
-    font-family: Work Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 1.6em;
@@ -914,7 +962,7 @@ flip card
     color: #fff;
     padding: 20px;
     list-style: none;
-    font-family: manrope;
+
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -946,7 +994,6 @@ flip card
     margin-top: -30px;
   }
   .section .back-btn {
-    font-family: Nunito Sans;
     font-size: 14px;
     font-style: normal;
     position: relative;
@@ -980,22 +1027,19 @@ flip card
   }
   #modal-modal-description ul li span {
     color: #fff;
-    font-family: manrope;
+
     padding-right: 5px;
     font-size: 0.8em;
   }
   #modal-modal-description h3 {
-    font-family: manrope;
     font-size: 0.9em;
     padding-left: 4px;
     margin-top: 3px;
   }
   #modal-modal-description p {
-    font-family: manrope;
     font-size: 0.8em;
   }
   #modal-modal-description a {
-    font-family: manrope;
     font-size: 1em;
     text-decoration: none;
     color: #fff;
@@ -1007,18 +1051,20 @@ flip card
   }
 }
 @media screen and (max-width: 700px) {
+  .workshop-modal {
+    height: 55vh;
+  }
   .workshop-modal .guest-details p {
     color: #fff;
     margin: auto;
     position: relative;
     font-size: 0.9em;
     text-align: center;
-    font-family: Work Sans;
   }
   .workshopCard {
     /* max-width: calc(45% - 1em); */
     width: 280px;
-    height: 410px;
+    height: 450px;
     margin-left: -30px;
     margin-bottom: 60px;
     display: flex;
@@ -1050,7 +1096,7 @@ flip card
   }
   .cardTitleWorkshop {
     position: absolute;
-    top: 360px;
+    top: 375px;
     width: 280px;
   }
 }
@@ -1061,6 +1107,14 @@ flip card
     position: relative;
     font-size: 0.9em;
     text-align: center;
-    font-family: Work Sans;
+  }
+
+  .workshop-modal .guest-details .timing {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

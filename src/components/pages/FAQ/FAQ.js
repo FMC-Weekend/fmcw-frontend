@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect , useRef } from 'react';
 import styled from 'styled-components';
 import { IconContext } from 'react-icons';
-import { BsArrowDown } from 'react-icons/bs';
-import { TiArrowUpOutline} from 'react-icons/ti'
+import UpArrow from '../../UpArrowFaq.svg';
+import DownArrow from '../../downArrowFaq.svg';
 import { Data } from './Data';
 import Footer from '../../Footer';
 import { Fade } from 'react-reveal';
 import leftStar from '../../leftStar.png';
 import rightStar from '../../rightStar.png';
-// import './FAQ.css';
+import './FAQ.css';
 
 const AccordionSection = styled.div`
   display: flex;
@@ -16,12 +16,15 @@ const AccordionSection = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 100vh;
+  height: 220vh;
   width: 100%;
   overflow-x: hidden;
   background: #fff;
   @media (max-width: 768px) {
-    height: 80vh;
+    height: 320vh;
+  }
+  @media (max-width: 500px) {
+    height: 400vh;
   }
 `;
 
@@ -45,7 +48,7 @@ const Heading = styled.div`
   border: 3px solid #000000;
   display: flex;
   justify-content: center;
-  h1
+  h1{
     padding: 15px;
     font-size: 60px;
     text-align: center;
@@ -66,11 +69,10 @@ const Heading = styled.div`
   span{
     top : 13%;
   }
-  @media (max-width: 1330px) {
+  @media (max-width: 768px) {
       height: 15vh;
       span {
         font-size: 50px;
-        top :-37%;
         text-shadow: 3px 4px 0px #000000;
       }
       img {
@@ -120,6 +122,11 @@ const Dropdown = styled.div`
 `;
 
 function Accordion() {
+  const ref_container = useRef();
+  useEffect(() => {
+    const scrollDiv = document.getElementById("header").offsetTop;
+    window.scrollTo({top : scrollDiv-200 , behavior : "smooth"});
+  }, [])
   const [clicked, setClicked] = useState(false);
 
   const toggle = (index) => {
@@ -132,18 +139,18 @@ function Accordion() {
   };
 
   return (
-    <div className="HEADER" style={{ overflow: 'hidden' }}>
+    <div className="HEADER" style={{ overflow: 'hidden' }} id="header" ref_container={useRef}>
       <Heading>
         <Fade right>
           {/* <img src='Group_7167.svg' /> */}
           <div>
-            <img className="star1" src={leftStar}></img>
+            <img className="star1" alt="" src={leftStar}></img>
           </div>
           <div>
             <span className="heading">FAQ</span>
           </div>
           <div>
-            <img className="star2" src={rightStar}></img>
+            <img className="star2" alt="" src={rightStar}></img>
           </div>
         </Fade>
       </Heading>
@@ -167,11 +174,12 @@ function Accordion() {
                       {item.question}
                     </h1>
                   </div>
-                  <span style={{ fontFamily: 'Montserrat', fontStyle: 'normal' }}>
-                    {clicked === index ? <TiArrowUpOutline /> : <BsArrowDown />}
+                  <Fade bottom><span style={{ fontFamily: 'Montserrat', fontStyle: 'normal' }}>
+                    {clicked === index ? <img src={UpArrow} style={{maxWidth: "max-content"}} /> : <img style={{maxWidth: "max-content"}} src={DownArrow} />}
                   </span>
+                  </Fade>
                 </Wrap>
-                <hr style={{ color: 'black', border: '0.25px solid #000000' }}></hr>
+                <hr style={{ color: 'black',  marginTop: '30px', border: '0.25px solid #000000' }}></hr>
                 {clicked === index ? (
                   <Fade bottom>
                     <Dropdown>

@@ -3,7 +3,8 @@ import Loading from '../../Loading';
 import { useState, useEffect, useContext } from 'react';
 import Classes from './DashboardNew.module.css';
 import EventCard from './EventCard';
-import WorkshopCard from '../Events/WorkshopCard';
+import WorkshopCard from './WorkshopCard';
+import PassCard from '../Passes/PassCard';
 import { useCart } from 'react-use-cart';
 import Button from './Button/Button';
 import Footer from '../../Footer';
@@ -256,12 +257,12 @@ function DashBoardNew() {
       </div>
       <div className={Classes.mobileView}>
         <div className={Classes.contest_cards}>
-          <a href='/events'>
-          <section className={Classes.addWorkshop}>
-          <h1>+</h1>
-          <h2>Add more workshop</h2>
-          </section>
-        </a>
+          <a href="/events">
+            <section className={Classes.addWorkshop}>
+              <h1>+</h1>
+              <h2>Add more workshop</h2>
+            </section>
+          </a>
           {/* <div className="event-cards"> */}
           <div className={Classes.event_cards}>
             {userData.cartItems.map((item, index) => {
@@ -281,6 +282,78 @@ function DashBoardNew() {
                     desc={item.desc}
                     date={item.date}
                     time={item.time}
+                  />
+                );
+              }
+              return '';
+            })}
+          </div>
+        </div>
+      </div>
+      <div className={`${Classes.registered_contest} ${Classes.section_top}`}>
+        <h2>Registered Passes</h2>
+      </div>
+      <div className={Classes.lapTopView}>
+        <div className={Classes.contest_cards}>
+          <a href="/passes">
+            <img
+              src={process.env.REACT_APP_AWS_S3_URI + '/addPasses.svg'}
+              style={{
+                marginBottom: '50px',
+                right: 'auto',
+                position: 'relative',
+                width: '400px',
+                margin: '50px'
+              }}
+            />
+          </a>
+          {/* <div className="event-cards"> */}
+          <div className={Classes.event_cards}>
+            {userData.cartItems.map((item, index) => {
+              if (item.Type === 'Pass' && item.verifyStatus) {
+                return (
+                  <PassCard
+                    img1={item.img1}
+                    img2={item.img2}
+                    type={item.type}
+                    price1={item.price1}
+                    price2={item.price2}
+                    key={index}
+                  />
+                );
+              }
+              return '';
+            })}
+          </div>
+        </div>
+      </div>
+      <div className={Classes.mobileView}>
+        <div className={Classes.contest_cards}>
+          <a href="/passes">
+            <img
+              src={process.env.REACT_APP_AWS_S3_URI + '/addPasses.svg'}
+              style={{
+                marginBottom: '50px',
+                margin: 'auto',
+                position: 'relative',
+                width: '300px'
+              }}
+            />
+          </a>
+          {/* <div className="event-cards"> */}
+          <div className={Classes.event_cards}>
+            {userData.cartItems.map((item, index) => {
+              if (item.Type === 'Workshop' && item.verifyStatus) {
+                return (
+                  <PassCard
+                    margin={'0'}
+                    left={'0'}
+                    img1={item.img1}
+                    img2={item.img2}
+                    type={item.type}
+                    price1={item.price1}
+                    price2={item.price2}
+                    key={index}
                   />
                 );
               }
