@@ -99,7 +99,7 @@ const data = {
       genre: 'outreach',
       type: 'Contest',
       title: 'Rant it',
-      link: 'https://drive.google.com/file/d/1fReZW22DIarbLKt-OJXqNLCfWJnNCle7/view?usp=share_link',
+      link: 'https://drive.google.com/file/d/1yK31dM76HLr2FnuvK9vkSYs7eJfU0hzC/view?usp=share_link',
       price: 249,
       prize: 'Prizes Worth- 6K',
       color: '#FFC900',
