@@ -5,7 +5,7 @@
     "node": "14.x"
   },
   "private": true,
-  "proxy": "https://fmcw-backend1.onrender.com",
+  "proxy": "http://localhost:8000",
   "dependencies": {
     "@chec/commerce.js": "^2.8.0",
     "@emotion/react": "^11.5.0",

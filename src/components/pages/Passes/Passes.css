@@ -58,6 +58,31 @@
   margin-top: 20px;
   font-weight: 400;
 }
+.accomodation {
+  background: #685EDA;
+}
+.passes-content-2 {
+  text-align: left;
+  width: 60vw;
+  padding: 100px;
+  margin: 30px;
+}
+.passes-content-2 h1 {
+  font-family: Montserrat;
+  font-size: 3.5em;
+  font-weight: 600;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.passes-content-2 p {
+  text-align: left;
+  color: #000;
+  font-size: 2em;
+  font-family: Nunito Sans;
+  margin-top: 20px;
+  font-weight: 400;
+}
 .headerHeading {
   font-family: 'Montserrat';
   font-style: normal;
@@ -111,6 +136,56 @@
   top: 200px;
   width: 40vw;
   right: 40px;
+}
+.pass-btn {
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 36px;
+    gap: 4px;
+    position: relative;
+    width: 200px;
+    font-weight: 700;
+    top: 20px;
+    height: 57px;
+    margin: auto;
+    background: #F2FF00;
+    border: 1px solid #000000;
+    box-shadow: 4px 6px 0px #000000;
+    border-radius: 4px;
+}
+.pass-btn:hover {
+  transform: translate(4px, 6px);
+  box-shadow: 0px 0px 0px;
+}
+.check {
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: #FFEA00;
+  font-weight: 600;
+  font-size: 2em;
+  font-family: Montserrat;
+  padding: 30px 30px;
+}
+.check .checkbox {
+  background-color: #fcc907;
+  width: 50px;
+  height: 26px;
+  margin-left: 90px;
+  position: relative;
+}
+.accomodation .pass-img-1 {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  position: absolute;
+  padding: 30px;
+  top: 1000px;
+  width: 40vw;
+  right: 20px;
 }
 .cart-card {
   width: 300px;
@@ -256,6 +331,12 @@ hr {
     padding: 30px;
   }
   .passes-content {
+    text-align: center;
+    width: 80vw;
+    padding: 0;
+    margin: auto;
+  }
+  .passes-content-2 {
     text-align: center;
     width: 80vw;
     padding: 0;

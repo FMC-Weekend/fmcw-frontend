@@ -519,11 +519,12 @@ border-radius: 4px;
 .addContest {
   margin: auto;
   color: #000;
-  right: 75px;
+  /* right: 75px; */
   text-align: center;
   justify-content: center;
   border-radius: 19px;
-  /* position: absolute; */
+  top: 26px;
+  position: relative;
   width: 60vw;
   max-width: 380px;
   min-width: 260px;
@@ -538,12 +539,13 @@ border-radius: 4px;
 .addWorkshop {
   margin: auto;
   color: #000;
-  right: 70px;
   text-align: center;
   justify-content: center;
+  left: 0;
   border-radius: 19px;
-  position: absolute;
+  position: relative;
   width: 60vw;
+  top: 39px;
   max-width: 295px;
   min-width: 230px;
   height: 420px;
@@ -561,7 +563,7 @@ border-radius: 4px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  margin-left: -6px;
+  margin-left: 25px;
 }
 .contest_cards {
   padding-left: 3.45vw;
@@ -914,8 +916,9 @@ color: #000000;
 }
 @media screen and (max-width: 960px) {
   .event_cards {
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 768px) {

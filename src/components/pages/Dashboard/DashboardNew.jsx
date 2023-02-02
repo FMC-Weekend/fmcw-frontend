@@ -256,12 +256,12 @@ function DashBoardNew() {
       </div>
       <div className={Classes.mobileView}>
         <div className={Classes.contest_cards}>
-          <a href='/events'>
-          <section className={Classes.addWorkshop}>
-          <h1>+</h1>
-          <h2>Add more workshop</h2>
-          </section>
-        </a>
+          <a href="/events">
+            <section className={Classes.addWorkshop}>
+              <h1>+</h1>
+              <h2>Add more workshop</h2>
+            </section>
+          </a>
           {/* <div className="event-cards"> */}
           <div className={Classes.event_cards}>
             {userData.cartItems.map((item, index) => {

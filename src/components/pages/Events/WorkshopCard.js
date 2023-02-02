@@ -69,8 +69,8 @@ function WorkshopCard(props) {
       body: JSON.stringify(obj),
       headers: {
         'Content-Type': 'application/json'
-      }  
-    });  
+      }
+    });
     // console.log({ obj });
 
     // alert('Item added to cart successfully!');/
@@ -191,8 +191,9 @@ function WorkshopCard(props) {
         }}
         onClick={handleOpen}>
         <div>
-
-          <CardTitle className="positionWorkshopType">{props.price == 249 ? 'ONLINE' : 'OFFLINE'} {props.type}</CardTitle>
+          <CardTitle className="positionWorkshopType">
+            {props.price == 249 ? 'ONLINE' : 'OFFLINE'} {props.type}
+          </CardTitle>
           <CardTitle className="positionWorkshopPrice">Rs.{props.price}</CardTitle>
           <div className="workshopCardImg">
             <img src={props.img} alt="" onClick={handleOpen} />
@@ -202,8 +203,6 @@ function WorkshopCard(props) {
           <CardTitle className="cardTitleWorkshop">by {props.name}</CardTitle>
         </div>
         <br></br>
-        
-        
       </div>
       <Modal
         open={open}
@@ -248,14 +247,11 @@ function WorkshopCard(props) {
 
                     // change();
                   }}>
-                  Add{' '}
-                  <useCart></useCart>
+                  Add
                 </button>
               ) : (
-              <div>
-              Login To Add
-            </div>
-            )}
+                <div>Login To Add</div>
+              )}
             </div>
           </Typography>
         </Box>
@@ -269,11 +265,7 @@ function WorkshopCard(props) {
   );
 }
 WorkshopCard.defaultProps = {
-  type: 'Contest',
-  img: 'https://wallpapercave.com/wp/wp2831956.png',
-  title: 'That’s How B’roll',
-  ps: 'View Problem Statement',
-  price: 150
+  type: 'Workshop'
 };
 
 export default WorkshopCard;

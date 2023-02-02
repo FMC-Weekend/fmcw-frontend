@@ -2,6 +2,8 @@ import Loading from './Loading';
 import './Cart.css';
 import { useCart } from 'react-use-cart';
 import CartCard_2 from './CartCard_2';
+import CartWorkshopCard from './CartWorkshopCard';
+
 import { NavLink, Link } from 'react-router-dom';
 // import { Button } from '../components/Button';
 import * as React from 'react';
@@ -23,6 +25,7 @@ import Fade from 'react-reveal/Reveal';
 // import Button from './pages/LandingPage/Section/Button/Button';
 import Button from './Button_2';
 import WorkshopCard from './pages/Events/WorkshopCard';
+import PassCard from './CartPass';
 
 const style = {
   position: 'absolute',
@@ -117,7 +120,14 @@ function Cart(props) {
   let paymentAmount = 0;
   for (const item of cartItems) {
     if (item.verifyStatus == false) {
+      if (item.Type === 'Pass' && localStorage.getItem('checked')) {
+        paymentAmount += item.price2;
+      } else if (item.Type === 'Pass' && !localStorage.getItem('checked')) {
+        paymentAmount += itm.price2;
+      }
+      else {
       paymentAmount += item.price;
+      }
     } else if (item.verifyStatus == true) {
       checkoutHandler();
     }
@@ -140,7 +150,7 @@ function Cart(props) {
             <img className="star2" src={rightStar}></img>
           </div>
         </div>
-        {/* <div className="cartInfo">
+        <div className="cartInfo">
           <div className="cartInfoHeading">
             Know how you can get access to more events within your budget
           </div>
@@ -150,13 +160,11 @@ function Cart(props) {
             including the super-combo called club passes which give you access to the complete
             package from any chosen category.
           </div>
-          <a href="/events">
-            <button className="knowMoreBtn">
-              <Link to="/cart">
-                <p>Know More</p>
-              </Link>
-            </button>
-          </a>
+          <button className="knowMoreBtn">
+            <Link to="/passes">
+              <p>Know More</p>
+            </Link>
+          </button>
 
           <Fade right>
             <div className="imgDiv">
@@ -164,7 +172,7 @@ function Cart(props) {
               <img className="cartImg2" src={img2}></img>
             </div>
           </Fade>
-        </div> */}
+        </div>
 
         {/* <div className="purchase_details"> */}
         {/* <a href="/events">
@@ -206,27 +214,8 @@ function Cart(props) {
               </div>
             </div>
             <div className="lapTopView">
-              <Fade bottom>
+              <Fade left>
                 <div className="contest_cards">
-                  {console.log(cartItems.length)}
-                  {cartItems.length == undefined || cartItems.length == 0 ? (
-                    <a href="/events">
-                      <section
-                        className="addContest"
-                        style={{ margin: '0px 30px 50px', right: 'auto', position: 'relative' }}>
-                        <h1>+</h1>
-                        <h2>Add more contest</h2>
-                      </section>
-                    </a>
-                  ) : (
-                    <a href="/events">
-                      <section className="addContest">
-                        <h1>+</h1>
-                        <h2>Add more contest</h2>
-                      </section>
-                    </a>
-                  )}
-
                   <div className="event_cards">
                     {cartItems.map((item, index) => {
                       console.log(item, index, 'fdsdfghioluyjtrgfguiu');
@@ -252,6 +241,24 @@ function Cart(props) {
                       return '';
                     })}
                   </div>
+                  {console.log(cartItems.length)}
+                  {cartItems.length == undefined || cartItems.length == 0 ? (
+                    <a href="/events">
+                      <section
+                        className="addContest"
+                        style={{ margin: '0px 30px 50px', right: 'auto', position: 'relative' }}>
+                        <h1>+</h1>
+                        <h2>Add more contest</h2>
+                      </section>
+                    </a>
+                  ) : (
+                    <a href="/events">
+                      <section className="addContest">
+                        <h1>+</h1>
+                        <h2>Add more contest</h2>
+                      </section>
+                    </a>
+                  )}
                 </div>
               </Fade>
             </div>
@@ -301,30 +308,19 @@ function Cart(props) {
                 </div>
               </div>
             </div>
-            {/* <div className="section_top" style={{ marginTop: '0px' }}>
+            <div className="section_top" style={{ marginTop: '0px' }}>
               <div className="registered_contest">
                 <h2>Workshops</h2>
               </div>
             </div>
             <div className="lapTopView">
               <div className="contest_cards">
-                {console.log(cartItems)}
-               
-                <section
-                  className="addWorkshop"
-                  style={{ marginBottom: '50px', right: 'auto', position: 'relative' }}>
-                  <a href="/events">
-                    <h1>+</h1>
-                    <h2>Add more Workshop</h2>
-                  </a>
-                </section>
-                
                 <div className="event_cards">
                   {cartItems.map((item, index) => {
                     console.log(item, index);
                     if (item.Type === 'Workshop' && !item.verifyStatus) {
                       return (
-                        <WorkshopCard
+                        <CartWorkshopCard
                           img={item.img}
                           title={item.title}
                           type={item.type}
@@ -337,6 +333,7 @@ function Cart(props) {
                           mongooseId={item._id}
                           desc={item.desc}
                           date={item.date}
+                          left={'0px'}
                           time={item.time}
                         />
                       );
@@ -344,15 +341,33 @@ function Cart(props) {
                     return '';
                   })}
                 </div>
+
+                {cartItems.length == undefined || cartItems.length == 0 ? (
+                  <a href="/events">
+                    <section
+                      className="addWorkshop"
+                      style={{ right: 'auto', position: 'relative' }}>
+                      <h1>+</h1>
+                      <h2>Add more Workshops</h2>
+                    </section>
+                  </a>
+                ) : (
+                  <a href="/events">
+                    <section className="addWorkshop">
+                      <h1>+</h1>
+                      <h2>Add more Workshops</h2>
+                    </section>
+                  </a>
+                )}
               </div>
-            </div> */}
-            {/* <div className="mobileView">
+            </div>
+            <div className="mobileView">
               <div className="contest_cards">
                 <div className="event_cards">
                   {cartItems.map((item, index) => {
                     if (item.Type === 'Workshop' && !item.verifyStatus) {
                       return (
-                        <WorkshopCard
+                        <CartWorkshopCard
                           margin={'0'}
                           left={'0'}
                           img={item.img}
@@ -363,6 +378,9 @@ function Cart(props) {
                           key={index}
                           color={item.color}
                           color2={item.color2}
+                          
+                          verified={item.verifyStatus}
+                          mongooseId={item._id}
                           desc={item.desc}
                           date={item.date}
                           time={item.time}
@@ -379,7 +397,77 @@ function Cart(props) {
                   </a>
                 </div>
               </div>
-            </div> */}
+            </div>
+            <div className="section_top" style={{ marginTop: '0px' }}>
+              <div className="registered_contest">
+                <h2>Passes</h2>
+              </div>
+            </div>
+            <div className="lapTopView">
+              <div className="contest_cards">
+                <div className="event_cards">
+                  {cartItems.map((item, index) => {
+                    console.log(item, index);
+                    if (item.Type === 'Pass' && !item.verifyStatus) {
+                      return (
+                        <PassCard
+                          img1={item.img1}
+                          img2={item.img2}
+                          price1={item.price1}
+                          price2={item.price2}
+                          key={index}
+                          verified={item.verifyStatus}
+                          mongooseId={item._id}
+                          item={item}
+                        />
+                      );
+                    }
+                    return '';
+                  })}
+                </div>
+              </div>
+              <a href="/passes">
+                <img
+                  src={process.env.REACT_APP_AWS_S3_URI + '/addPasses.svg'}
+                  style={{
+                    marginBottom: '50px',
+                    right: 'auto',
+                    position: 'relative',
+                    width: '400px',
+                    margin: '80px'
+                  }}
+                />
+              </a>
+            </div>
+            <div className="mobileView">
+              <div className="contest_cards">
+                <div className="event_cards">
+                  {cartItems.map((item, index) => {
+                    if (item.Type === 'Pass' && !item.verifyStatus) {
+                      return (
+                        <PassCard
+                          img1={item.img1}
+                          img2={item.img2}
+                          price1={item.price1}
+                          price2={item.price2}
+                          key={index}
+                          verified={item.verifyStatus}
+                          mongooseId={item._id}
+                          item={item}
+                        />
+                      );
+                    }
+                    return '';
+                  })}
+                  <a href="/events">
+                    <section className="addContest2">
+                      <h1>+</h1>
+                      <h2>Add more Passes</h2>
+                    </section>
+                  </a>
+                </div>
+              </div>
+            </div>
           </>
         )}
         {/* </div> */}

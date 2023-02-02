@@ -571,6 +571,9 @@ flip card
   float: right;
   color: #fff;
   margin: 45px;
+  left: 13px;
+  width: 900px;
+  position: relative;
   font-size: 1.125em;
   font-family: 'Manrope';
 }
@@ -607,7 +610,8 @@ flip card
   object-fit: cover;
   position: relative;
   height: 250px;
-  width: 450px;
+  width: 235px;
+  max-width: 400px;
 }
 #modal-modal-description ul li {
   display: flex;
@@ -657,7 +661,7 @@ flip card
 }
 .workshopCard {
   width: 295px;
-  height: 420px;
+  height: 450px;
   margin-right: 5%;
   margin-bottom: 5%;
   background: #00ccf5;
@@ -889,7 +893,7 @@ flip card
   }
   .workshop-modal .guest-details {
     margin: auto;
-    width: 60vw;
+    width: 50vw;
     text-align: center;
     left: 40px;
     display: contents;
