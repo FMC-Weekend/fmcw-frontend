@@ -1,0 +1,148 @@
+.error {
+    background-color: #fff;
+}
+
+.Error1 {
+    width: 15vw;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+}
+
+.Error2 {
+    width: 35vw;
+    position: absolute;
+    left: 32%;
+    top: 30%;
+}
+
+.Error3 {
+    width: 5vw;
+    position: absolute;
+    left: 82%;
+    top: 50%;
+}
+
+.Error4{
+    display: none;
+}
+
+.register_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 36px;
+    gap: 4px;
+
+    position: absolute;
+    width: 10vw;
+    height: 57px;
+    left: 40%;
+    top: 73%;
+
+    background: #ff90e8;
+    border: 1px solid #000000;
+    box-shadow: 4px 6px 0px #000000;
+    border-radius: 4px;
+}
+
+.register_button:hover {
+    transform: translate(4px, 8px);
+    box-shadow: 0px 0px 0px;
+}
+
+.register_button p {
+    width: 97px;
+    height: 33px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+
+    color: #000000;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .error {
+        background-color: #fff !important;
+    }
+    .register_button {
+        position: fixed;
+        width: 10vw;
+        height: 45px;
+        left: 40%;
+        top: 63%;
+      }
+      .register_button p {
+        width: 97px;
+        height: 33px;
+    
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .Error4{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .error {
+        background-color: #fff;
+    }
+    .Error1 {
+        width: 25vw;
+        position: absolute;
+        left: 5%;
+        top: 15%;
+    }
+    
+    .Error2 {
+        width: 60vw;
+        height: 30vh;
+        position: absolute;
+        left: 20%;
+        top: 40%;
+    }
+
+    .Error3{
+        display: none;
+    }
+
+    .Error4{
+        display: flex;
+        width: 20vw;
+        position: absolute;
+        left: 72%;
+        top: 80%;
+    }
+    .register_button {
+        position: fixed;
+        width: 10vw;
+        height: 25px;
+        left: 33%;
+        top: 59%;
+      }
+      .register_button p {
+        width: 97px;
+        height: 33px;
+    
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+    }
+}

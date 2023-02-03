@@ -29,6 +29,7 @@ import DashBoard_2 from './components/pages/Dashboard/DashboardNew';
 import DashBoardNew from './components/pages/Dashboard/DashboardNew';
 import Passes from './components/pages/Passes/Passes';
 import Glimps from './components/pages/Glimps/Glimps';
+import Error from './components/pages/NotFound/Error';
 function App() {
   const authCtx = useContext(AuthContext);
   if (window.innerWidth <= 1280) {
@@ -68,6 +69,7 @@ function App() {
           <Route path="/cart" component={Cart} />
           <Route path="/d" exact component={DashBoard_2} />
           <Route path="/passes" exact component={Passes} />
+          <Route path="*" exact component={Error} />
         </Switch>
       </Router>
     </>
