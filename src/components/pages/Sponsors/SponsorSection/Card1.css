@@ -1,126 +1,48 @@
-.parent_wrapper {
-  width: 100%;
+#sponsor-card {
+  width: 300px;
+  height: 380px;
+  margin-right: 5%;
+  margin-bottom: 5%;
   display: flex;
-  text-align: center;
   justify-content: center;
 }
 
-.position {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 22px;
-  color: #fff;
-  width: 302px;
-  text-align: center;
-  margin: 1.5rem 0;
-}
-
-#sponsor-card {
-  width: 295px;
-  height: 420px;
-  margin-right: 5%;
-  margin-bottom: 5%;
-  background: #685eda;
-  border: 2px solid #000000;
-  box-shadow: 4px 8px 0px #000000;
-  border-radius: 19px;
-}
-
-#sponsor-card:hover {
-  box-shadow: 0px 0px 0px;
-  transition: all 0.4s ease;
-}
-
-.stars {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  float: right;
-  top: 5px;
-  left: 0px;
-  z-index: 1;
-  margin: 10px 0px 0px 50px;
-  transform: rotate(0deg);
-}
-
-.drink {
-  position: absolute;
-  width: 69px;
-  height: 69px;
-  float: right;
-  top: 245px;
-  left: 170px;
-  z-index: 1;
-  margin: 15px 20px 0px 20px;
-}
-
-.cardImg {
-  object-fit: contain;
-  padding: 1rem;
-  width: 241px;
-  height: 280px;
-  margin: 40px 0px 0px 25px;
-  overflow: hidden;
-  background: #ffffff;
-  border: 2px solid #000000;
-  box-shadow: 4px 0px 0px #000000;
-  border-radius: 19px;
-  transition: all 0.5s ease;
-}
-
-.cardImg:hover {
-  box-shadow: 0px 0px 0px;
-  transition: all 0.4s ease;
-}
-
 .cardImg img {
+  border-top: 2px solid black;
   object-fit: contain;
   padding: 1rem;
   width: 241px;
   height: 280px;
-  background: #ffffff;
-  border-radius: 19px;
   transition: all 0.5s ease;
+  margin-top: 90px;
 }
 
-.cardImg img:hover {
-  transform: scale(1.08);
-  opacity: 0.8;
-}
 
 /* Add rounded corners to the top left and the top right corner of the image */
 /* Add some padding inside the card container */
-.container {
-  padding: 2px 16px;
-  text-align: center;
-  background: white;
-}
 
 #cardTitle {
-  height: 1.5rem;
+  height: 2.5rem;
   font-family: 'Manrope';
   font-style: normal;
-  font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 33px;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 41px;
+  width: 240px;
   color: #000;
   position: absolute;
-  margin-top: 1px;
-  margin-left: 60px;
   text-align: center;
   justify-content: center !important;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 700px) {
   #sponsor-card {
     /* max-width: calc(45% - 1em); */
     width: 280px;
-    height: 410px;
-    margin-left: -38px;
+    height: 400px;
     display: flex;
-    justify-content: space-between;
+    margin-right: 0%;
   }
 
   .parent_wrapper {
@@ -130,32 +52,17 @@
   .cardImg {
     width: 225px;
     height: 270px;
-    margin: 33px 0px 0px 21px;
+    margin: 33px 0px 0px 0px;
   }
 
-  .stars {
-    left: -29px;
-  }
   .cardImg img {
     width: 235px;
     height: 270px;
-  }
-
-  .position {
-    position: absolute;
-    top: 10px;
-    width: 280px;
-    font-size: 22px;
   }
 
   #cardTitle {
     position: absolute;
     /* font-size: 1rem; */
     justify-content: center;
-  }
-
-  .drink {
-    position: absolute;
-    top: 235px;
   }
 }

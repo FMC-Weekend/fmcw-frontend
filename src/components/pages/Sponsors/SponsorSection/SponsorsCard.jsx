@@ -15,16 +15,12 @@ function SponsorCard(props) {
 
   return (
     <Fade right>
-      <div className="team-card" id="sponsor-card" options={options}>
-        {console.log(props)}
+      <div id="sponsor-card" options={options}>
+        {/* {console.log(props)} */}
         <h3 id="cardTitle">{props.title}</h3>
-        <div>
           <div className="cardImg">
             <img src={props.img} alt="" />
           </div>
-
-          <h3 className="position">{props.name}</h3>
-        </div>
       </div>
     </Fade>
   );

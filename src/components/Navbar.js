@@ -189,15 +189,15 @@ function Navbar() {
               PRONITES
             </NavLink>
           </li> */}
-          {/* <li className="nav-item">
+          <li className="nav-item">
             <NavLink
-              to="/timeline"
+              to="/sponsors"
               className="nav-links"
               activeClassName="target"
               onClick={closeMobileMenu}>
-              TIMELINES
+              SPONSORS
             </NavLink>
-          </li> */}
+          </li>
           <li className="nav-item">
             <NavLink
               to="/FAQ"
