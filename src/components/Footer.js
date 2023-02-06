@@ -9,7 +9,7 @@ function Footer() {
       <footer>
         <div className="footer">
           <section>
-            <img src="WeekeendLogo1.png" className="image" alt="logo with image"></img>
+            <img src="Stiched_Logo-02.png" className="image" alt="logo with image"></img>
           </section>
         </div>
       </footer>
