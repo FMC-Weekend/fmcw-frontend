@@ -69,6 +69,16 @@ function SponsorSection(props) {
       </Fade>
       <Fade right>
         <div className={classes.sponsor_title} id="sponsor_6">
+          <h1>Content Team</h1>
+          <div className={classes.cards}>
+            {data.contentData.map((item, index) => (
+              <Card img={item.img} position={item.position} name={item.name} key={index} />
+            ))}
+          </div>
+        </div>
+      </Fade>
+      <Fade right>
+        <div className={classes.sponsor_title} id="sponsor_7">
           <h1>Marketing Team</h1>
           <div className={classes.cards}>
             {data.marketingData.map((item, index) => (
@@ -78,7 +88,7 @@ function SponsorSection(props) {
         </div>
       </Fade>
       <Fade right>
-        <div className={classes.sponsor_title} id="sponsor_7">
+        <div className={classes.sponsor_title} id="sponsor_8">
           <h1 id="sponsor_2">Publicity Team</h1>
           <div className={classes.cards}>
             {data.publiData.map((item, index) => (
@@ -88,7 +98,7 @@ function SponsorSection(props) {
         </div>
       </Fade>
       <Fade right>
-        <div className={classes.sponsor_title} id="sponsor_8">
+        <div className={classes.sponsor_title} id="sponsor_9">
           <h1 id="sponsor_3">Public Relations Team</h1>
           <div className={classes.cards}>
             {data.prData.map((item, index) => (
@@ -98,7 +108,7 @@ function SponsorSection(props) {
         </div>
       </Fade>
       <Fade right>
-        <div className={classes.sponsor_title} id="sponsor_9">
+        <div className={classes.sponsor_title} id="sponsor_10">
           <h1>Social Media Team</h1>
 
           <div className={classes.cards}>
@@ -109,7 +119,7 @@ function SponsorSection(props) {
         </div>
       </Fade>
       <Fade right>
-        <div className={classes.sponsor_title} id="sponsor_10">
+        <div className={classes.sponsor_title} id="sponsor_11">
           <h1>Tech Team</h1>
           <div className={classes.cards}>
             {data.techData.map((item, index) => (
@@ -119,7 +129,7 @@ function SponsorSection(props) {
         </div>
       </Fade>
       <Fade right>
-        <div className={classes.sponsor_title} id="sponsor_11">
+        <div className={classes.sponsor_title} id="sponsor_12">
           <h1>Club Secretaries</h1>
           <div className={classes.cards}>
             {data.secretariesData.map((item, index) => (

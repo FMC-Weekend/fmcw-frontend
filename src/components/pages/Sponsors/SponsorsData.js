@@ -4,10 +4,6 @@ const sponsors = [
     img: process.env.REACT_APP_AWS_S3_URI + '/Picsarttitlesponsor.png'
   },
   {
-    id: 2,
-    img: process.env.REACT_APP_AWS_S3_URI + '/XPpenco-title.png'
-  },
-  {
     id: 3,
     img: process.env.REACT_APP_AWS_S3_URI + '/LAPCARE.png'
   },
@@ -41,6 +37,14 @@ const sponsors = [
   },
   {
     id: 11,
+    img: 'download.png'
+  },
+  {
+    id: 12,
+    img: 'zebronics.png'
+  },
+  {
+    id: 13,
     img: process.env.REACT_APP_AWS_S3_URI + '/NyuCrush.png'
   },
 ];
