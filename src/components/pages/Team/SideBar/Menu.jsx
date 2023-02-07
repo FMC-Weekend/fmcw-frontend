@@ -23,7 +23,8 @@ const menuItems = {
   sponsor_8: null,
   sponsor_9: null,
   sponsor_10: null,
-  sponsor_11: null
+  sponsor_11: null,
+  sponsor_12: null
 };
 
 const menuItemNames = {
@@ -33,12 +34,13 @@ const menuItemNames = {
   sponsor_3: 'Design',
   sponsor_4: 'Event',
   sponsor_5: 'Animation',
-  sponsor_6: 'Marketing',
-  sponsor_7: 'Publicity',
-  sponsor_8: 'Public Relations',
-  sponsor_9: 'Social Media',
-  sponsor_10: 'Tech',
-  sponsor_11: 'Secretaries'
+  sponsor_6: 'Content',
+  sponsor_7: 'Marketing',
+  sponsor_8: 'Publicity',
+  sponsor_9: 'Public Relations',
+  sponsor_10: 'Social Media',
+  sponsor_11: 'Tech',
+  sponsor_12: 'Secretaries'
 };
 
 /*
@@ -75,7 +77,7 @@ function Menu() {
    * Programmatically determine where to set AnchorPoints for our Menu
    */
   const getAnchorPoints = () => {
-    const curScroll = window.scrollY - 60;
+    const curScroll = window.scrollY - 80;
     // const viewPortHeight = Math.max(
     //   document.documentElement.clientHeight,
     //   window.innerHeight || 0

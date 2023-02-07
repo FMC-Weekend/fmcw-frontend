@@ -1,9 +1,9 @@
 const Sponsors = [
   {
     title: 'Design partner',
-    img: process.env.REACT_APP_AWS_S3_URI + '/Huion.svg',
-    name: 'Huion',
-    link: 'https://www.huion.com'
+    img: process.env.REACT_APP_AWS_S3_URI + '/XPpenco-title.png',
+    name: 'XP Pen',
+    link: 'https://www.xp-pen.com'
   },
   {
     title: 'Bath and Body partner',

@@ -189,6 +189,26 @@ const data = {
       name: 'Kalpit Adhao'
     }
   ],
+  contentData: [
+    {
+      id: 28,
+      img: process.env.REACT_APP_AWS_S3_URI + '/Pratik_Content.png',
+      position: 'Content Head',
+      name: 'Pratik Mishra'
+    },
+    {
+      id: 28,
+      img: process.env.REACT_APP_AWS_S3_URI + '/sushritha.jpg',
+      position: 'Content Head',
+      name: 'Sushrita'
+    },
+    {
+      id: 28,
+      img: process.env.REACT_APP_AWS_S3_URI + '/aditya.png',
+      position: 'Content Head',
+      name: 'Aditya Anil Kapdi'
+    }
+  ],
   convenorData: [
     {
       id: 20,
@@ -259,6 +279,12 @@ const data = {
       img: process.env.REACT_APP_AWS_S3_URI + '/ClubSecretaries/Deepti.jpg',
       position: 'Design Club Secretary',
       name: 'Deepti Gupta'
+    },
+    {
+      id: 28,
+      img: process.env.REACT_APP_AWS_S3_URI + '/Pratik_Content.png',
+      position: 'Media Club Secretary',
+      name: 'Pratik Mishra'
     }
   ]
 };
