@@ -14,11 +14,11 @@ const Heading = styled.div`
   background: #685eda;
   height: 30vh;
   left: 0px;
-  max-width: 1600px;
-  width: 102vw;
+  width: 100%;
   border: 3px solid #000000;
   display: flex;
   justify-content: center;
+  align-items: center;
   h1 {
     padding: 15px;
     font-size: 60px;
