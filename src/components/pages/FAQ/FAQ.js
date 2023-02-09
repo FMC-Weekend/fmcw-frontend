@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { IconContext } from 'react-icons';
@@ -40,8 +41,6 @@ const Heading = styled.div`
   background: #fe6263;
   height: 30vh;
   left: 0px;
-  max-width: 1600px;
-  width: 102vw;
   border: 3px solid #000000;
   display: flex;
   justify-content: center;
