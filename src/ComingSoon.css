@@ -1,0 +1,242 @@
+body{
+ margin:0px;
+ overflow:hidden;
+}
+
+.container {
+   height:100vh;
+   display:flex;
+   flex-direction:column;
+}
+.c1{
+    position:relative;
+    height:50vh;
+   
+
+   
+   
+}
+
+.c2{
+    height:50vh;
+    margin-bottom: 0px;
+    background-color:#89CFF0;
+}
+ 
+
+
+
+.title{
+    text-align:center;
+    font-weight:bold;
+    font-size:3rem;
+
+}
+
+.btn{
+    background-color:#034694;
+    color:white;
+    
+    
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height:41.5px;
+    width:100px;
+    border:none;
+    outline: 0 none;
+   
+   
+}
+
+
+
+.btnip {
+   display:flex;
+   justify-content:center; 
+   margin-bottom:600px;
+   height:50vh;
+   
+}
+
+.cs{
+    text-align:center;
+    font-size:2rem;
+    margin:5px;
+    font-weight:900;
+}
+
+
+
+
+
+
+
+
+  
+  
+  @media (min-width: 1200px) {
+    .illus {
+        position:absolute;
+        bottom:0px;
+        left:20%;
+        right:20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:35%;
+    }
+
+    .fmc {
+        height:10%;
+        margin-top:25px;
+       
+    }
+    
+    .msg{
+        text-align:center;
+        font-size:2.5rem;
+        margin:15px;
+    }
+
+    .ip{
+        height:40px;
+        width:60%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border:none;
+        padding-left:20px;
+        outline-color:#034694;
+        
+    }
+    
+  }
+  
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .illus {
+        position:absolute;
+        bottom:0px;
+        left:20%;
+        right:20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:30%;
+    }
+    .fmc {
+        height:10%;
+        margin-top:25px;
+        
+    }
+
+    .msg{
+        text-align:center;
+        font-size:2.5rem;
+        margin:12px;
+    }
+
+    .ip{
+        height:40px;
+        width:60%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border:none;
+        padding-left:20px;
+        outline-color:#034694;
+       
+    }
+    
+  }
+  
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .illus {
+        position:absolute;
+        bottom:0px;
+        left:20%;
+        right:20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:500px;
+    }
+    .fmc {
+        height:10%;
+        margin-top:25px;
+        
+    }
+
+    .msg{
+        text-align:center;
+        font-size:2.5rem;
+        margin:10px;
+    }
+
+    .ip{
+        height:40px;
+        width:60%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border:none;
+        padding-left:20px;
+        outline-color:#034694;
+        
+      
+    }
+    
+  }
+  
+  
+  @media (max-width: 767px) {
+    .illus {
+        position:absolute;
+        bottom:0px;
+        left:10%;
+        right:10%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:300px;
+    }
+    .fmc {
+        height:10%;
+        margin-top:25px;
+        
+    }
+
+    .msg{
+        text-align:center;
+        font-size:0.8rem;
+        margin:7px;
+    }
+
+    .ip{
+        height:40px;
+        width:60%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border:none;
+        padding-left:20px;
+        outline-color:#034694;
+       
+    }
+
+    .title{
+        text-align:center;
+        font-weight:bold;
+        font-size:1.5rem;
+    
+    }
+
+    .cs{
+        text-align:center;
+        font-size:0.8rem;
+        margin:5px;
+        font-weight:900;
+    }
+    
+  }
+  
+ 
+
+
